@@ -1,0 +1,621 @@
+/**
+ */
+package Accounting.impl;
+
+import Accounting.AccountingPackage;
+import Accounting.AlternativeRoute;
+import Accounting.Carrier;
+import Accounting.CarrierConstraint;
+import Accounting.FareStationSetDefinition;
+import Accounting.Route;
+import Accounting.ServiceConstraint;
+import Accounting.Station;
+import Accounting.ViaStation;
+
+import java.lang.reflect.InvocationTargetException;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Via Station</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getStation <em>Station</em>}</li>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getCarrierConstraint <em>Carrier Constraint</em>}</li>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getCarrier <em>Carrier</em>}</li>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getRoute <em>Route</em>}</li>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getAlternativeRoutes <em>Alternative Routes</em>}</li>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getDataDescription <em>Data Description</em>}</li>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getFareStationSet <em>Fare Station Set</em>}</li>
+ *   <li>{@link Accounting.impl.ViaStationImpl#getServiceConstraint <em>Service Constraint</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaStation {
+	/**
+	 * The cached value of the '{@link #getStation() <em>Station</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStation()
+	 * @generated
+	 * @ordered
+	 */
+	protected Station station;
+
+	/**
+	 * The cached value of the '{@link #getCarrierConstraint() <em>Carrier Constraint</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCarrierConstraint()
+	 * @generated
+	 * @ordered
+	 */
+	protected CarrierConstraint carrierConstraint;
+
+	/**
+	 * The cached value of the '{@link #getCarrier() <em>Carrier</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCarrier()
+	 * @generated
+	 * @ordered
+	 */
+	protected Carrier carrier;
+
+	/**
+	 * The cached value of the '{@link #getRoute() <em>Route</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRoute()
+	 * @generated
+	 * @ordered
+	 */
+	protected Route route;
+
+	/**
+	 * The cached value of the '{@link #getAlternativeRoutes() <em>Alternative Routes</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAlternativeRoutes()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<AlternativeRoute> alternativeRoutes;
+
+	/**
+	 * The default value of the '{@link #getDataDescription() <em>Data Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDataDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DATA_DESCRIPTION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDataDescription() <em>Data Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDataDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected String dataDescription = DATA_DESCRIPTION_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getFareStationSet() <em>Fare Station Set</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFareStationSet()
+	 * @generated
+	 * @ordered
+	 */
+	protected FareStationSetDefinition fareStationSet;
+
+	/**
+	 * The cached value of the '{@link #getServiceConstraint() <em>Service Constraint</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getServiceConstraint()
+	 * @generated
+	 * @ordered
+	 */
+	protected ServiceConstraint serviceConstraint;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ViaStationImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return AccountingPackage.Literals.VIA_STATION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Station getStation() {
+		if (station != null && station.eIsProxy()) {
+			InternalEObject oldStation = (InternalEObject)station;
+			station = (Station)eResolveProxy(oldStation);
+			if (station != oldStation) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AccountingPackage.VIA_STATION__STATION, oldStation, station));
+			}
+		}
+		return station;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Station basicGetStation() {
+		return station;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setStation(Station newStation) {
+		Station oldStation = station;
+		station = newStation;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__STATION, oldStation, station));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CarrierConstraint getCarrierConstraint() {
+		if (carrierConstraint != null && carrierConstraint.eIsProxy()) {
+			InternalEObject oldCarrierConstraint = (InternalEObject)carrierConstraint;
+			carrierConstraint = (CarrierConstraint)eResolveProxy(oldCarrierConstraint);
+			if (carrierConstraint != oldCarrierConstraint) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AccountingPackage.VIA_STATION__CARRIER_CONSTRAINT, oldCarrierConstraint, carrierConstraint));
+			}
+		}
+		return carrierConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CarrierConstraint basicGetCarrierConstraint() {
+		return carrierConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCarrierConstraint(CarrierConstraint newCarrierConstraint) {
+		CarrierConstraint oldCarrierConstraint = carrierConstraint;
+		carrierConstraint = newCarrierConstraint;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__CARRIER_CONSTRAINT, oldCarrierConstraint, carrierConstraint));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Carrier getCarrier() {
+		if (carrier != null && carrier.eIsProxy()) {
+			InternalEObject oldCarrier = (InternalEObject)carrier;
+			carrier = (Carrier)eResolveProxy(oldCarrier);
+			if (carrier != oldCarrier) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AccountingPackage.VIA_STATION__CARRIER, oldCarrier, carrier));
+			}
+		}
+		return carrier;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Carrier basicGetCarrier() {
+		return carrier;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setCarrier(Carrier newCarrier) {
+		Carrier oldCarrier = carrier;
+		carrier = newCarrier;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__CARRIER, oldCarrier, carrier));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Route getRoute() {
+		return route;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetRoute(Route newRoute, NotificationChain msgs) {
+		Route oldRoute = route;
+		route = newRoute;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__ROUTE, oldRoute, newRoute);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRoute(Route newRoute) {
+		if (newRoute != route) {
+			NotificationChain msgs = null;
+			if (route != null)
+				msgs = ((InternalEObject)route).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - AccountingPackage.VIA_STATION__ROUTE, null, msgs);
+			if (newRoute != null)
+				msgs = ((InternalEObject)newRoute).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - AccountingPackage.VIA_STATION__ROUTE, null, msgs);
+			msgs = basicSetRoute(newRoute, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__ROUTE, newRoute, newRoute));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<AlternativeRoute> getAlternativeRoutes() {
+		if (alternativeRoutes == null) {
+			alternativeRoutes = new EObjectContainmentEList<AlternativeRoute>(AlternativeRoute.class, this, AccountingPackage.VIA_STATION__ALTERNATIVE_ROUTES);
+		}
+		return alternativeRoutes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getDataDescription() {
+		return dataDescription;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDataDescription(String newDataDescription) {
+		String oldDataDescription = dataDescription;
+		dataDescription = newDataDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__DATA_DESCRIPTION, oldDataDescription, dataDescription));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FareStationSetDefinition getFareStationSet() {
+		if (fareStationSet != null && fareStationSet.eIsProxy()) {
+			InternalEObject oldFareStationSet = (InternalEObject)fareStationSet;
+			fareStationSet = (FareStationSetDefinition)eResolveProxy(oldFareStationSet);
+			if (fareStationSet != oldFareStationSet) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AccountingPackage.VIA_STATION__FARE_STATION_SET, oldFareStationSet, fareStationSet));
+			}
+		}
+		return fareStationSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FareStationSetDefinition basicGetFareStationSet() {
+		return fareStationSet;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setFareStationSet(FareStationSetDefinition newFareStationSet) {
+		FareStationSetDefinition oldFareStationSet = fareStationSet;
+		fareStationSet = newFareStationSet;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__FARE_STATION_SET, oldFareStationSet, fareStationSet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ServiceConstraint getServiceConstraint() {
+		if (serviceConstraint != null && serviceConstraint.eIsProxy()) {
+			InternalEObject oldServiceConstraint = (InternalEObject)serviceConstraint;
+			serviceConstraint = (ServiceConstraint)eResolveProxy(oldServiceConstraint);
+			if (serviceConstraint != oldServiceConstraint) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AccountingPackage.VIA_STATION__SERVICE_CONSTRAINT, oldServiceConstraint, serviceConstraint));
+			}
+		}
+		return serviceConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ServiceConstraint basicGetServiceConstraint() {
+		return serviceConstraint;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setServiceConstraint(ServiceConstraint newServiceConstraint) {
+		ServiceConstraint oldServiceConstraint = serviceConstraint;
+		serviceConstraint = newServiceConstraint;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.VIA_STATION__SERVICE_CONSTRAINT, oldServiceConstraint, serviceConstraint));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getDescription() {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case AccountingPackage.VIA_STATION__ROUTE:
+				return basicSetRoute(null, msgs);
+			case AccountingPackage.VIA_STATION__ALTERNATIVE_ROUTES:
+				return ((InternalEList<?>)getAlternativeRoutes()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case AccountingPackage.VIA_STATION__STATION:
+				if (resolve) return getStation();
+				return basicGetStation();
+			case AccountingPackage.VIA_STATION__CARRIER_CONSTRAINT:
+				if (resolve) return getCarrierConstraint();
+				return basicGetCarrierConstraint();
+			case AccountingPackage.VIA_STATION__CARRIER:
+				if (resolve) return getCarrier();
+				return basicGetCarrier();
+			case AccountingPackage.VIA_STATION__ROUTE:
+				return getRoute();
+			case AccountingPackage.VIA_STATION__ALTERNATIVE_ROUTES:
+				return getAlternativeRoutes();
+			case AccountingPackage.VIA_STATION__DATA_DESCRIPTION:
+				return getDataDescription();
+			case AccountingPackage.VIA_STATION__FARE_STATION_SET:
+				if (resolve) return getFareStationSet();
+				return basicGetFareStationSet();
+			case AccountingPackage.VIA_STATION__SERVICE_CONSTRAINT:
+				if (resolve) return getServiceConstraint();
+				return basicGetServiceConstraint();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case AccountingPackage.VIA_STATION__STATION:
+				setStation((Station)newValue);
+				return;
+			case AccountingPackage.VIA_STATION__CARRIER_CONSTRAINT:
+				setCarrierConstraint((CarrierConstraint)newValue);
+				return;
+			case AccountingPackage.VIA_STATION__CARRIER:
+				setCarrier((Carrier)newValue);
+				return;
+			case AccountingPackage.VIA_STATION__ROUTE:
+				setRoute((Route)newValue);
+				return;
+			case AccountingPackage.VIA_STATION__ALTERNATIVE_ROUTES:
+				getAlternativeRoutes().clear();
+				getAlternativeRoutes().addAll((Collection<? extends AlternativeRoute>)newValue);
+				return;
+			case AccountingPackage.VIA_STATION__DATA_DESCRIPTION:
+				setDataDescription((String)newValue);
+				return;
+			case AccountingPackage.VIA_STATION__FARE_STATION_SET:
+				setFareStationSet((FareStationSetDefinition)newValue);
+				return;
+			case AccountingPackage.VIA_STATION__SERVICE_CONSTRAINT:
+				setServiceConstraint((ServiceConstraint)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case AccountingPackage.VIA_STATION__STATION:
+				setStation((Station)null);
+				return;
+			case AccountingPackage.VIA_STATION__CARRIER_CONSTRAINT:
+				setCarrierConstraint((CarrierConstraint)null);
+				return;
+			case AccountingPackage.VIA_STATION__CARRIER:
+				setCarrier((Carrier)null);
+				return;
+			case AccountingPackage.VIA_STATION__ROUTE:
+				setRoute((Route)null);
+				return;
+			case AccountingPackage.VIA_STATION__ALTERNATIVE_ROUTES:
+				getAlternativeRoutes().clear();
+				return;
+			case AccountingPackage.VIA_STATION__DATA_DESCRIPTION:
+				setDataDescription(DATA_DESCRIPTION_EDEFAULT);
+				return;
+			case AccountingPackage.VIA_STATION__FARE_STATION_SET:
+				setFareStationSet((FareStationSetDefinition)null);
+				return;
+			case AccountingPackage.VIA_STATION__SERVICE_CONSTRAINT:
+				setServiceConstraint((ServiceConstraint)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case AccountingPackage.VIA_STATION__STATION:
+				return station != null;
+			case AccountingPackage.VIA_STATION__CARRIER_CONSTRAINT:
+				return carrierConstraint != null;
+			case AccountingPackage.VIA_STATION__CARRIER:
+				return carrier != null;
+			case AccountingPackage.VIA_STATION__ROUTE:
+				return route != null;
+			case AccountingPackage.VIA_STATION__ALTERNATIVE_ROUTES:
+				return alternativeRoutes != null && !alternativeRoutes.isEmpty();
+			case AccountingPackage.VIA_STATION__DATA_DESCRIPTION:
+				return DATA_DESCRIPTION_EDEFAULT == null ? dataDescription != null : !DATA_DESCRIPTION_EDEFAULT.equals(dataDescription);
+			case AccountingPackage.VIA_STATION__FARE_STATION_SET:
+				return fareStationSet != null;
+			case AccountingPackage.VIA_STATION__SERVICE_CONSTRAINT:
+				return serviceConstraint != null;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case AccountingPackage.VIA_STATION___GET_DESCRIPTION:
+				return getDescription();
+		}
+		return super.eInvoke(operationID, arguments);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (dataDescription: ");
+		result.append(dataDescription);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ViaStationImpl

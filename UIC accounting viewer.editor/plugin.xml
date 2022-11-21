@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.applications"
+         id="AccountingEditorAdvisorApplication">
+      <!-- @generated UicAccountingViewer -->
+      <application>
+         <run class="Accounting.presentation.AccountingEditorAdvisor$Application"/>
+      </application>
+   </extension>
+
+
+   <extension point="org.eclipse.ui.perspectives">
+      <!-- @generated UicAccountingViewer -->
+      <perspective
+            name="%_UI_Perspective_label"
+            class="Accounting.presentation.AccountingEditorAdvisor$Perspective"
+            id="Accounting.presentation.AccountingEditorAdvisorPerspective">
+      </perspective>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <!-- @generated UicAccountingViewer -->
+      <command
+            name="%_UI_Menu_OpenURI_label"
+            description="%_UI_Menu_OpenURI_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="Accounting.presentation.AccountingEditorAdvisorOpenURICommand"/>
+      <command
+            name="%_UI_Menu_Open_label"
+            description="%_UI_Menu_Open_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="Accounting.presentation.AccountingEditorAdvisorOpenCommand"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+      <!-- @generated UicAccountingViewer -->
+      <key
+            commandId="Accounting.presentation.AccountingEditorAdvisorOpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="Accounting.presentation.AccountingEditorAdvisorOpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated UicAccountingViewer -->
+      <actionSet
+            label="%_UI_AccountingEditorAdvisor_ActionSet_label"
+            visible="true"
+            id="AccountingEditorAdvisorActionSet">
+         <action
+               label="%_UI_Menu_About_label"
+               class="Accounting.presentation.AccountingEditorAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="Accounting.presentation.AccountingEditorAdvisorAboutAction"/>
+         <action
+               label="%_UI_Menu_OpenURI_label"
+               definitionId="Accounting.presentation.AccountingEditorAdvisorOpenURICommand"
+               class="Accounting.presentation.AccountingEditorAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="Accounting.presentation.AccountingEditorAdvisorOpenURIAction"/>
+         <action
+               label="%_UI_Menu_Open_label"
+               definitionId="Accounting.presentation.AccountingEditorAdvisorOpenCommand"
+               class="Accounting.presentation.AccountingEditorAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="Accounting.presentation.AccountingEditorAdvisorOpenAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated UicAccountingViewer -->
+      <actionSet
+            label="%_UI_AccountingModelWizard_ActionSet_label"
+            visible="true"
+            id="Accounting.presentation.AccountingActionBarContributorActionSet">
+         <action
+               label="%_UI_AccountingModelWizard_label"
+               class="Accounting.presentation.AccountingActionBarContributor$NewAction"
+               menubarPath="file/new/additions"
+               id="Accounting.presentation.AccountingActionBarContributorNewAction"/>
+      </actionSet>
+   </extension>
+   
+   
+   
+   
+   
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated UicAccountingViewer -->
+      <editor
+            id="Accounting.presentation.AccountingEditorID"
+            name="%_UI_AccountingEditor_label"
+            icon="icons/full/obj16/AccountingModelFile.gif"
+            extensions="acc"
+            class="Accounting.presentation.AccountingEditor"
+            contributorClass="Accounting.presentation.AccountingActionBarContributor">
+      </editor>
+   </extension>
+   
+      <extension
+         id="UicAccountingViewer"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="UIC_accounting_viewer.editor.AccountingEditorAdvisorApplication"
+            name="UIC Accounting Viewer">
+         <property
+               name="appName"
+               value="UIC Accounting Viewer">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/UIC GIF square_96.gif">
+         </property>
+         <property
+               name="aboutText"
+               value="UIC accounting viewer &#x0A;&#x0A;The tool provides a viewer to the upcoming accounting data format in UIC IRS 30301.">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/UIC GIF square_16.gif,icons/UIC GIF square_32.gif,icons/UIC GIF square_48.gif,icons/UIC GIF square_64.gif">
+         </property>
+      </product>
+   </extension>
+   
+   	<extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="Accounting.presentation.HelpHandler"
+            id="accounting.contents"
+            name="Help">
+      </command>  
+	</extension>
+	
+	   <extension point="org.eclipse.help.toc">
+      <toc  file="$nl$\toc.xml"
+            primary="true">
+      </toc>
+   	  <index
+         path="searchindex/">
+      </index>
+   </extension>
+
+   <extension point="org.eclipse.help.index">
+     	<index file="$nl$\index.xml"/>
+   </extension>
+   <extension point="org.eclipse.help.contexts">
+     	<contexts
+           file="$nl$\contexts.xml">
+     	</contexts>
+   </extension>
+   
+      <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="Accounting.problems.AccountingProblemView"
+            id="org.uic.accounting.AccountingProblemView"
+            name="%_UI_VIEW_ERROR"
+            restorable="true">
+      </view>
+   </extension>
+   
+      <extension
+         id="Accounting.preferences"
+         name="Accounting Viewer Preferences"    
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="Accounting.preferences.PreferencePage"
+            id="Accounting.editor.preferences.PreferencePage"
+            name="Accounting viewer preferences">
+      </page>
+   </extension>
+   <extension
+         id="Accounting.preferences.preferences"
+         name="Accounting viewer preferences"
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="Accounting.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>	 
+
+   <extension
+      point="org.eclipse.emf.edit.propertyEditorFactories">
+     <factory
+         class="org.eclipse.emf.edit.ui.provider.NebulaDatePropertyEditorFactory"
+         uri="editor://org.eclipse.nebula.widgets.cdatetime/">
+     </factory>
+   </extension>
+   
+</plugin>

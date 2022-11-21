@@ -1,0 +1,3 @@
+
+D:\Software\jsonschemajava\jsonschema2pojo-1.0.1\bin\jsonschema2pojo.bat -s "D:\workspace_gtm_git\UIC Accounting File\accounting schema\accountingDataSchema.json" -t "D:\workspace_gtm_git\UIC Accounting File\src\accountingModelV1" -p accountingModelV1 -R -f -dp "yyyy-MM-dd'T'HH:mm:ssZZZ" -dtp "yyyy-MM-dd'T'HH:mm:ssZZZ" 
+

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UIC_Accounting_File
+Bundle-SymbolicName: UIC_Accounting_File;singleton:=true
+Automatic-Module-Name: UIC_Accounting_File
+Bundle-Version: 1.1.0
+Bundle-Vendor: www.uic.org
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: lib/,
+ .
+Export-Package: export,
+ accountingModelV1
+Require-Bundle: org.eclipse.swt;bundle-version="3.113.0", fasterxml;bundle-version="1.0.0"

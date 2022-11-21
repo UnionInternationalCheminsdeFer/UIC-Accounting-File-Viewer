@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/UIC accounting viewer/src" modelPluginID="UIC_accounting_viewer"
+    modelName="Accounting" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" runtimePlatform="RCP" importOrganizing="true">
+  <foreignModel>../../Accounting%20data%20converter/model/UicAccountingViewer.ecore</foreignModel>
+  <genPackages prefix="Accounting" resource="XML" disposableProviderFactory="true"
+      loadInitialization="true" extensibleProviderFactory="true" childCreationExtenders="true"
+      ecorePackage="UicAccountingViewer.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//PaymentType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PaymentType/BCC_CLEARING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PaymentType/CURRENT_ACCOUNT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PaymentType/CURRENT_ACCOUNT_CLEARING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PaymentType/BANK_ACCOUNT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//SalesChannel">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/AGENCY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/AGENCY_WEB"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/MOBILE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/RAIL_OFFICE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/VENDING_MACHINE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/WEB"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/WEB_MOBILE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesChannel/ON_BOARD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TransactionType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/BOOKING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/CANCELATION"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/EXCHANGE_CANCELATION"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/EXCHANGE_BOOKING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/COMPENSATION"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/MANUAL_REFUND"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//AccountingType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountingType/SHARES"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountingType/SERVICE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//AccountsType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountsType/CREDIT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountsType/DEBIT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//SalesType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesType/ONLINE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesType/OFFLINE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TransactionStandard">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionStandard/UIC"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionStandard/BILATERAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//BoardingOrArrival">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BoardingOrArrival/BOARDING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BoardingOrArrival/ARRIVAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//LuggageRule">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LuggageRule/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LuggageRule/CAN_CARRY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//Dimension">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Dimension/WEIGHT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Dimension/HEIGHT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Dimension/WIDTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Dimension/LENGTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Dimension/VOLUME"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Dimension/WIDTH_HEIGHT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Dimension/WIDTH_LENGTH_HEIGHT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//AddCarrierScope">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AddCarrierScope/CARRIER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AddCarrierScope/TCO"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AddCarrierScope/TCO_AND_CARRIER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TransportMode">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/train"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/ship"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/bus"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/highSpeedTrain"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/intercity"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/interRegional"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/regional"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/subUrban"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/nightTrain"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/motorRail"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/mountainTrain"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/historicTrain"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/plane"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/coachGroup"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/sharedTaxi"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/tram"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransportMode/underGround"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//StationRelationType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//StationRelationType/SAME_STATION"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//StationRelationType/PATH_CONNECTED_STATION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//StationFareDetailType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//StationFareDetailType/NO_DESCRIPTION"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//StationFareDetailType/ON_ARRIVAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//StationFareDetailType/ON_DEPARTURE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//StationFareDetailType/ON_ARRIVAL_ON__DEPARTURE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//RegulatoryCondition">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RegulatoryCondition/CIV"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RegulatoryCondition/MC"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RegulatoryCondition/EU_PRR"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RegulatoryCondition/RESPLUS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//AfterSalesTransactionType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AfterSalesTransactionType/REFUND"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AfterSalesTransactionType/EXCHANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AfterSalesTransactionType/EXCHANGE_KEEP_CARRIER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AfterSalesTransactionType/EXCHANGE_CHANGE_CARRIER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//BarcodeTypes">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BarcodeTypes/FCB"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BarcodeTypes/TLB"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BarcodeTypes/SSB"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//BasePriceClassType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BasePriceClassType/SERVICE_CLASS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BasePriceClassType/FIRST"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//BasePriceClassType/SECOND"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ClassicClassType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassicClassType/FIRST"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassicClassType/SECOND"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassicClassType/ANY_CLASS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ClassId">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassId/A"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassId/B"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassId/C"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassId/D"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ClassId/ANY_CLASS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//CharacterSet">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/COUNTRY_DEFAULT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN1_ISO88591"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN2_ISO88592"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATINGREEK_ISO88597"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/RUSSIAN_KOI8R"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/USASCII"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/UKRAINIAN_KOI8U"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN4_ISO88594"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATINKYRILLIC_ISO88595"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN5_ISO88599"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN7_ISO885913"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN9_ISO885915"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN3_ISO88593"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATINARABIC_ISO88596"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATINHEBREW_ISO88598"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CharacterSet/LATIN10_ISO885916"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//Clusters">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Clusters/BUSINESS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Clusters/FULLFLEX"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Clusters/SEMIFLEX"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Clusters/NONFLEX"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//Clusters/PROMO"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//CombinationModel">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CombinationModel/CLUSTERING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CombinationModel/SEPARATE_CONTRACT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//CombinationModel/COMBINING"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ControlDataExchangeTypes">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ControlDataExchangeTypes/IRS90918_4_PEER2PEER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ControlDataExchangeTypes/IRS90918_4_REGISTRY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//DataSource">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//DataSource/MANUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//DataSource/CONVERTED"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//DataSource/IMPORTED"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//DataSource/GENERATED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//DataType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//DataType/PRODUCTION_DATA"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//DataType/TEST_DATA"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//FareType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//FareType/NRT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//FareType/IRT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//FareType/RES"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//FareType/ANCILLARY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//FulfillmentType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//FulfillmentType/SID"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//FulfillmentType/SIP"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//FulfillmentType/SIS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//GeoSystem">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GeoSystem/wgs84"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GeoSystem/grs80"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//GeoUnit">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GeoUnit/microDegree"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GeoUnit/tenthmilliDegree"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GeoUnit/milliDegree"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GeoUnit/centiDegree"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GeoUnit/deciDegree"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//GraphicalReservationType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GraphicalReservationType/IRS90918_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GraphicalReservationType/GTM"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GraphicalReservationType/NONE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//GenericReductionCards">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_EURAIL_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_EURAIL_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_INTERRAIL_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_INTERRAIL_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_DUTY_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_DUTY_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_LEISURE_FREE_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_LEISURE_FREE_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_LEISURE_REDU_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_LEISURE_REDU_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RAILPLUS_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RAILPLUS_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_1_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_1_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_2_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_2_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_3_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_3_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_3"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RIT_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_INTERRAIL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_EURAIL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_RAILPLUS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_DUTY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_LEISURE_FREE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_FIP_LEISURE_REDU"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_EU_DISABILITY_CARD"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//GenericReductionCards/UIC_INT_DISABILITY_CARD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//HemisphereEW">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//HemisphereEW/EAST"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//HemisphereEW/WEST"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//HemisphereNS">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//HemisphereNS/NORTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//HemisphereNS/SOUTH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//InterfaceType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//InterfaceType/IRS90918_1_RESERVATION_BINARY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//InterfaceType/OSDM"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//InterfaceType/IRS90918_1_RESERVATION_XML"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//LegacyCalculationType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacyCalculationType/distance_based"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacyCalculationType/route_based"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//LegacyPassengerType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacyPassengerType/ADULT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacyPassengerType/CHILD"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//LegacySeriesType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacySeriesType/border_destination"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacySeriesType/transit"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacySeriesType/station_station"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//LegacyConversionType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacyConversionType/NO"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacyConversionType/YES"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//LegacyConversionType/ONLY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//OfferRequestType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OfferRequestType/POINT2POINT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OfferRequestType/AREA"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//OnlineServiceType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/OFFER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/BOOKING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/RESERVATION_LEGACY_918_1"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/RESERVATION_PREF"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/RESERVATION_GRAPH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/INCREASE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/DECREASE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/EXCHANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/FULFILLMENT_ITEMS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//OnlineServiceType/FULFILLMENT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//PersonalDataItemsType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DATE_OF_BIRTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/E_MAIL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/PHONE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/FULL_NAME"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/LAST_NAME"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/LANGUAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/TITLE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/GENDER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_TYPE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_ID"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_NAME"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_CITY_OF_RESIDENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_COUNTRY_OF_BIRTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_COUNTRY_OF_ISSUE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_COUNTRY_OF_RESDENCE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_DATE_OF_ISSUE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_GENDER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_NATIONALITY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_LIMIT_OF_VALIDITY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_CITY_OF_ISSUE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_CITY_OF_BIRTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/DOC_TYPE_PASSPORT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/CARD_ISSUER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataItemsType/CARD_NUMBER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//PersonalDataTransferType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataTransferType/SID"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataTransferType/SIS_CONTROL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataTransferType/BOOKING"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataTransferType/PRE_BOOKING"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//PersonalDataChangeReason">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataChangeReason/IN_GENERAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataChangeReason/MARRIAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataChangeReason/DOCUMENT_EXCHANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PersonalDataChangeReason/AGENT_ERROR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ReservationTravelClass">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationTravelClass/FIRST"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationTravelClass/SECOND"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationTravelClass/C"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationTravelClass/P"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationTravelClass/T"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ReservationServiceLevel">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/A"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/B"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/AH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/AM"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/AR"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/AS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/AV"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/AW"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/BC"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/BD"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/BE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/BH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/BN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/BR"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/BS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/C"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/D"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/DR"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/D2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/D4"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/D5"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/D6"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/E"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/EX"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/F"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/G"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/G2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/H"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/K"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/L"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/M"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/N"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/O"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/O3"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/O4"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/O5"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/O8"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/OB"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/OL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/OS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/OT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/P"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/Q"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/R"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/S"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/SL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/T"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/TL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/U"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/W"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/X"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/Y"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationServiceLevel/Z"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ReservationService">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationService/SEAT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationService/COUCHETTE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationService/BERTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationService/CAR_CARRIAGE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ReservationBerthType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationBerthType/SINGLE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationBerthType/SPECIAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationBerthType/DOUBLE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationBerthType/T2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationBerthType/T3"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ReservationBerthType/T4"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//RoundingType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/HALFUP"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/DOWN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/HALFEVEN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/UP"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/HALFDOWN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/UP5CENT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/DOWN5CENT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/UP2CENT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/DOWN2CENT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/UP10CENT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/DOWN10CENT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/HALFUP10"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/HALFDOWN10"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/HALFEVEN10"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/UP20CENT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//RoundingType/DOWN20CENT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//SchemaVersion">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SchemaVersion/V_1_2"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SchemaVersion/V_1_4"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SchemaVersion/V_1_5"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//ServiceMode">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/HIGH_SPEED_TRAIN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/HISTORIC_TRAIN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/INTERCITY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/REGIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/INTERREGIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/TRAIN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/URBAN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/TRAM"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/UNDERGROUND"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/NIGHT_TRAIN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/SHARED_TAXI"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/MOTOR_RAIL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/MOUNTAIN_TRAIN"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/PLANE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/COACH_GROUP"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/SHIP"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//ServiceMode/BUS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TimeZone">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeZone/CET"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeZone/GMT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeZone/EET"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeZone/MST"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeZone/WET"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TaxScope">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TaxScope/INTERNATIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TaxScope/NATIONAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TaxScope/SHORT_DISTANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TaxScope/LONG_DISTANCE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TaxScope/ANY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TimeReferenceType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeReferenceType/BEFORE_DEPARTURE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeReferenceType/AFTER_DEPARTURE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeReferenceType/BEFORE_VALIDITY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeReferenceType/BEFORE_START_VALIDITY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeReferenceType/AFTER_END_VALIDITY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TimeRangeScope">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeRangeScope/START_OF_TRAVEL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeRangeScope/COMPLETE_RANGE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TimeUnit">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeUnit/DAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeUnit/HOUR"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TimeUnit/MINUTE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TravelerType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/ADULT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/CHILD"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/YOUTH"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/SENIOR"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/FAMILY_CHILD"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/YOUNG_CHILD"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/DOG"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/LUGGAGE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/ACCOMP_DOG"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/PRM_CHILD"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/ACCOMP_PRM"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/CAR"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/BICYCLE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/MOTOCYCLE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/TRAILER"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelerType/GRAPHICAL_RES"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TripAllocationProcess">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationProcess/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationProcess/MANUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationProcess/ACTIVATION"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationProcess/FULFILLMENT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TripAllocationUnit">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationUnit/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationUnit/DAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationUnit/TRIP"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripAllocationUnit/DURATION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TripInterruptionProcess">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripInterruptionProcess/NONE"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripInterruptionProcess/MANUAL"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TripInterruptionProcess/ACTIVATION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TravelValidityType">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelValidityType/SINGLE_TRIP"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelValidityType/MULTIPLE_TRIPS"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TravelValidityType/UNRESTRICTED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//WeekDay">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//WeekDay/MONDAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//WeekDay/TUESDAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//WeekDay/WEDNESDAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//WeekDay/THURSDAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//WeekDay/FRIDAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//WeekDay/SATURDAY"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//WeekDay/SUNDAY"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="UicAccountingViewer.ecore#//DateAsDate"/>
+    <genDataTypes ecoreDataType="UicAccountingViewer.ecore#//DateAsDateTime"/>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingViewerData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/codeLists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/fareModells"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/workflowHistory"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/accountingFile"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingFile">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingFile/accountingDelivery"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingFile/accountingRecords"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingRecords">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingRecords/accountingRecords"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingDelivery">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/creationDate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingDelivery/invoicingParty"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingDelivery/invoiceRecipient"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/startStatementPeriod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/endStatementPeriod"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/paymentType"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingRecord">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingRecord/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingRecord/salesType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingRecord/accountingType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingRecord/transactionStandard"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingRecord/transaction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingRecord/subject"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingRecord/accountedAmounts"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountedAmounts">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountedAmounts/accountedAmounts"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingSubject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/fareId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/numberOfItems"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/salesOfficeId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/salesChannel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/train"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/travelDate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingSubject/countryOfSale"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingSubject/carriers"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingSubject/retailer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/bilateralTariffIdentifier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingSubject/legacyDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//LegacyDescription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/passengerType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/classCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/series"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/tariff"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Transaction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/transactionType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/contract"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/bookingId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/ticketId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/fulfillmentId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/exchangebookingId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/communicationId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/transactionTime"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountedAmount">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/accountsType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/grossAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/fee"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/commission"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountedAmount/currency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/amount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/rate"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CodeLists">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/carriers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/stations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/countries"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/languages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/currencies"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/serviceBrands"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/nutsCodes"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//WorkflowHistory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//WorkflowHistory/workflowSteps"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//WorkflowStep">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//WorkflowStep/time"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//WorkflowStep/description"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//NUTSCodes">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//NUTSCodes/nutsCodes"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//NutsCode">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//NutsCode/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//NutsCode/code"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceBrands">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceBrands/serviceBrands"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//ServiceBrands/findServiceBRand">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//ServiceBrands/findServiceBRand/code"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceBrand">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceBrand/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceBrand/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceBrand/abbreviation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceBrand/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceBrand/transportMode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceBrand/localLanguageName"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Countries">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Countries/countries"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Countries/findCountry">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Countries/findCountry/codeUic"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Country">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Country/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Country/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Country/ISOcode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Country/defaultCharacterSet"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Languages">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Languages/languages"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Language">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Language/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Language/code"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Currencies">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Currencies/currencies"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Currencies/findCurrency">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Currencies/findCurrency/ISOcode"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Currency">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Currency/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Currency/isoCode"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Stations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Stations/stations"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Stations/findStation">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation/countryCodeUIC"/>
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation/localCode"/>
+      </genOperations>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Stations/findStation.1">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation.1/countryCodeUIC"/>
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation.1/localCode"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Station">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Station/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/longitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/latitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/timetableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/borderStation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/nameCaseUTF8"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/nameCaseASCII"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/shortNameCaseASCII"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/shortNameCaseUTF8"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/legacyBorderPointCode"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Station/relations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/stationCode"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationRelation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//StationRelation/relationType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationRelation/station"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Carrier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Carrier/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Carrier/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Carrier/shortName"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Carriers">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Carriers/carriers"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Carriers/findCarrier">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Carriers/findCarrier/code"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationSet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationSet/stations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//GeneralTariffModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//GeneralTariffModel/delivery"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//GeneralTariffModel/fareStructure"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Delivery">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/previousDeliveryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/replacedDeliveryId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/optional"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Delivery/provider"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/schemaVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/acceptedSchemaVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/usage"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AfterSalesRules">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AfterSalesRules/afterSalesRules"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AfterSalesRule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AfterSalesRule/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AfterSalesRule/dataSource"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AfterSalesRule/conditions"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AfterSalesCondition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AfterSalesCondition/transactionType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AfterSalesCondition/individualContracts"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AfterSalesCondition/carrierFee"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AfterSalesCondition/fee"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AfterSalesCondition/applicationTime"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ApplicationTime"/>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareStructure">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/serviceClassDefinitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/serviceLevelDefinitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/stationNames"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/fareStationSetDefinitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/calendars"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/texts"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/reductionCards"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/fareConstraintBundles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/fareElements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/combinationConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/salesAvailabilityConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/travelValidityConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/regionalConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/connectionPoints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/carrierConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/serviceConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/passengerConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/totalPassengerCombinationConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/reductionConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/personalDataConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/afterSalesRules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/prices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/fulfillmentConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/reservationParameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/supportedOnlineServices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/fareResourceLocations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/zoneDefinitions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStructure/luggageConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ConnectionPoints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ConnectionPoints/connectionPoints"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//ConnectionPoints/findSimpleConnectionPoint">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//ConnectionPoints/findSimpleConnectionPoint/station"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ConnectionPoint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ConnectionPoint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ConnectionPoint/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ConnectionPoint/LegacyBorderPointCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ConnectionPoint/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ConnectionPoint/connectedStationSets"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ConnectionPoint/dataSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ConnectionPoint/nameUtf8"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareResourceLocations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareResourceLocations/trainResourceLocations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareResourceLocations/stationResourceLocations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareResourceLocations/carrierResourceLocations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TrainResourceLocations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TrainResourceLocations/trainResourceLocations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationResourceLocations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationResourceLocations/stationResourceLocations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CarrierResourceLocations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CarrierResourceLocations/carrierResourceLocations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TrainResourceLocation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TrainResourceLocation/carrier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TrainResourceLocation/onlineResources"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TrainResourceLocation/trainId"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationResourceLocation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationResourceLocation/onlineResources"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationResourceLocation/stations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationResourceLocation/connectionPoints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CarrierResourceLocation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CarrierResourceLocation/carrier"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CarrierResourceLocation/serviceBrand"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CarrierResourceLocation/onlineResources"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//OnlineResource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//OnlineResource/offerRequestType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//OnlineResource/interfaceType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//OnlineResource/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//OnlineResource/system"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FulfillmentConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FulfillmentConstraints/fulfillmentConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FulfillmentConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/acceptedFulfilmentTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/requiredControlDataExchange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/individualTicketingPermitted"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/separateFulFillmentRequired"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FulfillmentConstraint/acceptedBarcodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FulfillmentConstraint/requiredBarcodes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/dataDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/acceptedBarcodeTypes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FulfillmentConstraint/requiredBarcodeTypes"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//RequiredBarcodes">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RequiredBarcodes/requiredBarcodes"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AcceptedBarcodes">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AcceptedBarcodes/acceptedBarcodes"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//SupportedOnlineServices">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//SupportedOnlineServices/supportedOnlineServices"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationNames">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationNames/stationName"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareElements">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElements/fareElements"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareElement/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareElement/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareElement/dataDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/fareConstraintBundle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/text"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/price"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/regionalConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/serviceConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/carrierConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/serviceClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/serviceLevel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/salesAvailability"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/travelValidity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/combinationConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/fareDetailDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/personalDataConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/reservationParameter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/reductionConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/fulfillmentConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/passengerConstraint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareElement/regulatoryConditions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/afterSalesRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareElement/dataSource"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/legacyAccountingIdentifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareElement/legacyConversion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareElement/individualContracts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/involvedTcos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareElement/luggageConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TotalPassengerCombinationConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TotalPassengerCombinationConstraints/totalPassengerCombinationConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TotalPassengerCombinationConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TotalPassengerCombinationConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TotalPassengerCombinationConstraint/dataDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TotalPassengerCombinationConstraint/maxTotalPassengerWeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TotalPassengerCombinationConstraint/minTotalPassengerWeight"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareConstraintBundles">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundles/fareConstraintBundles"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareConstraintBundle">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareConstraintBundle/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareConstraintBundle/defaultFareType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareConstraintBundle/dataDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/carrierConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/salesAvailability"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/travelValidity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/combinationConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/personalDataConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/fulfillmentConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/totalPassengerConstraint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareConstraintBundle/defaultRegulatoryConditions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareConstraintBundle/dataSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/convertedBundles"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareConstraintBundle/luggageConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareStationSetDefinitions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStationSetDefinitions/fareStationSetDefinitions"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//FareStationSetDefinitions/findFareSet">
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//FareStationSetDefinitions/findFareSet/carrier"/>
+        <genParameters ecoreParameter="UicAccountingViewer.ecore#//FareStationSetDefinitions/findFareSet/legacyCode"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareStationSetDefinition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareStationSetDefinition/dataSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStationSetDefinition/carrier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareStationSetDefinition/code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareStationSetDefinition/legacyCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareStationSetDefinition/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareStationSetDefinition/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareStationSetDefinition/nameUtf8"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareStationSetDefinition/stations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//LegacyAccountingIdentifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyAccountingIdentifier/seriesId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyAccountingIdentifier/tariffId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyAccountingIdentifier/addSeriesId"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//PersonalDataConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PersonalDataConstraints/personalDataConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//PersonalDataConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PersonalDataConstraint/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PersonalDataConstraint/requiredPersonalData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PersonalDataConstraint/allowedChanges"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//RequiredPersonalData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RequiredPersonalData/ticketHolderOnly"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RequiredPersonalData/dataItem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RequiredPersonalData/transfer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RequiredPersonalData/fulfillmentType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RequiredPersonalData/crossBorder"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AllowedPersonalDataChanges">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AllowedPersonalDataChanges/timeLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AllowedPersonalDataChanges/acceptedReason"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//PassengerConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PassengerConstraints/passengerConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//PassengerConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/travelerType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PassengerConstraint/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/upperAgeLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/lowerAgeLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/travelAloneAgeLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/reservationAgeLimit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/isAncilliary"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/passengerWeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/maxTotalPassengerWeight"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/minTotalPassengerWeight"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PassengerConstraint/includedFreePassengers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PassengerConstraint/excludedPassengerCombinations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/dataDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerConstraint/dataSource"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//PassengerCombinationConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerCombinationConstraint/maxNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerCombinationConstraint/minNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//PassengerCombinationConstraint/passengerType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//PassengerCombinationConstraint/passengerConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//IncludedFreePassengerLimit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//IncludedFreePassengerLimit/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//IncludedFreePassengerLimit/passengerType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//IncludedFreePassengerLimit/passengerConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CombinationConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CombinationConstraints/combinationConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CombinationConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//CombinationConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//CombinationConstraint/dataDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CombinationConstraint/combinationModels"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TravelValidityConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraints/travelValidityConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TravelValidityConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TravelValidityConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TravelValidityConstraint/dataDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraint/validDays"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TravelValidityConstraint/travelDays"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraint/range"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraint/returnConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraint/excludedTimeRange"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraint/trainValidity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TravelValidityConstraint/validityType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraint/tripInterruptionConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TravelValidityConstraint/tripAllocationConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TrainValidity">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TrainValidity/carrierConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//TrainValidity/serrviceConstraint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TrainValidity/scope"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//SalesAvailabilityConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//SalesAvailabilityConstraints/salesAvailabilityConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//SalesAvailabilityConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//SalesAvailabilityConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//SalesAvailabilityConstraint/dataDescription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//SalesAvailabilityConstraint/restrictions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//SalesAvailabilityConstraint/dataSource"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//SalesRestriction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//SalesRestriction/salesDates"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//SalesRestriction/startOfSale"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//SalesRestriction/endOfSale"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//EndOfSale"/>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//StartOfSale"/>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CarrierConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CarrierConstraints/carrierConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CarrierConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//CarrierConstraint/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CarrierConstraint/includedCarriers"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CarrierConstraint/excludedCarriers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//CarrierConstraint/dataDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//CarrierConstraint/dataSource"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceConstraints/serviceConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceConstraint/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceConstraint/includedServiceBrands"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceConstraint/excludedServiceBrands"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceConstraint/dataDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceConstraint/legacy108Code"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceConstraint/description"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//RegionalConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalConstraints/regionalConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//RegionalConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RegionalConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RegionalConstraint/distance"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalConstraint/entryConnectionPoint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalConstraint/exitConnectionPoint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalConstraint/regionalValidity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RegionalConstraint/dataSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RegionalConstraint/dataDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalConstraint/linkedFares"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//RegionalValidity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RegionalValidity/seqNb"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalValidity/viaStation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalValidity/zone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalValidity/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalValidity/polygone"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalValidity/carrierConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RegionalValidity/serviceConstraint"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceLevelDefinitions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceLevelDefinitions/serviceLevelDefinition"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Texts">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Texts/texts"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Text/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Text/textUTF8"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Text/textICAO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Text/shortTextUTF8"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Text/shortTextICAO"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Text/translations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Text/standardText"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Text/dataSource"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Translation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Translation/language"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Translation/textUTF8"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Translation/textICAO"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Translation/shortTextUTF8"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Translation/shortTextICAO"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Prices">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Prices/prices"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Price">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Price/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Price/currencies"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Price/dataSource"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//VATDetail">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//VATDetail/amount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//VATDetail/percentage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//VATDetail/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//VATDetail/taxId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//VATDetail/scope"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CurrencyPrice">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CurrencyPrice/currency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//CurrencyPrice/amount"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CurrencyPrice/VATdetails"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceClassDefinitions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceClassDefinitions/serviceClassDefinitions"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Calendars">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Calendars/calendars"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Calendar">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/fromDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/untilDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/utcOffset"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/dates"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/dataSource"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/fromDateTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Calendar/untilDateTime"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReservationParameters">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReservationParameters/reservationParameters"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReservationParameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParameter/mandatoryReservation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParameter/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReservationParameter/params9181"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReservationParameter/options"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReservationParameter/mandatoryReservationForBrands"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParameter/mandatoryReservationsForMode"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReservationParams9181">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParams9181/travelClass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParams9181/serviceLevel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParams9181/service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParams9181/berthType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParams9181/coachType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParams9181/compartmentType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationParams9181/tariff"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReservationOptions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReservationOptions/preferences"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReservationOptions/serviceBrands"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationOptions/graphicalReservation"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReservationPreferenceGroup">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationPreferenceGroup/preference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReservationPreferenceGroup/group"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceClass/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceClass/classicClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceClass/text"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceLevel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceLevel/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceLevel/text"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceLevel/combiningServiceClasses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceLevel/reservationParameter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceLevel/includesClassName"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TimeRange">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TimeRange/scope"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TimeRange/from"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TimeRange/until"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ExcludedTimeRange"/>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ValidityRange">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ValidityRange/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ValidityRange/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ValidityRange/hoursAfterMidnight"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//RelativeTime">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RelativeTime/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RelativeTime/reference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RelativeTime/value"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReturnValidityConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReturnValidityConstraint/excludedWeekdays"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReturnValidityConstraint/latestReturn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReturnValidityConstraint/earliestReturn"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TripAllocationConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripAllocationConstraint/allocationUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripAllocationConstraint/maxUnits"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripAllocationConstraint/durationUnit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripAllocationConstraint/requiredProcesses"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//TripInterruptionConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripInterruptionConstraint/maxInterruptions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripInterruptionConstraint/maxDuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripInterruptionConstraint/totalMaxDuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//TripInterruptionConstraint/requiredProcesses"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ViaStation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ViaStation/station"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ViaStation/carrierConstraint"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ViaStation/carrier"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ViaStation/route"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ViaStation/alternativeRoutes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ViaStation/dataDescription"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ViaStation/fareStationSet"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ViaStation/serviceConstraint"/>
+      <genOperations ecoreOperation="UicAccountingViewer.ecore#//ViaStation/getDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AlternativeRoute">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AlternativeRoute/stations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Route">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Route/stations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Zone">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Zone/binaryZoneId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Zone/zoneId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Zone/city"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Zone/carrier"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Zone/entryStation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Zone/terminalStation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Zone/nutsCode"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Line">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Line/binaryZoneId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Line/lineId"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Line/carrier"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Line/entryStation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Line/terminalStation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Line/nutsCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Line/city"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Polygone">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Polygone/edge"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//Edge">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Edge/system"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Edge/accuracy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Edge/longitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Edge/latitude"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ZoneDefinitions">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ZoneDefinitions/zoneDefinition"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ZoneDefinition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ZoneDefinition/provider"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ZoneDefinition/zoneId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ZoneDefinition/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ZoneDefinition/polygone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ZoneDefinition/nameUtf8"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ZoneDefinition/stationSet"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ZoneDefinition/nutsCodes"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//CrossBorderCondition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CrossBorderCondition/fromCountry"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CrossBorderCondition/toCountry"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CrossBorderCondition/affectedServiceBrands"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//FareCombinationModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareCombinationModel/model"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareCombinationModel/combinableCarriers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareCombinationModel/onlyWhenCombined"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareCombinationModel/allowedAllocators"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareCombinationModel/referenceCluster"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//FareCombinationModel/allowedClusters"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//FareCombinationModel/allowedCommonContracts"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReductionConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReductionConstraints/reductionConstraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReductionConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReductionConstraint/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReductionConstraint/requiredReductionCards"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReductionCards">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReductionCards/reductionCards"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//ReductionCard">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReductionCard/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReductionCard/cardIssuer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReductionCard/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReductionCard/serviceClasses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReductionCard/idRequiredForBooking"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ReductionCard/includedReductionCards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ReductionCard/uicCode"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//RequiredReductionCard">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RequiredReductionCard/cardClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//RequiredReductionCard/card"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//RequiredReductionCard/name"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//LuggageConstraints">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//LuggageConstraints/constraints"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//LuggageConstraint">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageConstraint/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageConstraint/maxHandLuggage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageConstraint/maxLargeLuggage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//LuggageConstraint/restrictedItems"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageConstraint/rules"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageConstraint/dataDescription"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//LuggageItemsRestriction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageItemsRestriction/numberOfItems"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//LuggageItemsRestriction/dimension"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//LuggageDimension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageDimension/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LuggageDimension/dimension"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AddCarrierRules">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AddCarrierRules/addCarrierRule"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//AddCarrierRule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AddCarrierRule/carrier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AddCarrierRule/scope"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AddCarrierRule/stations"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//OnBorderStations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//OnBorderStations/stations"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
