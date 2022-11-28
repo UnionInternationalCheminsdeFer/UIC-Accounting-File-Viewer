@@ -53,6 +53,8 @@ import Accounting.actions.ExportJsonAction;
 import Accounting.actions.ImportCarriersAction;
 import Accounting.actions.ImportJsonAction;
 import Accounting.actions.ShowSummaryAction;
+import Accounting.filter.SearchControlContribution;
+import Accounting.resourceTree.VirtualFolderItemProvider;
 
 
 
@@ -283,8 +285,8 @@ public class AccountingActionBarContributor
 		}
 		if (accountingActions.isEmpty()) {
 			accountingActions.add(importCarriersAction);
-			accountingActions.add(exportJsonAction);				
 			accountingActions.add(importJsonAction);	
+			accountingActions.add(exportJsonAction);				
 			accountingActions.add(showSummaryAction);
 		}
 
@@ -317,13 +319,18 @@ public class AccountingActionBarContributor
 		
 		if (toolBarManager == null) return;
 		
-		toolBarManager.insertAfter("accounting-settings",importCarriersAction);
-
+		if (importJsonAction == null) {
+			extendActionBarContributor();
+			toolBarManager.add(new Separator("accounting-settings"));
+			toolBarManager.add(new Separator("accounting-additions"));
+		}
 		
-		toolBarManager.insertAfter("accounting-additions",importJsonAction);	
-		toolBarManager.insertAfter("accounting-additions",showSummaryAction);	
+		toolBarManager.insertAfter("accounting-settings",importCarriersAction);
+		
 		toolBarManager.insertAfter("accounting-additions",exportJsonAction);	
-
+		toolBarManager.insertAfter("accounting-additions",showSummaryAction);	
+		toolBarManager.insertAfter("accounting-additions",importJsonAction);	
+		
 		toolBarManager.add(new Separator("filter"));
 		toolBarManager.insertAfter("filter",filter);
 
@@ -346,7 +353,7 @@ public class AccountingActionBarContributor
 	 * as well as the sub-menus for object creation items.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public void contributeToMenu(IMenuManager menuManager) {
@@ -440,11 +447,7 @@ public class AccountingActionBarContributor
 		if (createSiblingMenuManager != null) {
 			depopulateManager(createSiblingMenuManager, createSiblingActions);
 		}
-		/*
-		if (gtmMenuManager != null) {
-			depopulateManager(gtmMenuManager, gtmActions);
-		}	
-		*/	
+
 
 		// Query the new selection for appropriate new child/sibling descriptors and generate actions
 		//
@@ -494,16 +497,6 @@ public class AccountingActionBarContributor
 		}
 		
 		deleteAction.updateSelection((IStructuredSelection) selection);
-				//additional actions
-		/*
-		for (BaseSelectionListenerAction action : gtmActions) {
-			action.selectionChanged(event);			
-		}
-		if (gtmMenuManager != null) {
-			populateManager(gtmMenuManager, gtmActions, null);
-			gtmMenuManager.update(true);
-		}
-		*/
 
 	}
 	/**

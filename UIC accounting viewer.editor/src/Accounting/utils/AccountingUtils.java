@@ -53,12 +53,10 @@ import Accounting.Station;
 import Accounting.WorkflowHistory;
 import Accounting.WorkflowStep;
 import Accounting.console.ConsoleUtil;
-import Accounting.preferences.PreferenceConstants;
-import Accounting.preferences.PreferencesAccess;
-import Accounting.presentation.DirtyCommand;
 import Accounting.presentation.AccountingEditor;
 import Accounting.presentation.AccountingEditorPlugin;
 import Accounting.provider.AccountingItemProviderAdapterFactory;
+import Accounting.resourceTree.DirtyCommand;
 
 
 /**
@@ -342,29 +340,7 @@ public class AccountingUtils {
 		return truncated;
 	}
 	
-	/**
-	 * Import station.
-	 *
-	 * @param filter the import filter in the preferences
-	 * @param country the country
-	 * @return true, if successful
-	 */
-	public static boolean importStation(String filter, int country) {
-		if (country < 1 || country > 99) return false;
-		
-		if (filter != null && filter.trim().length() > 0) {
-			if (!filter.contains(String.valueOf(country))) return false;
-		}
-		
-		String filterP = PreferencesAccess.getStringFromPreferenceStore(PreferenceConstants.P_IMPORT_CONTRY_FILTER);
-		
-		if (filterP != null && filterP.trim().length() > 0 ) {
-			if (!filterP.contains(String.valueOf(country))) return false;
-		}		
-		
-		return true;
-		
-	}
+
 
 	/**
 	 * Gets the numeric station code.
@@ -819,7 +795,7 @@ public class AccountingUtils {
 			
 			WorkflowHistory history = AccountingFactory.eINSTANCE.createWorkflowHistory();
 			history.getWorkflowSteps().add(step);
-			com = SetCommand.create(editor.getEditingDomain(), tool, "Workflow History", history);
+			com = SetCommand.create(editor.getEditingDomain(), tool, AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY, history);
 			if (com != null && com.canExecute()) {
 				editor.getEditingDomain().getCommandStack().execute(com);
 			}

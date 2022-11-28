@@ -15,7 +15,7 @@ public class AccountingValidateAction extends ValidateAction {
 	  public AccountingValidateAction() {
 		  super();
 		  this.setToolTipText(super.getText());
-		  setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/validate.png")); //$NON-NLS-1$
+		  setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/validate24.png")); //$NON-NLS-1$
 	  }
 	
 	  protected void handleDiagnostic(Diagnostic diagnostic) {

@@ -36,9 +36,9 @@
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountingType/SHARES"/>
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountingType/SERVICE"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//AccountsType">
-      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountsType/CREDIT"/>
-      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountsType/DEBIT"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//SettlementValueIndicator">
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SettlementValueIndicator/CREDIT"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SettlementValueIndicator/DEBIT"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//SalesType">
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//SalesType/ONLINE"/>
@@ -521,9 +521,10 @@
     <genDataTypes ecoreDataType="UicAccountingViewer.ecore#//DateAsDateTime"/>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingViewerData">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/codeLists"/>
+      <genFeatures property="None" children="true" createChild="true" propertySortChoices="true"
+          ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/accountingFile"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/fareModells"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/workflowHistory"/>
-      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/accountingFile"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingFile">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingFile/accountingDelivery"/>
@@ -583,7 +584,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/transactionTime"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountedAmount">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/accountsType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/settlementValueIndicator"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/grossAmount"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/fee"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountedAmount/commission"/>

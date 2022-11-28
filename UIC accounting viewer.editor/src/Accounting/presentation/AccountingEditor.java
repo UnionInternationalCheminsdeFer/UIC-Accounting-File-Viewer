@@ -135,9 +135,12 @@ import org.eclipse.emf.edit.ui.util.EditUIUtil;
 import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
 import Accounting.AccountingViewerData;
+import Accounting.filter.AccountingViewerFilter;
 import Accounting.preferences.PreferenceConstants;
 import Accounting.preferences.PreferencesAccess;
+import Accounting.propertyPage.CustomizedAdapterFactoryContentProvider;
 import Accounting.provider.AccountingItemProviderAdapterFactory;
+import Accounting.resourceTree.AccountingResourceUtils;
 import Accounting.utils.AccountingUtils;
 import Accounting.utils.MigrationManager;
 
@@ -173,6 +176,15 @@ public class AccountingEditor
 		}
 		return Collections.unmodifiableList(result);
 	}
+	
+	/**
+	 * This is an example of a Gtm model editor.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public static boolean doSelectionChange = true;
+	
 	/**
 	 * This keeps track of the editing domain that is used to track all changes to the model.
 	 * <!-- begin-user-doc -->
@@ -253,6 +265,14 @@ public class AccountingEditor
 	 * @generated
 	 */
 	protected TreeViewer treeViewer;
+	
+	/**
+	 * This is the saved content during bulk actions
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	protected IContentProvider treeContentProvider;	
 
 	/**
 	 * This shows how a list view works.
@@ -262,6 +282,15 @@ public class AccountingEditor
 	 * @generated
 	 */
 	protected ListViewer listViewer;
+	
+	/**
+	 * This is the saved content during bulk actions
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	
+	protected IContentProvider listContentProvider;
 
 	/**
 	 * This shows how a table view works.
@@ -320,13 +349,6 @@ public class AccountingEditor
 	 */
 	protected ISelection editorSelection = StructuredSelection.EMPTY;
 
-	/**
-	 * This is an example of a Gtm model editor.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated NOT
-	 */
-	public static boolean doSelectionChange = true;
 
 	/**
 	 * This listens for when the outline becomes active
@@ -679,10 +701,23 @@ public class AccountingEditor
 	/**
 	 * This sets the selection into whichever viewer is active.
 	 * <!-- begin-user-doc -->
+	 * selection switch
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public void setSelectionToViewer(Collection<?> collection) {
+		if (doSelectionChange) {
+			setSelectionToViewerGen(collection);
+		}
+	}
+
+	/**
+	 * This sets the selection into whichever viewer is active.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSelectionToViewer(Collection<?> collection) {
+	public void setSelectionToViewerGen(Collection<?> collection) {
 		final Collection<?> theSelection = collection;
 		// Make sure it's okay.
 		//
@@ -1198,13 +1233,9 @@ public class AccountingEditor
 	@Override
 	public void createPages() {
 		// Creates the model from the editor input
-		//
 		createModel();
-		
-		
 
 		// Only creates the other pages if there is something that can be edited
-		//
 		if (!getEditingDomain().getResourceSet().getResources().isEmpty()) {
 			// Create a page for the selection tree view.
 			//
@@ -1247,6 +1278,8 @@ public class AccountingEditor
 							
 				MigrationManager.migrate(editingDomain, this);
 				
+				setInitialSelection();
+				
 			}
 
 
@@ -1257,7 +1290,7 @@ public class AccountingEditor
 							 setActivePage(0);
 						 }
 					 }
-				 });
+			});
 		}
 
 		// Ensures that this editor will only display the page's tab
@@ -1286,6 +1319,19 @@ public class AccountingEditor
 
 	}
 	
+	
+	private void setInitialSelection() {
+		AccountingViewerData data = getModel();
+		if (data != null &&
+			data.getAccountingFile() != null && 
+			data.getAccountingFile()!= null && 
+			data.getAccountingFile().getAccountingDelivery() != null) {
+			
+		} else {
+			setSelection(new StructuredSelection(getModel()));
+		}
+	}
+	
 	/**
 	 * If there is just one page in the multi-page editor part,
 	 * this hides the single tab at the bottom.
@@ -1295,7 +1341,7 @@ public class AccountingEditor
 	 */
 	private IContentProvider getNewPartitionedContentProvider(ComposedAdapterFactory adapterFactory) {
 		
-		return new PartitionedContentProvider(adapterFactory) {
+		return new CustomizedAdapterFactoryContentProvider(adapterFactory) {
 		       @Override
 		       protected int getVirtualFolderSize(Object folder) {
 		    	  
@@ -1498,6 +1544,20 @@ public class AccountingEditor
 
 		return propertySheetPage;
 	}
+	
+	/**
+	 * This deals with how we want selection in the outliner to affect the other views.
+	 * <!-- begin-user-doc -->
+	 * switch for selection handling
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public void handleContentOutlineSelection(ISelection selection) {
+		
+		if (!doSelectionChange) return;
+		
+		handleContentOutlineSelectionGen(selection);
+	}
 
 	/**
 	 * This deals with how we want selection in the outliner to affect the other views.
@@ -1505,7 +1565,7 @@ public class AccountingEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void handleContentOutlineSelection(ISelection selection) {
+	public void handleContentOutlineSelectionGen(ISelection selection) {
 		if (currentViewerPane != null && !selection.isEmpty() && selection instanceof IStructuredSelection) {
 			Iterator<?> selectedElements = ((IStructuredSelection)selection).iterator();
 			if (selectedElements.hasNext()) {
@@ -1766,6 +1826,10 @@ public class AccountingEditor
 		
 		if (!doSelectionChange) return;
 		
+		if (contentOutlinePage != null && !contentOutlinePage.getSelection().equals(selection)) {
+			contentOutlinePage.setSelection(selection);
+		}
+		
 		setSelectionGen(selection);
 		
 	}
@@ -1989,12 +2053,28 @@ public class AccountingEditor
 		
 		if (object == null) return;
 
-		if (object instanceof AccountingViewerData){
-			setSelection(new StructuredSelection((AccountingViewerData) object));
-		} else {
-			return;
+		if (object instanceof AccountingViewerData){	
+			setInitialSelection();
 		}
 
+	}
+	
+	/**
+	 * select an element in the navigation views
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	public void expandTreeViews(Object o) {
+		if (this.contentOutlineViewer != null) {
+			this.contentOutlineViewer.setExpandedElements(o);
+		}
+		if (treeContentProvider!= null) {	
+			this.treeViewer.setExpandedElements(o);
+		}
+		if (currentViewer != null && currentViewer instanceof TreeViewer) {	
+			((TreeViewer)this.currentViewer).setExpandedElements(o);
+		}
 	}
 
 }

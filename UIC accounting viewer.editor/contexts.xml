@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contexts>
    <context id="install">
-      <description>Installation</description>
-      <topic href="html/gettingstarted/gettingstarted.html" label="Getting Started"/>
+      <topic href="html/gettingStarted/gettingstarted.html" label="Reference"/>
       <topic href="html/reference/reference.html" label="Reference"/>
-      <topic href="html/troubleshooting/troubleshooting.html" label="Getting Started"/>
+      <topic href="html/troubleshooting/troubleshooting.html" label="Trouble Shooting"/>
+   </context>
+   <context id="Help_Context">
    </context>
 
 </contexts>

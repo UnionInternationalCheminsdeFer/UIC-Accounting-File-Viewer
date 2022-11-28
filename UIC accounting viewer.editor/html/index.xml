@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index version="1.0">
+
+<entry keyword="UIC Accounting Data Viewer"><topic href="html/gettingstarted/gettingstarted.html" /></entry>
+<entry keyword="Carrier"><topic href="html/reference/data_companycodes.html" /></entry>
+<entry keyword="Company"><topic href="html/reference/data_companycodes.html" /></entry>
+<entry keyword="Preferences"><topic href="html/referenceuserPreferences.html" /></entry>
+<entry keyword="Validate"><topic href="html/reference/validation.html" /></entry>      
+</index>

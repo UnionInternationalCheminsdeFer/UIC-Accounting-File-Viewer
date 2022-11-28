@@ -363,8 +363,8 @@ public class AccountingValidator extends EObjectValidator {
 				return validateTransactionType((TransactionType)value, diagnostics, context);
 			case AccountingPackage.ACCOUNTING_TYPE:
 				return validateAccountingType((AccountingType)value, diagnostics, context);
-			case AccountingPackage.ACCOUNTS_TYPE:
-				return validateAccountsType((AccountsType)value, diagnostics, context);
+			case AccountingPackage.SETTLEMENT_VALUE_INDICATOR:
+				return validateSettlementValueIndicator((SettlementValueIndicator)value, diagnostics, context);
 			case AccountingPackage.SALES_TYPE:
 				return validateSalesType((SalesType)value, diagnostics, context);
 			case AccountingPackage.TRANSACTION_STANDARD:
@@ -7010,7 +7010,7 @@ public class AccountingValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAccountsType(AccountsType accountsType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSettlementValueIndicator(SettlementValueIndicator settlementValueIndicator, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 

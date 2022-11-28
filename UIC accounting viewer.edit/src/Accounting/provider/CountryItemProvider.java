@@ -172,14 +172,18 @@ public class CountryItemProvider
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Country)object).getName();
-		return label == null || label.length() == 0 ?
-			getString("_UI_Country_type") :
-			getString("_UI_Country_type") + " " + label;
+		Country country =  (Country)object;
+		StringBuilder label = new StringBuilder();
+		label.append(country.getName());
+		label.append(" - ");
+		label.append(country.getISOcode());
+		
+		return label.toString();
+
 	}
 
 

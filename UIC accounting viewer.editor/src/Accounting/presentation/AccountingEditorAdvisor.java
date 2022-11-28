@@ -160,24 +160,22 @@ public final class AccountingEditorAdvisor extends WorkbenchAdvisor {
 			layout.setEditorAreaVisible(true);
 			layout.addPerspectiveShortcut(ID_PERSPECTIVE);
 
-			IFolderLayout right = layout.createFolder("right", IPageLayout.RIGHT, (float)0.66, layout.getEditorArea());
-			right.addView(IPageLayout.ID_OUTLINE);
-			right.addView(IPageLayout.ID_PROP_SHEET);
-			
-			
-			IFolderLayout bottomRight = layout.createFolder("bottonRight", IPageLayout.BOTTOM, (float)0.60, "right");
-			bottomRight.addView(IPageLayout.ID_PROP_SHEET);
-			
+			IFolderLayout bottomRight = layout.createFolder("bottom", IPageLayout.BOTTOM, (float)0.30, layout.getEditorArea() );
+			//bottomRight.addView(IPageLayout.ID_PROP_SHEET);
 			bottomRight.addView(AccountingProblemView.ID);
 			layout.addShowViewShortcut(AccountingProblemView.ID);
 			
-
 			//addons
 			ConsoleUtil.showConsole("Infos");
 			
 			ConsoleUtil.showConsole("Errors");
 			
 			ConsoleUtil.showConsole("Warnings");
+			
+			IFolderLayout right = layout.createFolder("right", IPageLayout.RIGHT, (float)0.66, layout.getEditorArea());
+			//right.addView(IPageLayout.ID_OUTLINE);
+			right.addView(IPageLayout.ID_PROP_SHEET);
+			
 		}
 	}
 	

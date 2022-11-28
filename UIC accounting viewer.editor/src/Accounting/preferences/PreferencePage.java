@@ -53,8 +53,8 @@ public class PreferencePage
 	public void init(IWorkbench workbench)	{
 
 		// second parameter is typically the plug-in id
-	    setPreferenceStore(new ScopedPreferenceStore(InstanceScope.INSTANCE, "GTM_data_converter.editor")); //$NON-NLS-1$
-	    setDescription(NationalLanguageSupport.PreferencePage_4);
+	    setPreferenceStore(new ScopedPreferenceStore(InstanceScope.INSTANCE, "Accounting_data_viewer.editor")); //$NON-NLS-1$
+	    setDescription("User Preferences Accounting Viewer");
 	    //provide access to the edit module
 	    PropertyAdapter.getInstance().setStore(AccountingEditorPlugin.getPreferenceStore());
 

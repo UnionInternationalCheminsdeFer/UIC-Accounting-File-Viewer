@@ -36,7 +36,7 @@ public class ImportJsonAction extends BasicAction {
 		public ImportJsonAction(IEditingDomainProvider editingDomainProvider) {
 			super("Import Accounting File", editingDomainProvider);
 			this.setToolTipText(this.getText());
-			setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/importGtm.png")); //$NON-NLS-1$
+			setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/import24.png")); //$NON-NLS-1$
 			this.editingDomainProvider = editingDomainProvider;
 		}
 		

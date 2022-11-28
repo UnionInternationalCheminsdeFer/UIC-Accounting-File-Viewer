@@ -208,7 +208,7 @@
 					"description": "indicates that the value is a commission",
 					"type": "boolean"
 				},
-				"accountingType": {
+				"settlementValueIndicator": {
 					"type": "string",
 					"enum": [
 						"DEBIT",

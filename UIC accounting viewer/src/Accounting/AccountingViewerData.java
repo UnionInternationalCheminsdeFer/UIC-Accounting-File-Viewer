@@ -16,9 +16,9 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link Accounting.AccountingViewerData#getCodeLists <em>Code Lists</em>}</li>
+ *   <li>{@link Accounting.AccountingViewerData#getAccountingFile <em>Accounting File</em>}</li>
  *   <li>{@link Accounting.AccountingViewerData#getFareModells <em>Fare Modells</em>}</li>
  *   <li>{@link Accounting.AccountingViewerData#getWorkflowHistory <em>Workflow History</em>}</li>
- *   <li>{@link Accounting.AccountingViewerData#getAccountingFile <em>Accounting File</em>}</li>
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountingViewerData()
@@ -55,7 +55,7 @@ public interface AccountingViewerData extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Fare Modells</em>' containment reference list.
 	 * @see Accounting.AccountingPackage#getAccountingViewerData_FareModells()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<GeneralTariffModel> getFareModells();

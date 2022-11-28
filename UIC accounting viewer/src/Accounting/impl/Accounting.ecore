@@ -18,11 +18,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="AccountingViewerData">
     <eStructuralFeatures xsi:type="ecore:EReference" name="codeLists" lowerBound="1"
         eType="#//CodeLists" containment="true" resolveProxies="false"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fareModells" lowerBound="1"
-        upperBound="-1" eType="#//GeneralTariffModel" containment="true" resolveProxies="false"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="workflowHistory" eType="#//WorkflowHistory"
-        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="accountingFile" eType="#//AccountingFile"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fareModells" upperBound="-1"
+        eType="#//GeneralTariffModel" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workflowHistory" eType="#//WorkflowHistory"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AccountingFile">
@@ -117,7 +117,8 @@
     <eLiterals name="MANUAL_REFUND" value="5"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AccountedAmount">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accountsType" eType="#//AccountsType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="settlementValueIndicator"
+        eType="#//SettlementValueIndicator"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="grossAmount" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="fee" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="commission" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
@@ -129,7 +130,7 @@
     <eLiterals name="SHARES"/>
     <eLiterals name="SERVICE" value="1"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EEnum" name="AccountsType">
+  <eClassifiers xsi:type="ecore:EEnum" name="SettlementValueIndicator">
     <eLiterals name="CREDIT"/>
     <eLiterals name="DEBIT" value="1"/>
   </eClassifiers>

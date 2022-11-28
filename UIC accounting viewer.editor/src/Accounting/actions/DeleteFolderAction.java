@@ -14,7 +14,7 @@ import org.eclipse.jface.viewers.IStructuredSelection;
 
 import Accounting.AccountingViewerData;
 import Accounting.nls.NationalLanguageSupport;
-import Accounting.presentation.VirtualFolderItemProvider;
+import Accounting.resourceTree.VirtualFolderItemProvider;
 import Accounting.utils.AccountingUtils;
 
 

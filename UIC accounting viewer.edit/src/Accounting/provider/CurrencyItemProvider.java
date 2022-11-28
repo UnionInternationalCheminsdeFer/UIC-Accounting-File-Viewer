@@ -126,14 +126,19 @@ public class CurrencyItemProvider
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Currency)object).getName();
-		return label == null || label.length() == 0 ?
-			getString("_UI_Currency_type") :
-			getString("_UI_Currency_type") + " " + label;
+		Currency c = (Currency)object;
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(c.getIsoCode());
+		sb.append(" - ");
+		sb.append(c.getName());
+		
+		return sb.toString();
+		
 	}
 
 

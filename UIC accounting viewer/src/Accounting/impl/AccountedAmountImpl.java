@@ -4,9 +4,9 @@ package Accounting.impl;
 
 import Accounting.AccountedAmount;
 import Accounting.AccountingPackage;
-import Accounting.AccountsType;
 import Accounting.Currency;
 
+import Accounting.SettlementValueIndicator;
 import java.math.BigDecimal;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Accounting.impl.AccountedAmountImpl#getAccountsType <em>Accounts Type</em>}</li>
+ *   <li>{@link Accounting.impl.AccountedAmountImpl#getSettlementValueIndicator <em>Settlement Value Indicator</em>}</li>
  *   <li>{@link Accounting.impl.AccountedAmountImpl#isGrossAmount <em>Gross Amount</em>}</li>
  *   <li>{@link Accounting.impl.AccountedAmountImpl#isFee <em>Fee</em>}</li>
  *   <li>{@link Accounting.impl.AccountedAmountImpl#isCommission <em>Commission</em>}</li>
@@ -38,24 +38,24 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  */
 public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements AccountedAmount {
 	/**
-	 * The default value of the '{@link #getAccountsType() <em>Accounts Type</em>}' attribute.
+	 * The default value of the '{@link #getSettlementValueIndicator() <em>Settlement Value Indicator</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAccountsType()
+	 * @see #getSettlementValueIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final AccountsType ACCOUNTS_TYPE_EDEFAULT = AccountsType.CREDIT;
+	protected static final SettlementValueIndicator SETTLEMENT_VALUE_INDICATOR_EDEFAULT = SettlementValueIndicator.CREDIT;
 
 	/**
-	 * The cached value of the '{@link #getAccountsType() <em>Accounts Type</em>}' attribute.
+	 * The cached value of the '{@link #getSettlementValueIndicator() <em>Settlement Value Indicator</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAccountsType()
+	 * @see #getSettlementValueIndicator()
 	 * @generated
 	 * @ordered
 	 */
-	protected AccountsType accountsType = ACCOUNTS_TYPE_EDEFAULT;
+	protected SettlementValueIndicator settlementValueIndicator = SETTLEMENT_VALUE_INDICATOR_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #isGrossAmount() <em>Gross Amount</em>}' attribute.
@@ -191,8 +191,8 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AccountsType getAccountsType() {
-		return accountsType;
+	public SettlementValueIndicator getSettlementValueIndicator() {
+		return settlementValueIndicator;
 	}
 
 	/**
@@ -200,11 +200,11 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setAccountsType(AccountsType newAccountsType) {
-		AccountsType oldAccountsType = accountsType;
-		accountsType = newAccountsType == null ? ACCOUNTS_TYPE_EDEFAULT : newAccountsType;
+	public void setSettlementValueIndicator(SettlementValueIndicator newSettlementValueIndicator) {
+		SettlementValueIndicator oldSettlementValueIndicator = settlementValueIndicator;
+		settlementValueIndicator = newSettlementValueIndicator == null ? SETTLEMENT_VALUE_INDICATOR_EDEFAULT : newSettlementValueIndicator;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.ACCOUNTED_AMOUNT__ACCOUNTS_TYPE, oldAccountsType, accountsType));
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR, oldSettlementValueIndicator, settlementValueIndicator));
 	}
 
 	/**
@@ -358,8 +358,8 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case AccountingPackage.ACCOUNTED_AMOUNT__ACCOUNTS_TYPE:
-				return getAccountsType();
+			case AccountingPackage.ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR:
+				return getSettlementValueIndicator();
 			case AccountingPackage.ACCOUNTED_AMOUNT__GROSS_AMOUNT:
 				return isGrossAmount();
 			case AccountingPackage.ACCOUNTED_AMOUNT__FEE:
@@ -385,8 +385,8 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case AccountingPackage.ACCOUNTED_AMOUNT__ACCOUNTS_TYPE:
-				setAccountsType((AccountsType)newValue);
+			case AccountingPackage.ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR:
+				setSettlementValueIndicator((SettlementValueIndicator)newValue);
 				return;
 			case AccountingPackage.ACCOUNTED_AMOUNT__GROSS_AMOUNT:
 				setGrossAmount((Boolean)newValue);
@@ -418,8 +418,8 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case AccountingPackage.ACCOUNTED_AMOUNT__ACCOUNTS_TYPE:
-				setAccountsType(ACCOUNTS_TYPE_EDEFAULT);
+			case AccountingPackage.ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR:
+				setSettlementValueIndicator(SETTLEMENT_VALUE_INDICATOR_EDEFAULT);
 				return;
 			case AccountingPackage.ACCOUNTED_AMOUNT__GROSS_AMOUNT:
 				setGrossAmount(GROSS_AMOUNT_EDEFAULT);
@@ -451,8 +451,8 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case AccountingPackage.ACCOUNTED_AMOUNT__ACCOUNTS_TYPE:
-				return accountsType != ACCOUNTS_TYPE_EDEFAULT;
+			case AccountingPackage.ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR:
+				return settlementValueIndicator != SETTLEMENT_VALUE_INDICATOR_EDEFAULT;
 			case AccountingPackage.ACCOUNTED_AMOUNT__GROSS_AMOUNT:
 				return grossAmount != GROSS_AMOUNT_EDEFAULT;
 			case AccountingPackage.ACCOUNTED_AMOUNT__FEE:
@@ -479,8 +479,8 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (accountsType: ");
-		result.append(accountsType);
+		result.append(" (settlementValueIndicator: ");
+		result.append(settlementValueIndicator);
 		result.append(", grossAmount: ");
 		result.append(grossAmount);
 		result.append(", fee: ");

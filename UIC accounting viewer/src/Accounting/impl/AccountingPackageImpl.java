@@ -1017,7 +1017,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EEnum accountsTypeEEnum = null;
+	private EEnum settlementValueIndicatorEEnum = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1530,15 +1530,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	public EReference getAccountingViewerData_FareModells() {
-        return (EReference)getAccountingViewerData().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAccountingViewerData_WorkflowHistory() {
         return (EReference)getAccountingViewerData().getEStructuralFeatures().get(2);
 	}
 
@@ -1547,8 +1538,17 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAccountingViewerData_AccountingFile() {
+	public EReference getAccountingViewerData_WorkflowHistory() {
         return (EReference)getAccountingViewerData().getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAccountingViewerData_AccountingFile() {
+        return (EReference)getAccountingViewerData().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2033,7 +2033,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAccountedAmount_AccountsType() {
+	public EAttribute getAccountedAmount_SettlementValueIndicator() {
         return (EAttribute)getAccountedAmount().getEStructuralFeatures().get(0);
 	}
 
@@ -7808,11 +7808,11 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EEnum getAccountsType() {
-		if (accountsTypeEEnum == null) {
-			accountsTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(16);
+	public EEnum getSettlementValueIndicator() {
+		if (settlementValueIndicatorEEnum == null) {
+			settlementValueIndicatorEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(16);
 		}
-		return accountsTypeEEnum;
+		return settlementValueIndicatorEEnum;
 	}
 
 	/**

@@ -17,7 +17,7 @@ import Accounting.AccountingSubject;
 import Accounting.AccountingViewerData;
 import Accounting.Carrier;
 import accountingModelV1.AccountedAmount;
-import accountingModelV1.AccountedAmount.AccountType;
+import accountingModelV1.AccountedAmount.SettlementValueIndicator;
 import accountingModelV1.AccountingDataDelivery;
 import accountingModelV1.AccountingDeliveryDetails;
 import accountingModelV1.AccountingDeliveryDetails.PaymentType;
@@ -129,8 +129,8 @@ public class AccountingJsonExporter {
 			jObj.setRateScale(convertToScale(mObj.getRate()));
 		}
 		
-		if (mObj.getAccountsType() != null) {
-			jObj.setAccountingType(AccountType.fromValue(mObj.getAccountsType().getLiteral()));
+		if (mObj.getSettlementValueIndicator() != null) {
+			jObj.setSettlementValueIndicator(SettlementValueIndicator.fromValue(mObj.getSettlementValueIndicator().getLiteral()));
 		}
 		
 		

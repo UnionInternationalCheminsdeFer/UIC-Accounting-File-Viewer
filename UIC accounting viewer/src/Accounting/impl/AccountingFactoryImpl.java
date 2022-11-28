@@ -214,8 +214,8 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 				return createTransactionTypeFromString(eDataType, initialValue);
 			case AccountingPackage.ACCOUNTING_TYPE:
 				return createAccountingTypeFromString(eDataType, initialValue);
-			case AccountingPackage.ACCOUNTS_TYPE:
-				return createAccountsTypeFromString(eDataType, initialValue);
+			case AccountingPackage.SETTLEMENT_VALUE_INDICATOR:
+				return createSettlementValueIndicatorFromString(eDataType, initialValue);
 			case AccountingPackage.SALES_TYPE:
 				return createSalesTypeFromString(eDataType, initialValue);
 			case AccountingPackage.TRANSACTION_STANDARD:
@@ -355,8 +355,8 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 				return convertTransactionTypeToString(eDataType, instanceValue);
 			case AccountingPackage.ACCOUNTING_TYPE:
 				return convertAccountingTypeToString(eDataType, instanceValue);
-			case AccountingPackage.ACCOUNTS_TYPE:
-				return convertAccountsTypeToString(eDataType, instanceValue);
+			case AccountingPackage.SETTLEMENT_VALUE_INDICATOR:
+				return convertSettlementValueIndicatorToString(eDataType, instanceValue);
 			case AccountingPackage.SALES_TYPE:
 				return convertSalesTypeToString(eDataType, instanceValue);
 			case AccountingPackage.TRANSACTION_STANDARD:
@@ -1905,8 +1905,8 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AccountsType createAccountsTypeFromString(EDataType eDataType, String initialValue) {
-		AccountsType result = AccountsType.get(initialValue);
+	public SettlementValueIndicator createSettlementValueIndicatorFromString(EDataType eDataType, String initialValue) {
+		SettlementValueIndicator result = SettlementValueIndicator.get(initialValue);
 		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
@@ -1916,7 +1916,7 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String convertAccountsTypeToString(EDataType eDataType, Object instanceValue) {
+	public String convertSettlementValueIndicatorToString(EDataType eDataType, Object instanceValue) {
 		return instanceValue == null ? null : instanceValue.toString();
 	}
 

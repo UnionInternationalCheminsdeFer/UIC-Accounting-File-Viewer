@@ -22,7 +22,6 @@ import org.eclipse.swt.widgets.Tree;
 import org.eclipse.swt.widgets.TreeColumn;
 import org.eclipse.ui.part.ViewPart;
 
-import Accounting.nls.NationalLanguageSupport;
 import Accounting.presentation.AccountingEditor;
 import Accounting.utils.AccountingUtils;
 
@@ -30,7 +29,7 @@ import Accounting.utils.AccountingUtils;
 public class AccountingProblemView extends ViewPart {
 	
 	// the ID needs to match the id set in the view's properties
-	public static final String ID = "org.uic.gtm.GtmProblemView"; //$NON-NLS-1$
+	public static final String ID = "org.uic.accounting.AccountingProblemView"; //$NON-NLS-1$
 	private TreeViewer contentTreeViewer;
 	
 	private static AccountingProblemView me = null;
@@ -40,14 +39,14 @@ public class AccountingProblemView extends ViewPart {
 
 	public AccountingProblemView(){
 		super();
-		this.setPartName(NationalLanguageSupport.GtmProblemView_0);
+		this.setPartName("Validation Results");
 		me = this;
 		
-		ProblemCategory errors = new ProblemCategory(Diagnostic.ERROR, NationalLanguageSupport.GtmProblemView_1);
+		ProblemCategory errors = new ProblemCategory(Diagnostic.ERROR, "Errors");
 		 
-		ProblemCategory warnings = new ProblemCategory(Diagnostic.WARNING, NationalLanguageSupport.GtmProblemView_2);
+		ProblemCategory warnings = new ProblemCategory(Diagnostic.WARNING, "Warnings");
 		 
-		ProblemCategory infos = new ProblemCategory(Diagnostic.INFO, NationalLanguageSupport.GtmProblemView_3);
+		ProblemCategory infos = new ProblemCategory(Diagnostic.INFO, "Infos");
 		
 		content = new ArrayList<ProblemCategory>();
 		content.add(0,errors);
@@ -67,11 +66,11 @@ public class AccountingProblemView extends ViewPart {
 		final TreeColumn column1 = new TreeColumn(contentTree, SWT.LEFT);
 		contentTree.setLinesVisible(true);
 		column1.setAlignment(SWT.LEFT);
-		column1.setText(NationalLanguageSupport.GtmProblemView_4);
+		column1.setText("Description");
 		column1.setWidth(500);
 		TreeColumn column2 = new TreeColumn(contentTree, SWT.RIGHT);
 		column2.setAlignment(SWT.LEFT);
-		column2.setText(NationalLanguageSupport.GtmProblemView_5);
+		column2.setText("Object");
 		column2.setWidth(300);
 		
 		contentTreeViewer.setContentProvider(new ProblemViewTreeTableContentProvider());
@@ -90,7 +89,6 @@ public class AccountingProblemView extends ViewPart {
 						ISelection selection = new StructuredSelection(object);
 						editor.setSelection(selection);
 						editor.setFocus();
-						editor.getContentOutlinePage().setSelection(selection);
 						//editor.expandTreeViews(object);
 					}
 				}
@@ -168,9 +166,9 @@ public class AccountingProblemView extends ViewPart {
 
 		public String getColumnText(Object o, int column) {
 			if(o instanceof ProblemCategory && column == 0) {
-				if (((ProblemCategory)o).getSeverity() == Diagnostic.ERROR) return NationalLanguageSupport.GtmProblemView_6;
-				if (((ProblemCategory)o).getSeverity() == Diagnostic.WARNING) return NationalLanguageSupport.GtmProblemView_7;
-				if (((ProblemCategory)o).getSeverity() == Diagnostic.INFO) return NationalLanguageSupport.GtmProblemView_8;			
+				if (((ProblemCategory)o).getSeverity() == Diagnostic.ERROR) return "Error";
+				if (((ProblemCategory)o).getSeverity() == Diagnostic.WARNING) return "Warning";
+				if (((ProblemCategory)o).getSeverity() == Diagnostic.INFO) return "Info";			
 			} else if (o instanceof Diagnostic){
 				Diagnostic diagnostic = ((Diagnostic) o);
 				if(column == 0){

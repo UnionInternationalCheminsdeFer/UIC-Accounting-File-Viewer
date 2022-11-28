@@ -36,7 +36,7 @@ public class ImportCarriersAction extends ImportCsvDataAction {
 	public ImportCarriersAction(IEditingDomainProvider editingDomainProvider) {
 		super(NationalLanguageSupport.ImportCarriersAction_0, editingDomainProvider);
 		this.setToolTipText(this.getText());
-		setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/importCarriers.png")); //$NON-NLS-1$
+		setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/importCarriers24.png")); //$NON-NLS-1$
 	}
 	
 	

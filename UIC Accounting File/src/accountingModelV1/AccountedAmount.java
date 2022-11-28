@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "grossAmount",
     "refundFee",
     "commission",
-    "accountingType",
+    "settlementValueIndicator",
     "amount",
     "scale",
     "currency",
@@ -53,13 +53,8 @@ public class AccountedAmount {
     @JsonProperty("commission")
     @JsonPropertyDescription("indicates that the value is a commission")
     private Boolean commission;
-    /**
-     * 
-     * (Required)
-     * 
-     */
-    @JsonProperty("accountingType")
-    private AccountedAmount.AccountType accountingType;
+    @JsonProperty("settlementValueIndicator")
+    private AccountedAmount.SettlementValueIndicator settlementValueIndicator;
     /**
      * 
      * (Required)
@@ -156,24 +151,14 @@ public class AccountedAmount {
         this.commission = commission;
     }
 
-    /**
-     * 
-     * (Required)
-     * 
-     */
-    @JsonProperty("accountingType")
-    public AccountedAmount.AccountType getAccountingType() {
-        return accountingType;
+    @JsonProperty("settlementValueIndicator")
+    public AccountedAmount.SettlementValueIndicator getSettlementValueIndicator() {
+        return settlementValueIndicator;
     }
 
-    /**
-     * 
-     * (Required)
-     * 
-     */
-    @JsonProperty("accountingType")
-    public void setAccountingType(AccountedAmount.AccountType accountingType) {
-        this.accountingType = accountingType;
+    @JsonProperty("settlementValueIndicator")
+    public void setSettlementValueIndicator(AccountedAmount.SettlementValueIndicator settlementValueIndicator) {
+        this.settlementValueIndicator = settlementValueIndicator;
     }
 
     /**
@@ -284,9 +269,9 @@ public class AccountedAmount {
         sb.append('=');
         sb.append(((this.commission == null)?"<null>":this.commission));
         sb.append(',');
-        sb.append("accountingType");
+        sb.append("settlementValueIndicator");
         sb.append('=');
-        sb.append(((this.accountingType == null)?"<null>":this.accountingType));
+        sb.append(((this.settlementValueIndicator == null)?"<null>":this.settlementValueIndicator));
         sb.append(',');
         sb.append("amount");
         sb.append('=');
@@ -322,7 +307,7 @@ public class AccountedAmount {
         result = ((result* 31)+((this.refundFee == null)? 0 :this.refundFee.hashCode()));
         result = ((result* 31)+((this.amount == null)? 0 :this.amount.hashCode()));
         result = ((result* 31)+((this.rate == null)? 0 :this.rate.hashCode()));
-        result = ((result* 31)+((this.accountingType == null)? 0 :this.accountingType.hashCode()));
+        result = ((result* 31)+((this.settlementValueIndicator == null)? 0 :this.settlementValueIndicator.hashCode()));
         result = ((result* 31)+((this.scale == null)? 0 :this.scale.hashCode()));
         result = ((result* 31)+((this.commission == null)? 0 :this.commission.hashCode()));
         result = ((result* 31)+((this.currency == null)? 0 :this.currency.hashCode()));
@@ -340,23 +325,23 @@ public class AccountedAmount {
             return false;
         }
         AccountedAmount rhs = ((AccountedAmount) other);
-        return ((((((((((this.refundFee == rhs.refundFee)||((this.refundFee!= null)&&this.refundFee.equals(rhs.refundFee)))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.rate == rhs.rate)||((this.rate!= null)&&this.rate.equals(rhs.rate))))&&((this.accountingType == rhs.accountingType)||((this.accountingType!= null)&&this.accountingType.equals(rhs.accountingType))))&&((this.scale == rhs.scale)||((this.scale!= null)&&this.scale.equals(rhs.scale))))&&((this.commission == rhs.commission)||((this.commission!= null)&&this.commission.equals(rhs.commission))))&&((this.currency == rhs.currency)||((this.currency!= null)&&this.currency.equals(rhs.currency))))&&((this.grossAmount == rhs.grossAmount)||((this.grossAmount!= null)&&this.grossAmount.equals(rhs.grossAmount))))&&((this.rateScale == rhs.rateScale)||((this.rateScale!= null)&&this.rateScale.equals(rhs.rateScale))));
+        return ((((((((((this.refundFee == rhs.refundFee)||((this.refundFee!= null)&&this.refundFee.equals(rhs.refundFee)))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.rate == rhs.rate)||((this.rate!= null)&&this.rate.equals(rhs.rate))))&&((this.settlementValueIndicator == rhs.settlementValueIndicator)||((this.settlementValueIndicator!= null)&&this.settlementValueIndicator.equals(rhs.settlementValueIndicator))))&&((this.scale == rhs.scale)||((this.scale!= null)&&this.scale.equals(rhs.scale))))&&((this.commission == rhs.commission)||((this.commission!= null)&&this.commission.equals(rhs.commission))))&&((this.currency == rhs.currency)||((this.currency!= null)&&this.currency.equals(rhs.currency))))&&((this.grossAmount == rhs.grossAmount)||((this.grossAmount!= null)&&this.grossAmount.equals(rhs.grossAmount))))&&((this.rateScale == rhs.rateScale)||((this.rateScale!= null)&&this.rateScale.equals(rhs.rateScale))));
     }
 
-    public enum AccountType {
+    public enum SettlementValueIndicator {
 
         DEBIT("DEBIT"),
         CREDIT("CREDIT");
         private final String value;
-        private final static Map<String, AccountedAmount.AccountType> CONSTANTS = new HashMap<String, AccountedAmount.AccountType>();
+        private final static Map<String, AccountedAmount.SettlementValueIndicator> CONSTANTS = new HashMap<String, AccountedAmount.SettlementValueIndicator>();
 
         static {
-            for (AccountedAmount.AccountType c: values()) {
+            for (AccountedAmount.SettlementValueIndicator c: values()) {
                 CONSTANTS.put(c.value, c);
             }
         }
 
-        private AccountType(String value) {
+        private SettlementValueIndicator(String value) {
             this.value = value;
         }
 
@@ -371,8 +356,8 @@ public class AccountedAmount {
         }
 
         @JsonCreator
-        public static AccountedAmount.AccountType fromValue(String value) {
-            AccountedAmount.AccountType constant = CONSTANTS.get(value);
+        public static AccountedAmount.SettlementValueIndicator fromValue(String value) {
+            AccountedAmount.SettlementValueIndicator constant = CONSTANTS.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

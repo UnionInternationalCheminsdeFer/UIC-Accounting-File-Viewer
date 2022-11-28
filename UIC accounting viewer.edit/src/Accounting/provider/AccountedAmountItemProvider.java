@@ -5,7 +5,7 @@ package Accounting.provider;
 
 import Accounting.AccountedAmount;
 import Accounting.AccountingPackage;
-import Accounting.AccountsType;
+import Accounting.SettlementValueIndicator;
 import java.util.Collection;
 import java.util.List;
 
@@ -61,7 +61,7 @@ public class AccountedAmountItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addAccountsTypePropertyDescriptor(object);
+			addSettlementValueIndicatorPropertyDescriptor(object);
 			addGrossAmountPropertyDescriptor(object);
 			addFeePropertyDescriptor(object);
 			addCommissionPropertyDescriptor(object);
@@ -73,19 +73,19 @@ public class AccountedAmountItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Accounts Type feature.
+	 * This adds a property descriptor for the Settlement Value Indicator feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addAccountsTypePropertyDescriptor(Object object) {
+	protected void addSettlementValueIndicatorPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_AccountedAmount_accountsType_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_AccountedAmount_accountsType_feature", "_UI_AccountedAmount_type"),
-				 AccountingPackage.Literals.ACCOUNTED_AMOUNT__ACCOUNTS_TYPE,
+				 getString("_UI_AccountedAmount_settlementValueIndicator_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AccountedAmount_settlementValueIndicator_feature", "_UI_AccountedAmount_type"),
+				 AccountingPackage.Literals.ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR,
 				 true,
 				 false,
 				 false,
@@ -245,7 +245,7 @@ public class AccountedAmountItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		AccountsType labelValue = ((AccountedAmount)object).getAccountsType();
+		SettlementValueIndicator labelValue = ((AccountedAmount)object).getSettlementValueIndicator();
 		String label = labelValue == null ? null : labelValue.toString();
 		return label == null || label.length() == 0 ?
 			getString("_UI_AccountedAmount_type") :
@@ -265,7 +265,7 @@ public class AccountedAmountItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(AccountedAmount.class)) {
-			case AccountingPackage.ACCOUNTED_AMOUNT__ACCOUNTS_TYPE:
+			case AccountingPackage.ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR:
 			case AccountingPackage.ACCOUNTED_AMOUNT__GROSS_AMOUNT:
 			case AccountingPackage.ACCOUNTED_AMOUNT__FEE:
 			case AccountingPackage.ACCOUNTED_AMOUNT__COMMISSION:

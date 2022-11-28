@@ -31,7 +31,7 @@ public class ShowSummaryAction extends BasicAction {
 		public ShowSummaryAction(IEditingDomainProvider editingDomainProvider) {
 			super("Show Accounting Summary", editingDomainProvider);
 			this.setToolTipText(this.getText());
-			setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/summary.png")); //$NON-NLS-1$
+			setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/summary24.png")); //$NON-NLS-1$
 			this.editingDomainProvider = editingDomainProvider;
 		}
 		
@@ -107,6 +107,7 @@ public class ShowSummaryAction extends BasicAction {
 						}					
 												
 						AccountingUtils.addWorkflowStep("Summary completed", editor);
+						
 					} finally {
 						monitor.done();
 					}
@@ -114,8 +115,6 @@ public class ShowSummaryAction extends BasicAction {
 			};	
 			
 			try {
-				// This runs the operation, and shows progress.
-				editor.disconnectViews();
 		
 				new ProgressMonitorDialog(editor.getSite().getShell()).run(true, false, operation);
 				

@@ -80,13 +80,22 @@ public interface AccountingPackage extends EPackage {
 	int ACCOUNTING_VIEWER_DATA__CODE_LISTS = 0;
 
 	/**
+	 * The feature id for the '<em><b>Accounting File</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE = 1;
+
+	/**
 	 * The feature id for the '<em><b>Fare Modells</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOUNTING_VIEWER_DATA__FARE_MODELLS = 1;
+	int ACCOUNTING_VIEWER_DATA__FARE_MODELLS = 2;
 
 	/**
 	 * The feature id for the '<em><b>Workflow History</b></em>' containment reference.
@@ -95,16 +104,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY = 2;
-
-	/**
-	 * The feature id for the '<em><b>Accounting File</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE = 3;
+	int ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY = 3;
 
 	/**
 	 * The number of structural features of the '<em>Viewer Data</em>' class.
@@ -728,13 +728,13 @@ public interface AccountingPackage extends EPackage {
 	int ACCOUNTED_AMOUNT = 9;
 
 	/**
-	 * The feature id for the '<em><b>Accounts Type</b></em>' attribute.
+	 * The feature id for the '<em><b>Settlement Value Indicator</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOUNTED_AMOUNT__ACCOUNTS_TYPE = 0;
+	int ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR = 0;
 
 	/**
 	 * The feature id for the '<em><b>Gross Amount</b></em>' attribute.
@@ -8605,14 +8605,14 @@ public interface AccountingPackage extends EPackage {
 	int ACCOUNTING_TYPE = 137;
 
 	/**
-	 * The meta object id for the '{@link Accounting.AccountsType <em>Accounts Type</em>}' enum.
+	 * The meta object id for the '{@link Accounting.SettlementValueIndicator <em>Settlement Value Indicator</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Accounting.AccountsType
-	 * @see Accounting.impl.AccountingPackageImpl#getAccountsType()
+	 * @see Accounting.SettlementValueIndicator
+	 * @see Accounting.impl.AccountingPackageImpl#getSettlementValueIndicator()
 	 * @generated
 	 */
-	int ACCOUNTS_TYPE = 138;
+	int SETTLEMENT_VALUE_INDICATOR = 138;
 
 	/**
 	 * The meta object id for the '{@link Accounting.SalesType <em>Sales Type</em>}' enum.
@@ -9801,15 +9801,15 @@ public interface AccountingPackage extends EPackage {
 	EClass getAccountedAmount();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Accounting.AccountedAmount#getAccountsType <em>Accounts Type</em>}'.
+	 * Returns the meta object for the attribute '{@link Accounting.AccountedAmount#getSettlementValueIndicator <em>Settlement Value Indicator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Accounts Type</em>'.
-	 * @see Accounting.AccountedAmount#getAccountsType()
+	 * @return the meta object for the attribute '<em>Settlement Value Indicator</em>'.
+	 * @see Accounting.AccountedAmount#getSettlementValueIndicator()
 	 * @see #getAccountedAmount()
 	 * @generated
 	 */
-	EAttribute getAccountedAmount_AccountsType();
+	EAttribute getAccountedAmount_SettlementValueIndicator();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Accounting.AccountedAmount#isGrossAmount <em>Gross Amount</em>}'.
@@ -16253,14 +16253,14 @@ public interface AccountingPackage extends EPackage {
 	EEnum getAccountingType();
 
 	/**
-	 * Returns the meta object for enum '{@link Accounting.AccountsType <em>Accounts Type</em>}'.
+	 * Returns the meta object for enum '{@link Accounting.SettlementValueIndicator <em>Settlement Value Indicator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Accounts Type</em>'.
-	 * @see Accounting.AccountsType
+	 * @return the meta object for enum '<em>Settlement Value Indicator</em>'.
+	 * @see Accounting.SettlementValueIndicator
 	 * @generated
 	 */
-	EEnum getAccountsType();
+	EEnum getSettlementValueIndicator();
 
 	/**
 	 * Returns the meta object for enum '{@link Accounting.SalesType <em>Sales Type</em>}'.
@@ -17340,12 +17340,12 @@ public interface AccountingPackage extends EPackage {
 		EClass ACCOUNTED_AMOUNT = eINSTANCE.getAccountedAmount();
 
 		/**
-		 * The meta object literal for the '<em><b>Accounts Type</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Settlement Value Indicator</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute ACCOUNTED_AMOUNT__ACCOUNTS_TYPE = eINSTANCE.getAccountedAmount_AccountsType();
+		EAttribute ACCOUNTED_AMOUNT__SETTLEMENT_VALUE_INDICATOR = eINSTANCE.getAccountedAmount_SettlementValueIndicator();
 
 		/**
 		 * The meta object literal for the '<em><b>Gross Amount</b></em>' attribute feature.
@@ -22388,14 +22388,14 @@ public interface AccountingPackage extends EPackage {
 		EEnum ACCOUNTING_TYPE = eINSTANCE.getAccountingType();
 
 		/**
-		 * The meta object literal for the '{@link Accounting.AccountsType <em>Accounts Type</em>}' enum.
+		 * The meta object literal for the '{@link Accounting.SettlementValueIndicator <em>Settlement Value Indicator</em>}' enum.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Accounting.AccountsType
-		 * @see Accounting.impl.AccountingPackageImpl#getAccountsType()
+		 * @see Accounting.SettlementValueIndicator
+		 * @see Accounting.impl.AccountingPackageImpl#getSettlementValueIndicator()
 		 * @generated
 		 */
-		EEnum ACCOUNTS_TYPE = eINSTANCE.getAccountsType();
+		EEnum SETTLEMENT_VALUE_INDICATOR = eINSTANCE.getSettlementValueIndicator();
 
 		/**
 		 * The meta object literal for the '{@link Accounting.SalesType <em>Sales Type</em>}' enum.

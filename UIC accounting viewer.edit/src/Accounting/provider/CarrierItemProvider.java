@@ -149,14 +149,18 @@ public class CarrierItemProvider
 	 * This returns the label text for the adapted class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Carrier)object).getName();
-		return label == null || label.length() == 0 ?
-			getString("_UI_Carrier_type") :
-			getString("_UI_Carrier_type") + " " + label;
+		Carrier carrier = (Carrier) object;
+		StringBuilder sb = new StringBuilder();
+		sb.append(carrier.getName());
+		sb.append(" - ");
+		sb.append(carrier.getCode());
+		
+		return sb.toString();
+
 	}
 
 

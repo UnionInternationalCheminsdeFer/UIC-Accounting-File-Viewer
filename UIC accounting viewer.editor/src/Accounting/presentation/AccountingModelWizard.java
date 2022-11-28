@@ -47,6 +47,7 @@ import Accounting.AccountingFactory;
 import Accounting.AccountingPackage;
 import Accounting.AccountingViewerData;
 import Accounting.provider.AccountingEditPlugin;
+import Accounting.resourceTree.AccountingResourceUtils;
 import Accounting.utils.ModelInitializer;
 
 import java.io.File;

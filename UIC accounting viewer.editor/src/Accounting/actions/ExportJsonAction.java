@@ -22,7 +22,7 @@ import Accounting.AccountingViewerData;
 import Accounting.nls.NationalLanguageSupport;
 import Accounting.presentation.AccountingEditor;
 import Accounting.presentation.AccountingEditorPlugin;
-import Accounting.presentation.DirtyCommand;
+import Accounting.resourceTree.DirtyCommand;
 import Accounting.utils.AccountingUtils;
 import accountingModelV1.AccountingDataDelivery;
 import export.ExportAccountingFile;
@@ -36,10 +36,10 @@ public class ExportJsonAction extends BasicAction {
 		protected IEditingDomainProvider editingDomainProvider = null;
 		
 		public ExportJsonAction(IEditingDomainProvider editingDomainProvider) {
-			super(NationalLanguageSupport.ExportGTMJsonAction_1, editingDomainProvider);
+			super("Export accounting data in json format", editingDomainProvider);
 			this.editingDomainProvider = editingDomainProvider;
 			this.setToolTipText(this.getText());
-			setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/exportGtm.png")); //$NON-NLS-1$
+			setImageDescriptor(AccountingUtils.getImageDescriptor("/icons/export24.png")); //$NON-NLS-1$
 		}
 		
 		public ExportJsonAction(String text, IEditingDomainProvider editingDomainProvider) {
@@ -140,14 +140,16 @@ public class ExportJsonAction extends BasicAction {
 					
 					try {
 						
-						monitor.beginTask(NationalLanguageSupport.ExportGTMJsonAction_4, 31); 
+						monitor.beginTask("Export Accounting Data", 31); 
 
 						AccountingUtils.addWorkflowStep("Export started to accounting file: " + name, editor);
 						
-						monitor.subTask(NationalLanguageSupport.ExportGTMJsonAction_5);
+						/*
+						monitor.subTask("Delete unused elements");
 						AccountingUtils.deleteOrphanedObjects(domain, accounting);
 						prepareStructure(accounting,domain);
 						monitor.worked(1);
+						*/
 					
 	
 						AccountingDataDelivery accountingV1 = null;

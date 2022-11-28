@@ -34,9 +34,9 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link Accounting.impl.AccountingViewerDataImpl#getCodeLists <em>Code Lists</em>}</li>
+ *   <li>{@link Accounting.impl.AccountingViewerDataImpl#getAccountingFile <em>Accounting File</em>}</li>
  *   <li>{@link Accounting.impl.AccountingViewerDataImpl#getFareModells <em>Fare Modells</em>}</li>
  *   <li>{@link Accounting.impl.AccountingViewerDataImpl#getWorkflowHistory <em>Workflow History</em>}</li>
- *   <li>{@link Accounting.impl.AccountingViewerDataImpl#getAccountingFile <em>Accounting File</em>}</li>
  * </ul>
  *
  * @generated
@@ -51,6 +51,16 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * @ordered
 	 */
 	protected CodeLists codeLists;
+
+	/**
+	 * The cached value of the '{@link #getAccountingFile() <em>Accounting File</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccountingFile()
+	 * @generated
+	 * @ordered
+	 */
+	protected AccountingFile accountingFile;
 
 	/**
 	 * The cached value of the '{@link #getFareModells() <em>Fare Modells</em>}' containment reference list.
@@ -71,16 +81,6 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * @ordered
 	 */
 	protected WorkflowHistory workflowHistory;
-
-	/**
-	 * The cached value of the '{@link #getAccountingFile() <em>Accounting File</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAccountingFile()
-	 * @generated
-	 * @ordered
-	 */
-	protected AccountingFile accountingFile;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,12 +252,12 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 		switch (featureID) {
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__CODE_LISTS:
 				return basicSetCodeLists(null, msgs);
+			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
+				return basicSetAccountingFile(null, msgs);
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS:
 				return ((InternalEList<?>)getFareModells()).basicRemove(otherEnd, msgs);
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY:
 				return basicSetWorkflowHistory(null, msgs);
-			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
-				return basicSetAccountingFile(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -272,12 +272,12 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 		switch (featureID) {
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__CODE_LISTS:
 				return getCodeLists();
+			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
+				return getAccountingFile();
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS:
 				return getFareModells();
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY:
 				return getWorkflowHistory();
-			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
-				return getAccountingFile();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -294,15 +294,15 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__CODE_LISTS:
 				setCodeLists((CodeLists)newValue);
 				return;
+			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
+				setAccountingFile((AccountingFile)newValue);
+				return;
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS:
 				getFareModells().clear();
 				getFareModells().addAll((Collection<? extends GeneralTariffModel>)newValue);
 				return;
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY:
 				setWorkflowHistory((WorkflowHistory)newValue);
-				return;
-			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
-				setAccountingFile((AccountingFile)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -319,14 +319,14 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__CODE_LISTS:
 				setCodeLists((CodeLists)null);
 				return;
+			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
+				setAccountingFile((AccountingFile)null);
+				return;
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS:
 				getFareModells().clear();
 				return;
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY:
 				setWorkflowHistory((WorkflowHistory)null);
-				return;
-			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
-				setAccountingFile((AccountingFile)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -342,12 +342,12 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 		switch (featureID) {
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__CODE_LISTS:
 				return codeLists != null;
+			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
+				return accountingFile != null;
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS:
 				return fareModells != null && !fareModells.isEmpty();
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY:
 				return workflowHistory != null;
-			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
-				return accountingFile != null;
 		}
 		return super.eIsSet(featureID);
 	}

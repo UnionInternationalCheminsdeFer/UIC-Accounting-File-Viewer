@@ -1,13 +1,15 @@
 package Accounting.actions;
 
 import java.math.BigDecimal;
-import java.sql.Date;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.SimpleTimeZone;
 
 import org.eclipse.emf.edit.domain.EditingDomain;
 
@@ -19,7 +21,6 @@ import Accounting.AccountingRecords;
 import Accounting.AccountingSubject;
 import Accounting.AccountingType;
 import Accounting.AccountingViewerData;
-import Accounting.AccountsType;
 import Accounting.Carrier;
 import Accounting.ClassicClassType;
 import Accounting.Country;
@@ -31,6 +32,7 @@ import Accounting.PaymentType;
 import Accounting.SalesChannel;
 import Accounting.SalesType;
 import Accounting.ServiceBrand;
+import Accounting.SettlementValueIndicator;
 import Accounting.Transaction;
 import Accounting.TransactionStandard;
 import Accounting.TransactionType;
@@ -133,7 +135,13 @@ public class AccountingJsonImporter {
 		
 		mObj.setAccountingDelivery(convert(jObj.getDeliveryDetails()));
 		
-		mObj.setAccountingRecords(convert(jObj.getAccountingRecords()));
+		try {
+			mObj.setAccountingRecords(convert(jObj.getAccountingRecords()));
+		} catch (ParseException e) {
+			AccountingUtils.writeConsoleError("Error in accounting record " + '\n'
+		            + e.getMessage() + '\n'
+					+ e.getStackTrace(), editor);
+		}
 	
 		return mObj;
 	}
@@ -142,7 +150,7 @@ public class AccountingJsonImporter {
 
 	
 
-	private AccountingRecords convert(List<AccountingRecord> jObjL) {
+	private AccountingRecords convert(List<AccountingRecord> jObjL) throws ParseException {
 		
 		AccountingRecords mObjL = AccountingFactory.eINSTANCE.createAccountingRecords();
 		
@@ -204,7 +212,7 @@ public class AccountingJsonImporter {
 	}
 
 
-	private AccountingSubject convert(Subject jObj) {
+	private AccountingSubject convert(Subject jObj) throws ParseException {
 		
 		if (jObj == null) return null;
 		
@@ -230,13 +238,24 @@ public class AccountingJsonImporter {
 		
 		mObj.setTrain(jObj.getTrain());
 		
-		mObj.setTravelDate(Date.valueOf(jObj.getTravelDate()));
-
-		mObj.getCarriers().addAll(convertCarriers(jObj.getCarriers()));
+		if (jObj.getTravelDate() != null) {
+			mObj.setTravelDate(convertDate(jObj.getTravelDate()));
+		}
+		if (jObj.getCarriers() != null && !jObj.getCarriers().isEmpty()) {
+			mObj.getCarriers().addAll(convertCarriers(jObj.getCarriers()));
+		}
 		
 		return mObj;
 	}
 
+
+	private Date convertDate(String travelDate) throws ParseException {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat();
+		sdf.setTimeZone(new SimpleTimeZone(0, "GMT"));
+		sdf.applyPattern("yyyy-MM-dd");
+		return sdf.parse(travelDate);
+	}
 
 	private Collection<Carrier> convertCarriers(List<String> jObjL) {
 		
@@ -283,8 +302,8 @@ public class AccountingJsonImporter {
 			
 			Accounting.AccountedAmount mObj = AccountingFactory.eINSTANCE.createAccountedAmount();
 					
-			if (jObj.getAccountingType() != null) {
-				mObj.setAccountsType(AccountsType.get(jObj.getAccountingType().value()));
+			if (jObj.getSettlementValueIndicator() != null) {
+				mObj.setSettlementValueIndicator(SettlementValueIndicator.get(jObj.getSettlementValueIndicator().value()));
 			}
 			
 			mObj.setCommission(jObj.getCommission());

@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link Accounting.AccountedAmount#getAccountsType <em>Accounts Type</em>}</li>
+ *   <li>{@link Accounting.AccountedAmount#getSettlementValueIndicator <em>Settlement Value Indicator</em>}</li>
  *   <li>{@link Accounting.AccountedAmount#isGrossAmount <em>Gross Amount</em>}</li>
  *   <li>{@link Accounting.AccountedAmount#isFee <em>Fee</em>}</li>
  *   <li>{@link Accounting.AccountedAmount#isCommission <em>Commission</em>}</li>
@@ -30,29 +30,29 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface AccountedAmount extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Accounts Type</b></em>' attribute.
-	 * The literals are from the enumeration {@link Accounting.AccountsType}.
+	 * Returns the value of the '<em><b>Settlement Value Indicator</b></em>' attribute.
+	 * The literals are from the enumeration {@link Accounting.SettlementValueIndicator}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Accounts Type</em>' attribute.
-	 * @see Accounting.AccountsType
-	 * @see #setAccountsType(AccountsType)
-	 * @see Accounting.AccountingPackage#getAccountedAmount_AccountsType()
+	 * @return the value of the '<em>Settlement Value Indicator</em>' attribute.
+	 * @see Accounting.SettlementValueIndicator
+	 * @see #setSettlementValueIndicator(SettlementValueIndicator)
+	 * @see Accounting.AccountingPackage#getAccountedAmount_SettlementValueIndicator()
 	 * @model
 	 * @generated
 	 */
-	AccountsType getAccountsType();
+	SettlementValueIndicator getSettlementValueIndicator();
 
 	/**
-	 * Sets the value of the '{@link Accounting.AccountedAmount#getAccountsType <em>Accounts Type</em>}' attribute.
+	 * Sets the value of the '{@link Accounting.AccountedAmount#getSettlementValueIndicator <em>Settlement Value Indicator</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Accounts Type</em>' attribute.
-	 * @see Accounting.AccountsType
-	 * @see #getAccountsType()
+	 * @param value the new value of the '<em>Settlement Value Indicator</em>' attribute.
+	 * @see Accounting.SettlementValueIndicator
+	 * @see #getSettlementValueIndicator()
 	 * @generated
 	 */
-	void setAccountsType(AccountsType value);
+	void setSettlementValueIndicator(SettlementValueIndicator value);
 
 	/**
 	 * Returns the value of the '<em><b>Gross Amount</b></em>' attribute.

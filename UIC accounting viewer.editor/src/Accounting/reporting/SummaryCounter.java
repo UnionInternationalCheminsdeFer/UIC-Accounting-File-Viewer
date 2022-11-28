@@ -11,27 +11,30 @@ public class SummaryCounter {
 	private String transactionType = null;
 	private String valueType = null;
 	private String comission = null; 
+	private String settlementIndicator = null;
 	
 	private BigDecimal amount = new BigDecimal(0);
 	private long numberOfRecords = 0;
 	
-	public SummaryCounter(Currency currency, String accountingType, String transactionType, String valueType, String comission) {
+	public SummaryCounter(Currency currency, String accountingType, String transactionType, String valueType, String comission, String settlementIndicator ) {
 		
 		this.accountingType = accountingType;
 		this.comission = comission;
 		this.transactionType = transactionType;
 		this.currency = currency;
 		this.valueType = valueType;
+		this.settlementIndicator = settlementIndicator;
 		
 	}
 	
 	
-	public boolean isCounterFor(Currency currency, String accountingType, String transactionType, String valueType, String comission){
+	public boolean isCounterFor(Currency currency, String accountingType, String transactionType, String valueType, String comission, String settlementIndicator){
 		
 		if ( 	this.accountingType.equals(accountingType) &&
 				this.comission.equals(comission) &&
 				this.transactionType.equals(transactionType) &&
 				this.currency.equals(currency) &&
+				this.settlementIndicator.equals(settlementIndicator) &&
 				this.valueType.equals(valueType) ){
 				return true;
 		}
@@ -40,9 +43,9 @@ public class SummaryCounter {
 		return false;
 	};
 	
-	public void updateCounter(Currency currency, String accountingType, String transactionType, String valueType, String comission, BigDecimal decimal) {
+	public void updateCounter(Currency currency, String accountingType, String transactionType, String valueType, String comission, String settlementIndicator, BigDecimal decimal) {
 		
-		if (!isCounterFor(currency,accountingType,transactionType,valueType,comission)) {
+		if (!isCounterFor(currency,accountingType,transactionType,valueType,comission, settlementIndicator)) {
 			return;
 		}
 			
@@ -63,6 +66,7 @@ public class SummaryCounter {
 		if (comission != null && comission.length() > 0) {
 			sb.append(" ").append(comission).append(" - ");
 		}
+		sb.append(" Settlement Indicator: ").append(settlementIndicator);
 		sb.append(" Number of Records: ").append(Long.toString(numberOfRecords));
 		sb.append(" - ");
 		sb.append(amount.toString());
