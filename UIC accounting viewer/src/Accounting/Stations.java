@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getStations()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AT_LEAST_ONE'"
+ * @model
  * @generated
  */
 public interface Stations extends EObject {
@@ -34,21 +34,5 @@ public interface Stations extends EObject {
 	 * @generated
 	 */
 	EList<Station> getStations();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model countryCodeUICDataType="org.eclipse.emf.ecore.xml.type.Int" localCodeDataType="org.eclipse.emf.ecore.xml.type.Int"
-	 * @generated
-	 */
-	Station findStation(int countryCodeUIC, int localCode);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model countryCodeUICDataType="org.eclipse.emf.ecore.xml.type.Int" localCodeDataType="org.eclipse.emf.ecore.xml.type.String"
-	 * @generated
-	 */
-	Station findStation(int countryCodeUIC, String localCode);
 
 } // Stations

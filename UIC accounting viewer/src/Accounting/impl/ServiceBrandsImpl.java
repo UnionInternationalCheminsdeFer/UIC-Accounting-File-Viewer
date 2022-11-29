@@ -5,9 +5,6 @@ package Accounting.impl;
 import Accounting.AccountingPackage;
 import Accounting.ServiceBrand;
 import Accounting.ServiceBrands;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -82,17 +79,6 @@ public class ServiceBrandsImpl extends MinimalEObjectImpl.Container implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ServiceBrand findServiceBRand(int code) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -160,20 +146,6 @@ public class ServiceBrandsImpl extends MinimalEObjectImpl.Container implements S
 				return serviceBrands != null && !serviceBrands.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case AccountingPackage.SERVICE_BRANDS___FIND_SERVICE_BRAND__INT:
-				return findServiceBRand((Integer)arguments.get(0));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //ServiceBrandsImpl

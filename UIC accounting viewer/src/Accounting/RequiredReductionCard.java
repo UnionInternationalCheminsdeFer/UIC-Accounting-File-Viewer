@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getRequiredReductionCard()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NAME_FORMAT CARD_MUST'"
+ * @model
  * @generated
  */
 public interface RequiredReductionCard extends EObject {

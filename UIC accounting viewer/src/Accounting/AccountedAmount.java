@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountedAmount()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AMOUNT_NOT_0 ONE_OF_GROSS_AND_FEE'"
  * @generated
  */
 public interface AccountedAmount extends EObject {

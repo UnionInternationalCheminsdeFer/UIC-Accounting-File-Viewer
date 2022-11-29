@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getCarrierConstraint()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='INCLUDE_OR_EXCLUDE'"
+ * @model
  * @generated
  */
 public interface CarrierConstraint extends EObject {

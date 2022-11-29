@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getRoute()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AT_LEAST_ONE_VIA'"
+ * @model
  * @generated
  */
 public interface Route extends EObject {

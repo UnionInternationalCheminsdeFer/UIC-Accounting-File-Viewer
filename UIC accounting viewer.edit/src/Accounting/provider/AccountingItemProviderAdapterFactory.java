@@ -664,29 +664,6 @@ public class AccountingItemProviderAdapterFactory extends AccountingAdapterFacto
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link Accounting.StationRelation} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected StationRelationItemProvider stationRelationItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link Accounting.StationRelation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createStationRelationAdapter() {
-		if (stationRelationItemProvider == null) {
-			stationRelationItemProvider = new StationRelationItemProvider(this);
-		}
-
-		return stationRelationItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link Accounting.Carrier} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3321,7 +3298,6 @@ public class AccountingItemProviderAdapterFactory extends AccountingAdapterFacto
 		if (currencyItemProvider != null) currencyItemProvider.dispose();
 		if (stationsItemProvider != null) stationsItemProvider.dispose();
 		if (stationItemProvider != null) stationItemProvider.dispose();
-		if (stationRelationItemProvider != null) stationRelationItemProvider.dispose();
 		if (carrierItemProvider != null) carrierItemProvider.dispose();
 		if (carriersItemProvider != null) carriersItemProvider.dispose();
 		if (stationSetItemProvider != null) stationSetItemProvider.dispose();

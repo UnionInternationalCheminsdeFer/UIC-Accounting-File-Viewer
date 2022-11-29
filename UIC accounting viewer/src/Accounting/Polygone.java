@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getPolygone()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AT_LEAST_THREE_EDGES'"
+ * @model
  * @generated
  */
 public interface Polygone extends EObject {

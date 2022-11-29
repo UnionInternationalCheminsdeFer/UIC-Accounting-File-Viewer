@@ -617,9 +617,6 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceBrands">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ServiceBrands/serviceBrands"/>
-      <genOperations ecoreOperation="UicAccountingViewer.ecore#//ServiceBrands/findServiceBRand">
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//ServiceBrands/findServiceBRand/code"/>
-      </genOperations>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//ServiceBrand">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ServiceBrand/code"/>
@@ -631,9 +628,6 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Countries">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Countries/countries"/>
-      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Countries/findCountry">
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Countries/findCountry/codeUic"/>
-      </genOperations>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Country">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Country/code"/>
@@ -650,9 +644,6 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Currencies">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Currencies/currencies"/>
-      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Currencies/findCurrency">
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Currencies/findCurrency/ISOcode"/>
-      </genOperations>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Currency">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Currency/name"/>
@@ -660,14 +651,6 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Stations">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Stations/stations"/>
-      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Stations/findStation">
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation/countryCodeUIC"/>
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation/localCode"/>
-      </genOperations>
-      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Stations/findStation.1">
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation.1/countryCodeUIC"/>
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Stations/findStation.1/localCode"/>
-      </genOperations>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Station">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/name"/>
@@ -682,12 +665,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/shortNameCaseASCII"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/shortNameCaseUTF8"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/legacyBorderPointCode"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Station/relations"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Station/stationCode"/>
-    </genClasses>
-    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationRelation">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//StationRelation/relationType"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationRelation/station"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Carrier">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Carrier/code"/>
@@ -696,9 +674,6 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Carriers">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Carriers/carriers"/>
-      <genOperations ecoreOperation="UicAccountingViewer.ecore#//Carriers/findCarrier">
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//Carriers/findCarrier/code"/>
-      </genOperations>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//StationSet">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationSet/stations"/>
@@ -765,9 +740,6 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//ConnectionPoints">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//ConnectionPoints/connectionPoints"/>
-      <genOperations ecoreOperation="UicAccountingViewer.ecore#//ConnectionPoints/findSimpleConnectionPoint">
-        <genParameters ecoreParameter="UicAccountingViewer.ecore#//ConnectionPoints/findSimpleConnectionPoint/station"/>
-      </genOperations>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//ConnectionPoint">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//ConnectionPoint/id"/>

@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getSalesRestriction()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='START_END_DATE_ORDER'"
+ * @model
  * @generated
  */
 public interface SalesRestriction extends EObject {

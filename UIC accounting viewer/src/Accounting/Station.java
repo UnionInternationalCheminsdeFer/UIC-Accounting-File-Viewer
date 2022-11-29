@@ -2,8 +2,6 @@
  */
 package Accounting;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -27,12 +25,11 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Accounting.Station#getShortNameCaseASCII <em>Short Name Case ASCII</em>}</li>
  *   <li>{@link Accounting.Station#getShortNameCaseUTF8 <em>Short Name Case UTF8</em>}</li>
  *   <li>{@link Accounting.Station#getLegacyBorderPointCode <em>Legacy Border Point Code</em>}</li>
- *   <li>{@link Accounting.Station#getRelations <em>Relations</em>}</li>
  *   <li>{@link Accounting.Station#getStationCode <em>Station Code</em>}</li>
  * </ul>
  *
  * @see Accounting.AccountingPackage#getStation()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NAME_FORMAT NAME_CASE_UTF8_FORMAT NAME_CASE_ASCII_FORMAT SHORT_NAME_CASE_ASCII_FORMAT SHORT_NAME_CASE_UTF8_FORMAT TT_NAME_FORMAT LATITUDE_VALUE_RANGE LONGITUDE_VALUE_RANGE COUNTRY_MUST'"
+ * @model
  * @generated
  */
 public interface Station extends EObject {
@@ -299,18 +296,6 @@ public interface Station extends EObject {
 	 * @generated
 	 */
 	void setLegacyBorderPointCode(int value);
-
-	/**
-	 * Returns the value of the '<em><b>Relations</b></em>' containment reference list.
-	 * The list contents are of type {@link Accounting.StationRelation}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Relations</em>' containment reference list.
-	 * @see Accounting.AccountingPackage#getStation_Relations()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<StationRelation> getRelations();
 
 	/**
 	 * Returns the value of the '<em><b>Station Code</b></em>' attribute.

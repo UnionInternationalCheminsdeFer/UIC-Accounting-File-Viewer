@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getPassengerConstraint()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='TRAVELLER_TYPE_MUST NAME_MUST NOT_REFERENCED'"
+ * @model
  * @generated
  */
 public interface PassengerConstraint extends EObject {

@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getEdge()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='COORDINATE_LIMITS'"
+ * @model
  * @generated
  */
 public interface Edge extends EObject {

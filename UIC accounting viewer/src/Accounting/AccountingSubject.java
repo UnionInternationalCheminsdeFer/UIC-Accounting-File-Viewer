@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountingSubject()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='MUST_NUMBER'"
  * @generated
  */
 public interface AccountingSubject extends EObject {

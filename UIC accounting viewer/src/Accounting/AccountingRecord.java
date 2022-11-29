@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountingRecord()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='ID_MUST MUST_TRANSACTION MUST_SUBJECT MUST_ACCOUNTED_AMOUNTS'"
  * @generated
  */
 public interface AccountingRecord extends EObject {
@@ -34,7 +34,7 @@ public interface AccountingRecord extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(String)
 	 * @see Accounting.AccountingPackage#getAccountingRecord_Id()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getId();
@@ -58,7 +58,7 @@ public interface AccountingRecord extends EObject {
 	 * @see Accounting.SalesType
 	 * @see #setSalesType(SalesType)
 	 * @see Accounting.AccountingPackage#getAccountingRecord_SalesType()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	SalesType getSalesType();
@@ -83,7 +83,7 @@ public interface AccountingRecord extends EObject {
 	 * @see Accounting.AccountingType
 	 * @see #setAccountingType(AccountingType)
 	 * @see Accounting.AccountingPackage#getAccountingRecord_AccountingType()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	AccountingType getAccountingType();
@@ -131,7 +131,7 @@ public interface AccountingRecord extends EObject {
 	 * @return the value of the '<em>Transaction</em>' containment reference.
 	 * @see #setTransaction(Transaction)
 	 * @see Accounting.AccountingPackage#getAccountingRecord_Transaction()
-	 * @model containment="true"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
 	Transaction getTransaction();

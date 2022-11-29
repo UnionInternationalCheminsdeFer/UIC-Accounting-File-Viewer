@@ -46,7 +46,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getFareElement()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='TYPE_MUST PRICE_MUST TEXT_MUST SERVICE_CLASS_MUST PASSENGER_CONSTRAINT_MUST LEGACY_ACCOUNTING_MISSING CONVERSION_MISSING BUNDLE_MUST'"
+ * @model
  * @generated
  */
 public interface FareElement extends EObject {

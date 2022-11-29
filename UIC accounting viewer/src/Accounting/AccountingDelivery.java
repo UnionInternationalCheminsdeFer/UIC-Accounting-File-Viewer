@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountingDelivery()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='MUST_INCLUDE_PARTIES MUST_INCLUDE_TIME END_BEFORE_START ID_MUST'"
  * @generated
  */
 public interface AccountingDelivery extends EObject {
@@ -58,7 +58,7 @@ public interface AccountingDelivery extends EObject {
 	 * @return the value of the '<em>Creation Date</em>' attribute.
 	 * @see #setCreationDate(Date)
 	 * @see Accounting.AccountingPackage#getAccountingDelivery_CreationDate()
-	 * @model dataType="Accounting.DateAsDateTime"
+	 * @model dataType="Accounting.DateAsDateTime" required="true"
 	 * @generated
 	 */
 	Date getCreationDate();
@@ -170,7 +170,7 @@ public interface AccountingDelivery extends EObject {
 	 * @see Accounting.PaymentType
 	 * @see #setPaymentType(PaymentType)
 	 * @see Accounting.AccountingPackage#getAccountingDelivery_PaymentType()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	PaymentType getPaymentType();

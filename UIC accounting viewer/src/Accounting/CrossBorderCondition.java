@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getCrossBorderCondition()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='FROM_TO_COUNTRY_MUST'"
+ * @model
  * @generated
  */
 public interface CrossBorderCondition extends EObject {

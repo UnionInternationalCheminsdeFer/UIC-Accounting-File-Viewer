@@ -5,9 +5,6 @@ package Accounting.impl;
 import Accounting.AccountingPackage;
 import Accounting.Countries;
 import Accounting.Country;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -82,17 +79,6 @@ public class CountriesImpl extends MinimalEObjectImpl.Container implements Count
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Country findCountry(int codeUic) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -160,20 +146,6 @@ public class CountriesImpl extends MinimalEObjectImpl.Container implements Count
 				return countries != null && !countries.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case AccountingPackage.COUNTRIES___FIND_COUNTRY__INT:
-				return findCountry((Integer)arguments.get(0));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //CountriesImpl

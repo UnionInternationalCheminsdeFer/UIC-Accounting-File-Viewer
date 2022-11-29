@@ -5,9 +5,6 @@ package Accounting.impl;
 import Accounting.AccountingPackage;
 import Accounting.Currencies;
 import Accounting.Currency;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -82,17 +79,6 @@ public class CurrenciesImpl extends MinimalEObjectImpl.Container implements Curr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Currency findCurrency(String ISOcode) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -160,20 +146,6 @@ public class CurrenciesImpl extends MinimalEObjectImpl.Container implements Curr
 				return currencies != null && !currencies.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case AccountingPackage.CURRENCIES___FIND_CURRENCY__STRING:
-				return findCurrency((String)arguments.get(0));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //CurrenciesImpl

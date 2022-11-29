@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getIncludedFreePassengerLimit()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NUMBER_AT_LEAST_ONE TRAVELLER_TYPE_MUST SIMPLE_PASSENGER_CONSTRAINT_ONLY'"
+ * @model
  * @generated
  */
 public interface IncludedFreePassengerLimit extends EObject {

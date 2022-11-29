@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getFulfillmentConstraint()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AT_LEAST_ONE_ACCEPTED_TYPE NOT_REFERENCED'"
+ * @model
  * @generated
  */
 public interface FulfillmentConstraint extends EObject {

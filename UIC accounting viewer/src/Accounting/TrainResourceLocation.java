@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getTrainResourceLocation()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='CARRIER_MUST AT_LEAST_ONE_ONLINE_RESOURCE'"
+ * @model
  * @generated
  */
 public interface TrainResourceLocation extends EObject {

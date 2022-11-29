@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getServiceConstraint()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='INCLUDE_OR_EXCLUDE LEGACY_CODE_RANGE'"
+ * @model
  * @generated
  */
 public interface ServiceConstraint extends EObject {

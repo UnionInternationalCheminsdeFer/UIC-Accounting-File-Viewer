@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getTransaction()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='BOOKING_OR_TICKET'"
  * @generated
  */
 public interface Transaction extends EObject {

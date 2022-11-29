@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getCountries()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AT_LEAST_ONE'"
+ * @model
  * @generated
  */
 public interface Countries extends EObject {
@@ -34,13 +34,5 @@ public interface Countries extends EObject {
 	 * @generated
 	 */
 	EList<Country> getCountries();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model codeUicDataType="org.eclipse.emf.ecore.xml.type.Int"
-	 * @generated
-	 */
-	Country findCountry(int codeUic);
 
 } // Countries

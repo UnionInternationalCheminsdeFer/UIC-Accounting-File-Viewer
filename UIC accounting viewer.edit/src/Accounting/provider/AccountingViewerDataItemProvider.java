@@ -78,9 +78,9 @@ public class AccountingViewerDataItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__CODE_LISTS);
+			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE);
 			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__FARE_MODELLS);
 			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY);
-			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE);
 		}
 		return childrenFeatures;
 	}
@@ -134,9 +134,9 @@ public class AccountingViewerDataItemProvider
 
 		switch (notification.getFeatureID(AccountingViewerData.class)) {
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__CODE_LISTS:
+			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS:
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY:
-			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -161,6 +161,11 @@ public class AccountingViewerDataItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE,
+				 AccountingFactory.eINSTANCE.createAccountingFile()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__FARE_MODELLS,
 				 AccountingFactory.eINSTANCE.createGeneralTariffModel()));
 
@@ -168,11 +173,6 @@ public class AccountingViewerDataItemProvider
 			(createChildParameter
 				(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY,
 				 AccountingFactory.eINSTANCE.createWorkflowHistory()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE,
-				 AccountingFactory.eINSTANCE.createAccountingFile()));
 	}
 
 	/**

@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getReductionCard()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='ISUER_MUST_FOR_NON_GENERIC NOT_REFERENCED CARD_ID_FORMAT'"
+ * @model
  * @generated
  */
 public interface ReductionCard extends EObject {

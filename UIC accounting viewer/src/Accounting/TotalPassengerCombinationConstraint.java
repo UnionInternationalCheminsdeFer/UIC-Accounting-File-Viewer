@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getTotalPassengerCombinationConstraint()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='MIN_MAX_MUST NOT_REFERENCED'"
+ * @model
  * @generated
  */
 public interface TotalPassengerCombinationConstraint extends EObject {

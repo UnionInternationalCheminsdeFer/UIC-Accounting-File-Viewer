@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getLegacyDescription()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='NOT_EMPTY SERIES_RANGE TARIFF_RANGE'"
  * @generated
  */
 public interface LegacyDescription extends EObject {

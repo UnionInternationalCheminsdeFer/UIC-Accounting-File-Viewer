@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getServiceClass()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='TEXT_MUST CLASSIC_CLASS_MUST'"
+ * @model
  * @generated
  */
 public interface ServiceClass extends EObject {

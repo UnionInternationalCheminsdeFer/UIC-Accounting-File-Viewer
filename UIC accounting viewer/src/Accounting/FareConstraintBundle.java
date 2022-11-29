@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getFareConstraintBundle()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='SALES_AVAILABILITY_MUST TRAVEL_VALIDITY_MUST FULFILLMENT_CONSTRAINT_MUST COMBINATION_CONSTRAINT_MUST TOTAL_PASSENGER_CONSTRAINT_WARNING NOT_REFERENCED'"
+ * @model
  * @generated
  */
 public interface FareConstraintBundle extends EObject {
