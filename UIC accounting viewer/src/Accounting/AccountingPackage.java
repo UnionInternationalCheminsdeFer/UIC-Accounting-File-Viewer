@@ -1094,22 +1094,13 @@ public interface AccountingPackage extends EPackage {
 	int SERVICE_BRANDS_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Find Service BRand</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SERVICE_BRANDS___FIND_SERVICE_BRAND__INT = 0;
-
-	/**
 	 * The number of operations of the '<em>Service Brands</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_BRANDS_OPERATION_COUNT = 1;
+	int SERVICE_BRANDS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.ServiceBrandImpl <em>Service Brand</em>}' class.
@@ -1222,22 +1213,13 @@ public interface AccountingPackage extends EPackage {
 	int COUNTRIES_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Find Country</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COUNTRIES___FIND_COUNTRY__INT = 0;
-
-	/**
 	 * The number of operations of the '<em>Countries</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COUNTRIES_OPERATION_COUNT = 1;
+	int COUNTRIES_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.CountryImpl <em>Country</em>}' class.
@@ -1415,22 +1397,13 @@ public interface AccountingPackage extends EPackage {
 	int CURRENCIES_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Find Currency</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CURRENCIES___FIND_CURRENCY__STRING = 0;
-
-	/**
 	 * The number of operations of the '<em>Currencies</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CURRENCIES_OPERATION_COUNT = 1;
+	int CURRENCIES_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.CurrencyImpl <em>Currency</em>}' class.
@@ -1507,31 +1480,13 @@ public interface AccountingPackage extends EPackage {
 	int STATIONS_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Find Station</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATIONS___FIND_STATION__INT_INT = 0;
-
-	/**
-	 * The operation id for the '<em>Find Station</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATIONS___FIND_STATION__INT_STRING = 1;
-
-	/**
 	 * The number of operations of the '<em>Stations</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATIONS_OPERATION_COUNT = 2;
+	int STATIONS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.StationImpl <em>Station</em>}' class.
@@ -1652,22 +1607,13 @@ public interface AccountingPackage extends EPackage {
 	int STATION__LEGACY_BORDER_POINT_CODE = 11;
 
 	/**
-	 * The feature id for the '<em><b>Relations</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION__RELATIONS = 12;
-
-	/**
 	 * The feature id for the '<em><b>Station Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int STATION__STATION_CODE = 13;
+	int STATION__STATION_CODE = 12;
 
 	/**
 	 * The number of structural features of the '<em>Station</em>' class.
@@ -1676,7 +1622,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STATION_FEATURE_COUNT = 14;
+	int STATION_FEATURE_COUNT = 13;
 
 	/**
 	 * The number of operations of the '<em>Station</em>' class.
@@ -1688,52 +1634,6 @@ public interface AccountingPackage extends EPackage {
 	int STATION_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Accounting.impl.StationRelationImpl <em>Station Relation</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see Accounting.impl.StationRelationImpl
-	 * @see Accounting.impl.AccountingPackageImpl#getStationRelation()
-	 * @generated
-	 */
-	int STATION_RELATION = 25;
-
-	/**
-	 * The feature id for the '<em><b>Relation Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION_RELATION__RELATION_TYPE = 0;
-
-	/**
-	 * The feature id for the '<em><b>Station</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION_RELATION__STATION = 1;
-
-	/**
-	 * The number of structural features of the '<em>Station Relation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION_RELATION_FEATURE_COUNT = 2;
-
-	/**
-	 * The number of operations of the '<em>Station Relation</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION_RELATION_OPERATION_COUNT = 0;
-
-	/**
 	 * The meta object id for the '{@link Accounting.impl.CarrierImpl <em>Carrier</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1741,7 +1641,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCarrier()
 	 * @generated
 	 */
-	int CARRIER = 26;
+	int CARRIER = 25;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' attribute.
@@ -1796,7 +1696,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCarriers()
 	 * @generated
 	 */
-	int CARRIERS = 27;
+	int CARRIERS = 26;
 
 	/**
 	 * The feature id for the '<em><b>Carriers</b></em>' containment reference list.
@@ -1817,22 +1717,13 @@ public interface AccountingPackage extends EPackage {
 	int CARRIERS_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Find Carrier</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CARRIERS___FIND_CARRIER__STRING = 0;
-
-	/**
 	 * The number of operations of the '<em>Carriers</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIERS_OPERATION_COUNT = 1;
+	int CARRIERS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.StationSetImpl <em>Station Set</em>}' class.
@@ -1842,7 +1733,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStationSet()
 	 * @generated
 	 */
-	int STATION_SET = 28;
+	int STATION_SET = 27;
 
 	/**
 	 * The feature id for the '<em><b>Stations</b></em>' reference list.
@@ -1879,7 +1770,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getGeneralTariffModel()
 	 * @generated
 	 */
-	int GENERAL_TARIFF_MODEL = 29;
+	int GENERAL_TARIFF_MODEL = 28;
 
 	/**
 	 * The feature id for the '<em><b>Delivery</b></em>' containment reference.
@@ -1925,7 +1816,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getDelivery()
 	 * @generated
 	 */
-	int DELIVERY = 30;
+	int DELIVERY = 29;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2025,7 +1916,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAfterSalesRules()
 	 * @generated
 	 */
-	int AFTER_SALES_RULES = 31;
+	int AFTER_SALES_RULES = 30;
 
 	/**
 	 * The feature id for the '<em><b>After Sales Rules</b></em>' containment reference list.
@@ -2062,7 +1953,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAfterSalesRule()
 	 * @generated
 	 */
-	int AFTER_SALES_RULE = 32;
+	int AFTER_SALES_RULE = 31;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2117,7 +2008,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAfterSalesCondition()
 	 * @generated
 	 */
-	int AFTER_SALES_CONDITION = 33;
+	int AFTER_SALES_CONDITION = 32;
 
 	/**
 	 * The feature id for the '<em><b>Transaction Type</b></em>' attribute.
@@ -2190,7 +2081,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRelativeTime()
 	 * @generated
 	 */
-	int RELATIVE_TIME = 107;
+	int RELATIVE_TIME = 106;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -2245,7 +2136,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getApplicationTime()
 	 * @generated
 	 */
-	int APPLICATION_TIME = 34;
+	int APPLICATION_TIME = 33;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -2300,7 +2191,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareStructure()
 	 * @generated
 	 */
-	int FARE_STRUCTURE = 35;
+	int FARE_STRUCTURE = 34;
 
 	/**
 	 * The feature id for the '<em><b>Service Class Definitions</b></em>' containment reference.
@@ -2580,7 +2471,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getConnectionPoints()
 	 * @generated
 	 */
-	int CONNECTION_POINTS = 36;
+	int CONNECTION_POINTS = 35;
 
 	/**
 	 * The feature id for the '<em><b>Connection Points</b></em>' containment reference list.
@@ -2601,22 +2492,13 @@ public interface AccountingPackage extends EPackage {
 	int CONNECTION_POINTS_FEATURE_COUNT = 1;
 
 	/**
-	 * The operation id for the '<em>Find Simple Connection Point</em>' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CONNECTION_POINTS___FIND_SIMPLE_CONNECTION_POINT__STATION = 0;
-
-	/**
 	 * The number of operations of the '<em>Connection Points</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTION_POINTS_OPERATION_COUNT = 1;
+	int CONNECTION_POINTS_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.ConnectionPointImpl <em>Connection Point</em>}' class.
@@ -2626,7 +2508,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getConnectionPoint()
 	 * @generated
 	 */
-	int CONNECTION_POINT = 37;
+	int CONNECTION_POINT = 36;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -2717,7 +2599,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareResourceLocations()
 	 * @generated
 	 */
-	int FARE_RESOURCE_LOCATIONS = 38;
+	int FARE_RESOURCE_LOCATIONS = 37;
 
 	/**
 	 * The feature id for the '<em><b>Train Resource Locations</b></em>' containment reference.
@@ -2772,7 +2654,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTrainResourceLocations()
 	 * @generated
 	 */
-	int TRAIN_RESOURCE_LOCATIONS = 39;
+	int TRAIN_RESOURCE_LOCATIONS = 38;
 
 	/**
 	 * The feature id for the '<em><b>Train Resource Locations</b></em>' containment reference list.
@@ -2809,7 +2691,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStationResourceLocations()
 	 * @generated
 	 */
-	int STATION_RESOURCE_LOCATIONS = 40;
+	int STATION_RESOURCE_LOCATIONS = 39;
 
 	/**
 	 * The feature id for the '<em><b>Station Resource Locations</b></em>' containment reference list.
@@ -2846,7 +2728,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCarrierResourceLocations()
 	 * @generated
 	 */
-	int CARRIER_RESOURCE_LOCATIONS = 41;
+	int CARRIER_RESOURCE_LOCATIONS = 40;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Resource Locations</b></em>' containment reference list.
@@ -2883,7 +2765,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTrainResourceLocation()
 	 * @generated
 	 */
-	int TRAIN_RESOURCE_LOCATION = 42;
+	int TRAIN_RESOURCE_LOCATION = 41;
 
 	/**
 	 * The feature id for the '<em><b>Carrier</b></em>' reference.
@@ -2938,7 +2820,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStationResourceLocation()
 	 * @generated
 	 */
-	int STATION_RESOURCE_LOCATION = 43;
+	int STATION_RESOURCE_LOCATION = 42;
 
 	/**
 	 * The feature id for the '<em><b>Online Resources</b></em>' containment reference list.
@@ -2993,7 +2875,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCarrierResourceLocation()
 	 * @generated
 	 */
-	int CARRIER_RESOURCE_LOCATION = 44;
+	int CARRIER_RESOURCE_LOCATION = 43;
 
 	/**
 	 * The feature id for the '<em><b>Carrier</b></em>' reference.
@@ -3048,7 +2930,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getOnlineResource()
 	 * @generated
 	 */
-	int ONLINE_RESOURCE = 45;
+	int ONLINE_RESOURCE = 44;
 
 	/**
 	 * The feature id for the '<em><b>Offer Request Type</b></em>' attribute.
@@ -3112,7 +2994,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFulfillmentConstraints()
 	 * @generated
 	 */
-	int FULFILLMENT_CONSTRAINTS = 46;
+	int FULFILLMENT_CONSTRAINTS = 45;
 
 	/**
 	 * The feature id for the '<em><b>Fulfillment Constraints</b></em>' containment reference list.
@@ -3149,7 +3031,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFulfillmentConstraint()
 	 * @generated
 	 */
-	int FULFILLMENT_CONSTRAINT = 47;
+	int FULFILLMENT_CONSTRAINT = 46;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3267,7 +3149,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRequiredBarcodes()
 	 * @generated
 	 */
-	int REQUIRED_BARCODES = 48;
+	int REQUIRED_BARCODES = 47;
 
 	/**
 	 * The feature id for the '<em><b>Required Barcodes</b></em>' attribute list.
@@ -3304,7 +3186,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAcceptedBarcodes()
 	 * @generated
 	 */
-	int ACCEPTED_BARCODES = 49;
+	int ACCEPTED_BARCODES = 48;
 
 	/**
 	 * The feature id for the '<em><b>Accepted Barcodes</b></em>' attribute list.
@@ -3341,7 +3223,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSupportedOnlineServices()
 	 * @generated
 	 */
-	int SUPPORTED_ONLINE_SERVICES = 50;
+	int SUPPORTED_ONLINE_SERVICES = 49;
 
 	/**
 	 * The feature id for the '<em><b>Supported Online Services</b></em>' attribute list.
@@ -3378,7 +3260,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStationNames()
 	 * @generated
 	 */
-	int STATION_NAMES = 51;
+	int STATION_NAMES = 50;
 
 	/**
 	 * The feature id for the '<em><b>Station Name</b></em>' reference list.
@@ -3415,7 +3297,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareElements()
 	 * @generated
 	 */
-	int FARE_ELEMENTS = 52;
+	int FARE_ELEMENTS = 51;
 
 	/**
 	 * The feature id for the '<em><b>Fare Elements</b></em>' containment reference list.
@@ -3452,7 +3334,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareElement()
 	 * @generated
 	 */
-	int FARE_ELEMENT = 53;
+	int FARE_ELEMENT = 52;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3732,7 +3614,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTotalPassengerCombinationConstraints()
 	 * @generated
 	 */
-	int TOTAL_PASSENGER_COMBINATION_CONSTRAINTS = 54;
+	int TOTAL_PASSENGER_COMBINATION_CONSTRAINTS = 53;
 
 	/**
 	 * The feature id for the '<em><b>Total Passenger Combination Constraint</b></em>' containment reference list.
@@ -3769,7 +3651,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTotalPassengerCombinationConstraint()
 	 * @generated
 	 */
-	int TOTAL_PASSENGER_COMBINATION_CONSTRAINT = 55;
+	int TOTAL_PASSENGER_COMBINATION_CONSTRAINT = 54;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -3833,7 +3715,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareConstraintBundles()
 	 * @generated
 	 */
-	int FARE_CONSTRAINT_BUNDLES = 56;
+	int FARE_CONSTRAINT_BUNDLES = 55;
 
 	/**
 	 * The feature id for the '<em><b>Fare Constraint Bundles</b></em>' containment reference list.
@@ -3870,7 +3752,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareConstraintBundle()
 	 * @generated
 	 */
-	int FARE_CONSTRAINT_BUNDLE = 57;
+	int FARE_CONSTRAINT_BUNDLE = 56;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4024,7 +3906,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareStationSetDefinitions()
 	 * @generated
 	 */
-	int FARE_STATION_SET_DEFINITIONS = 58;
+	int FARE_STATION_SET_DEFINITIONS = 57;
 
 	/**
 	 * The feature id for the '<em><b>Fare Station Set Definitions</b></em>' containment reference list.
@@ -4070,7 +3952,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareStationSetDefinition()
 	 * @generated
 	 */
-	int FARE_STATION_SET_DEFINITION = 59;
+	int FARE_STATION_SET_DEFINITION = 58;
 
 	/**
 	 * The feature id for the '<em><b>Data Source</b></em>' attribute.
@@ -4170,7 +4052,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLegacyAccountingIdentifier()
 	 * @generated
 	 */
-	int LEGACY_ACCOUNTING_IDENTIFIER = 60;
+	int LEGACY_ACCOUNTING_IDENTIFIER = 59;
 
 	/**
 	 * The feature id for the '<em><b>Series Id</b></em>' attribute.
@@ -4225,7 +4107,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPersonalDataConstraints()
 	 * @generated
 	 */
-	int PERSONAL_DATA_CONSTRAINTS = 61;
+	int PERSONAL_DATA_CONSTRAINTS = 60;
 
 	/**
 	 * The feature id for the '<em><b>Personal Data Constraints</b></em>' containment reference list.
@@ -4262,7 +4144,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPersonalDataConstraint()
 	 * @generated
 	 */
-	int PERSONAL_DATA_CONSTRAINT = 62;
+	int PERSONAL_DATA_CONSTRAINT = 61;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4317,7 +4199,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRequiredPersonalData()
 	 * @generated
 	 */
-	int REQUIRED_PERSONAL_DATA = 63;
+	int REQUIRED_PERSONAL_DATA = 62;
 
 	/**
 	 * The feature id for the '<em><b>Ticket Holder Only</b></em>' attribute.
@@ -4390,7 +4272,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAllowedPersonalDataChanges()
 	 * @generated
 	 */
-	int ALLOWED_PERSONAL_DATA_CHANGES = 64;
+	int ALLOWED_PERSONAL_DATA_CHANGES = 63;
 
 	/**
 	 * The feature id for the '<em><b>Time Limit</b></em>' attribute.
@@ -4436,7 +4318,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPassengerConstraints()
 	 * @generated
 	 */
-	int PASSENGER_CONSTRAINTS = 65;
+	int PASSENGER_CONSTRAINTS = 64;
 
 	/**
 	 * The feature id for the '<em><b>Passenger Constraints</b></em>' containment reference list.
@@ -4473,7 +4355,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPassengerConstraint()
 	 * @generated
 	 */
-	int PASSENGER_CONSTRAINT = 66;
+	int PASSENGER_CONSTRAINT = 65;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4636,7 +4518,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPassengerCombinationConstraint()
 	 * @generated
 	 */
-	int PASSENGER_COMBINATION_CONSTRAINT = 67;
+	int PASSENGER_COMBINATION_CONSTRAINT = 66;
 
 	/**
 	 * The feature id for the '<em><b>Max Number</b></em>' attribute.
@@ -4700,7 +4582,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getIncludedFreePassengerLimit()
 	 * @generated
 	 */
-	int INCLUDED_FREE_PASSENGER_LIMIT = 68;
+	int INCLUDED_FREE_PASSENGER_LIMIT = 67;
 
 	/**
 	 * The feature id for the '<em><b>Number</b></em>' attribute.
@@ -4755,7 +4637,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCombinationConstraints()
 	 * @generated
 	 */
-	int COMBINATION_CONSTRAINTS = 69;
+	int COMBINATION_CONSTRAINTS = 68;
 
 	/**
 	 * The feature id for the '<em><b>Combination Constraints</b></em>' containment reference list.
@@ -4792,7 +4674,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCombinationConstraint()
 	 * @generated
 	 */
-	int COMBINATION_CONSTRAINT = 70;
+	int COMBINATION_CONSTRAINT = 69;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -4847,7 +4729,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTravelValidityConstraints()
 	 * @generated
 	 */
-	int TRAVEL_VALIDITY_CONSTRAINTS = 71;
+	int TRAVEL_VALIDITY_CONSTRAINTS = 70;
 
 	/**
 	 * The feature id for the '<em><b>Travel Validity Constraints</b></em>' containment reference list.
@@ -4884,7 +4766,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTravelValidityConstraint()
 	 * @generated
 	 */
-	int TRAVEL_VALIDITY_CONSTRAINT = 72;
+	int TRAVEL_VALIDITY_CONSTRAINT = 71;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5011,7 +4893,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTrainValidity()
 	 * @generated
 	 */
-	int TRAIN_VALIDITY = 73;
+	int TRAIN_VALIDITY = 72;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Constraint</b></em>' reference.
@@ -5066,7 +4948,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSalesAvailabilityConstraints()
 	 * @generated
 	 */
-	int SALES_AVAILABILITY_CONSTRAINTS = 74;
+	int SALES_AVAILABILITY_CONSTRAINTS = 73;
 
 	/**
 	 * The feature id for the '<em><b>Sales Availability Constraints</b></em>' containment reference list.
@@ -5103,7 +4985,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSalesAvailabilityConstraint()
 	 * @generated
 	 */
-	int SALES_AVAILABILITY_CONSTRAINT = 75;
+	int SALES_AVAILABILITY_CONSTRAINT = 74;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5167,7 +5049,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSalesRestriction()
 	 * @generated
 	 */
-	int SALES_RESTRICTION = 76;
+	int SALES_RESTRICTION = 75;
 
 	/**
 	 * The feature id for the '<em><b>Sales Dates</b></em>' reference.
@@ -5222,7 +5104,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getEndOfSale()
 	 * @generated
 	 */
-	int END_OF_SALE = 77;
+	int END_OF_SALE = 76;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -5277,7 +5159,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStartOfSale()
 	 * @generated
 	 */
-	int START_OF_SALE = 78;
+	int START_OF_SALE = 77;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -5332,7 +5214,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCarrierConstraints()
 	 * @generated
 	 */
-	int CARRIER_CONSTRAINTS = 79;
+	int CARRIER_CONSTRAINTS = 78;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Constraints</b></em>' containment reference list.
@@ -5369,7 +5251,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCarrierConstraint()
 	 * @generated
 	 */
-	int CARRIER_CONSTRAINT = 80;
+	int CARRIER_CONSTRAINT = 79;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5442,7 +5324,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getServiceConstraints()
 	 * @generated
 	 */
-	int SERVICE_CONSTRAINTS = 81;
+	int SERVICE_CONSTRAINTS = 80;
 
 	/**
 	 * The feature id for the '<em><b>Service Constraints</b></em>' containment reference list.
@@ -5479,7 +5361,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getServiceConstraint()
 	 * @generated
 	 */
-	int SERVICE_CONSTRAINT = 82;
+	int SERVICE_CONSTRAINT = 81;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5561,7 +5443,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRegionalConstraints()
 	 * @generated
 	 */
-	int REGIONAL_CONSTRAINTS = 83;
+	int REGIONAL_CONSTRAINTS = 82;
 
 	/**
 	 * The feature id for the '<em><b>Regional Constraints</b></em>' containment reference list.
@@ -5598,7 +5480,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRegionalConstraint()
 	 * @generated
 	 */
-	int REGIONAL_CONSTRAINT = 84;
+	int REGIONAL_CONSTRAINT = 83;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5698,7 +5580,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRegionalValidity()
 	 * @generated
 	 */
-	int REGIONAL_VALIDITY = 85;
+	int REGIONAL_VALIDITY = 84;
 
 	/**
 	 * The feature id for the '<em><b>Seq Nb</b></em>' attribute.
@@ -5789,7 +5671,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getServiceLevelDefinitions()
 	 * @generated
 	 */
-	int SERVICE_LEVEL_DEFINITIONS = 86;
+	int SERVICE_LEVEL_DEFINITIONS = 85;
 
 	/**
 	 * The feature id for the '<em><b>Service Level Definition</b></em>' containment reference list.
@@ -5826,7 +5708,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTexts()
 	 * @generated
 	 */
-	int TEXTS = 87;
+	int TEXTS = 86;
 
 	/**
 	 * The feature id for the '<em><b>Texts</b></em>' containment reference list.
@@ -5863,7 +5745,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getText()
 	 * @generated
 	 */
-	int TEXT = 88;
+	int TEXT = 87;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -5963,7 +5845,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTranslation()
 	 * @generated
 	 */
-	int TRANSLATION = 89;
+	int TRANSLATION = 88;
 
 	/**
 	 * The feature id for the '<em><b>Language</b></em>' reference.
@@ -6036,7 +5918,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPrices()
 	 * @generated
 	 */
-	int PRICES = 90;
+	int PRICES = 89;
 
 	/**
 	 * The feature id for the '<em><b>Prices</b></em>' containment reference list.
@@ -6073,7 +5955,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPrice()
 	 * @generated
 	 */
-	int PRICE = 91;
+	int PRICE = 90;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6128,7 +6010,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getVATDetail()
 	 * @generated
 	 */
-	int VAT_DETAIL = 92;
+	int VAT_DETAIL = 91;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -6201,7 +6083,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCurrencyPrice()
 	 * @generated
 	 */
-	int CURRENCY_PRICE = 93;
+	int CURRENCY_PRICE = 92;
 
 	/**
 	 * The feature id for the '<em><b>Currency</b></em>' reference.
@@ -6256,7 +6138,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getServiceClassDefinitions()
 	 * @generated
 	 */
-	int SERVICE_CLASS_DEFINITIONS = 94;
+	int SERVICE_CLASS_DEFINITIONS = 93;
 
 	/**
 	 * The feature id for the '<em><b>Service Class Definitions</b></em>' containment reference list.
@@ -6293,7 +6175,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCalendars()
 	 * @generated
 	 */
-	int CALENDARS = 95;
+	int CALENDARS = 94;
 
 	/**
 	 * The feature id for the '<em><b>Calendars</b></em>' containment reference list.
@@ -6330,7 +6212,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCalendar()
 	 * @generated
 	 */
-	int CALENDAR = 96;
+	int CALENDAR = 95;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -6439,7 +6321,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationParameters()
 	 * @generated
 	 */
-	int RESERVATION_PARAMETERS = 97;
+	int RESERVATION_PARAMETERS = 96;
 
 	/**
 	 * The feature id for the '<em><b>Reservation Parameters</b></em>' containment reference list.
@@ -6476,7 +6358,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationParameter()
 	 * @generated
 	 */
-	int RESERVATION_PARAMETER = 98;
+	int RESERVATION_PARAMETER = 97;
 
 	/**
 	 * The feature id for the '<em><b>Mandatory Reservation</b></em>' attribute.
@@ -6558,7 +6440,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationParams9181()
 	 * @generated
 	 */
-	int RESERVATION_PARAMS9181 = 99;
+	int RESERVATION_PARAMS9181 = 98;
 
 	/**
 	 * The feature id for the '<em><b>Travel Class</b></em>' attribute.
@@ -6649,7 +6531,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationOptions()
 	 * @generated
 	 */
-	int RESERVATION_OPTIONS = 100;
+	int RESERVATION_OPTIONS = 99;
 
 	/**
 	 * The feature id for the '<em><b>Preferences</b></em>' containment reference list.
@@ -6704,7 +6586,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationPreferenceGroup()
 	 * @generated
 	 */
-	int RESERVATION_PREFERENCE_GROUP = 101;
+	int RESERVATION_PREFERENCE_GROUP = 100;
 
 	/**
 	 * The feature id for the '<em><b>Preference</b></em>' attribute list.
@@ -6750,7 +6632,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getServiceClass()
 	 * @generated
 	 */
-	int SERVICE_CLASS = 102;
+	int SERVICE_CLASS = 101;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6805,7 +6687,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getServiceLevel()
 	 * @generated
 	 */
-	int SERVICE_LEVEL = 103;
+	int SERVICE_LEVEL = 102;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -6878,7 +6760,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTimeRange()
 	 * @generated
 	 */
-	int TIME_RANGE = 104;
+	int TIME_RANGE = 103;
 
 	/**
 	 * The feature id for the '<em><b>Scope</b></em>' attribute.
@@ -6933,7 +6815,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getExcludedTimeRange()
 	 * @generated
 	 */
-	int EXCLUDED_TIME_RANGE = 105;
+	int EXCLUDED_TIME_RANGE = 104;
 
 	/**
 	 * The feature id for the '<em><b>Scope</b></em>' attribute.
@@ -6988,7 +6870,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getValidityRange()
 	 * @generated
 	 */
-	int VALIDITY_RANGE = 106;
+	int VALIDITY_RANGE = 105;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -7043,7 +6925,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReturnValidityConstraint()
 	 * @generated
 	 */
-	int RETURN_VALIDITY_CONSTRAINT = 108;
+	int RETURN_VALIDITY_CONSTRAINT = 107;
 
 	/**
 	 * The feature id for the '<em><b>Excluded Weekdays</b></em>' attribute list.
@@ -7098,7 +6980,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTripAllocationConstraint()
 	 * @generated
 	 */
-	int TRIP_ALLOCATION_CONSTRAINT = 109;
+	int TRIP_ALLOCATION_CONSTRAINT = 108;
 
 	/**
 	 * The feature id for the '<em><b>Allocation Unit</b></em>' attribute.
@@ -7162,7 +7044,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTripInterruptionConstraint()
 	 * @generated
 	 */
-	int TRIP_INTERRUPTION_CONSTRAINT = 110;
+	int TRIP_INTERRUPTION_CONSTRAINT = 109;
 
 	/**
 	 * The feature id for the '<em><b>Max Interruptions</b></em>' attribute.
@@ -7226,7 +7108,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getViaStation()
 	 * @generated
 	 */
-	int VIA_STATION = 111;
+	int VIA_STATION = 110;
 
 	/**
 	 * The feature id for the '<em><b>Station</b></em>' reference.
@@ -7335,7 +7217,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAlternativeRoute()
 	 * @generated
 	 */
-	int ALTERNATIVE_ROUTE = 112;
+	int ALTERNATIVE_ROUTE = 111;
 
 	/**
 	 * The feature id for the '<em><b>Stations</b></em>' containment reference list.
@@ -7372,7 +7254,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRoute()
 	 * @generated
 	 */
-	int ROUTE = 113;
+	int ROUTE = 112;
 
 	/**
 	 * The feature id for the '<em><b>Stations</b></em>' containment reference list.
@@ -7409,7 +7291,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getZone()
 	 * @generated
 	 */
-	int ZONE = 114;
+	int ZONE = 113;
 
 	/**
 	 * The feature id for the '<em><b>Binary Zone Id</b></em>' attribute.
@@ -7500,7 +7382,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLine()
 	 * @generated
 	 */
-	int LINE = 115;
+	int LINE = 114;
 
 	/**
 	 * The feature id for the '<em><b>Binary Zone Id</b></em>' attribute.
@@ -7591,7 +7473,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPolygone()
 	 * @generated
 	 */
-	int POLYGONE = 116;
+	int POLYGONE = 115;
 
 	/**
 	 * The feature id for the '<em><b>Edge</b></em>' containment reference list.
@@ -7628,7 +7510,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getEdge()
 	 * @generated
 	 */
-	int EDGE = 117;
+	int EDGE = 116;
 
 	/**
 	 * The feature id for the '<em><b>System</b></em>' attribute.
@@ -7692,7 +7574,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getZoneDefinitions()
 	 * @generated
 	 */
-	int ZONE_DEFINITIONS = 118;
+	int ZONE_DEFINITIONS = 117;
 
 	/**
 	 * The feature id for the '<em><b>Zone Definition</b></em>' containment reference list.
@@ -7729,7 +7611,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getZoneDefinition()
 	 * @generated
 	 */
-	int ZONE_DEFINITION = 119;
+	int ZONE_DEFINITION = 118;
 
 	/**
 	 * The feature id for the '<em><b>Provider</b></em>' reference.
@@ -7820,7 +7702,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCrossBorderCondition()
 	 * @generated
 	 */
-	int CROSS_BORDER_CONDITION = 120;
+	int CROSS_BORDER_CONDITION = 119;
 
 	/**
 	 * The feature id for the '<em><b>From Country</b></em>' reference.
@@ -7875,7 +7757,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareCombinationModel()
 	 * @generated
 	 */
-	int FARE_COMBINATION_MODEL = 121;
+	int FARE_COMBINATION_MODEL = 120;
 
 	/**
 	 * The feature id for the '<em><b>Model</b></em>' attribute.
@@ -7966,7 +7848,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReductionConstraints()
 	 * @generated
 	 */
-	int REDUCTION_CONSTRAINTS = 122;
+	int REDUCTION_CONSTRAINTS = 121;
 
 	/**
 	 * The feature id for the '<em><b>Reduction Constraints</b></em>' containment reference list.
@@ -8003,7 +7885,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReductionConstraint()
 	 * @generated
 	 */
-	int REDUCTION_CONSTRAINT = 123;
+	int REDUCTION_CONSTRAINT = 122;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8049,7 +7931,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReductionCards()
 	 * @generated
 	 */
-	int REDUCTION_CARDS = 124;
+	int REDUCTION_CARDS = 123;
 
 	/**
 	 * The feature id for the '<em><b>Reduction Cards</b></em>' containment reference list.
@@ -8086,7 +7968,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReductionCard()
 	 * @generated
 	 */
-	int REDUCTION_CARD = 125;
+	int REDUCTION_CARD = 124;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8177,7 +8059,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRequiredReductionCard()
 	 * @generated
 	 */
-	int REQUIRED_REDUCTION_CARD = 126;
+	int REQUIRED_REDUCTION_CARD = 125;
 
 	/**
 	 * The feature id for the '<em><b>Card Class</b></em>' reference.
@@ -8232,7 +8114,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLuggageConstraints()
 	 * @generated
 	 */
-	int LUGGAGE_CONSTRAINTS = 127;
+	int LUGGAGE_CONSTRAINTS = 126;
 
 	/**
 	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
@@ -8269,7 +8151,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLuggageConstraint()
 	 * @generated
 	 */
-	int LUGGAGE_CONSTRAINT = 128;
+	int LUGGAGE_CONSTRAINT = 127;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -8351,7 +8233,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLuggageItemsRestriction()
 	 * @generated
 	 */
-	int LUGGAGE_ITEMS_RESTRICTION = 129;
+	int LUGGAGE_ITEMS_RESTRICTION = 128;
 
 	/**
 	 * The feature id for the '<em><b>Number Of Items</b></em>' attribute.
@@ -8397,7 +8279,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLuggageDimension()
 	 * @generated
 	 */
-	int LUGGAGE_DIMENSION = 130;
+	int LUGGAGE_DIMENSION = 129;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -8443,7 +8325,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAddCarrierRules()
 	 * @generated
 	 */
-	int ADD_CARRIER_RULES = 131;
+	int ADD_CARRIER_RULES = 130;
 
 	/**
 	 * The feature id for the '<em><b>Add Carrier Rule</b></em>' containment reference list.
@@ -8480,7 +8362,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAddCarrierRule()
 	 * @generated
 	 */
-	int ADD_CARRIER_RULE = 132;
+	int ADD_CARRIER_RULE = 131;
 
 	/**
 	 * The feature id for the '<em><b>Carrier</b></em>' reference.
@@ -8535,7 +8417,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getOnBorderStations()
 	 * @generated
 	 */
-	int ON_BORDER_STATIONS = 133;
+	int ON_BORDER_STATIONS = 132;
 
 	/**
 	 * The feature id for the '<em><b>Stations</b></em>' containment reference.
@@ -8572,7 +8454,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPaymentType()
 	 * @generated
 	 */
-	int PAYMENT_TYPE = 134;
+	int PAYMENT_TYPE = 133;
 
 	/**
 	 * The meta object id for the '{@link Accounting.SalesChannel <em>Sales Channel</em>}' enum.
@@ -8582,7 +8464,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSalesChannel()
 	 * @generated
 	 */
-	int SALES_CHANNEL = 135;
+	int SALES_CHANNEL = 134;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TransactionType <em>Transaction Type</em>}' enum.
@@ -8592,7 +8474,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTransactionType()
 	 * @generated
 	 */
-	int TRANSACTION_TYPE = 136;
+	int TRANSACTION_TYPE = 135;
 
 	/**
 	 * The meta object id for the '{@link Accounting.AccountingType <em>Type</em>}' enum.
@@ -8602,7 +8484,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAccountingType()
 	 * @generated
 	 */
-	int ACCOUNTING_TYPE = 137;
+	int ACCOUNTING_TYPE = 136;
 
 	/**
 	 * The meta object id for the '{@link Accounting.SettlementValueIndicator <em>Settlement Value Indicator</em>}' enum.
@@ -8612,7 +8494,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSettlementValueIndicator()
 	 * @generated
 	 */
-	int SETTLEMENT_VALUE_INDICATOR = 138;
+	int SETTLEMENT_VALUE_INDICATOR = 137;
 
 	/**
 	 * The meta object id for the '{@link Accounting.SalesType <em>Sales Type</em>}' enum.
@@ -8622,7 +8504,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSalesType()
 	 * @generated
 	 */
-	int SALES_TYPE = 139;
+	int SALES_TYPE = 138;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TransactionStandard <em>Transaction Standard</em>}' enum.
@@ -8632,7 +8514,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTransactionStandard()
 	 * @generated
 	 */
-	int TRANSACTION_STANDARD = 140;
+	int TRANSACTION_STANDARD = 139;
 
 	/**
 	 * The meta object id for the '{@link Accounting.BoardingOrArrival <em>Boarding Or Arrival</em>}' enum.
@@ -8642,7 +8524,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getBoardingOrArrival()
 	 * @generated
 	 */
-	int BOARDING_OR_ARRIVAL = 141;
+	int BOARDING_OR_ARRIVAL = 140;
 
 	/**
 	 * The meta object id for the '{@link Accounting.LuggageRule <em>Luggage Rule</em>}' enum.
@@ -8652,7 +8534,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLuggageRule()
 	 * @generated
 	 */
-	int LUGGAGE_RULE = 142;
+	int LUGGAGE_RULE = 141;
 
 	/**
 	 * The meta object id for the '{@link Accounting.Dimension <em>Dimension</em>}' enum.
@@ -8662,7 +8544,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getDimension()
 	 * @generated
 	 */
-	int DIMENSION = 143;
+	int DIMENSION = 142;
 
 	/**
 	 * The meta object id for the '{@link Accounting.AddCarrierScope <em>Add Carrier Scope</em>}' enum.
@@ -8672,7 +8554,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAddCarrierScope()
 	 * @generated
 	 */
-	int ADD_CARRIER_SCOPE = 144;
+	int ADD_CARRIER_SCOPE = 143;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TransportMode <em>Transport Mode</em>}' enum.
@@ -8682,7 +8564,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTransportMode()
 	 * @generated
 	 */
-	int TRANSPORT_MODE = 145;
+	int TRANSPORT_MODE = 144;
 
 	/**
 	 * The meta object id for the '{@link Accounting.StationRelationType <em>Station Relation Type</em>}' enum.
@@ -8692,7 +8574,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStationRelationType()
 	 * @generated
 	 */
-	int STATION_RELATION_TYPE = 146;
+	int STATION_RELATION_TYPE = 145;
 
 	/**
 	 * The meta object id for the '{@link Accounting.StationFareDetailType <em>Station Fare Detail Type</em>}' enum.
@@ -8702,7 +8584,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStationFareDetailType()
 	 * @generated
 	 */
-	int STATION_FARE_DETAIL_TYPE = 147;
+	int STATION_FARE_DETAIL_TYPE = 146;
 
 	/**
 	 * The meta object id for the '{@link Accounting.RegulatoryCondition <em>Regulatory Condition</em>}' enum.
@@ -8712,7 +8594,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRegulatoryCondition()
 	 * @generated
 	 */
-	int REGULATORY_CONDITION = 148;
+	int REGULATORY_CONDITION = 147;
 
 	/**
 	 * The meta object id for the '{@link Accounting.AfterSalesTransactionType <em>After Sales Transaction Type</em>}' enum.
@@ -8722,7 +8604,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getAfterSalesTransactionType()
 	 * @generated
 	 */
-	int AFTER_SALES_TRANSACTION_TYPE = 149;
+	int AFTER_SALES_TRANSACTION_TYPE = 148;
 
 	/**
 	 * The meta object id for the '{@link Accounting.BarcodeTypes <em>Barcode Types</em>}' enum.
@@ -8732,7 +8614,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getBarcodeTypes()
 	 * @generated
 	 */
-	int BARCODE_TYPES = 150;
+	int BARCODE_TYPES = 149;
 
 	/**
 	 * The meta object id for the '{@link Accounting.BasePriceClassType <em>Base Price Class Type</em>}' enum.
@@ -8742,7 +8624,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getBasePriceClassType()
 	 * @generated
 	 */
-	int BASE_PRICE_CLASS_TYPE = 151;
+	int BASE_PRICE_CLASS_TYPE = 150;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ClassicClassType <em>Classic Class Type</em>}' enum.
@@ -8752,7 +8634,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getClassicClassType()
 	 * @generated
 	 */
-	int CLASSIC_CLASS_TYPE = 152;
+	int CLASSIC_CLASS_TYPE = 151;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ClassId <em>Class Id</em>}' enum.
@@ -8762,7 +8644,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getClassId()
 	 * @generated
 	 */
-	int CLASS_ID = 153;
+	int CLASS_ID = 152;
 
 	/**
 	 * The meta object id for the '{@link Accounting.CharacterSet <em>Character Set</em>}' enum.
@@ -8772,7 +8654,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCharacterSet()
 	 * @generated
 	 */
-	int CHARACTER_SET = 154;
+	int CHARACTER_SET = 153;
 
 	/**
 	 * The meta object id for the '{@link Accounting.Clusters <em>Clusters</em>}' enum.
@@ -8782,7 +8664,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getClusters()
 	 * @generated
 	 */
-	int CLUSTERS = 155;
+	int CLUSTERS = 154;
 
 	/**
 	 * The meta object id for the '{@link Accounting.CombinationModel <em>Combination Model</em>}' enum.
@@ -8792,7 +8674,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getCombinationModel()
 	 * @generated
 	 */
-	int COMBINATION_MODEL = 156;
+	int COMBINATION_MODEL = 155;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ControlDataExchangeTypes <em>Control Data Exchange Types</em>}' enum.
@@ -8802,7 +8684,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getControlDataExchangeTypes()
 	 * @generated
 	 */
-	int CONTROL_DATA_EXCHANGE_TYPES = 157;
+	int CONTROL_DATA_EXCHANGE_TYPES = 156;
 
 	/**
 	 * The meta object id for the '{@link Accounting.DataSource <em>Data Source</em>}' enum.
@@ -8812,7 +8694,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getDataSource()
 	 * @generated
 	 */
-	int DATA_SOURCE = 158;
+	int DATA_SOURCE = 157;
 
 	/**
 	 * The meta object id for the '{@link Accounting.DataType <em>Data Type</em>}' enum.
@@ -8822,7 +8704,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getDataType()
 	 * @generated
 	 */
-	int DATA_TYPE = 159;
+	int DATA_TYPE = 158;
 
 	/**
 	 * The meta object id for the '{@link Accounting.FareType <em>Fare Type</em>}' enum.
@@ -8832,7 +8714,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFareType()
 	 * @generated
 	 */
-	int FARE_TYPE = 160;
+	int FARE_TYPE = 159;
 
 	/**
 	 * The meta object id for the '{@link Accounting.FulfillmentType <em>Fulfillment Type</em>}' enum.
@@ -8842,7 +8724,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getFulfillmentType()
 	 * @generated
 	 */
-	int FULFILLMENT_TYPE = 161;
+	int FULFILLMENT_TYPE = 160;
 
 	/**
 	 * The meta object id for the '{@link Accounting.GeoSystem <em>Geo System</em>}' enum.
@@ -8852,7 +8734,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getGeoSystem()
 	 * @generated
 	 */
-	int GEO_SYSTEM = 162;
+	int GEO_SYSTEM = 161;
 
 	/**
 	 * The meta object id for the '{@link Accounting.GeoUnit <em>Geo Unit</em>}' enum.
@@ -8862,7 +8744,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getGeoUnit()
 	 * @generated
 	 */
-	int GEO_UNIT = 163;
+	int GEO_UNIT = 162;
 
 	/**
 	 * The meta object id for the '{@link Accounting.GraphicalReservationType <em>Graphical Reservation Type</em>}' enum.
@@ -8872,7 +8754,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getGraphicalReservationType()
 	 * @generated
 	 */
-	int GRAPHICAL_RESERVATION_TYPE = 164;
+	int GRAPHICAL_RESERVATION_TYPE = 163;
 
 	/**
 	 * The meta object id for the '{@link Accounting.GenericReductionCards <em>Generic Reduction Cards</em>}' enum.
@@ -8882,7 +8764,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getGenericReductionCards()
 	 * @generated
 	 */
-	int GENERIC_REDUCTION_CARDS = 165;
+	int GENERIC_REDUCTION_CARDS = 164;
 
 	/**
 	 * The meta object id for the '{@link Accounting.HemisphereEW <em>Hemisphere EW</em>}' enum.
@@ -8892,7 +8774,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getHemisphereEW()
 	 * @generated
 	 */
-	int HEMISPHERE_EW = 166;
+	int HEMISPHERE_EW = 165;
 
 	/**
 	 * The meta object id for the '{@link Accounting.HemisphereNS <em>Hemisphere NS</em>}' enum.
@@ -8902,7 +8784,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getHemisphereNS()
 	 * @generated
 	 */
-	int HEMISPHERE_NS = 167;
+	int HEMISPHERE_NS = 166;
 
 	/**
 	 * The meta object id for the '{@link Accounting.InterfaceType <em>Interface Type</em>}' enum.
@@ -8912,7 +8794,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getInterfaceType()
 	 * @generated
 	 */
-	int INTERFACE_TYPE = 168;
+	int INTERFACE_TYPE = 167;
 
 	/**
 	 * The meta object id for the '{@link Accounting.LegacyCalculationType <em>Legacy Calculation Type</em>}' enum.
@@ -8922,7 +8804,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLegacyCalculationType()
 	 * @generated
 	 */
-	int LEGACY_CALCULATION_TYPE = 169;
+	int LEGACY_CALCULATION_TYPE = 168;
 
 	/**
 	 * The meta object id for the '{@link Accounting.LegacyPassengerType <em>Legacy Passenger Type</em>}' enum.
@@ -8932,7 +8814,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLegacyPassengerType()
 	 * @generated
 	 */
-	int LEGACY_PASSENGER_TYPE = 170;
+	int LEGACY_PASSENGER_TYPE = 169;
 
 	/**
 	 * The meta object id for the '{@link Accounting.LegacySeriesType <em>Legacy Series Type</em>}' enum.
@@ -8942,7 +8824,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLegacySeriesType()
 	 * @generated
 	 */
-	int LEGACY_SERIES_TYPE = 171;
+	int LEGACY_SERIES_TYPE = 170;
 
 	/**
 	 * The meta object id for the '{@link Accounting.LegacyConversionType <em>Legacy Conversion Type</em>}' enum.
@@ -8952,7 +8834,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getLegacyConversionType()
 	 * @generated
 	 */
-	int LEGACY_CONVERSION_TYPE = 172;
+	int LEGACY_CONVERSION_TYPE = 171;
 
 	/**
 	 * The meta object id for the '{@link Accounting.OfferRequestType <em>Offer Request Type</em>}' enum.
@@ -8962,7 +8844,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getOfferRequestType()
 	 * @generated
 	 */
-	int OFFER_REQUEST_TYPE = 173;
+	int OFFER_REQUEST_TYPE = 172;
 
 	/**
 	 * The meta object id for the '{@link Accounting.OnlineServiceType <em>Online Service Type</em>}' enum.
@@ -8972,7 +8854,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getOnlineServiceType()
 	 * @generated
 	 */
-	int ONLINE_SERVICE_TYPE = 174;
+	int ONLINE_SERVICE_TYPE = 173;
 
 	/**
 	 * The meta object id for the '{@link Accounting.PersonalDataItemsType <em>Personal Data Items Type</em>}' enum.
@@ -8982,7 +8864,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPersonalDataItemsType()
 	 * @generated
 	 */
-	int PERSONAL_DATA_ITEMS_TYPE = 175;
+	int PERSONAL_DATA_ITEMS_TYPE = 174;
 
 	/**
 	 * The meta object id for the '{@link Accounting.PersonalDataTransferType <em>Personal Data Transfer Type</em>}' enum.
@@ -8992,7 +8874,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPersonalDataTransferType()
 	 * @generated
 	 */
-	int PERSONAL_DATA_TRANSFER_TYPE = 176;
+	int PERSONAL_DATA_TRANSFER_TYPE = 175;
 
 	/**
 	 * The meta object id for the '{@link Accounting.PersonalDataChangeReason <em>Personal Data Change Reason</em>}' enum.
@@ -9002,7 +8884,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getPersonalDataChangeReason()
 	 * @generated
 	 */
-	int PERSONAL_DATA_CHANGE_REASON = 177;
+	int PERSONAL_DATA_CHANGE_REASON = 176;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ReservationTravelClass <em>Reservation Travel Class</em>}' enum.
@@ -9012,7 +8894,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationTravelClass()
 	 * @generated
 	 */
-	int RESERVATION_TRAVEL_CLASS = 178;
+	int RESERVATION_TRAVEL_CLASS = 177;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ReservationServiceLevel <em>Reservation Service Level</em>}' enum.
@@ -9022,7 +8904,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationServiceLevel()
 	 * @generated
 	 */
-	int RESERVATION_SERVICE_LEVEL = 179;
+	int RESERVATION_SERVICE_LEVEL = 178;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ReservationService <em>Reservation Service</em>}' enum.
@@ -9032,7 +8914,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationService()
 	 * @generated
 	 */
-	int RESERVATION_SERVICE = 180;
+	int RESERVATION_SERVICE = 179;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ReservationBerthType <em>Reservation Berth Type</em>}' enum.
@@ -9042,7 +8924,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getReservationBerthType()
 	 * @generated
 	 */
-	int RESERVATION_BERTH_TYPE = 181;
+	int RESERVATION_BERTH_TYPE = 180;
 
 	/**
 	 * The meta object id for the '{@link Accounting.RoundingType <em>Rounding Type</em>}' enum.
@@ -9052,7 +8934,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getRoundingType()
 	 * @generated
 	 */
-	int ROUNDING_TYPE = 182;
+	int ROUNDING_TYPE = 181;
 
 	/**
 	 * The meta object id for the '{@link Accounting.SchemaVersion <em>Schema Version</em>}' enum.
@@ -9062,7 +8944,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getSchemaVersion()
 	 * @generated
 	 */
-	int SCHEMA_VERSION = 183;
+	int SCHEMA_VERSION = 182;
 
 	/**
 	 * The meta object id for the '{@link Accounting.ServiceMode <em>Service Mode</em>}' enum.
@@ -9072,7 +8954,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getServiceMode()
 	 * @generated
 	 */
-	int SERVICE_MODE = 184;
+	int SERVICE_MODE = 183;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TimeZone <em>Time Zone</em>}' enum.
@@ -9082,7 +8964,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTimeZone()
 	 * @generated
 	 */
-	int TIME_ZONE = 185;
+	int TIME_ZONE = 184;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TaxScope <em>Tax Scope</em>}' enum.
@@ -9092,7 +8974,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTaxScope()
 	 * @generated
 	 */
-	int TAX_SCOPE = 186;
+	int TAX_SCOPE = 185;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TimeReferenceType <em>Time Reference Type</em>}' enum.
@@ -9102,7 +8984,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTimeReferenceType()
 	 * @generated
 	 */
-	int TIME_REFERENCE_TYPE = 187;
+	int TIME_REFERENCE_TYPE = 186;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TimeRangeScope <em>Time Range Scope</em>}' enum.
@@ -9112,7 +8994,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTimeRangeScope()
 	 * @generated
 	 */
-	int TIME_RANGE_SCOPE = 188;
+	int TIME_RANGE_SCOPE = 187;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TimeUnit <em>Time Unit</em>}' enum.
@@ -9122,7 +9004,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTimeUnit()
 	 * @generated
 	 */
-	int TIME_UNIT = 189;
+	int TIME_UNIT = 188;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TravelerType <em>Traveler Type</em>}' enum.
@@ -9132,7 +9014,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTravelerType()
 	 * @generated
 	 */
-	int TRAVELER_TYPE = 190;
+	int TRAVELER_TYPE = 189;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TripAllocationProcess <em>Trip Allocation Process</em>}' enum.
@@ -9142,7 +9024,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTripAllocationProcess()
 	 * @generated
 	 */
-	int TRIP_ALLOCATION_PROCESS = 191;
+	int TRIP_ALLOCATION_PROCESS = 190;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TripAllocationUnit <em>Trip Allocation Unit</em>}' enum.
@@ -9152,7 +9034,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTripAllocationUnit()
 	 * @generated
 	 */
-	int TRIP_ALLOCATION_UNIT = 192;
+	int TRIP_ALLOCATION_UNIT = 191;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TripInterruptionProcess <em>Trip Interruption Process</em>}' enum.
@@ -9162,7 +9044,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTripInterruptionProcess()
 	 * @generated
 	 */
-	int TRIP_INTERRUPTION_PROCESS = 193;
+	int TRIP_INTERRUPTION_PROCESS = 192;
 
 	/**
 	 * The meta object id for the '{@link Accounting.TravelValidityType <em>Travel Validity Type</em>}' enum.
@@ -9172,7 +9054,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getTravelValidityType()
 	 * @generated
 	 */
-	int TRAVEL_VALIDITY_TYPE = 194;
+	int TRAVEL_VALIDITY_TYPE = 193;
 
 	/**
 	 * The meta object id for the '{@link Accounting.WeekDay <em>Week Day</em>}' enum.
@@ -9182,7 +9064,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getWeekDay()
 	 * @generated
 	 */
-	int WEEK_DAY = 195;
+	int WEEK_DAY = 194;
 
 	/**
 	 * The meta object id for the '<em>Date As Date</em>' data type.
@@ -9192,7 +9074,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getDateAsDate()
 	 * @generated
 	 */
-	int DATE_AS_DATE = 196;
+	int DATE_AS_DATE = 195;
 
 	/**
 	 * The meta object id for the '<em>Date As Date Time</em>' data type.
@@ -9202,7 +9084,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getDateAsDateTime()
 	 * @generated
 	 */
-	int DATE_AS_DATE_TIME = 197;
+	int DATE_AS_DATE_TIME = 196;
 
 
 	/**
@@ -10092,16 +9974,6 @@ public interface AccountingPackage extends EPackage {
 	EReference getServiceBrands_ServiceBrands();
 
 	/**
-	 * Returns the meta object for the '{@link Accounting.ServiceBrands#findServiceBRand(int) <em>Find Service BRand</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Find Service BRand</em>' operation.
-	 * @see Accounting.ServiceBrands#findServiceBRand(int)
-	 * @generated
-	 */
-	EOperation getServiceBrands__FindServiceBRand__int();
-
-	/**
 	 * Returns the meta object for class '{@link Accounting.ServiceBrand <em>Service Brand</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10197,16 +10069,6 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCountries_Countries();
-
-	/**
-	 * Returns the meta object for the '{@link Accounting.Countries#findCountry(int) <em>Find Country</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Find Country</em>' operation.
-	 * @see Accounting.Countries#findCountry(int)
-	 * @generated
-	 */
-	EOperation getCountries__FindCountry__int();
 
 	/**
 	 * Returns the meta object for class '{@link Accounting.Country <em>Country</em>}'.
@@ -10337,16 +10199,6 @@ public interface AccountingPackage extends EPackage {
 	EReference getCurrencies_Currencies();
 
 	/**
-	 * Returns the meta object for the '{@link Accounting.Currencies#findCurrency(java.lang.String) <em>Find Currency</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Find Currency</em>' operation.
-	 * @see Accounting.Currencies#findCurrency(java.lang.String)
-	 * @generated
-	 */
-	EOperation getCurrencies__FindCurrency__String();
-
-	/**
 	 * Returns the meta object for class '{@link Accounting.Currency <em>Currency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10398,26 +10250,6 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getStations_Stations();
-
-	/**
-	 * Returns the meta object for the '{@link Accounting.Stations#findStation(int, int) <em>Find Station</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Find Station</em>' operation.
-	 * @see Accounting.Stations#findStation(int, int)
-	 * @generated
-	 */
-	EOperation getStations__FindStation__int_int();
-
-	/**
-	 * Returns the meta object for the '{@link Accounting.Stations#findStation(int, java.lang.String) <em>Find Station</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Find Station</em>' operation.
-	 * @see Accounting.Stations#findStation(int, java.lang.String)
-	 * @generated
-	 */
-	EOperation getStations__FindStation__int_String();
 
 	/**
 	 * Returns the meta object for class '{@link Accounting.Station <em>Station</em>}'.
@@ -10562,17 +10394,6 @@ public interface AccountingPackage extends EPackage {
 	EAttribute getStation_LegacyBorderPointCode();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Accounting.Station#getRelations <em>Relations</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Relations</em>'.
-	 * @see Accounting.Station#getRelations()
-	 * @see #getStation()
-	 * @generated
-	 */
-	EReference getStation_Relations();
-
-	/**
 	 * Returns the meta object for the attribute '{@link Accounting.Station#getStationCode <em>Station Code</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10582,38 +10403,6 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getStation_StationCode();
-
-	/**
-	 * Returns the meta object for class '{@link Accounting.StationRelation <em>Station Relation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Station Relation</em>'.
-	 * @see Accounting.StationRelation
-	 * @generated
-	 */
-	EClass getStationRelation();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Accounting.StationRelation#getRelationType <em>Relation Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Relation Type</em>'.
-	 * @see Accounting.StationRelation#getRelationType()
-	 * @see #getStationRelation()
-	 * @generated
-	 */
-	EAttribute getStationRelation_RelationType();
-
-	/**
-	 * Returns the meta object for the reference '{@link Accounting.StationRelation#getStation <em>Station</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Station</em>'.
-	 * @see Accounting.StationRelation#getStation()
-	 * @see #getStationRelation()
-	 * @generated
-	 */
-	EReference getStationRelation_Station();
 
 	/**
 	 * Returns the meta object for class '{@link Accounting.Carrier <em>Carrier</em>}'.
@@ -10678,16 +10467,6 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCarriers_Carriers();
-
-	/**
-	 * Returns the meta object for the '{@link Accounting.Carriers#findCarrier(java.lang.String) <em>Find Carrier</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Find Carrier</em>' operation.
-	 * @see Accounting.Carriers#findCarrier(java.lang.String)
-	 * @generated
-	 */
-	EOperation getCarriers__FindCarrier__String();
 
 	/**
 	 * Returns the meta object for class '{@link Accounting.StationSet <em>Station Set</em>}'.
@@ -11317,16 +11096,6 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getConnectionPoints_ConnectionPoints();
-
-	/**
-	 * Returns the meta object for the '{@link Accounting.ConnectionPoints#findSimpleConnectionPoint(Accounting.Station) <em>Find Simple Connection Point</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the '<em>Find Simple Connection Point</em>' operation.
-	 * @see Accounting.ConnectionPoints#findSimpleConnectionPoint(Accounting.Station)
-	 * @generated
-	 */
-	EOperation getConnectionPoints__FindSimpleConnectionPoint__Station();
 
 	/**
 	 * Returns the meta object for class '{@link Accounting.ConnectionPoint <em>Connection Point</em>}'.
@@ -17568,14 +17337,6 @@ public interface AccountingPackage extends EPackage {
 		EReference SERVICE_BRANDS__SERVICE_BRANDS = eINSTANCE.getServiceBrands_ServiceBrands();
 
 		/**
-		 * The meta object literal for the '<em><b>Find Service BRand</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation SERVICE_BRANDS___FIND_SERVICE_BRAND__INT = eINSTANCE.getServiceBrands__FindServiceBRand__int();
-
-		/**
 		 * The meta object literal for the '{@link Accounting.impl.ServiceBrandImpl <em>Service Brand</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -17650,14 +17411,6 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EReference COUNTRIES__COUNTRIES = eINSTANCE.getCountries_Countries();
-
-		/**
-		 * The meta object literal for the '<em><b>Find Country</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation COUNTRIES___FIND_COUNTRY__INT = eINSTANCE.getCountries__FindCountry__int();
 
 		/**
 		 * The meta object literal for the '{@link Accounting.impl.CountryImpl <em>Country</em>}' class.
@@ -17764,14 +17517,6 @@ public interface AccountingPackage extends EPackage {
 		EReference CURRENCIES__CURRENCIES = eINSTANCE.getCurrencies_Currencies();
 
 		/**
-		 * The meta object literal for the '<em><b>Find Currency</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CURRENCIES___FIND_CURRENCY__STRING = eINSTANCE.getCurrencies__FindCurrency__String();
-
-		/**
 		 * The meta object literal for the '{@link Accounting.impl.CurrencyImpl <em>Currency</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -17814,22 +17559,6 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EReference STATIONS__STATIONS = eINSTANCE.getStations_Stations();
-
-		/**
-		 * The meta object literal for the '<em><b>Find Station</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STATIONS___FIND_STATION__INT_INT = eINSTANCE.getStations__FindStation__int_int();
-
-		/**
-		 * The meta object literal for the '<em><b>Find Station</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation STATIONS___FIND_STATION__INT_STRING = eINSTANCE.getStations__FindStation__int_String();
 
 		/**
 		 * The meta object literal for the '{@link Accounting.impl.StationImpl <em>Station</em>}' class.
@@ -17938,46 +17667,12 @@ public interface AccountingPackage extends EPackage {
 		EAttribute STATION__LEGACY_BORDER_POINT_CODE = eINSTANCE.getStation_LegacyBorderPointCode();
 
 		/**
-		 * The meta object literal for the '<em><b>Relations</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference STATION__RELATIONS = eINSTANCE.getStation_Relations();
-
-		/**
 		 * The meta object literal for the '<em><b>Station Code</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EAttribute STATION__STATION_CODE = eINSTANCE.getStation_StationCode();
-
-		/**
-		 * The meta object literal for the '{@link Accounting.impl.StationRelationImpl <em>Station Relation</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see Accounting.impl.StationRelationImpl
-		 * @see Accounting.impl.AccountingPackageImpl#getStationRelation()
-		 * @generated
-		 */
-		EClass STATION_RELATION = eINSTANCE.getStationRelation();
-
-		/**
-		 * The meta object literal for the '<em><b>Relation Type</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute STATION_RELATION__RELATION_TYPE = eINSTANCE.getStationRelation_RelationType();
-
-		/**
-		 * The meta object literal for the '<em><b>Station</b></em>' reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference STATION_RELATION__STATION = eINSTANCE.getStationRelation_Station();
 
 		/**
 		 * The meta object literal for the '{@link Accounting.impl.CarrierImpl <em>Carrier</em>}' class.
@@ -18030,14 +17725,6 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CARRIERS__CARRIERS = eINSTANCE.getCarriers_Carriers();
-
-		/**
-		 * The meta object literal for the '<em><b>Find Carrier</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CARRIERS___FIND_CARRIER__STRING = eINSTANCE.getCarriers__FindCarrier__String();
 
 		/**
 		 * The meta object literal for the '{@link Accounting.impl.StationSetImpl <em>Station Set</em>}' class.
@@ -18520,14 +18207,6 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CONNECTION_POINTS__CONNECTION_POINTS = eINSTANCE.getConnectionPoints_ConnectionPoints();
-
-		/**
-		 * The meta object literal for the '<em><b>Find Simple Connection Point</b></em>' operation.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EOperation CONNECTION_POINTS___FIND_SIMPLE_CONNECTION_POINT__STATION = eINSTANCE.getConnectionPoints__FindSimpleConnectionPoint__Station();
 
 		/**
 		 * The meta object literal for the '{@link Accounting.impl.ConnectionPointImpl <em>Connection Point</em>}' class.

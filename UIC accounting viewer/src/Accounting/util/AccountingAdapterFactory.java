@@ -168,10 +168,6 @@ public class AccountingAdapterFactory extends AdapterFactoryImpl {
 				return createStationAdapter();
 			}
 			@Override
-			public Adapter caseStationRelation(StationRelation object) {
-				return createStationRelationAdapter();
-			}
-			@Override
 			public Adapter caseCarrier(Carrier object) {
 				return createCarrierAdapter();
 			}
@@ -970,20 +966,6 @@ public class AccountingAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createStationAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link Accounting.StationRelation <em>Station Relation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see Accounting.StationRelation
-	 * @generated
-	 */
-	public Adapter createStationRelationAdapter() {
 		return null;
 	}
 

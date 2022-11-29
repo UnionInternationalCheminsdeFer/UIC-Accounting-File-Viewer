@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getTravelValidityConstraint()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='TRAVEL_DAYS_NOT_NULL WARNING_TRAVEL_DAYS_TOO_LONG NOT_REFERENCED TRAVEL_VALIDITY_TYPE_CONSTRAINT'"
+ * @model
  * @generated
  */
 public interface TravelValidityConstraint extends EObject {

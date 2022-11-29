@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getTrainValidity()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='TRAIN_VALIDITY_REQUIRED_CONTENT'"
+ * @model
  * @generated
  */
 public interface TrainValidity extends EObject {

@@ -5,10 +5,6 @@ package Accounting.impl;
 import Accounting.AccountingPackage;
 import Accounting.ConnectionPoint;
 import Accounting.ConnectionPoints;
-import Accounting.Station;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -83,17 +79,6 @@ public class ConnectionPointsImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ConnectionPoint findSimpleConnectionPoint(Station station) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -161,20 +146,6 @@ public class ConnectionPointsImpl extends MinimalEObjectImpl.Container implement
 				return connectionPoints != null && !connectionPoints.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case AccountingPackage.CONNECTION_POINTS___FIND_SIMPLE_CONNECTION_POINT__STATION:
-				return findSimpleConnectionPoint((Station)arguments.get(0));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //ConnectionPointsImpl

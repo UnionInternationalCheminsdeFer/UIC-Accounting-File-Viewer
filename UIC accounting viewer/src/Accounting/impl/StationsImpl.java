@@ -5,9 +5,6 @@ package Accounting.impl;
 import Accounting.AccountingPackage;
 import Accounting.Station;
 import Accounting.Stations;
-
-import java.lang.reflect.InvocationTargetException;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -82,28 +79,6 @@ public class StationsImpl extends MinimalEObjectImpl.Container implements Statio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Station findStation(int countryCodeUIC, int localCode) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Station findStation(int countryCodeUIC, String localCode) {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -171,22 +146,6 @@ public class StationsImpl extends MinimalEObjectImpl.Container implements Statio
 				return stations != null && !stations.isEmpty();
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
-		switch (operationID) {
-			case AccountingPackage.STATIONS___FIND_STATION__INT_INT:
-				return findStation((Integer)arguments.get(0), (Integer)arguments.get(1));
-			case AccountingPackage.STATIONS___FIND_STATION__INT_STRING:
-				return findStation((Integer)arguments.get(0), (String)arguments.get(1));
-		}
-		return super.eInvoke(operationID, arguments);
 	}
 
 } //StationsImpl

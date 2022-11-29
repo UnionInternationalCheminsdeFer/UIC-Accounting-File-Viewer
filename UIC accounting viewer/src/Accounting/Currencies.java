@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getCurrencies()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AT_LEAST_ONE'"
+ * @model
  * @generated
  */
 public interface Currencies extends EObject {
@@ -34,13 +34,5 @@ public interface Currencies extends EObject {
 	 * @generated
 	 */
 	EList<Currency> getCurrencies();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model ISOcodeDataType="org.eclipse.emf.ecore.xml.type.String"
-	 * @generated
-	 */
-	Currency findCurrency(String ISOcode);
 
 } // Currencies

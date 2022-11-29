@@ -35,12 +35,4 @@ public interface ConnectionPoints extends EObject {
 	 */
 	EList<ConnectionPoint> getConnectionPoints();
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model
-	 * @generated
-	 */
-	ConnectionPoint findSimpleConnectionPoint(Station station);
-
 } // ConnectionPoints

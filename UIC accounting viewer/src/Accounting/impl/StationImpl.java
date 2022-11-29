@@ -5,23 +5,12 @@ package Accounting.impl;
 import Accounting.AccountingPackage;
 import Accounting.Country;
 import Accounting.Station;
-import Accounting.StationRelation;
-
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +32,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link Accounting.impl.StationImpl#getShortNameCaseASCII <em>Short Name Case ASCII</em>}</li>
  *   <li>{@link Accounting.impl.StationImpl#getShortNameCaseUTF8 <em>Short Name Case UTF8</em>}</li>
  *   <li>{@link Accounting.impl.StationImpl#getLegacyBorderPointCode <em>Legacy Border Point Code</em>}</li>
- *   <li>{@link Accounting.impl.StationImpl#getRelations <em>Relations</em>}</li>
  *   <li>{@link Accounting.impl.StationImpl#getStationCode <em>Station Code</em>}</li>
  * </ul>
  *
@@ -279,16 +267,6 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * @ordered
 	 */
 	protected int legacyBorderPointCode = LEGACY_BORDER_POINT_CODE_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getRelations() <em>Relations</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getRelations()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<StationRelation> relations;
 
 	/**
 	 * The default value of the '{@link #getStationCode() <em>Station Code</em>}' attribute.
@@ -603,18 +581,6 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<StationRelation> getRelations() {
-		if (relations == null) {
-			relations = new EObjectContainmentEList<StationRelation>(StationRelation.class, this, AccountingPackage.STATION__RELATIONS);
-		}
-		return relations;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public long getStationCode() {
 		return stationCode;
 	}
@@ -629,20 +595,6 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 		stationCode = newStationCode;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.STATION__STATION_CODE, oldStationCode, stationCode));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case AccountingPackage.STATION__RELATIONS:
-				return ((InternalEList<?>)getRelations()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -678,8 +630,6 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 				return getShortNameCaseUTF8();
 			case AccountingPackage.STATION__LEGACY_BORDER_POINT_CODE:
 				return getLegacyBorderPointCode();
-			case AccountingPackage.STATION__RELATIONS:
-				return getRelations();
 			case AccountingPackage.STATION__STATION_CODE:
 				return getStationCode();
 		}
@@ -730,10 +680,6 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 				return;
 			case AccountingPackage.STATION__LEGACY_BORDER_POINT_CODE:
 				setLegacyBorderPointCode((Integer)newValue);
-				return;
-			case AccountingPackage.STATION__RELATIONS:
-				getRelations().clear();
-				getRelations().addAll((Collection<? extends StationRelation>)newValue);
 				return;
 			case AccountingPackage.STATION__STATION_CODE:
 				setStationCode((Long)newValue);
@@ -786,9 +732,6 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 			case AccountingPackage.STATION__LEGACY_BORDER_POINT_CODE:
 				setLegacyBorderPointCode(LEGACY_BORDER_POINT_CODE_EDEFAULT);
 				return;
-			case AccountingPackage.STATION__RELATIONS:
-				getRelations().clear();
-				return;
 			case AccountingPackage.STATION__STATION_CODE:
 				setStationCode(STATION_CODE_EDEFAULT);
 				return;
@@ -828,8 +771,6 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 				return SHORT_NAME_CASE_UTF8_EDEFAULT == null ? shortNameCaseUTF8 != null : !SHORT_NAME_CASE_UTF8_EDEFAULT.equals(shortNameCaseUTF8);
 			case AccountingPackage.STATION__LEGACY_BORDER_POINT_CODE:
 				return legacyBorderPointCode != LEGACY_BORDER_POINT_CODE_EDEFAULT;
-			case AccountingPackage.STATION__RELATIONS:
-				return relations != null && !relations.isEmpty();
 			case AccountingPackage.STATION__STATION_CODE:
 				return stationCode != STATION_CODE_EDEFAULT;
 		}

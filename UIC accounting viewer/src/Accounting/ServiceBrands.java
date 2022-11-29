@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getServiceBrands()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='AT_LEAST_ONE'"
+ * @model
  * @generated
  */
 public interface ServiceBrands extends EObject {
@@ -34,13 +34,5 @@ public interface ServiceBrands extends EObject {
 	 * @generated
 	 */
 	EList<ServiceBrand> getServiceBrands();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model codeDataType="org.eclipse.emf.ecore.xml.type.Int"
-	 * @generated
-	 */
-	ServiceBrand findServiceBRand(int code);
 
 } // ServiceBrands

@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountingFile()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='MUST_INCLUDE_DELIVERY MUST_INCLUDE_ACCOUNTING_RECORD'"
  * @generated
  */
 public interface AccountingFile extends EObject {

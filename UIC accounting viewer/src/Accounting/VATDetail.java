@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getVATDetail()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='VALID_AMOUNT COUNTRY_MUST PERCENTAGE_VALUES'"
+ * @model
  * @generated
  */
 public interface VATDetail extends EObject {

@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getDelivery()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='CARRIER_MUST DELIVERY_ID_CHARACTERS VERSION_MUST ACCEPTED_VERSIONS_MUST'"
+ * @model
  * @generated
  */
 public interface Delivery extends EObject {

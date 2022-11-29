@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getServiceLevel()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='TEXT_MUST ID_FORMAT'"
+ * @model
  * @generated
  */
 public interface ServiceLevel extends EObject {

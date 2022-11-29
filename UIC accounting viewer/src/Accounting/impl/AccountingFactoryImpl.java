@@ -84,7 +84,6 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 			case AccountingPackage.CURRENCY: return createCurrency();
 			case AccountingPackage.STATIONS: return createStations();
 			case AccountingPackage.STATION: return createStation();
-			case AccountingPackage.STATION_RELATION: return createStationRelation();
 			case AccountingPackage.CARRIER: return createCarrier();
 			case AccountingPackage.CARRIERS: return createCarriers();
 			case AccountingPackage.STATION_SET: return createStationSet();
@@ -728,16 +727,6 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 	public Station createStation() {
 		StationImpl station = new StationImpl();
 		return station;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public StationRelation createStationRelation() {
-		StationRelationImpl stationRelation = new StationRelationImpl();
-		return stationRelation;
 	}
 
 	/**

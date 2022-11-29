@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getCurrencyPrice()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='VAT_PLAUSIBILITY_CHECK CURRENCY_MUST AMOUNT_MUST'"
+ * @model
  * @generated
  */
 public interface CurrencyPrice extends EObject {

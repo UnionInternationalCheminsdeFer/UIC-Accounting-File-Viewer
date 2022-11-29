@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getText()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='FORMAT_TEXT FORMAT_TEXT_SHORT FORMAT_TEXT_UTF8 FORMAT_TEXT_SHORT_UTF8'"
+ * @model
  * @generated
  */
 public interface Text extends EObject {

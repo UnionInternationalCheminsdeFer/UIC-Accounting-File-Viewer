@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see Accounting.AccountingPackage#getTripInterruptionConstraint()
- * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='DURATION_FORMAT'"
+ * @model
  * @generated
  */
 public interface TripInterruptionConstraint extends EObject {

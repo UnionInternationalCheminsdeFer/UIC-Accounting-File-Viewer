@@ -226,13 +226,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass stationRelationEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass carrierEClass = null;
 
 	/**
@@ -2294,15 +2287,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getServiceBrands__FindServiceBRand__int() {
-        return getServiceBrands().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getServiceBrand() {
 		if (serviceBrandEClass == null) {
 			serviceBrandEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(25);
@@ -2383,15 +2367,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EReference getCountries_Countries() {
         return (EReference)getCountries().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getCountries__FindCountry__int() {
-        return getCountries().getEOperations().get(0);
 	}
 
 	/**
@@ -2519,15 +2494,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCurrencies__FindCurrency__String() {
-        return getCurrencies().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getCurrency() {
 		if (currencyEClass == null) {
 			currencyEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(31);
@@ -2572,24 +2538,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EReference getStations_Stations() {
         return (EReference)getStations().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getStations__FindStation__int_int() {
-        return getStations().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EOperation getStations__FindStation__int_String() {
-        return getStations().getEOperations().get(1);
 	}
 
 	/**
@@ -2717,47 +2665,8 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getStation_Relations() {
-        return (EReference)getStation().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getStation_StationCode() {
-        return (EAttribute)getStation().getEStructuralFeatures().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getStationRelation() {
-		if (stationRelationEClass == null) {
-			stationRelationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(34);
-		}
-		return stationRelationEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getStationRelation_RelationType() {
-        return (EAttribute)getStationRelation().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getStationRelation_Station() {
-        return (EReference)getStationRelation().getEStructuralFeatures().get(1);
+        return (EAttribute)getStation().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -2767,7 +2676,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCarrier() {
 		if (carrierEClass == null) {
-			carrierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(35);
+			carrierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(34);
 		}
 		return carrierEClass;
 	}
@@ -2806,7 +2715,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCarriers() {
 		if (carriersEClass == null) {
-			carriersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(36);
+			carriersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(35);
 		}
 		return carriersEClass;
 	}
@@ -2825,18 +2734,9 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCarriers__FindCarrier__String() {
-        return getCarriers().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getStationSet() {
 		if (stationSetEClass == null) {
-			stationSetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(37);
+			stationSetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(36);
 		}
 		return stationSetEClass;
 	}
@@ -2857,7 +2757,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getGeneralTariffModel() {
 		if (generalTariffModelEClass == null) {
-			generalTariffModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(38);
+			generalTariffModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(37);
 		}
 		return generalTariffModelEClass;
 	}
@@ -2887,7 +2787,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getDelivery() {
 		if (deliveryEClass == null) {
-			deliveryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(39);
+			deliveryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(38);
 		}
 		return deliveryEClass;
 	}
@@ -2971,7 +2871,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAfterSalesRules() {
 		if (afterSalesRulesEClass == null) {
-			afterSalesRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(40);
+			afterSalesRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(39);
 		}
 		return afterSalesRulesEClass;
 	}
@@ -2992,7 +2892,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAfterSalesRule() {
 		if (afterSalesRuleEClass == null) {
-			afterSalesRuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(41);
+			afterSalesRuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(40);
 		}
 		return afterSalesRuleEClass;
 	}
@@ -3031,7 +2931,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAfterSalesCondition() {
 		if (afterSalesConditionEClass == null) {
-			afterSalesConditionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(42);
+			afterSalesConditionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(41);
 		}
 		return afterSalesConditionEClass;
 	}
@@ -3088,7 +2988,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getApplicationTime() {
 		if (applicationTimeEClass == null) {
-			applicationTimeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(43);
+			applicationTimeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(42);
 		}
 		return applicationTimeEClass;
 	}
@@ -3100,7 +3000,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareStructure() {
 		if (fareStructureEClass == null) {
-			fareStructureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(44);
+			fareStructureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(43);
 		}
 		return fareStructureEClass;
 	}
@@ -3364,7 +3264,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getConnectionPoints() {
 		if (connectionPointsEClass == null) {
-			connectionPointsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(45);
+			connectionPointsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(44);
 		}
 		return connectionPointsEClass;
 	}
@@ -3383,18 +3283,9 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getConnectionPoints__FindSimpleConnectionPoint__Station() {
-        return getConnectionPoints().getEOperations().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getConnectionPoint() {
 		if (connectionPointEClass == null) {
-			connectionPointEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(46);
+			connectionPointEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(45);
 		}
 		return connectionPointEClass;
 	}
@@ -3469,7 +3360,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareResourceLocations() {
 		if (fareResourceLocationsEClass == null) {
-			fareResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(47);
+			fareResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(46);
 		}
 		return fareResourceLocationsEClass;
 	}
@@ -3508,7 +3399,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTrainResourceLocations() {
 		if (trainResourceLocationsEClass == null) {
-			trainResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(48);
+			trainResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(47);
 		}
 		return trainResourceLocationsEClass;
 	}
@@ -3529,7 +3420,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getStationResourceLocations() {
 		if (stationResourceLocationsEClass == null) {
-			stationResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(49);
+			stationResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(48);
 		}
 		return stationResourceLocationsEClass;
 	}
@@ -3550,7 +3441,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCarrierResourceLocations() {
 		if (carrierResourceLocationsEClass == null) {
-			carrierResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(50);
+			carrierResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(49);
 		}
 		return carrierResourceLocationsEClass;
 	}
@@ -3571,7 +3462,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTrainResourceLocation() {
 		if (trainResourceLocationEClass == null) {
-			trainResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(51);
+			trainResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(50);
 		}
 		return trainResourceLocationEClass;
 	}
@@ -3610,7 +3501,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getStationResourceLocation() {
 		if (stationResourceLocationEClass == null) {
-			stationResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(52);
+			stationResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(51);
 		}
 		return stationResourceLocationEClass;
 	}
@@ -3649,7 +3540,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCarrierResourceLocation() {
 		if (carrierResourceLocationEClass == null) {
-			carrierResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(53);
+			carrierResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(52);
 		}
 		return carrierResourceLocationEClass;
 	}
@@ -3688,7 +3579,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getOnlineResource() {
 		if (onlineResourceEClass == null) {
-			onlineResourceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(54);
+			onlineResourceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(53);
 		}
 		return onlineResourceEClass;
 	}
@@ -3736,7 +3627,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFulfillmentConstraints() {
 		if (fulfillmentConstraintsEClass == null) {
-			fulfillmentConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(55);
+			fulfillmentConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(54);
 		}
 		return fulfillmentConstraintsEClass;
 	}
@@ -3757,7 +3648,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFulfillmentConstraint() {
 		if (fulfillmentConstraintEClass == null) {
-			fulfillmentConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(56);
+			fulfillmentConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(55);
 		}
 		return fulfillmentConstraintEClass;
 	}
@@ -3859,7 +3750,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRequiredBarcodes() {
 		if (requiredBarcodesEClass == null) {
-			requiredBarcodesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(57);
+			requiredBarcodesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(56);
 		}
 		return requiredBarcodesEClass;
 	}
@@ -3880,7 +3771,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAcceptedBarcodes() {
 		if (acceptedBarcodesEClass == null) {
-			acceptedBarcodesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(58);
+			acceptedBarcodesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(57);
 		}
 		return acceptedBarcodesEClass;
 	}
@@ -3901,7 +3792,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getSupportedOnlineServices() {
 		if (supportedOnlineServicesEClass == null) {
-			supportedOnlineServicesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(59);
+			supportedOnlineServicesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(58);
 		}
 		return supportedOnlineServicesEClass;
 	}
@@ -3922,7 +3813,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getStationNames() {
 		if (stationNamesEClass == null) {
-			stationNamesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(60);
+			stationNamesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(59);
 		}
 		return stationNamesEClass;
 	}
@@ -3943,7 +3834,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareElements() {
 		if (fareElementsEClass == null) {
-			fareElementsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(61);
+			fareElementsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(60);
 		}
 		return fareElementsEClass;
 	}
@@ -3964,7 +3855,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareElement() {
 		if (fareElementEClass == null) {
-			fareElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(62);
+			fareElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(61);
 		}
 		return fareElementEClass;
 	}
@@ -4228,7 +4119,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTotalPassengerCombinationConstraints() {
 		if (totalPassengerCombinationConstraintsEClass == null) {
-			totalPassengerCombinationConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(63);
+			totalPassengerCombinationConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(62);
 		}
 		return totalPassengerCombinationConstraintsEClass;
 	}
@@ -4249,7 +4140,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTotalPassengerCombinationConstraint() {
 		if (totalPassengerCombinationConstraintEClass == null) {
-			totalPassengerCombinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(64);
+			totalPassengerCombinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(63);
 		}
 		return totalPassengerCombinationConstraintEClass;
 	}
@@ -4297,7 +4188,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareConstraintBundles() {
 		if (fareConstraintBundlesEClass == null) {
-			fareConstraintBundlesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(65);
+			fareConstraintBundlesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(64);
 		}
 		return fareConstraintBundlesEClass;
 	}
@@ -4318,7 +4209,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareConstraintBundle() {
 		if (fareConstraintBundleEClass == null) {
-			fareConstraintBundleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(66);
+			fareConstraintBundleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(65);
 		}
 		return fareConstraintBundleEClass;
 	}
@@ -4456,7 +4347,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareStationSetDefinitions() {
 		if (fareStationSetDefinitionsEClass == null) {
-			fareStationSetDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(67);
+			fareStationSetDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(66);
 		}
 		return fareStationSetDefinitionsEClass;
 	}
@@ -4486,7 +4377,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareStationSetDefinition() {
 		if (fareStationSetDefinitionEClass == null) {
-			fareStationSetDefinitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(68);
+			fareStationSetDefinitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(67);
 		}
 		return fareStationSetDefinitionEClass;
 	}
@@ -4570,7 +4461,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getLegacyAccountingIdentifier() {
 		if (legacyAccountingIdentifierEClass == null) {
-			legacyAccountingIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(69);
+			legacyAccountingIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(68);
 		}
 		return legacyAccountingIdentifierEClass;
 	}
@@ -4609,7 +4500,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPersonalDataConstraints() {
 		if (personalDataConstraintsEClass == null) {
-			personalDataConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(70);
+			personalDataConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(69);
 		}
 		return personalDataConstraintsEClass;
 	}
@@ -4630,7 +4521,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPersonalDataConstraint() {
 		if (personalDataConstraintEClass == null) {
-			personalDataConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(71);
+			personalDataConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(70);
 		}
 		return personalDataConstraintEClass;
 	}
@@ -4669,7 +4560,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRequiredPersonalData() {
 		if (requiredPersonalDataEClass == null) {
-			requiredPersonalDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(72);
+			requiredPersonalDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(71);
 		}
 		return requiredPersonalDataEClass;
 	}
@@ -4726,7 +4617,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAllowedPersonalDataChanges() {
 		if (allowedPersonalDataChangesEClass == null) {
-			allowedPersonalDataChangesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(73);
+			allowedPersonalDataChangesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(72);
 		}
 		return allowedPersonalDataChangesEClass;
 	}
@@ -4756,7 +4647,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPassengerConstraints() {
 		if (passengerConstraintsEClass == null) {
-			passengerConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(74);
+			passengerConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(73);
 		}
 		return passengerConstraintsEClass;
 	}
@@ -4777,7 +4668,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPassengerConstraint() {
 		if (passengerConstraintEClass == null) {
-			passengerConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(75);
+			passengerConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(74);
 		}
 		return passengerConstraintEClass;
 	}
@@ -4924,7 +4815,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPassengerCombinationConstraint() {
 		if (passengerCombinationConstraintEClass == null) {
-			passengerCombinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(76);
+			passengerCombinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(75);
 		}
 		return passengerCombinationConstraintEClass;
 	}
@@ -4972,7 +4863,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getIncludedFreePassengerLimit() {
 		if (includedFreePassengerLimitEClass == null) {
-			includedFreePassengerLimitEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(77);
+			includedFreePassengerLimitEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(76);
 		}
 		return includedFreePassengerLimitEClass;
 	}
@@ -5011,7 +4902,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCombinationConstraints() {
 		if (combinationConstraintsEClass == null) {
-			combinationConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(78);
+			combinationConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(77);
 		}
 		return combinationConstraintsEClass;
 	}
@@ -5032,7 +4923,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCombinationConstraint() {
 		if (combinationConstraintEClass == null) {
-			combinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(79);
+			combinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(78);
 		}
 		return combinationConstraintEClass;
 	}
@@ -5071,7 +4962,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTravelValidityConstraints() {
 		if (travelValidityConstraintsEClass == null) {
-			travelValidityConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(80);
+			travelValidityConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(79);
 		}
 		return travelValidityConstraintsEClass;
 	}
@@ -5092,7 +4983,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTravelValidityConstraint() {
 		if (travelValidityConstraintEClass == null) {
-			travelValidityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(81);
+			travelValidityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(80);
 		}
 		return travelValidityConstraintEClass;
 	}
@@ -5203,7 +5094,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTrainValidity() {
 		if (trainValidityEClass == null) {
-			trainValidityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(82);
+			trainValidityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(81);
 		}
 		return trainValidityEClass;
 	}
@@ -5242,7 +5133,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getSalesAvailabilityConstraints() {
 		if (salesAvailabilityConstraintsEClass == null) {
-			salesAvailabilityConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(84);
+			salesAvailabilityConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(83);
 		}
 		return salesAvailabilityConstraintsEClass;
 	}
@@ -5263,7 +5154,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getSalesAvailabilityConstraint() {
 		if (salesAvailabilityConstraintEClass == null) {
-			salesAvailabilityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(85);
+			salesAvailabilityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(84);
 		}
 		return salesAvailabilityConstraintEClass;
 	}
@@ -5311,7 +5202,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getSalesRestriction() {
 		if (salesRestrictionEClass == null) {
-			salesRestrictionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(86);
+			salesRestrictionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(85);
 		}
 		return salesRestrictionEClass;
 	}
@@ -5350,7 +5241,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getEndOfSale() {
 		if (endOfSaleEClass == null) {
-			endOfSaleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(87);
+			endOfSaleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(86);
 		}
 		return endOfSaleEClass;
 	}
@@ -5362,7 +5253,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getStartOfSale() {
 		if (startOfSaleEClass == null) {
-			startOfSaleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(88);
+			startOfSaleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(87);
 		}
 		return startOfSaleEClass;
 	}
@@ -5374,7 +5265,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCarrierConstraints() {
 		if (carrierConstraintsEClass == null) {
-			carrierConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(89);
+			carrierConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(88);
 		}
 		return carrierConstraintsEClass;
 	}
@@ -5395,7 +5286,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCarrierConstraint() {
 		if (carrierConstraintEClass == null) {
-			carrierConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(90);
+			carrierConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(89);
 		}
 		return carrierConstraintEClass;
 	}
@@ -5452,7 +5343,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getServiceConstraints() {
 		if (serviceConstraintsEClass == null) {
-			serviceConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(91);
+			serviceConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(90);
 		}
 		return serviceConstraintsEClass;
 	}
@@ -5473,7 +5364,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getServiceConstraint() {
 		if (serviceConstraintEClass == null) {
-			serviceConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(92);
+			serviceConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(91);
 		}
 		return serviceConstraintEClass;
 	}
@@ -5539,7 +5430,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRegionalConstraints() {
 		if (regionalConstraintsEClass == null) {
-			regionalConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(93);
+			regionalConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(92);
 		}
 		return regionalConstraintsEClass;
 	}
@@ -5560,7 +5451,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRegionalConstraint() {
 		if (regionalConstraintEClass == null) {
-			regionalConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(94);
+			regionalConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(93);
 		}
 		return regionalConstraintEClass;
 	}
@@ -5644,7 +5535,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRegionalValidity() {
 		if (regionalValidityEClass == null) {
-			regionalValidityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(95);
+			regionalValidityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(94);
 		}
 		return regionalValidityEClass;
 	}
@@ -5719,7 +5610,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getServiceLevelDefinitions() {
 		if (serviceLevelDefinitionsEClass == null) {
-			serviceLevelDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(96);
+			serviceLevelDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(95);
 		}
 		return serviceLevelDefinitionsEClass;
 	}
@@ -5740,7 +5631,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTexts() {
 		if (textsEClass == null) {
-			textsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(97);
+			textsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(96);
 		}
 		return textsEClass;
 	}
@@ -5761,7 +5652,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getText() {
 		if (textEClass == null) {
-			textEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(98);
+			textEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(97);
 		}
 		return textEClass;
 	}
@@ -5845,7 +5736,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTranslation() {
 		if (translationEClass == null) {
-			translationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(99);
+			translationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(98);
 		}
 		return translationEClass;
 	}
@@ -5902,7 +5793,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPrices() {
 		if (pricesEClass == null) {
-			pricesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(100);
+			pricesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(99);
 		}
 		return pricesEClass;
 	}
@@ -5923,7 +5814,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPrice() {
 		if (priceEClass == null) {
-			priceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(101);
+			priceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(100);
 		}
 		return priceEClass;
 	}
@@ -5962,7 +5853,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getVATDetail() {
 		if (vatDetailEClass == null) {
-			vatDetailEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(102);
+			vatDetailEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(101);
 		}
 		return vatDetailEClass;
 	}
@@ -6019,7 +5910,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCurrencyPrice() {
 		if (currencyPriceEClass == null) {
-			currencyPriceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(103);
+			currencyPriceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(102);
 		}
 		return currencyPriceEClass;
 	}
@@ -6058,7 +5949,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getServiceClassDefinitions() {
 		if (serviceClassDefinitionsEClass == null) {
-			serviceClassDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(104);
+			serviceClassDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(103);
 		}
 		return serviceClassDefinitionsEClass;
 	}
@@ -6079,7 +5970,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCalendars() {
 		if (calendarsEClass == null) {
-			calendarsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(105);
+			calendarsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(104);
 		}
 		return calendarsEClass;
 	}
@@ -6100,7 +5991,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCalendar() {
 		if (calendarEClass == null) {
-			calendarEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(106);
+			calendarEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(105);
 		}
 		return calendarEClass;
 	}
@@ -6193,7 +6084,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReservationParameters() {
 		if (reservationParametersEClass == null) {
-			reservationParametersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(107);
+			reservationParametersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(106);
 		}
 		return reservationParametersEClass;
 	}
@@ -6214,7 +6105,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReservationParameter() {
 		if (reservationParameterEClass == null) {
-			reservationParameterEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(108);
+			reservationParameterEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(107);
 		}
 		return reservationParameterEClass;
 	}
@@ -6280,7 +6171,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReservationParams9181() {
 		if (reservationParams9181EClass == null) {
-			reservationParams9181EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(109);
+			reservationParams9181EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(108);
 		}
 		return reservationParams9181EClass;
 	}
@@ -6355,7 +6246,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReservationOptions() {
 		if (reservationOptionsEClass == null) {
-			reservationOptionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(110);
+			reservationOptionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(109);
 		}
 		return reservationOptionsEClass;
 	}
@@ -6394,7 +6285,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReservationPreferenceGroup() {
 		if (reservationPreferenceGroupEClass == null) {
-			reservationPreferenceGroupEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(111);
+			reservationPreferenceGroupEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(110);
 		}
 		return reservationPreferenceGroupEClass;
 	}
@@ -6424,7 +6315,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getServiceClass() {
 		if (serviceClassEClass == null) {
-			serviceClassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(112);
+			serviceClassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(111);
 		}
 		return serviceClassEClass;
 	}
@@ -6463,7 +6354,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getServiceLevel() {
 		if (serviceLevelEClass == null) {
-			serviceLevelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(113);
+			serviceLevelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(112);
 		}
 		return serviceLevelEClass;
 	}
@@ -6520,7 +6411,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTimeRange() {
 		if (timeRangeEClass == null) {
-			timeRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(114);
+			timeRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(113);
 		}
 		return timeRangeEClass;
 	}
@@ -6559,7 +6450,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getExcludedTimeRange() {
 		if (excludedTimeRangeEClass == null) {
-			excludedTimeRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(115);
+			excludedTimeRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(114);
 		}
 		return excludedTimeRangeEClass;
 	}
@@ -6571,7 +6462,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getValidityRange() {
 		if (validityRangeEClass == null) {
-			validityRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(116);
+			validityRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(115);
 		}
 		return validityRangeEClass;
 	}
@@ -6610,7 +6501,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRelativeTime() {
 		if (relativeTimeEClass == null) {
-			relativeTimeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(117);
+			relativeTimeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(116);
 		}
 		return relativeTimeEClass;
 	}
@@ -6649,7 +6540,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReturnValidityConstraint() {
 		if (returnValidityConstraintEClass == null) {
-			returnValidityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(118);
+			returnValidityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(117);
 		}
 		return returnValidityConstraintEClass;
 	}
@@ -6688,7 +6579,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTripAllocationConstraint() {
 		if (tripAllocationConstraintEClass == null) {
-			tripAllocationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(119);
+			tripAllocationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(118);
 		}
 		return tripAllocationConstraintEClass;
 	}
@@ -6736,7 +6627,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getTripInterruptionConstraint() {
 		if (tripInterruptionConstraintEClass == null) {
-			tripInterruptionConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(120);
+			tripInterruptionConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(119);
 		}
 		return tripInterruptionConstraintEClass;
 	}
@@ -6784,7 +6675,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getViaStation() {
 		if (viaStationEClass == null) {
-			viaStationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(121);
+			viaStationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(120);
 		}
 		return viaStationEClass;
 	}
@@ -6877,7 +6768,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAlternativeRoute() {
 		if (alternativeRouteEClass == null) {
-			alternativeRouteEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(122);
+			alternativeRouteEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(121);
 		}
 		return alternativeRouteEClass;
 	}
@@ -6898,7 +6789,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRoute() {
 		if (routeEClass == null) {
-			routeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(123);
+			routeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(122);
 		}
 		return routeEClass;
 	}
@@ -6919,7 +6810,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getZone() {
 		if (zoneEClass == null) {
-			zoneEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(124);
+			zoneEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(123);
 		}
 		return zoneEClass;
 	}
@@ -6994,7 +6885,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getLine() {
 		if (lineEClass == null) {
-			lineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(125);
+			lineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(124);
 		}
 		return lineEClass;
 	}
@@ -7069,7 +6960,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getPolygone() {
 		if (polygoneEClass == null) {
-			polygoneEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(126);
+			polygoneEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(125);
 		}
 		return polygoneEClass;
 	}
@@ -7090,7 +6981,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getEdge() {
 		if (edgeEClass == null) {
-			edgeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(127);
+			edgeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(126);
 		}
 		return edgeEClass;
 	}
@@ -7138,7 +7029,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getZoneDefinitions() {
 		if (zoneDefinitionsEClass == null) {
-			zoneDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(128);
+			zoneDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(127);
 		}
 		return zoneDefinitionsEClass;
 	}
@@ -7159,7 +7050,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getZoneDefinition() {
 		if (zoneDefinitionEClass == null) {
-			zoneDefinitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(129);
+			zoneDefinitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(128);
 		}
 		return zoneDefinitionEClass;
 	}
@@ -7234,7 +7125,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getCrossBorderCondition() {
 		if (crossBorderConditionEClass == null) {
-			crossBorderConditionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(130);
+			crossBorderConditionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(129);
 		}
 		return crossBorderConditionEClass;
 	}
@@ -7273,7 +7164,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getFareCombinationModel() {
 		if (fareCombinationModelEClass == null) {
-			fareCombinationModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(131);
+			fareCombinationModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(130);
 		}
 		return fareCombinationModelEClass;
 	}
@@ -7348,7 +7239,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReductionConstraints() {
 		if (reductionConstraintsEClass == null) {
-			reductionConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(132);
+			reductionConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(131);
 		}
 		return reductionConstraintsEClass;
 	}
@@ -7369,7 +7260,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReductionConstraint() {
 		if (reductionConstraintEClass == null) {
-			reductionConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(133);
+			reductionConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(132);
 		}
 		return reductionConstraintEClass;
 	}
@@ -7399,7 +7290,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReductionCards() {
 		if (reductionCardsEClass == null) {
-			reductionCardsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(134);
+			reductionCardsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(133);
 		}
 		return reductionCardsEClass;
 	}
@@ -7420,7 +7311,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getReductionCard() {
 		if (reductionCardEClass == null) {
-			reductionCardEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(135);
+			reductionCardEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(134);
 		}
 		return reductionCardEClass;
 	}
@@ -7495,7 +7386,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getRequiredReductionCard() {
 		if (requiredReductionCardEClass == null) {
-			requiredReductionCardEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(136);
+			requiredReductionCardEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(135);
 		}
 		return requiredReductionCardEClass;
 	}
@@ -7534,7 +7425,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getLuggageConstraints() {
 		if (luggageConstraintsEClass == null) {
-			luggageConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(137);
+			luggageConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(136);
 		}
 		return luggageConstraintsEClass;
 	}
@@ -7555,7 +7446,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getLuggageConstraint() {
 		if (luggageConstraintEClass == null) {
-			luggageConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(138);
+			luggageConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(137);
 		}
 		return luggageConstraintEClass;
 	}
@@ -7621,7 +7512,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getLuggageItemsRestriction() {
 		if (luggageItemsRestrictionEClass == null) {
-			luggageItemsRestrictionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(139);
+			luggageItemsRestrictionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(138);
 		}
 		return luggageItemsRestrictionEClass;
 	}
@@ -7651,7 +7542,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getLuggageDimension() {
 		if (luggageDimensionEClass == null) {
-			luggageDimensionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(140);
+			luggageDimensionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(139);
 		}
 		return luggageDimensionEClass;
 	}
@@ -7681,7 +7572,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAddCarrierRules() {
 		if (addCarrierRulesEClass == null) {
-			addCarrierRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(143);
+			addCarrierRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(142);
 		}
 		return addCarrierRulesEClass;
 	}
@@ -7702,7 +7593,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getAddCarrierRule() {
 		if (addCarrierRuleEClass == null) {
-			addCarrierRuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(144);
+			addCarrierRuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(143);
 		}
 		return addCarrierRuleEClass;
 	}
@@ -7741,7 +7632,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getOnBorderStations() {
 		if (onBorderStationsEClass == null) {
-			onBorderStationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(146);
+			onBorderStationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(145);
 		}
 		return onBorderStationsEClass;
 	}
@@ -7846,7 +7737,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getBoardingOrArrival() {
 		if (boardingOrArrivalEEnum == null) {
-			boardingOrArrivalEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(83);
+			boardingOrArrivalEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(82);
 		}
 		return boardingOrArrivalEEnum;
 	}
@@ -7858,7 +7749,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getLuggageRule() {
 		if (luggageRuleEEnum == null) {
-			luggageRuleEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(141);
+			luggageRuleEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(140);
 		}
 		return luggageRuleEEnum;
 	}
@@ -7870,7 +7761,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getDimension() {
 		if (dimensionEEnum == null) {
-			dimensionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(142);
+			dimensionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(141);
 		}
 		return dimensionEEnum;
 	}
@@ -7882,7 +7773,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getAddCarrierScope() {
 		if (addCarrierScopeEEnum == null) {
-			addCarrierScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(145);
+			addCarrierScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(144);
 		}
 		return addCarrierScopeEEnum;
 	}
@@ -7894,7 +7785,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTransportMode() {
 		if (transportModeEEnum == null) {
-			transportModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(147);
+			transportModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(146);
 		}
 		return transportModeEEnum;
 	}
@@ -7906,7 +7797,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getStationRelationType() {
 		if (stationRelationTypeEEnum == null) {
-			stationRelationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(148);
+			stationRelationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(147);
 		}
 		return stationRelationTypeEEnum;
 	}
@@ -7918,7 +7809,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getStationFareDetailType() {
 		if (stationFareDetailTypeEEnum == null) {
-			stationFareDetailTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(149);
+			stationFareDetailTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(148);
 		}
 		return stationFareDetailTypeEEnum;
 	}
@@ -7930,7 +7821,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getRegulatoryCondition() {
 		if (regulatoryConditionEEnum == null) {
-			regulatoryConditionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(150);
+			regulatoryConditionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(149);
 		}
 		return regulatoryConditionEEnum;
 	}
@@ -7942,7 +7833,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getAfterSalesTransactionType() {
 		if (afterSalesTransactionTypeEEnum == null) {
-			afterSalesTransactionTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(151);
+			afterSalesTransactionTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(150);
 		}
 		return afterSalesTransactionTypeEEnum;
 	}
@@ -7954,7 +7845,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getBarcodeTypes() {
 		if (barcodeTypesEEnum == null) {
-			barcodeTypesEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(152);
+			barcodeTypesEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(151);
 		}
 		return barcodeTypesEEnum;
 	}
@@ -7966,7 +7857,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getBasePriceClassType() {
 		if (basePriceClassTypeEEnum == null) {
-			basePriceClassTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(153);
+			basePriceClassTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(152);
 		}
 		return basePriceClassTypeEEnum;
 	}
@@ -7978,7 +7869,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getClassicClassType() {
 		if (classicClassTypeEEnum == null) {
-			classicClassTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(154);
+			classicClassTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(153);
 		}
 		return classicClassTypeEEnum;
 	}
@@ -7990,7 +7881,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getClassId() {
 		if (classIdEEnum == null) {
-			classIdEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(155);
+			classIdEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(154);
 		}
 		return classIdEEnum;
 	}
@@ -8002,7 +7893,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getCharacterSet() {
 		if (characterSetEEnum == null) {
-			characterSetEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(156);
+			characterSetEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(155);
 		}
 		return characterSetEEnum;
 	}
@@ -8014,7 +7905,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getClusters() {
 		if (clustersEEnum == null) {
-			clustersEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(157);
+			clustersEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(156);
 		}
 		return clustersEEnum;
 	}
@@ -8026,7 +7917,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getCombinationModel() {
 		if (combinationModelEEnum == null) {
-			combinationModelEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(158);
+			combinationModelEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(157);
 		}
 		return combinationModelEEnum;
 	}
@@ -8038,7 +7929,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getControlDataExchangeTypes() {
 		if (controlDataExchangeTypesEEnum == null) {
-			controlDataExchangeTypesEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(159);
+			controlDataExchangeTypesEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(158);
 		}
 		return controlDataExchangeTypesEEnum;
 	}
@@ -8050,7 +7941,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getDataSource() {
 		if (dataSourceEEnum == null) {
-			dataSourceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(160);
+			dataSourceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(159);
 		}
 		return dataSourceEEnum;
 	}
@@ -8062,7 +7953,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getDataType() {
 		if (dataTypeEEnum == null) {
-			dataTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(161);
+			dataTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(160);
 		}
 		return dataTypeEEnum;
 	}
@@ -8074,7 +7965,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getFareType() {
 		if (fareTypeEEnum == null) {
-			fareTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(162);
+			fareTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(161);
 		}
 		return fareTypeEEnum;
 	}
@@ -8086,7 +7977,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getFulfillmentType() {
 		if (fulfillmentTypeEEnum == null) {
-			fulfillmentTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(163);
+			fulfillmentTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(162);
 		}
 		return fulfillmentTypeEEnum;
 	}
@@ -8098,7 +7989,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getGeoSystem() {
 		if (geoSystemEEnum == null) {
-			geoSystemEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(164);
+			geoSystemEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(163);
 		}
 		return geoSystemEEnum;
 	}
@@ -8110,7 +8001,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getGeoUnit() {
 		if (geoUnitEEnum == null) {
-			geoUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(165);
+			geoUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(164);
 		}
 		return geoUnitEEnum;
 	}
@@ -8122,7 +8013,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getGraphicalReservationType() {
 		if (graphicalReservationTypeEEnum == null) {
-			graphicalReservationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(166);
+			graphicalReservationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(165);
 		}
 		return graphicalReservationTypeEEnum;
 	}
@@ -8134,7 +8025,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getGenericReductionCards() {
 		if (genericReductionCardsEEnum == null) {
-			genericReductionCardsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(167);
+			genericReductionCardsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(166);
 		}
 		return genericReductionCardsEEnum;
 	}
@@ -8146,7 +8037,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getHemisphereEW() {
 		if (hemisphereEWEEnum == null) {
-			hemisphereEWEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(168);
+			hemisphereEWEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(167);
 		}
 		return hemisphereEWEEnum;
 	}
@@ -8158,7 +8049,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getHemisphereNS() {
 		if (hemisphereNSEEnum == null) {
-			hemisphereNSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(169);
+			hemisphereNSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(168);
 		}
 		return hemisphereNSEEnum;
 	}
@@ -8170,7 +8061,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getInterfaceType() {
 		if (interfaceTypeEEnum == null) {
-			interfaceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(170);
+			interfaceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(169);
 		}
 		return interfaceTypeEEnum;
 	}
@@ -8182,7 +8073,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getLegacyCalculationType() {
 		if (legacyCalculationTypeEEnum == null) {
-			legacyCalculationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(171);
+			legacyCalculationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(170);
 		}
 		return legacyCalculationTypeEEnum;
 	}
@@ -8194,7 +8085,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getLegacyPassengerType() {
 		if (legacyPassengerTypeEEnum == null) {
-			legacyPassengerTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(172);
+			legacyPassengerTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(171);
 		}
 		return legacyPassengerTypeEEnum;
 	}
@@ -8206,7 +8097,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getLegacySeriesType() {
 		if (legacySeriesTypeEEnum == null) {
-			legacySeriesTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(173);
+			legacySeriesTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(172);
 		}
 		return legacySeriesTypeEEnum;
 	}
@@ -8218,7 +8109,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getLegacyConversionType() {
 		if (legacyConversionTypeEEnum == null) {
-			legacyConversionTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(174);
+			legacyConversionTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(173);
 		}
 		return legacyConversionTypeEEnum;
 	}
@@ -8230,7 +8121,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getOfferRequestType() {
 		if (offerRequestTypeEEnum == null) {
-			offerRequestTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(175);
+			offerRequestTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(174);
 		}
 		return offerRequestTypeEEnum;
 	}
@@ -8242,7 +8133,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getOnlineServiceType() {
 		if (onlineServiceTypeEEnum == null) {
-			onlineServiceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(176);
+			onlineServiceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(175);
 		}
 		return onlineServiceTypeEEnum;
 	}
@@ -8254,7 +8145,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getPersonalDataItemsType() {
 		if (personalDataItemsTypeEEnum == null) {
-			personalDataItemsTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(177);
+			personalDataItemsTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(176);
 		}
 		return personalDataItemsTypeEEnum;
 	}
@@ -8266,7 +8157,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getPersonalDataTransferType() {
 		if (personalDataTransferTypeEEnum == null) {
-			personalDataTransferTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(178);
+			personalDataTransferTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(177);
 		}
 		return personalDataTransferTypeEEnum;
 	}
@@ -8278,7 +8169,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getPersonalDataChangeReason() {
 		if (personalDataChangeReasonEEnum == null) {
-			personalDataChangeReasonEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(179);
+			personalDataChangeReasonEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(178);
 		}
 		return personalDataChangeReasonEEnum;
 	}
@@ -8290,7 +8181,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getReservationTravelClass() {
 		if (reservationTravelClassEEnum == null) {
-			reservationTravelClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(180);
+			reservationTravelClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(179);
 		}
 		return reservationTravelClassEEnum;
 	}
@@ -8302,7 +8193,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getReservationServiceLevel() {
 		if (reservationServiceLevelEEnum == null) {
-			reservationServiceLevelEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(181);
+			reservationServiceLevelEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(180);
 		}
 		return reservationServiceLevelEEnum;
 	}
@@ -8314,7 +8205,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getReservationService() {
 		if (reservationServiceEEnum == null) {
-			reservationServiceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(182);
+			reservationServiceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(181);
 		}
 		return reservationServiceEEnum;
 	}
@@ -8326,7 +8217,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getReservationBerthType() {
 		if (reservationBerthTypeEEnum == null) {
-			reservationBerthTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(183);
+			reservationBerthTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(182);
 		}
 		return reservationBerthTypeEEnum;
 	}
@@ -8338,7 +8229,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getRoundingType() {
 		if (roundingTypeEEnum == null) {
-			roundingTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(184);
+			roundingTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(183);
 		}
 		return roundingTypeEEnum;
 	}
@@ -8350,7 +8241,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getSchemaVersion() {
 		if (schemaVersionEEnum == null) {
-			schemaVersionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(185);
+			schemaVersionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(184);
 		}
 		return schemaVersionEEnum;
 	}
@@ -8362,7 +8253,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getServiceMode() {
 		if (serviceModeEEnum == null) {
-			serviceModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(186);
+			serviceModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(185);
 		}
 		return serviceModeEEnum;
 	}
@@ -8374,7 +8265,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTimeZone() {
 		if (timeZoneEEnum == null) {
-			timeZoneEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(187);
+			timeZoneEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(186);
 		}
 		return timeZoneEEnum;
 	}
@@ -8386,7 +8277,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTaxScope() {
 		if (taxScopeEEnum == null) {
-			taxScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(188);
+			taxScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(187);
 		}
 		return taxScopeEEnum;
 	}
@@ -8398,7 +8289,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTimeReferenceType() {
 		if (timeReferenceTypeEEnum == null) {
-			timeReferenceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(189);
+			timeReferenceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(188);
 		}
 		return timeReferenceTypeEEnum;
 	}
@@ -8410,7 +8301,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTimeRangeScope() {
 		if (timeRangeScopeEEnum == null) {
-			timeRangeScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(190);
+			timeRangeScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(189);
 		}
 		return timeRangeScopeEEnum;
 	}
@@ -8422,7 +8313,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTimeUnit() {
 		if (timeUnitEEnum == null) {
-			timeUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(191);
+			timeUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(190);
 		}
 		return timeUnitEEnum;
 	}
@@ -8434,7 +8325,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTravelerType() {
 		if (travelerTypeEEnum == null) {
-			travelerTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(192);
+			travelerTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(191);
 		}
 		return travelerTypeEEnum;
 	}
@@ -8446,7 +8337,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTripAllocationProcess() {
 		if (tripAllocationProcessEEnum == null) {
-			tripAllocationProcessEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(193);
+			tripAllocationProcessEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(192);
 		}
 		return tripAllocationProcessEEnum;
 	}
@@ -8458,7 +8349,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTripAllocationUnit() {
 		if (tripAllocationUnitEEnum == null) {
-			tripAllocationUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(194);
+			tripAllocationUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(193);
 		}
 		return tripAllocationUnitEEnum;
 	}
@@ -8470,7 +8361,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTripInterruptionProcess() {
 		if (tripInterruptionProcessEEnum == null) {
-			tripInterruptionProcessEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(195);
+			tripInterruptionProcessEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(194);
 		}
 		return tripInterruptionProcessEEnum;
 	}
@@ -8482,7 +8373,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getTravelValidityType() {
 		if (travelValidityTypeEEnum == null) {
-			travelValidityTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(196);
+			travelValidityTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(195);
 		}
 		return travelValidityTypeEEnum;
 	}
@@ -8494,7 +8385,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EEnum getWeekDay() {
 		if (weekDayEEnum == null) {
-			weekDayEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(197);
+			weekDayEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(196);
 		}
 		return weekDayEEnum;
 	}
