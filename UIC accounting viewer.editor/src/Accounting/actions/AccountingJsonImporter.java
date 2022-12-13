@@ -197,10 +197,10 @@ public class AccountingJsonImporter {
 		
 		Transaction mObj = AccountingFactory.eINSTANCE.createTransaction();
 		
-		mObj.setBookingId(jObj.getBookingId());
+		mObj.setBookingId(jObj.getBookedOfferId());
 		mObj.setCommunicationId(jObj.getCommunicationId());
 		mObj.setContract(jObj.getContract());
-		mObj.setExchangebookingId(jObj.getExchangeBookingId());
+		mObj.setExchangebookingId(jObj.getExchangedBookedOfferId());
 		mObj.setFulfillmentId(mObj.getFulfillmentId());
 		mObj.setTicketId(jObj.getTicketId());
 		mObj.setTransactionTime(jObj.getTime());

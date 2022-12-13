@@ -19,7 +19,6 @@ import org.eclipse.swt.widgets.Shell;
 import org.osgi.service.prefs.BackingStoreException;
 
 import Accounting.AccountingViewerData;
-import Accounting.nls.NationalLanguageSupport;
 import Accounting.presentation.AccountingEditor;
 import Accounting.presentation.AccountingEditorPlugin;
 import Accounting.resourceTree.DirtyCommand;

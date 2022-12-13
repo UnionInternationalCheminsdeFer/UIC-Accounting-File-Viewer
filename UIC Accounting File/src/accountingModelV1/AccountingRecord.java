@@ -78,7 +78,7 @@ public class AccountingRecord {
      */
     @JsonProperty("transactionStandard")
     @JsonPropertyDescription("indication of a sale that is not following UIC sales standards, Default is UIC")
-    private AccountingRecord.TransactionStandard transactionStandard;
+    private AccountingRecord.TransactionStandard transactionStandard = AccountingRecord.TransactionStandard.fromValue("UIC");
 
     /**
      * accounting identifier (id of the accounting record) 
