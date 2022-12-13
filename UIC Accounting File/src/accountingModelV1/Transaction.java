@@ -17,10 +17,10 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "time",
     "type",
     "contract",
-    "bookingId",
+    "bookedOfferId",
     "ticketId",
     "fulfillmentId",
-    "exchangeBookingId",
+    "exchangedBookedOfferId",
     "communicationId"
 })
 public class Transaction {
@@ -41,7 +41,7 @@ public class Transaction {
      */
     @JsonProperty("type")
     @JsonPropertyDescription("type of the sales transaction accounted")
-    private Transaction.Type type;
+    private Transaction.TransactionType type;
     /**
      * id of the sales contact used for this transaction defining the commission
      * (Required)
@@ -51,12 +51,12 @@ public class Transaction {
     @JsonPropertyDescription("id of the sales contact used for this transaction defining the commission")
     private String contract;
     /**
-     * booking id of the provider in case of an online booking
+     * booked offer id of the provider in case of an online booking
      * 
      */
-    @JsonProperty("bookingId")
-    @JsonPropertyDescription("booking id of the provider in case of an online booking")
-    private String bookingId;
+    @JsonProperty("bookedOfferId")
+    @JsonPropertyDescription("booked offer id of the provider in case of an online booking")
+    private String bookedOfferId;
     /**
      * id of the ticket in case the provider is responsible for the ticket creation used in barcodes according to 90918-9
      * 
@@ -72,12 +72,12 @@ public class Transaction {
     @JsonPropertyDescription("OSDM fulfillment id associated with this accounting transaction")
     private String fulfillmentId;
     /**
-     * reference of the connected part of the booking in case of an exchange
+     * reference of the original booked offer that was exchanged in case of an exchange transaction
      * 
      */
-    @JsonProperty("exchangeBookingId")
-    @JsonPropertyDescription("reference of the connected part of the booking in case of an exchange")
-    private String exchangeBookingId;
+    @JsonProperty("exchangedBookedOfferId")
+    @JsonPropertyDescription("reference of the original booked offer that was exchanged in case of an exchange transaction")
+    private String exchangedBookedOfferId;
     /**
      * identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. The comminiicatioId is mandatory in case of one step bookings where the bookingId might not be known by both partners in case of errors as might be the case with IRS 90918-1.
      * 
@@ -112,7 +112,7 @@ public class Transaction {
      * 
      */
     @JsonProperty("type")
-    public Transaction.Type getType() {
+    public Transaction.TransactionType getType() {
         return type;
     }
 
@@ -122,7 +122,7 @@ public class Transaction {
      * 
      */
     @JsonProperty("type")
-    public void setType(Transaction.Type type) {
+    public void setType(Transaction.TransactionType type) {
         this.type = type;
     }
 
@@ -147,21 +147,21 @@ public class Transaction {
     }
 
     /**
-     * booking id of the provider in case of an online booking
+     * booked offer id of the provider in case of an online booking
      * 
      */
-    @JsonProperty("bookingId")
-    public String getBookingId() {
-        return bookingId;
+    @JsonProperty("bookedOfferId")
+    public String getBookedOfferId() {
+        return bookedOfferId;
     }
 
     /**
-     * booking id of the provider in case of an online booking
+     * booked offer id of the provider in case of an online booking
      * 
      */
-    @JsonProperty("bookingId")
-    public void setBookingId(String bookingId) {
-        this.bookingId = bookingId;
+    @JsonProperty("bookedOfferId")
+    public void setBookedOfferId(String bookedOfferId) {
+        this.bookedOfferId = bookedOfferId;
     }
 
     /**
@@ -201,21 +201,21 @@ public class Transaction {
     }
 
     /**
-     * reference of the connected part of the booking in case of an exchange
+     * reference of the original booked offer that was exchanged in case of an exchange transaction
      * 
      */
-    @JsonProperty("exchangeBookingId")
-    public String getExchangeBookingId() {
-        return exchangeBookingId;
+    @JsonProperty("exchangedBookedOfferId")
+    public String getExchangedBookedOfferId() {
+        return exchangedBookedOfferId;
     }
 
     /**
-     * reference of the connected part of the booking in case of an exchange
+     * reference of the original booked offer that was exchanged in case of an exchange transaction
      * 
      */
-    @JsonProperty("exchangeBookingId")
-    public void setExchangeBookingId(String exchangeBookingId) {
-        this.exchangeBookingId = exchangeBookingId;
+    @JsonProperty("exchangedBookedOfferId")
+    public void setExchangedBookedOfferId(String exchangedBookedOfferId) {
+        this.exchangedBookedOfferId = exchangedBookedOfferId;
     }
 
     /**
@@ -252,9 +252,9 @@ public class Transaction {
         sb.append('=');
         sb.append(((this.contract == null)?"<null>":this.contract));
         sb.append(',');
-        sb.append("bookingId");
+        sb.append("bookedOfferId");
         sb.append('=');
-        sb.append(((this.bookingId == null)?"<null>":this.bookingId));
+        sb.append(((this.bookedOfferId == null)?"<null>":this.bookedOfferId));
         sb.append(',');
         sb.append("ticketId");
         sb.append('=');
@@ -264,9 +264,9 @@ public class Transaction {
         sb.append('=');
         sb.append(((this.fulfillmentId == null)?"<null>":this.fulfillmentId));
         sb.append(',');
-        sb.append("exchangeBookingId");
+        sb.append("exchangedBookedOfferId");
         sb.append('=');
-        sb.append(((this.exchangeBookingId == null)?"<null>":this.exchangeBookingId));
+        sb.append(((this.exchangedBookedOfferId == null)?"<null>":this.exchangedBookedOfferId));
         sb.append(',');
         sb.append("communicationId");
         sb.append('=');
@@ -286,10 +286,10 @@ public class Transaction {
         result = ((result* 31)+((this.fulfillmentId == null)? 0 :this.fulfillmentId.hashCode()));
         result = ((result* 31)+((this.contract == null)? 0 :this.contract.hashCode()));
         result = ((result* 31)+((this.communicationId == null)? 0 :this.communicationId.hashCode()));
+        result = ((result* 31)+((this.bookedOfferId == null)? 0 :this.bookedOfferId.hashCode()));
         result = ((result* 31)+((this.time == null)? 0 :this.time.hashCode()));
         result = ((result* 31)+((this.type == null)? 0 :this.type.hashCode()));
-        result = ((result* 31)+((this.exchangeBookingId == null)? 0 :this.exchangeBookingId.hashCode()));
-        result = ((result* 31)+((this.bookingId == null)? 0 :this.bookingId.hashCode()));
+        result = ((result* 31)+((this.exchangedBookedOfferId == null)? 0 :this.exchangedBookedOfferId.hashCode()));
         result = ((result* 31)+((this.ticketId == null)? 0 :this.ticketId.hashCode()));
         return result;
     }
@@ -303,10 +303,10 @@ public class Transaction {
             return false;
         }
         Transaction rhs = ((Transaction) other);
-        return (((((((((this.fulfillmentId == rhs.fulfillmentId)||((this.fulfillmentId!= null)&&this.fulfillmentId.equals(rhs.fulfillmentId)))&&((this.contract == rhs.contract)||((this.contract!= null)&&this.contract.equals(rhs.contract))))&&((this.communicationId == rhs.communicationId)||((this.communicationId!= null)&&this.communicationId.equals(rhs.communicationId))))&&((this.time == rhs.time)||((this.time!= null)&&this.time.equals(rhs.time))))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.exchangeBookingId == rhs.exchangeBookingId)||((this.exchangeBookingId!= null)&&this.exchangeBookingId.equals(rhs.exchangeBookingId))))&&((this.bookingId == rhs.bookingId)||((this.bookingId!= null)&&this.bookingId.equals(rhs.bookingId))))&&((this.ticketId == rhs.ticketId)||((this.ticketId!= null)&&this.ticketId.equals(rhs.ticketId))));
+        return (((((((((this.fulfillmentId == rhs.fulfillmentId)||((this.fulfillmentId!= null)&&this.fulfillmentId.equals(rhs.fulfillmentId)))&&((this.contract == rhs.contract)||((this.contract!= null)&&this.contract.equals(rhs.contract))))&&((this.communicationId == rhs.communicationId)||((this.communicationId!= null)&&this.communicationId.equals(rhs.communicationId))))&&((this.bookedOfferId == rhs.bookedOfferId)||((this.bookedOfferId!= null)&&this.bookedOfferId.equals(rhs.bookedOfferId))))&&((this.time == rhs.time)||((this.time!= null)&&this.time.equals(rhs.time))))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.exchangedBookedOfferId == rhs.exchangedBookedOfferId)||((this.exchangedBookedOfferId!= null)&&this.exchangedBookedOfferId.equals(rhs.exchangedBookedOfferId))))&&((this.ticketId == rhs.ticketId)||((this.ticketId!= null)&&this.ticketId.equals(rhs.ticketId))));
     }
 
-    public enum Type {
+    public enum TransactionType {
 
         BOOKING("BOOKING"),
         CANCELATION("CANCELATION"),
@@ -315,15 +315,15 @@ public class Transaction {
         COMPENSATION("COMPENSATION"),
         MANUAL_REFUND("MANUAL_REFUND");
         private final String value;
-        private final static Map<String, Transaction.Type> CONSTANTS = new HashMap<String, Transaction.Type>();
+        private final static Map<String, Transaction.TransactionType> CONSTANTS = new HashMap<String, Transaction.TransactionType>();
 
         static {
-            for (Transaction.Type c: values()) {
+            for (Transaction.TransactionType c: values()) {
                 CONSTANTS.put(c.value, c);
             }
         }
 
-        private Type(String value) {
+        private TransactionType(String value) {
             this.value = value;
         }
 
@@ -338,8 +338,8 @@ public class Transaction {
         }
 
         @JsonCreator
-        public static Transaction.Type fromValue(String value) {
-            Transaction.Type constant = CONSTANTS.get(value);
+        public static Transaction.TransactionType fromValue(String value) {
+            Transaction.TransactionType constant = CONSTANTS.get(value);
             if (constant == null) {
                 throw new IllegalArgumentException(value);
             } else {

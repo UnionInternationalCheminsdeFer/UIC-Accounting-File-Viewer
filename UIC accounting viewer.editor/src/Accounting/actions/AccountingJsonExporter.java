@@ -28,7 +28,7 @@ import accountingModelV1.LegacyDescription.ClassCode;
 import accountingModelV1.Subject;
 import accountingModelV1.Subject.SalesChannel;
 import accountingModelV1.Transaction;
-import accountingModelV1.Transaction.Type;
+import accountingModelV1.Transaction.TransactionType;
 
 
 public class AccountingJsonExporter {
@@ -256,13 +256,13 @@ public class AccountingJsonExporter {
 		
 		Transaction jObj = new Transaction();
 		
-		jObj.setBookingId(mObj.getBookingId());
+		jObj.setBookedOfferId(mObj.getBookingId());
 		
 		jObj.setCommunicationId(mObj.getCommunicationId());
 
 		jObj.setContract(mObj.getContract());
 		
-		jObj.setExchangeBookingId(mObj.getExchangebookingId());
+		jObj.setExchangedBookedOfferId(mObj.getExchangebookingId());
 		
 		jObj.setFulfillmentId(mObj.getFulfillmentId());
 		
@@ -273,7 +273,7 @@ public class AccountingJsonExporter {
 		}
 		
 		if (mObj.getTransactionType() != null) {
-			jObj.setType(Type.fromValue(mObj.getTransactionType().getLiteral()));
+			jObj.setType(TransactionType.fromValue(mObj.getTransactionType().getLiteral()));
 		}
 		return jObj;
 	}

@@ -53,6 +53,11 @@ public class AccountedAmount {
     @JsonProperty("commission")
     @JsonPropertyDescription("indicates that the value is a commission")
     private Boolean commission;
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("settlementValueIndicator")
     private AccountedAmount.SettlementValueIndicator settlementValueIndicator;
     /**
@@ -151,11 +156,21 @@ public class AccountedAmount {
         this.commission = commission;
     }
 
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("settlementValueIndicator")
     public AccountedAmount.SettlementValueIndicator getSettlementValueIndicator() {
         return settlementValueIndicator;
     }
 
+    /**
+     * 
+     * (Required)
+     * 
+     */
     @JsonProperty("settlementValueIndicator")
     public void setSettlementValueIndicator(AccountedAmount.SettlementValueIndicator settlementValueIndicator) {
         this.settlementValueIndicator = settlementValueIndicator;
