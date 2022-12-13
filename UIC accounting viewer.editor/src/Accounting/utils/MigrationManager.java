@@ -28,7 +28,7 @@ public class MigrationManager {
 		if (resource == null) return;
 		
 		TreeIterator<EObject> it = resource.getAllContents();
-		if (it == null) return;
+		if (it == null || !it.hasNext()) return;
 		
 		EObject object = it.next();
 		

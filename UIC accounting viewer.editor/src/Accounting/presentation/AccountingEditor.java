@@ -1319,16 +1319,23 @@ public class AccountingEditor
 
 	}
 	
-	
+	/**
+	 * This is the method used by the framework to install your own controls.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
 	private void setInitialSelection() {
 		AccountingViewerData data = getModel();
 		if (data != null &&
 			data.getAccountingFile() != null && 
 			data.getAccountingFile()!= null && 
 			data.getAccountingFile().getAccountingDelivery() != null) {
-			
+			setSelection(new StructuredSelection(data.getAccountingFile().getAccountingDelivery()));
 		} else {
-			setSelection(new StructuredSelection(getModel()));
+			if (data != null) {
+				setSelection(new StructuredSelection(data));
+			}
 		}
 	}
 	
@@ -2024,6 +2031,9 @@ public class AccountingEditor
 		Resource resource = domain.getResourceSet().getResources().get(0);
 	   	
 		TreeIterator<EObject> it = resource.getAllContents();
+		if (it == null || !it.hasNext()) {
+			return null;
+		}
 		EObject object = it.next();
 		
 		if (object == null) return null;
