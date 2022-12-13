@@ -155,7 +155,7 @@ public class ExportJsonAction extends BasicAction {
 
 						monitor.subTask("Converting to json format");		
 						accountingV1 = jsonModelExporterV1.convertToJson(accounting.getAccountingFile(), monitor);
-						AccountingUtils.writeConsoleInfo("Export to Accounting File", editor);
+						AccountingUtils.writeConsoleInfo("Export to Accounting File started", editor);
 													
 						monitor.worked(1);	 	
 						monitor.subTask("Writing to json file");
@@ -169,7 +169,7 @@ public class ExportJsonAction extends BasicAction {
 						monitor.worked(1);
 						
 						AccountingUtils.addWorkflowStep("Export completed to file: " + name, editor);
-						
+						AccountingUtils.writeConsoleInfo("Export completed to file: " + name, editor);
 					} catch (Exception e) {
 						AccountingUtils.addWorkflowStep("Export abandoned to file: " + name, editor);
 						AccountingUtils.writeConsoleError("Export failed", editor);
