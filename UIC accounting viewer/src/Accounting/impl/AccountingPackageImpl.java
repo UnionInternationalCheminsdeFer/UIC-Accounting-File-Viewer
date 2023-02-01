@@ -1930,6 +1930,15 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getLegacyDescription_DialogNumber() {
+        return (EAttribute)getLegacyDescription().getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getTransaction() {
 		if (transactionEClass == null) {
 			transactionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(12);
@@ -1978,7 +1987,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransaction_FulfillmentId() {
+	public EAttribute getTransaction_FulfillmentIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(4);
 	}
 
@@ -1996,17 +2005,8 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransaction_CommunicationId() {
-        return (EAttribute)getTransaction().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTransaction_TransactionTime() {
-        return (EAttribute)getTransaction().getEStructuralFeatures().get(7);
+        return (EAttribute)getTransaction().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -2736,7 +2736,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getStationSet() {
 		if (stationSetEClass == null) {
-			stationSetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(36);
+			stationSetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(38);
 		}
 		return stationSetEClass;
 	}
@@ -2757,7 +2757,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getGeneralTariffModel() {
 		if (generalTariffModelEClass == null) {
-			generalTariffModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(37);
+			generalTariffModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(36);
 		}
 		return generalTariffModelEClass;
 	}
@@ -2787,7 +2787,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 */
 	public EClass getDelivery() {
 		if (deliveryEClass == null) {
-			deliveryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(38);
+			deliveryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(37);
 		}
 		return deliveryEClass;
 	}

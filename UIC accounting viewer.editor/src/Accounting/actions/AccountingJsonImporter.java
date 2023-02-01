@@ -198,10 +198,15 @@ public class AccountingJsonImporter {
 		Transaction mObj = AccountingFactory.eINSTANCE.createTransaction();
 		
 		mObj.setBookingId(jObj.getBookedOfferId());
-		mObj.setCommunicationId(jObj.getCommunicationId());
 		mObj.setContract(jObj.getContract());
 		mObj.setExchangebookingId(jObj.getExchangedBookedOfferId());
-		mObj.setFulfillmentId(mObj.getFulfillmentId());
+		
+		if (jObj.getFulfillmentIds() != null) {
+			for (String id : jObj.getFulfillmentIds() ) {
+				mObj.getFulfillmentIds().add(id);
+			}
+		}
+
 		mObj.setTicketId(jObj.getTicketId());
 		mObj.setTransactionTime(jObj.getTime());
 		
@@ -289,6 +294,8 @@ public class AccountingJsonImporter {
 		mObj.setSeries(jObj.getSeries());
 		
 		mObj.setTariff(jObj.getTariff());
+		
+		mObj.setDialogNumber(jObj.getDialogNumber());
 		
 		return mObj;
 	}

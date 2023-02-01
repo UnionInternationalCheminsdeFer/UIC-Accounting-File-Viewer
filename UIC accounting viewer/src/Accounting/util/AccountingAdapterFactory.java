@@ -176,16 +176,16 @@ public class AccountingAdapterFactory extends AdapterFactoryImpl {
 				return createCarriersAdapter();
 			}
 			@Override
-			public Adapter caseStationSet(StationSet object) {
-				return createStationSetAdapter();
-			}
-			@Override
 			public Adapter caseGeneralTariffModel(GeneralTariffModel object) {
 				return createGeneralTariffModelAdapter();
 			}
 			@Override
 			public Adapter caseDelivery(Delivery object) {
 				return createDeliveryAdapter();
+			}
+			@Override
+			public Adapter caseStationSet(StationSet object) {
+				return createStationSetAdapter();
 			}
 			@Override
 			public Adapter caseAfterSalesRules(AfterSalesRules object) {

@@ -236,6 +236,8 @@ public class AccountingJsonExporter {
 		jObj.setSeries(mObj.getSeries());
 
 		jObj.setTariff(mObj.getTariff());
+		
+		jObj.setDialogNumber(mObj.getDialogNumber());
 
 		return jObj;
 	}
@@ -258,13 +260,17 @@ public class AccountingJsonExporter {
 		
 		jObj.setBookedOfferId(mObj.getBookingId());
 		
-		jObj.setCommunicationId(mObj.getCommunicationId());
-
 		jObj.setContract(mObj.getContract());
 		
 		jObj.setExchangedBookedOfferId(mObj.getExchangebookingId());
 		
-		jObj.setFulfillmentId(mObj.getFulfillmentId());
+		if (mObj.getFulfillmentIds() != null && !mObj.getFulfillmentIds().isEmpty()) {
+		    jObj.setFulfillmentIds(new ArrayList<String>());
+			for (String id : mObj.getFulfillmentIds()) {
+				jObj.getFulfillmentIds().add(id);
+			}
+		}
+		
 		
 		jObj.setTicketId(mObj.getTicketId());
 

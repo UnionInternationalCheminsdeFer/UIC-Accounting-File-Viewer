@@ -79,7 +79,6 @@ public class AccountingViewerDataItemProvider
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__CODE_LISTS);
 			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE);
-			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__FARE_MODELLS);
 			childrenFeatures.add(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY);
 		}
 		return childrenFeatures;
@@ -135,7 +134,6 @@ public class AccountingViewerDataItemProvider
 		switch (notification.getFeatureID(AccountingViewerData.class)) {
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__CODE_LISTS:
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE:
-			case AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS:
 			case AccountingPackage.ACCOUNTING_VIEWER_DATA__WORKFLOW_HISTORY:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -163,11 +161,6 @@ public class AccountingViewerDataItemProvider
 			(createChildParameter
 				(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__ACCOUNTING_FILE,
 				 AccountingFactory.eINSTANCE.createAccountingFile()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(AccountingPackage.Literals.ACCOUNTING_VIEWER_DATA__FARE_MODELLS,
-				 AccountingFactory.eINSTANCE.createGeneralTariffModel()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.EClassifier;
 
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.emf.edit.ui.provider.ExtendedImageRegistry;
 import org.eclipse.core.runtime.IProgressMonitor;
 

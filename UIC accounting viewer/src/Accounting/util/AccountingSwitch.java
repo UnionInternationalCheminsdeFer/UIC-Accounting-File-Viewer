@@ -228,12 +228,6 @@ public class AccountingSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case AccountingPackage.STATION_SET: {
-				StationSet stationSet = (StationSet)theEObject;
-				T result = caseStationSet(stationSet);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case AccountingPackage.GENERAL_TARIFF_MODEL: {
 				GeneralTariffModel generalTariffModel = (GeneralTariffModel)theEObject;
 				T result = caseGeneralTariffModel(generalTariffModel);
@@ -243,6 +237,12 @@ public class AccountingSwitch<T> extends Switch<T> {
 			case AccountingPackage.DELIVERY: {
 				Delivery delivery = (Delivery)theEObject;
 				T result = caseDelivery(delivery);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case AccountingPackage.STATION_SET: {
+				StationSet stationSet = (StationSet)theEObject;
+				T result = caseStationSet(stationSet);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

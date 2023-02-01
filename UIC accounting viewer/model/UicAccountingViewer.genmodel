@@ -7,7 +7,7 @@
   <foreignModel>../../Accounting%20data%20converter/model/UicAccountingViewer.ecore</foreignModel>
   <genPackages prefix="Accounting" resource="XML" disposableProviderFactory="true"
       loadInitialization="true" extensibleProviderFactory="true" childCreationExtenders="true"
-      ecorePackage="UicAccountingViewer.ecore#/">
+      fileExtensions="acc" ecorePackage="UicAccountingViewer.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//PaymentType">
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PaymentType/BCC_CLEARING"/>
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//PaymentType/CURRENT_ACCOUNT"/>
@@ -26,11 +26,12 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//TransactionType">
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/BOOKING"/>
-      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/CANCELATION"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/CANCELLATION"/>
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/EXCHANGE_CANCELATION"/>
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/EXCHANGE_BOOKING"/>
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/COMPENSATION"/>
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/MANUAL_REFUND"/>
+      <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//TransactionType/PREBOOKING_TIME_EXTENSION"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="UicAccountingViewer.ecore#//AccountingType">
       <genEnumLiterals ecoreEnumLiteral="UicAccountingViewer.ecore#//AccountingType/SHARES"/>
@@ -523,7 +524,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/codeLists"/>
       <genFeatures property="None" children="true" createChild="true" propertySortChoices="true"
           ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/accountingFile"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/fareModells"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/fareModells"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingViewerData/workflowHistory"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingFile">
@@ -535,12 +536,14 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingDelivery">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/creationDate"/>
+      <genFeatures createChild="false" propertyDescription="Timestamp of the creation of these accounting data."
+          ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/creationDate"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingDelivery/invoicingParty"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingDelivery/invoiceRecipient"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/startStatementPeriod"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/endStatementPeriod"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/paymentType"/>
+      <genFeatures createChild="false" propertyDescription="Type of the payment to settle this accounting."
+          ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingDelivery/paymentType"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountingRecord">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingRecord/id"/>
@@ -568,19 +571,19 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingSubject/legacyDescription"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//LegacyDescription">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/passengerType"/>
+      <genFeatures createChild="false" propertyDescription="Passenger Types" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/passengerType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/classCode"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/series"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/tariff"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/dialogNumber"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Transaction">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/transactionType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/contract"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/bookingId"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/ticketId"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/fulfillmentId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/fulfillmentIds"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/exchangebookingId"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/communicationId"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/transactionTime"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AccountedAmount">
@@ -594,12 +597,14 @@
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//CodeLists">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/carriers"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/stations"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/stations"
+          suppressedGetVisibility="false" suppressedSetVisibility="false" suppressedIsSetVisibility="false"
+          suppressedUnsetVisibility="false"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/countries"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/languages"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/currencies"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/serviceBrands"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/nutsCodes"/>
+      <genFeatures property="None" createChild="false" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/serviceBrands"/>
+      <genFeatures property="None" createChild="false" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//CodeLists/nutsCodes"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//WorkflowHistory">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//WorkflowHistory/workflowSteps"/>
@@ -675,9 +680,6 @@
     <genClasses ecoreClass="UicAccountingViewer.ecore#//Carriers">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//Carriers/carriers"/>
     </genClasses>
-    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationSet">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationSet/stations"/>
-    </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//GeneralTariffModel">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//GeneralTariffModel/delivery"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//GeneralTariffModel/fareStructure"/>
@@ -691,6 +693,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/schemaVersion"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/acceptedSchemaVersion"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Delivery/usage"/>
+    </genClasses>
+    <genClasses ecoreClass="UicAccountingViewer.ecore#//StationSet">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//StationSet/stations"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//AfterSalesRules">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AfterSalesRules/afterSalesRules"/>

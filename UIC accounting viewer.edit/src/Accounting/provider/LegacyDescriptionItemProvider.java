@@ -66,6 +66,7 @@ public class LegacyDescriptionItemProvider
 			addClassCodePropertyDescriptor(object);
 			addSeriesPropertyDescriptor(object);
 			addTariffPropertyDescriptor(object);
+			addDialogNumberPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -82,7 +83,7 @@ public class LegacyDescriptionItemProvider
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
 				 getString("_UI_LegacyDescription_passengerType_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_LegacyDescription_passengerType_feature", "_UI_LegacyDescription_type"),
+				 getString("_UI_LegacyDescription_passengerType_description"),
 				 AccountingPackage.Literals.LEGACY_DESCRIPTION__PASSENGER_TYPE,
 				 true,
 				 false,
@@ -159,6 +160,28 @@ public class LegacyDescriptionItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Dialog Number feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDialogNumberPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_LegacyDescription_dialogNumber_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_LegacyDescription_dialogNumber_feature", "_UI_LegacyDescription_type"),
+				 AccountingPackage.Literals.LEGACY_DESCRIPTION__DIALOG_NUMBER,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns LegacyDescription.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -201,6 +224,7 @@ public class LegacyDescriptionItemProvider
 			case AccountingPackage.LEGACY_DESCRIPTION__CLASS_CODE:
 			case AccountingPackage.LEGACY_DESCRIPTION__SERIES:
 			case AccountingPackage.LEGACY_DESCRIPTION__TARIFF:
+			case AccountingPackage.LEGACY_DESCRIPTION__DIALOG_NUMBER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

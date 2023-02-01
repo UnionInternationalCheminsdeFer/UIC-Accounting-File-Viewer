@@ -600,13 +600,22 @@ public interface AccountingPackage extends EPackage {
 	int LEGACY_DESCRIPTION__TARIFF = 3;
 
 	/**
+	 * The feature id for the '<em><b>Dialog Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LEGACY_DESCRIPTION__DIALOG_NUMBER = 4;
+
+	/**
 	 * The number of structural features of the '<em>Legacy Description</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LEGACY_DESCRIPTION_FEATURE_COUNT = 4;
+	int LEGACY_DESCRIPTION_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Legacy Description</em>' class.
@@ -664,13 +673,13 @@ public interface AccountingPackage extends EPackage {
 	int TRANSACTION__TICKET_ID = 3;
 
 	/**
-	 * The feature id for the '<em><b>Fulfillment Id</b></em>' attribute.
+	 * The feature id for the '<em><b>Fulfillment Ids</b></em>' attribute list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION__FULFILLMENT_ID = 4;
+	int TRANSACTION__FULFILLMENT_IDS = 4;
 
 	/**
 	 * The feature id for the '<em><b>Exchangebooking Id</b></em>' attribute.
@@ -682,22 +691,13 @@ public interface AccountingPackage extends EPackage {
 	int TRANSACTION__EXCHANGEBOOKING_ID = 5;
 
 	/**
-	 * The feature id for the '<em><b>Communication Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TRANSACTION__COMMUNICATION_ID = 6;
-
-	/**
 	 * The feature id for the '<em><b>Transaction Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION__TRANSACTION_TIME = 7;
+	int TRANSACTION__TRANSACTION_TIME = 6;
 
 	/**
 	 * The number of structural features of the '<em>Transaction</em>' class.
@@ -706,7 +706,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION_FEATURE_COUNT = 8;
+	int TRANSACTION_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Transaction</em>' class.
@@ -1733,34 +1733,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getStationSet()
 	 * @generated
 	 */
-	int STATION_SET = 27;
-
-	/**
-	 * The feature id for the '<em><b>Stations</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION_SET__STATIONS = 0;
-
-	/**
-	 * The number of structural features of the '<em>Station Set</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION_SET_FEATURE_COUNT = 1;
-
-	/**
-	 * The number of operations of the '<em>Station Set</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STATION_SET_OPERATION_COUNT = 0;
+	int STATION_SET = 29;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.GeneralTariffModelImpl <em>General Tariff Model</em>}' class.
@@ -1770,7 +1743,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getGeneralTariffModel()
 	 * @generated
 	 */
-	int GENERAL_TARIFF_MODEL = 28;
+	int GENERAL_TARIFF_MODEL = 27;
 
 	/**
 	 * The feature id for the '<em><b>Delivery</b></em>' containment reference.
@@ -1816,7 +1789,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see Accounting.impl.AccountingPackageImpl#getDelivery()
 	 * @generated
 	 */
-	int DELIVERY = 29;
+	int DELIVERY = 28;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
@@ -1907,6 +1880,33 @@ public interface AccountingPackage extends EPackage {
 	 * @ordered
 	 */
 	int DELIVERY_OPERATION_COUNT = 0;
+
+	/**
+	 * The feature id for the '<em><b>Stations</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATION_SET__STATIONS = 0;
+
+	/**
+	 * The number of structural features of the '<em>Station Set</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATION_SET_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Station Set</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STATION_SET_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link Accounting.impl.AfterSalesRulesImpl <em>After Sales Rules</em>}' class.
@@ -9575,6 +9575,17 @@ public interface AccountingPackage extends EPackage {
 	EAttribute getLegacyDescription_Tariff();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Accounting.LegacyDescription#getDialogNumber <em>Dialog Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Dialog Number</em>'.
+	 * @see Accounting.LegacyDescription#getDialogNumber()
+	 * @see #getLegacyDescription()
+	 * @generated
+	 */
+	EAttribute getLegacyDescription_DialogNumber();
+
+	/**
 	 * Returns the meta object for class '{@link Accounting.Transaction <em>Transaction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9629,15 +9640,15 @@ public interface AccountingPackage extends EPackage {
 	EAttribute getTransaction_TicketId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link Accounting.Transaction#getFulfillmentId <em>Fulfillment Id</em>}'.
+	 * Returns the meta object for the attribute list '{@link Accounting.Transaction#getFulfillmentIds <em>Fulfillment Ids</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Fulfillment Id</em>'.
-	 * @see Accounting.Transaction#getFulfillmentId()
+	 * @return the meta object for the attribute list '<em>Fulfillment Ids</em>'.
+	 * @see Accounting.Transaction#getFulfillmentIds()
 	 * @see #getTransaction()
 	 * @generated
 	 */
-	EAttribute getTransaction_FulfillmentId();
+	EAttribute getTransaction_FulfillmentIds();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Accounting.Transaction#getExchangebookingId <em>Exchangebooking Id</em>}'.
@@ -9649,17 +9660,6 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getTransaction_ExchangebookingId();
-
-	/**
-	 * Returns the meta object for the attribute '{@link Accounting.Transaction#getCommunicationId <em>Communication Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Communication Id</em>'.
-	 * @see Accounting.Transaction#getCommunicationId()
-	 * @see #getTransaction()
-	 * @generated
-	 */
-	EAttribute getTransaction_CommunicationId();
 
 	/**
 	 * Returns the meta object for the attribute '{@link Accounting.Transaction#getTransactionTime <em>Transaction Time</em>}'.
@@ -17025,6 +17025,14 @@ public interface AccountingPackage extends EPackage {
 		EAttribute LEGACY_DESCRIPTION__TARIFF = eINSTANCE.getLegacyDescription_Tariff();
 
 		/**
+		 * The meta object literal for the '<em><b>Dialog Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LEGACY_DESCRIPTION__DIALOG_NUMBER = eINSTANCE.getLegacyDescription_DialogNumber();
+
+		/**
 		 * The meta object literal for the '{@link Accounting.impl.TransactionImpl <em>Transaction</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -17067,12 +17075,12 @@ public interface AccountingPackage extends EPackage {
 		EAttribute TRANSACTION__TICKET_ID = eINSTANCE.getTransaction_TicketId();
 
 		/**
-		 * The meta object literal for the '<em><b>Fulfillment Id</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Fulfillment Ids</b></em>' attribute list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute TRANSACTION__FULFILLMENT_ID = eINSTANCE.getTransaction_FulfillmentId();
+		EAttribute TRANSACTION__FULFILLMENT_IDS = eINSTANCE.getTransaction_FulfillmentIds();
 
 		/**
 		 * The meta object literal for the '<em><b>Exchangebooking Id</b></em>' attribute feature.
@@ -17081,14 +17089,6 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute TRANSACTION__EXCHANGEBOOKING_ID = eINSTANCE.getTransaction_ExchangebookingId();
-
-		/**
-		 * The meta object literal for the '<em><b>Communication Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute TRANSACTION__COMMUNICATION_ID = eINSTANCE.getTransaction_CommunicationId();
 
 		/**
 		 * The meta object literal for the '<em><b>Transaction Time</b></em>' attribute feature.

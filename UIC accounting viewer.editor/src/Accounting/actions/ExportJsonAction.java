@@ -119,9 +119,9 @@ public class ExportJsonAction extends BasicAction {
 			
 
 			
-			final String name = accounting.getAccountingFile().getAccountingDelivery().getInvoicingParty()
+			String name = accounting.getAccountingFile().getAccountingDelivery().getInvoicingParty().getShortName()
 					+ "_"
-					+ accounting.getAccountingFile().getAccountingDelivery().getInvoiceRecipient()
+					+ accounting.getAccountingFile().getAccountingDelivery().getInvoiceRecipient().getShortName()
 					+ "_"
 					+ accounting.getAccountingFile().getAccountingDelivery().getCreationDate().toString();
 		
@@ -129,7 +129,7 @@ public class ExportJsonAction extends BasicAction {
 			if (file == null) {
 				return;
 			}
-			
+
 			final AccountingJsonExporter jsonModelExporterV1 = new AccountingJsonExporter();
 	
 			IRunnableWithProgress operation =	new IRunnableWithProgress() {
@@ -141,7 +141,7 @@ public class ExportJsonAction extends BasicAction {
 						
 						monitor.beginTask("Export Accounting Data", 31); 
 
-						AccountingUtils.addWorkflowStep("Export started to accounting file: " + name, editor);
+						AccountingUtils.addWorkflowStep("Export started to accounting file: " + file.getName(), editor);
 						
 						/*
 						monitor.subTask("Delete unused elements");
@@ -168,10 +168,10 @@ public class ExportJsonAction extends BasicAction {
 						}
 						monitor.worked(1);
 						
-						AccountingUtils.addWorkflowStep("Export completed to file: " + name, editor);
-						AccountingUtils.writeConsoleInfo("Export completed to file: " + name, editor);
+						AccountingUtils.addWorkflowStep("Export completed to file: " + file.getName(), editor);
+						AccountingUtils.writeConsoleInfo("Export completed to file: " + file.getName(), editor);
 					} catch (Exception e) {
-						AccountingUtils.addWorkflowStep("Export abandoned to file: " + name, editor);
+						AccountingUtils.addWorkflowStep("Export abandoned to file: " + file.getName(), editor);
 						AccountingUtils.writeConsoleError("Export failed", editor);
 						AccountingUtils.writeConsoleStackTrace(e, editor);
 						

@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Accounting.LegacyDescription#getClassCode <em>Class Code</em>}</li>
  *   <li>{@link Accounting.LegacyDescription#getSeries <em>Series</em>}</li>
  *   <li>{@link Accounting.LegacyDescription#getTariff <em>Tariff</em>}</li>
+ *   <li>{@link Accounting.LegacyDescription#getDialogNumber <em>Dialog Number</em>}</li>
  * </ul>
  *
  * @see Accounting.AccountingPackage#getLegacyDescription()
@@ -117,5 +118,27 @@ public interface LegacyDescription extends EObject {
 	 * @generated
 	 */
 	void setTariff(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Dialog Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Dialog Number</em>' attribute.
+	 * @see #setDialogNumber(String)
+	 * @see Accounting.AccountingPackage#getLegacyDescription_DialogNumber()
+	 * @model
+	 * @generated
+	 */
+	String getDialogNumber();
+
+	/**
+	 * Sets the value of the '{@link Accounting.LegacyDescription#getDialogNumber <em>Dialog Number</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Dialog Number</em>' attribute.
+	 * @see #getDialogNumber()
+	 * @generated
+	 */
+	void setDialogNumber(String value);
 
 } // LegacyDescription

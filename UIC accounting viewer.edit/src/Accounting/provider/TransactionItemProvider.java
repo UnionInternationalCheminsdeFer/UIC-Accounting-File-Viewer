@@ -67,9 +67,8 @@ public class TransactionItemProvider
 			addContractPropertyDescriptor(object);
 			addBookingIdPropertyDescriptor(object);
 			addTicketIdPropertyDescriptor(object);
-			addFulfillmentIdPropertyDescriptor(object);
+			addFulfillmentIdsPropertyDescriptor(object);
 			addExchangebookingIdPropertyDescriptor(object);
-			addCommunicationIdPropertyDescriptor(object);
 			addTransactionTimePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
@@ -164,19 +163,19 @@ public class TransactionItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Fulfillment Id feature.
+	 * This adds a property descriptor for the Fulfillment Ids feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addFulfillmentIdPropertyDescriptor(Object object) {
+	protected void addFulfillmentIdsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Transaction_fulfillmentId_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_fulfillmentId_feature", "_UI_Transaction_type"),
-				 AccountingPackage.Literals.TRANSACTION__FULFILLMENT_ID,
+				 getString("_UI_Transaction_fulfillmentIds_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_fulfillmentIds_feature", "_UI_Transaction_type"),
+				 AccountingPackage.Literals.TRANSACTION__FULFILLMENT_IDS,
 				 true,
 				 false,
 				 false,
@@ -199,28 +198,6 @@ public class TransactionItemProvider
 				 getString("_UI_Transaction_exchangebookingId_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_exchangebookingId_feature", "_UI_Transaction_type"),
 				 AccountingPackage.Literals.TRANSACTION__EXCHANGEBOOKING_ID,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Communication Id feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addCommunicationIdPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Transaction_communicationId_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_communicationId_feature", "_UI_Transaction_type"),
-				 AccountingPackage.Literals.TRANSACTION__COMMUNICATION_ID,
 				 true,
 				 false,
 				 false,
@@ -295,9 +272,8 @@ public class TransactionItemProvider
 			case AccountingPackage.TRANSACTION__CONTRACT:
 			case AccountingPackage.TRANSACTION__BOOKING_ID:
 			case AccountingPackage.TRANSACTION__TICKET_ID:
-			case AccountingPackage.TRANSACTION__FULFILLMENT_ID:
+			case AccountingPackage.TRANSACTION__FULFILLMENT_IDS:
 			case AccountingPackage.TRANSACTION__EXCHANGEBOOKING_ID:
-			case AccountingPackage.TRANSACTION__COMMUNICATION_ID:
 			case AccountingPackage.TRANSACTION__TRANSACTION_TIME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;

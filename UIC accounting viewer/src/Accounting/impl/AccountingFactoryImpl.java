@@ -86,9 +86,9 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 			case AccountingPackage.STATION: return createStation();
 			case AccountingPackage.CARRIER: return createCarrier();
 			case AccountingPackage.CARRIERS: return createCarriers();
-			case AccountingPackage.STATION_SET: return createStationSet();
 			case AccountingPackage.GENERAL_TARIFF_MODEL: return createGeneralTariffModel();
 			case AccountingPackage.DELIVERY: return createDelivery();
+			case AccountingPackage.STATION_SET: return createStationSet();
 			case AccountingPackage.AFTER_SALES_RULES: return createAfterSalesRules();
 			case AccountingPackage.AFTER_SALES_RULE: return createAfterSalesRule();
 			case AccountingPackage.AFTER_SALES_CONDITION: return createAfterSalesCondition();
