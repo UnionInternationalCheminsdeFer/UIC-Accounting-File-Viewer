@@ -16,7 +16,7 @@
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <!-- @generated UicAccountingViewer -->
       <parser
-            type="accounting"
+            type="acc"
             class="Accounting.util.AccountingResourceFactoryImpl"/>
    </extension>
 

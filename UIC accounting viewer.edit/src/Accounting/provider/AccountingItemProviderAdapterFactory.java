@@ -3300,9 +3300,9 @@ public class AccountingItemProviderAdapterFactory extends AccountingAdapterFacto
 		if (stationItemProvider != null) stationItemProvider.dispose();
 		if (carrierItemProvider != null) carrierItemProvider.dispose();
 		if (carriersItemProvider != null) carriersItemProvider.dispose();
-		if (stationSetItemProvider != null) stationSetItemProvider.dispose();
 		if (generalTariffModelItemProvider != null) generalTariffModelItemProvider.dispose();
 		if (deliveryItemProvider != null) deliveryItemProvider.dispose();
+		if (stationSetItemProvider != null) stationSetItemProvider.dispose();
 		if (afterSalesRulesItemProvider != null) afterSalesRulesItemProvider.dispose();
 		if (afterSalesRuleItemProvider != null) afterSalesRuleItemProvider.dispose();
 		if (afterSalesConditionItemProvider != null) afterSalesConditionItemProvider.dispose();

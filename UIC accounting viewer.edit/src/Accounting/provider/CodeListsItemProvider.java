@@ -79,12 +79,9 @@ public class CodeListsItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(AccountingPackage.Literals.CODE_LISTS__CARRIERS);
-			childrenFeatures.add(AccountingPackage.Literals.CODE_LISTS__STATIONS);
 			childrenFeatures.add(AccountingPackage.Literals.CODE_LISTS__COUNTRIES);
 			childrenFeatures.add(AccountingPackage.Literals.CODE_LISTS__LANGUAGES);
 			childrenFeatures.add(AccountingPackage.Literals.CODE_LISTS__CURRENCIES);
-			childrenFeatures.add(AccountingPackage.Literals.CODE_LISTS__SERVICE_BRANDS);
-			childrenFeatures.add(AccountingPackage.Literals.CODE_LISTS__NUTS_CODES);
 		}
 		return childrenFeatures;
 	}
@@ -137,13 +134,14 @@ public class CodeListsItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(CodeLists.class)) {
+			case AccountingPackage.CODE_LISTS__SERVICE_BRANDS:
+			case AccountingPackage.CODE_LISTS__NUTS_CODES:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
 			case AccountingPackage.CODE_LISTS__CARRIERS:
-			case AccountingPackage.CODE_LISTS__STATIONS:
 			case AccountingPackage.CODE_LISTS__COUNTRIES:
 			case AccountingPackage.CODE_LISTS__LANGUAGES:
 			case AccountingPackage.CODE_LISTS__CURRENCIES:
-			case AccountingPackage.CODE_LISTS__SERVICE_BRANDS:
-			case AccountingPackage.CODE_LISTS__NUTS_CODES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -168,11 +166,6 @@ public class CodeListsItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(AccountingPackage.Literals.CODE_LISTS__STATIONS,
-				 AccountingFactory.eINSTANCE.createStations()));
-
-		newChildDescriptors.add
-			(createChildParameter
 				(AccountingPackage.Literals.CODE_LISTS__COUNTRIES,
 				 AccountingFactory.eINSTANCE.createCountries()));
 
@@ -185,16 +178,6 @@ public class CodeListsItemProvider
 			(createChildParameter
 				(AccountingPackage.Literals.CODE_LISTS__CURRENCIES,
 				 AccountingFactory.eINSTANCE.createCurrencies()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(AccountingPackage.Literals.CODE_LISTS__SERVICE_BRANDS,
-				 AccountingFactory.eINSTANCE.createServiceBrands()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(AccountingPackage.Literals.CODE_LISTS__NUTS_CODES,
-				 AccountingFactory.eINSTANCE.createNUTSCodes()));
 	}
 
 	/**

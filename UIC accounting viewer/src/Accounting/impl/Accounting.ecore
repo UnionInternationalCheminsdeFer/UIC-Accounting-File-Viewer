@@ -106,6 +106,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="classCode" eType="#//ClassicClassType"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="series" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tariff" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dialogNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="SalesChannel">
     <eLiterals name="AGENCY"/>
@@ -125,18 +126,19 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="contract" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bookingId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ticketId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fulfillmentId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fulfillmentIds" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="exchangebookingId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="communicationId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionTime" eType="#//DateAsDateTime"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="TransactionType">
     <eLiterals name="BOOKING"/>
-    <eLiterals name="CANCELATION" value="1"/>
+    <eLiterals name="CANCELLATION" value="1"/>
     <eLiterals name="EXCHANGE_CANCELATION" value="2"/>
     <eLiterals name="EXCHANGE_BOOKING" value="3"/>
     <eLiterals name="COMPENSATION" value="4"/>
     <eLiterals name="MANUAL_REFUND" value="5"/>
+    <eLiterals name="PREBOOKING_TIME_EXTENSION" value="6"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AccountedAmount">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -270,10 +272,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="carriers" upperBound="-1"
         eType="#//Carrier" containment="true" resolveProxies="false"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StationSet">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="stations" upperBound="-1"
-        eType="#//Station"/>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GeneralTariffModel">
     <eStructuralFeatures xsi:type="ecore:EReference" name="delivery" eType="#//Delivery"
         containment="true" resolveProxies="false"/>
@@ -293,6 +291,10 @@
         eType="#//SchemaVersion"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="usage" eType="#//DataType"
         defaultValueLiteral="PRODUCTION_DATA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StationSet">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stations" upperBound="-1"
+        eType="#//Station"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AfterSalesRules">
     <eStructuralFeatures xsi:type="ecore:EReference" name="afterSalesRules" upperBound="-1"

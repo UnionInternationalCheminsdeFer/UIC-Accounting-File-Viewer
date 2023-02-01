@@ -144,12 +144,12 @@ public class AccountingValidator extends EObjectValidator {
 				return validateCarrier((Carrier)value, diagnostics, context);
 			case AccountingPackage.CARRIERS:
 				return validateCarriers((Carriers)value, diagnostics, context);
-			case AccountingPackage.STATION_SET:
-				return validateStationSet((StationSet)value, diagnostics, context);
 			case AccountingPackage.GENERAL_TARIFF_MODEL:
 				return validateGeneralTariffModel((GeneralTariffModel)value, diagnostics, context);
 			case AccountingPackage.DELIVERY:
 				return validateDelivery((Delivery)value, diagnostics, context);
+			case AccountingPackage.STATION_SET:
+				return validateStationSet((StationSet)value, diagnostics, context);
 			case AccountingPackage.AFTER_SALES_RULES:
 				return validateAfterSalesRules((AfterSalesRules)value, diagnostics, context);
 			case AccountingPackage.AFTER_SALES_RULE:

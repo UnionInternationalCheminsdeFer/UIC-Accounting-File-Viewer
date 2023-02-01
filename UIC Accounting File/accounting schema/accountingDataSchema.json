@@ -140,16 +140,15 @@
 					"description": "id of the ticket in case the provider is responsible for the ticket creation used in barcodes according to 90918-9",
 					"type": "string"
 				},
-				"fulfillmentId": {
-					"description": "OSDM fulfillment id associated with this accounting transaction",
-					"type": "string"
+				"fulfillmentIds": {
+					"description": "OSDM fulfillment idsassociated with this accounting transaction",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
 				},
 				"exchangedBookedOfferId": {
 					"description": "reference of the original booked offer that was exchanged in case of an exchange transaction",
-					"type": "string"
-				},
-				"communicationId": {
-					"description": "identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. The comminiicatioId is mandatory in case of one step bookings where the bookingId might not be known by both partners in case of errors as might be the case with IRS 90918-1.",
 					"type": "string"
 				}
 			},
@@ -189,6 +188,10 @@
 						},
 						"passengerType": {
 							"$ref": "#/definitions/PassengerType"
+						},
+						"dialogNumber": {
+							"description": "identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. ",
+							"type": "string"
 						}
 					},
 					"required": [
@@ -391,5 +394,6 @@
 				"MANUAL_REFUND"
 			]
 		}
-	}
+	},
+	"version": "1.0.0"
 }

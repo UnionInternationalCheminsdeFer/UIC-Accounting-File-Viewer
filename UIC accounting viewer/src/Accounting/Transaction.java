@@ -4,6 +4,7 @@ package Accounting;
 
 import java.util.Date;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -19,9 +20,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Accounting.Transaction#getContract <em>Contract</em>}</li>
  *   <li>{@link Accounting.Transaction#getBookingId <em>Booking Id</em>}</li>
  *   <li>{@link Accounting.Transaction#getTicketId <em>Ticket Id</em>}</li>
- *   <li>{@link Accounting.Transaction#getFulfillmentId <em>Fulfillment Id</em>}</li>
+ *   <li>{@link Accounting.Transaction#getFulfillmentIds <em>Fulfillment Ids</em>}</li>
  *   <li>{@link Accounting.Transaction#getExchangebookingId <em>Exchangebooking Id</em>}</li>
- *   <li>{@link Accounting.Transaction#getCommunicationId <em>Communication Id</em>}</li>
  *   <li>{@link Accounting.Transaction#getTransactionTime <em>Transaction Time</em>}</li>
  * </ul>
  *
@@ -122,26 +122,16 @@ public interface Transaction extends EObject {
 	void setTicketId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Fulfillment Id</b></em>' attribute.
+	 * Returns the value of the '<em><b>Fulfillment Ids</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Fulfillment Id</em>' attribute.
-	 * @see #setFulfillmentId(String)
-	 * @see Accounting.AccountingPackage#getTransaction_FulfillmentId()
+	 * @return the value of the '<em>Fulfillment Ids</em>' attribute list.
+	 * @see Accounting.AccountingPackage#getTransaction_FulfillmentIds()
 	 * @model
 	 * @generated
 	 */
-	String getFulfillmentId();
-
-	/**
-	 * Sets the value of the '{@link Accounting.Transaction#getFulfillmentId <em>Fulfillment Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Fulfillment Id</em>' attribute.
-	 * @see #getFulfillmentId()
-	 * @generated
-	 */
-	void setFulfillmentId(String value);
+	EList<String> getFulfillmentIds();
 
 	/**
 	 * Returns the value of the '<em><b>Exchangebooking Id</b></em>' attribute.
@@ -164,28 +154,6 @@ public interface Transaction extends EObject {
 	 * @generated
 	 */
 	void setExchangebookingId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Communication Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Communication Id</em>' attribute.
-	 * @see #setCommunicationId(String)
-	 * @see Accounting.AccountingPackage#getTransaction_CommunicationId()
-	 * @model
-	 * @generated
-	 */
-	String getCommunicationId();
-
-	/**
-	 * Sets the value of the '{@link Accounting.Transaction#getCommunicationId <em>Communication Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Communication Id</em>' attribute.
-	 * @see #getCommunicationId()
-	 * @generated
-	 */
-	void setCommunicationId(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Time</b></em>' attribute.

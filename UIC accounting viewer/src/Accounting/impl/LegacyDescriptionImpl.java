@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *   <li>{@link Accounting.impl.LegacyDescriptionImpl#getClassCode <em>Class Code</em>}</li>
  *   <li>{@link Accounting.impl.LegacyDescriptionImpl#getSeries <em>Series</em>}</li>
  *   <li>{@link Accounting.impl.LegacyDescriptionImpl#getTariff <em>Tariff</em>}</li>
+ *   <li>{@link Accounting.impl.LegacyDescriptionImpl#getDialogNumber <em>Dialog Number</em>}</li>
  * </ul>
  *
  * @generated
@@ -110,6 +111,26 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * @ordered
 	 */
 	protected int tariff = TARIFF_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDialogNumber() <em>Dialog Number</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDialogNumber()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DIALOG_NUMBER_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDialogNumber() <em>Dialog Number</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDialogNumber()
+	 * @generated
+	 * @ordered
+	 */
+	protected String dialogNumber = DIALOG_NUMBER_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -219,6 +240,27 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getDialogNumber() {
+		return dialogNumber;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDialogNumber(String newDialogNumber) {
+		String oldDialogNumber = dialogNumber;
+		dialogNumber = newDialogNumber;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.LEGACY_DESCRIPTION__DIALOG_NUMBER, oldDialogNumber, dialogNumber));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -230,6 +272,8 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 				return getSeries();
 			case AccountingPackage.LEGACY_DESCRIPTION__TARIFF:
 				return getTariff();
+			case AccountingPackage.LEGACY_DESCRIPTION__DIALOG_NUMBER:
+				return getDialogNumber();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -253,6 +297,9 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 				return;
 			case AccountingPackage.LEGACY_DESCRIPTION__TARIFF:
 				setTariff((Integer)newValue);
+				return;
+			case AccountingPackage.LEGACY_DESCRIPTION__DIALOG_NUMBER:
+				setDialogNumber((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -278,6 +325,9 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 			case AccountingPackage.LEGACY_DESCRIPTION__TARIFF:
 				setTariff(TARIFF_EDEFAULT);
 				return;
+			case AccountingPackage.LEGACY_DESCRIPTION__DIALOG_NUMBER:
+				setDialogNumber(DIALOG_NUMBER_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -298,6 +348,8 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 				return series != SERIES_EDEFAULT;
 			case AccountingPackage.LEGACY_DESCRIPTION__TARIFF:
 				return tariff != TARIFF_EDEFAULT;
+			case AccountingPackage.LEGACY_DESCRIPTION__DIALOG_NUMBER:
+				return DIALOG_NUMBER_EDEFAULT == null ? dialogNumber != null : !DIALOG_NUMBER_EDEFAULT.equals(dialogNumber);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -320,6 +372,8 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 		result.append(series);
 		result.append(", tariff: ");
 		result.append(tariff);
+		result.append(", dialogNumber: ");
+		result.append(dialogNumber);
 		result.append(')');
 		return result.toString();
 	}

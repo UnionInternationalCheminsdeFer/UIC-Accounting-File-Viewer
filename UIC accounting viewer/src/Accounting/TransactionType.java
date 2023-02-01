@@ -29,16 +29,14 @@ public enum TransactionType implements Enumerator {
 	BOOKING(0, "BOOKING", "BOOKING"),
 
 	/**
-	 * The '<em><b>CANCELATION</b></em>' literal object.
+	 * The '<em><b>CANCELLATION</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CANCELATION_VALUE
+	 * @see #CANCELLATION_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	CANCELATION(1, "CANCELATION", "CANCELATION"),
-
-	/**
+	CANCELLATION(1, "CANCELLATION", "CANCELLATION"), /**
 	 * The '<em><b>EXCHANGE CANCELATION</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,7 +74,15 @@ public enum TransactionType implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	MANUAL_REFUND(5, "MANUAL_REFUND", "MANUAL_REFUND");
+	MANUAL_REFUND(5, "MANUAL_REFUND", "MANUAL_REFUND"), /**
+	 * The '<em><b>PREBOOKING TIME EXTENSION</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #PREBOOKING_TIME_EXTENSION_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	PREBOOKING_TIME_EXTENSION(6, "PREBOOKING_TIME_EXTENSION", "PREBOOKING_TIME_EXTENSION");
 
 	/**
 	 * The '<em><b>BOOKING</b></em>' literal value.
@@ -90,15 +96,15 @@ public enum TransactionType implements Enumerator {
 	public static final int BOOKING_VALUE = 0;
 
 	/**
-	 * The '<em><b>CANCELATION</b></em>' literal value.
+	 * The '<em><b>CANCELLATION</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #CANCELATION
+	 * @see #CANCELLATION
 	 * @model
 	 * @generated
 	 * @ordered
 	 */
-	public static final int CANCELATION_VALUE = 1;
+	public static final int CANCELLATION_VALUE = 1;
 
 	/**
 	 * The '<em><b>EXCHANGE CANCELATION</b></em>' literal value.
@@ -145,6 +151,17 @@ public enum TransactionType implements Enumerator {
 	public static final int MANUAL_REFUND_VALUE = 5;
 
 	/**
+	 * The '<em><b>PREBOOKING TIME EXTENSION</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #PREBOOKING_TIME_EXTENSION
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
+	public static final int PREBOOKING_TIME_EXTENSION_VALUE = 6;
+
+	/**
 	 * An array of all the '<em><b>Transaction Type</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -153,11 +170,12 @@ public enum TransactionType implements Enumerator {
 	private static final TransactionType[] VALUES_ARRAY =
 		new TransactionType[] {
 			BOOKING,
-			CANCELATION,
+			CANCELLATION,
 			EXCHANGE_CANCELATION,
 			EXCHANGE_BOOKING,
 			COMPENSATION,
 			MANUAL_REFUND,
+			PREBOOKING_TIME_EXTENSION,
 		};
 
 	/**
@@ -215,11 +233,12 @@ public enum TransactionType implements Enumerator {
 	public static TransactionType get(int value) {
 		switch (value) {
 			case BOOKING_VALUE: return BOOKING;
-			case CANCELATION_VALUE: return CANCELATION;
+			case CANCELLATION_VALUE: return CANCELLATION;
 			case EXCHANGE_CANCELATION_VALUE: return EXCHANGE_CANCELATION;
 			case EXCHANGE_BOOKING_VALUE: return EXCHANGE_BOOKING;
 			case COMPENSATION_VALUE: return COMPENSATION;
 			case MANUAL_REFUND_VALUE: return MANUAL_REFUND;
+			case PREBOOKING_TIME_EXTENSION_VALUE: return PREBOOKING_TIME_EXTENSION;
 		}
 		return null;
 	}
