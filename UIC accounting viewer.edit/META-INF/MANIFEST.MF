@@ -8,7 +8,7 @@ Bundle-ClassPath: .
 Bundle-Activator: Accounting.provider.AccountingEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: Accounting,
  Accounting.provider
 Require-Bundle: org.eclipse.core.runtime,

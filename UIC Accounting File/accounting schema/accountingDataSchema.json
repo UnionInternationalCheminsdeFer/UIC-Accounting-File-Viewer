@@ -136,9 +136,26 @@
 					"description": "booked offer id of the provider in case of an online booking",
 					"type": "string"
 				},
-				"ticketId": {
-					"description": "id of the ticket in case the provider is responsible for the ticket creation used in barcodes according to 90918-9",
-					"type": "string"
+				"bookedOfferPartIds": {
+					"description": "booked offer part ids of the provider in case of an online booking",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},				
+				"accountingReferenceIds": {
+					"description": "accounting ids that were provided in the bookingPart accountingRef in an online booking",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				},
+				"ticketIds": {
+					"description": "ids of the tickets in case the provider is responsible for the ticket creation used in barcodes according to 90918-9",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
 				},
 				"fulfillmentIds": {
 					"description": "OSDM fulfillment idsassociated with this accounting transaction",

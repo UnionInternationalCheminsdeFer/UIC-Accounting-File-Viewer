@@ -19,6 +19,9 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Accounting.Transaction#getTransactionType <em>Transaction Type</em>}</li>
  *   <li>{@link Accounting.Transaction#getContract <em>Contract</em>}</li>
  *   <li>{@link Accounting.Transaction#getBookingId <em>Booking Id</em>}</li>
+ *   <li>{@link Accounting.Transaction#getBookingPartIds <em>Booking Part Ids</em>}</li>
+ *   <li>{@link Accounting.Transaction#getAccountingReferenceIds <em>Accounting Reference Ids</em>}</li>
+ *   <li>{@link Accounting.Transaction#getTicketIds <em>Ticket Ids</em>}</li>
  *   <li>{@link Accounting.Transaction#getTicketId <em>Ticket Id</em>}</li>
  *   <li>{@link Accounting.Transaction#getFulfillmentIds <em>Fulfillment Ids</em>}</li>
  *   <li>{@link Accounting.Transaction#getExchangebookingId <em>Exchangebooking Id</em>}</li>
@@ -98,6 +101,42 @@ public interface Transaction extends EObject {
 	 * @generated
 	 */
 	void setBookingId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Booking Part Ids</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Booking Part Ids</em>' attribute list.
+	 * @see Accounting.AccountingPackage#getTransaction_BookingPartIds()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 * @generated
+	 */
+	EList<String> getBookingPartIds();
+
+	/**
+	 * Returns the value of the '<em><b>Accounting Reference Ids</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Accounting Reference Ids</em>' attribute list.
+	 * @see Accounting.AccountingPackage#getTransaction_AccountingReferenceIds()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 * @generated
+	 */
+	EList<String> getAccountingReferenceIds();
+
+	/**
+	 * Returns the value of the '<em><b>Ticket Ids</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Ticket Ids</em>' attribute list.
+	 * @see Accounting.AccountingPackage#getTransaction_TicketIds()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 * @generated
+	 */
+	EList<String> getTicketIds();
 
 	/**
 	 * Returns the value of the '<em><b>Ticket Id</b></em>' attribute.

@@ -271,9 +271,18 @@ public class AccountingJsonExporter {
 			}
 		}
 		
+		if (mObj.getBookingPartIds() != null && !mObj.getBookingPartIds().isEmpty()) {
+			jObj.setBookedOfferPartIds(mObj.getBookingPartIds());
+		}
 		
-		jObj.setTicketId(mObj.getTicketId());
+		if (mObj.getAccountingReferenceIds() != null && !mObj.getAccountingReferenceIds().isEmpty()) {
+			jObj.setAccountingReferenceIds(mObj.getAccountingReferenceIds());
+		}
 
+		if (mObj.getTicketIds() != null && !mObj.getTicketIds().isEmpty()) {
+			jObj.setTicketIds(mObj.getTicketIds());
+		}
+		
 		if (mObj.getTransactionTime() != null) {
 			jObj.setTime(mObj.getTransactionTime());
 		}

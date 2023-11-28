@@ -66,6 +66,9 @@ public class TransactionItemProvider
 			addTransactionTypePropertyDescriptor(object);
 			addContractPropertyDescriptor(object);
 			addBookingIdPropertyDescriptor(object);
+			addBookingPartIdsPropertyDescriptor(object);
+			addAccountingReferenceIdsPropertyDescriptor(object);
+			addTicketIdsPropertyDescriptor(object);
 			addTicketIdPropertyDescriptor(object);
 			addFulfillmentIdsPropertyDescriptor(object);
 			addExchangebookingIdPropertyDescriptor(object);
@@ -132,6 +135,72 @@ public class TransactionItemProvider
 				 getString("_UI_Transaction_bookingId_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_bookingId_feature", "_UI_Transaction_type"),
 				 AccountingPackage.Literals.TRANSACTION__BOOKING_ID,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Booking Part Ids feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addBookingPartIdsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Transaction_bookingPartIds_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_bookingPartIds_feature", "_UI_Transaction_type"),
+				 AccountingPackage.Literals.TRANSACTION__BOOKING_PART_IDS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Accounting Reference Ids feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addAccountingReferenceIdsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Transaction_accountingReferenceIds_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_accountingReferenceIds_feature", "_UI_Transaction_type"),
+				 AccountingPackage.Literals.TRANSACTION__ACCOUNTING_REFERENCE_IDS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Ticket Ids feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTicketIdsPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Transaction_ticketIds_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Transaction_ticketIds_feature", "_UI_Transaction_type"),
+				 AccountingPackage.Literals.TRANSACTION__TICKET_IDS,
 				 true,
 				 false,
 				 false,
@@ -271,6 +340,9 @@ public class TransactionItemProvider
 			case AccountingPackage.TRANSACTION__TRANSACTION_TYPE:
 			case AccountingPackage.TRANSACTION__CONTRACT:
 			case AccountingPackage.TRANSACTION__BOOKING_ID:
+			case AccountingPackage.TRANSACTION__BOOKING_PART_IDS:
+			case AccountingPackage.TRANSACTION__ACCOUNTING_REFERENCE_IDS:
+			case AccountingPackage.TRANSACTION__TICKET_IDS:
 			case AccountingPackage.TRANSACTION__TICKET_ID:
 			case AccountingPackage.TRANSACTION__FULFILLMENT_IDS:
 			case AccountingPackage.TRANSACTION__EXCHANGEBOOKING_ID:

@@ -52,9 +52,7 @@ import org.eclipse.emf.common.ui.action.WorkbenchWindowActionDelegate;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.edit.ui.action.LoadResourceAction;
 import org.eclipse.emf.edit.ui.util.EditUIUtil;
-
 import Accounting.console.ConsoleUtil;
-import Accounting.presentation.AccountingEditorPlugin;
 import Accounting.problems.AccountingProblemView;
 
 

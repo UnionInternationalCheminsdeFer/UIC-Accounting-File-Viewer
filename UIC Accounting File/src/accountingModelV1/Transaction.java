@@ -20,7 +20,9 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "type",
     "contract",
     "bookedOfferId",
-    "ticketId",
+    "bookedOfferPartIds",
+    "accountingReferenceIds",
+    "ticketIds",
     "fulfillmentIds",
     "exchangedBookedOfferId"
 })
@@ -59,12 +61,26 @@ public class Transaction {
     @JsonPropertyDescription("booked offer id of the provider in case of an online booking")
     private String bookedOfferId;
     /**
-     * id of the ticket in case the provider is responsible for the ticket creation used in barcodes according to 90918-9
+     * booked offer part ids of the provider in case of an online booking
      * 
      */
-    @JsonProperty("ticketId")
-    @JsonPropertyDescription("id of the ticket in case the provider is responsible for the ticket creation used in barcodes according to 90918-9")
-    private String ticketId;
+    @JsonProperty("bookedOfferPartIds")
+    @JsonPropertyDescription("booked offer part ids of the provider in case of an online booking")
+    private List<String> bookedOfferPartIds = new ArrayList<String>();
+    /**
+     * accounting ids that were provided in the bookingPart accountingRef in an online booking
+     * 
+     */
+    @JsonProperty("accountingReferenceIds")
+    @JsonPropertyDescription("accounting ids that were provided in the bookingPart accountingRef in an online booking")
+    private List<String> accountingReferenceIds = new ArrayList<String>();
+    /**
+     * ids of the tickets in case the provider is responsible for the ticket creation used in barcodes according to 90918-9
+     * 
+     */
+    @JsonProperty("ticketIds")
+    @JsonPropertyDescription("ids of the tickets in case the provider is responsible for the ticket creation used in barcodes according to 90918-9")
+    private List<String> ticketIds = new ArrayList<String>();
     /**
      * OSDM fulfillment idsassociated with this accounting transaction
      * 
@@ -159,21 +175,57 @@ public class Transaction {
     }
 
     /**
-     * id of the ticket in case the provider is responsible for the ticket creation used in barcodes according to 90918-9
+     * booked offer part ids of the provider in case of an online booking
      * 
      */
-    @JsonProperty("ticketId")
-    public String getTicketId() {
-        return ticketId;
+    @JsonProperty("bookedOfferPartIds")
+    public List<String> getBookedOfferPartIds() {
+        return bookedOfferPartIds;
     }
 
     /**
-     * id of the ticket in case the provider is responsible for the ticket creation used in barcodes according to 90918-9
+     * booked offer part ids of the provider in case of an online booking
      * 
      */
-    @JsonProperty("ticketId")
-    public void setTicketId(String ticketId) {
-        this.ticketId = ticketId;
+    @JsonProperty("bookedOfferPartIds")
+    public void setBookedOfferPartIds(List<String> bookedOfferPartIds) {
+        this.bookedOfferPartIds = bookedOfferPartIds;
+    }
+
+    /**
+     * accounting ids that were provided in the bookingPart accountingRef in an online booking
+     * 
+     */
+    @JsonProperty("accountingReferenceIds")
+    public List<String> getAccountingReferenceIds() {
+        return accountingReferenceIds;
+    }
+
+    /**
+     * accounting ids that were provided in the bookingPart accountingRef in an online booking
+     * 
+     */
+    @JsonProperty("accountingReferenceIds")
+    public void setAccountingReferenceIds(List<String> accountingReferenceIds) {
+        this.accountingReferenceIds = accountingReferenceIds;
+    }
+
+    /**
+     * ids of the tickets in case the provider is responsible for the ticket creation used in barcodes according to 90918-9
+     * 
+     */
+    @JsonProperty("ticketIds")
+    public List<String> getTicketIds() {
+        return ticketIds;
+    }
+
+    /**
+     * ids of the tickets in case the provider is responsible for the ticket creation used in barcodes according to 90918-9
+     * 
+     */
+    @JsonProperty("ticketIds")
+    public void setTicketIds(List<String> ticketIds) {
+        this.ticketIds = ticketIds;
     }
 
     /**
@@ -232,9 +284,17 @@ public class Transaction {
         sb.append('=');
         sb.append(((this.bookedOfferId == null)?"<null>":this.bookedOfferId));
         sb.append(',');
-        sb.append("ticketId");
+        sb.append("bookedOfferPartIds");
         sb.append('=');
-        sb.append(((this.ticketId == null)?"<null>":this.ticketId));
+        sb.append(((this.bookedOfferPartIds == null)?"<null>":this.bookedOfferPartIds));
+        sb.append(',');
+        sb.append("accountingReferenceIds");
+        sb.append('=');
+        sb.append(((this.accountingReferenceIds == null)?"<null>":this.accountingReferenceIds));
+        sb.append(',');
+        sb.append("ticketIds");
+        sb.append('=');
+        sb.append(((this.ticketIds == null)?"<null>":this.ticketIds));
         sb.append(',');
         sb.append("fulfillmentIds");
         sb.append('=');
@@ -255,13 +315,15 @@ public class Transaction {
     @Override
     public int hashCode() {
         int result = 1;
+        result = ((result* 31)+((this.bookedOfferPartIds == null)? 0 :this.bookedOfferPartIds.hashCode()));
+        result = ((result* 31)+((this.accountingReferenceIds == null)? 0 :this.accountingReferenceIds.hashCode()));
         result = ((result* 31)+((this.contract == null)? 0 :this.contract.hashCode()));
         result = ((result* 31)+((this.bookedOfferId == null)? 0 :this.bookedOfferId.hashCode()));
         result = ((result* 31)+((this.fulfillmentIds == null)? 0 :this.fulfillmentIds.hashCode()));
         result = ((result* 31)+((this.time == null)? 0 :this.time.hashCode()));
         result = ((result* 31)+((this.type == null)? 0 :this.type.hashCode()));
         result = ((result* 31)+((this.exchangedBookedOfferId == null)? 0 :this.exchangedBookedOfferId.hashCode()));
-        result = ((result* 31)+((this.ticketId == null)? 0 :this.ticketId.hashCode()));
+        result = ((result* 31)+((this.ticketIds == null)? 0 :this.ticketIds.hashCode()));
         return result;
     }
 
@@ -274,7 +336,7 @@ public class Transaction {
             return false;
         }
         Transaction rhs = ((Transaction) other);
-        return ((((((((this.contract == rhs.contract)||((this.contract!= null)&&this.contract.equals(rhs.contract)))&&((this.bookedOfferId == rhs.bookedOfferId)||((this.bookedOfferId!= null)&&this.bookedOfferId.equals(rhs.bookedOfferId))))&&((this.fulfillmentIds == rhs.fulfillmentIds)||((this.fulfillmentIds!= null)&&this.fulfillmentIds.equals(rhs.fulfillmentIds))))&&((this.time == rhs.time)||((this.time!= null)&&this.time.equals(rhs.time))))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.exchangedBookedOfferId == rhs.exchangedBookedOfferId)||((this.exchangedBookedOfferId!= null)&&this.exchangedBookedOfferId.equals(rhs.exchangedBookedOfferId))))&&((this.ticketId == rhs.ticketId)||((this.ticketId!= null)&&this.ticketId.equals(rhs.ticketId))));
+        return ((((((((((this.bookedOfferPartIds == rhs.bookedOfferPartIds)||((this.bookedOfferPartIds!= null)&&this.bookedOfferPartIds.equals(rhs.bookedOfferPartIds)))&&((this.accountingReferenceIds == rhs.accountingReferenceIds)||((this.accountingReferenceIds!= null)&&this.accountingReferenceIds.equals(rhs.accountingReferenceIds))))&&((this.contract == rhs.contract)||((this.contract!= null)&&this.contract.equals(rhs.contract))))&&((this.bookedOfferId == rhs.bookedOfferId)||((this.bookedOfferId!= null)&&this.bookedOfferId.equals(rhs.bookedOfferId))))&&((this.fulfillmentIds == rhs.fulfillmentIds)||((this.fulfillmentIds!= null)&&this.fulfillmentIds.equals(rhs.fulfillmentIds))))&&((this.time == rhs.time)||((this.time!= null)&&this.time.equals(rhs.time))))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.exchangedBookedOfferId == rhs.exchangedBookedOfferId)||((this.exchangedBookedOfferId!= null)&&this.exchangedBookedOfferId.equals(rhs.exchangedBookedOfferId))))&&((this.ticketIds == rhs.ticketIds)||((this.ticketIds!= null)&&this.ticketIds.equals(rhs.ticketIds))));
     }
 
     public enum TransactionType {
