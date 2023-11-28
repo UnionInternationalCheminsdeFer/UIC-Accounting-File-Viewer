@@ -246,9 +246,9 @@ public class LegacyDescription {
         int result = 1;
         result = ((result* 31)+((this.classCode == null)? 0 :this.classCode.hashCode()));
         result = ((result* 31)+((this.tariff == null)? 0 :this.tariff.hashCode()));
-        result = ((result* 31)+((this.dialogNumber == null)? 0 :this.dialogNumber.hashCode()));
         result = ((result* 31)+((this.passengerType == null)? 0 :this.passengerType.hashCode()));
         result = ((result* 31)+((this.series == null)? 0 :this.series.hashCode()));
+        result = ((result* 31)+((this.dialogNumber == null)? 0 :this.dialogNumber.hashCode()));
         return result;
     }
 
@@ -261,7 +261,7 @@ public class LegacyDescription {
             return false;
         }
         LegacyDescription rhs = ((LegacyDescription) other);
-        return ((((((this.classCode == rhs.classCode)||((this.classCode!= null)&&this.classCode.equals(rhs.classCode)))&&((this.tariff == rhs.tariff)||((this.tariff!= null)&&this.tariff.equals(rhs.tariff))))&&((this.dialogNumber == rhs.dialogNumber)||((this.dialogNumber!= null)&&this.dialogNumber.equals(rhs.dialogNumber))))&&((this.passengerType == rhs.passengerType)||((this.passengerType!= null)&&this.passengerType.equals(rhs.passengerType))))&&((this.series == rhs.series)||((this.series!= null)&&this.series.equals(rhs.series))));
+        return ((((((this.classCode == rhs.classCode)||((this.classCode!= null)&&this.classCode.equals(rhs.classCode)))&&((this.tariff == rhs.tariff)||((this.tariff!= null)&&this.tariff.equals(rhs.tariff))))&&((this.passengerType == rhs.passengerType)||((this.passengerType!= null)&&this.passengerType.equals(rhs.passengerType))))&&((this.series == rhs.series)||((this.series!= null)&&this.series.equals(rhs.series))))&&((this.dialogNumber == rhs.dialogNumber)||((this.dialogNumber!= null)&&this.dialogNumber.equals(rhs.dialogNumber))));
     }
 
     public enum ClassCode {

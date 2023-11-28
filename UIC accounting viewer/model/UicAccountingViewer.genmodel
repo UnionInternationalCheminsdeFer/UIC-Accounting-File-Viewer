@@ -581,6 +581,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/transactionType"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/contract"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/bookingId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/bookingPartIds"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/accountingReferenceIds"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/ticketIds"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/ticketId"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/fulfillmentIds"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//Transaction/exchangebookingId"/>

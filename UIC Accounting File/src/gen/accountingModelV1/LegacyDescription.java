@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "tariff",
     "classCode",
     "passengerType",
-    "dialogNummer"
+    "dialogNumber"
 })
 public class LegacyDescription {
 
@@ -71,9 +71,9 @@ public class LegacyDescription {
      * identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. 
      * 
      */
-    @JsonProperty("dialogNummer")
+    @JsonProperty("dialogNumber")
     @JsonPropertyDescription("identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. ")
-    private String dialogNummer;
+    private String dialogNumber;
 
     /**
      * 
@@ -195,18 +195,18 @@ public class LegacyDescription {
      * identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. 
      * 
      */
-    @JsonProperty("dialogNummer")
-    public String getDialogNummer() {
-        return dialogNummer;
+    @JsonProperty("dialogNumber")
+    public String getDialogNumber() {
+        return dialogNumber;
     }
 
     /**
      * identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. 
      * 
      */
-    @JsonProperty("dialogNummer")
-    public void setDialogNummer(String dialogNummer) {
-        this.dialogNummer = dialogNummer;
+    @JsonProperty("dialogNumber")
+    public void setDialogNumber(String dialogNumber) {
+        this.dialogNumber = dialogNumber;
     }
 
     @Override
@@ -229,9 +229,9 @@ public class LegacyDescription {
         sb.append('=');
         sb.append(((this.passengerType == null)?"<null>":this.passengerType));
         sb.append(',');
-        sb.append("dialogNummer");
+        sb.append("dialogNumber");
         sb.append('=');
-        sb.append(((this.dialogNummer == null)?"<null>":this.dialogNummer));
+        sb.append(((this.dialogNumber == null)?"<null>":this.dialogNumber));
         sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
@@ -246,9 +246,9 @@ public class LegacyDescription {
         int result = 1;
         result = ((result* 31)+((this.classCode == null)? 0 :this.classCode.hashCode()));
         result = ((result* 31)+((this.tariff == null)? 0 :this.tariff.hashCode()));
-        result = ((result* 31)+((this.dialogNummer == null)? 0 :this.dialogNummer.hashCode()));
         result = ((result* 31)+((this.passengerType == null)? 0 :this.passengerType.hashCode()));
         result = ((result* 31)+((this.series == null)? 0 :this.series.hashCode()));
+        result = ((result* 31)+((this.dialogNumber == null)? 0 :this.dialogNumber.hashCode()));
         return result;
     }
 
@@ -261,7 +261,7 @@ public class LegacyDescription {
             return false;
         }
         LegacyDescription rhs = ((LegacyDescription) other);
-        return ((((((this.classCode == rhs.classCode)||((this.classCode!= null)&&this.classCode.equals(rhs.classCode)))&&((this.tariff == rhs.tariff)||((this.tariff!= null)&&this.tariff.equals(rhs.tariff))))&&((this.dialogNummer == rhs.dialogNummer)||((this.dialogNummer!= null)&&this.dialogNummer.equals(rhs.dialogNummer))))&&((this.passengerType == rhs.passengerType)||((this.passengerType!= null)&&this.passengerType.equals(rhs.passengerType))))&&((this.series == rhs.series)||((this.series!= null)&&this.series.equals(rhs.series))));
+        return ((((((this.classCode == rhs.classCode)||((this.classCode!= null)&&this.classCode.equals(rhs.classCode)))&&((this.tariff == rhs.tariff)||((this.tariff!= null)&&this.tariff.equals(rhs.tariff))))&&((this.passengerType == rhs.passengerType)||((this.passengerType!= null)&&this.passengerType.equals(rhs.passengerType))))&&((this.series == rhs.series)||((this.series!= null)&&this.series.equals(rhs.series))))&&((this.dialogNumber == rhs.dialogNumber)||((this.dialogNumber!= null)&&this.dialogNumber.equals(rhs.dialogNumber))));
     }
 
     public enum ClassCode {

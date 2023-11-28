@@ -201,13 +201,22 @@ public class AccountingJsonImporter {
 		mObj.setContract(jObj.getContract());
 		mObj.setExchangebookingId(jObj.getExchangedBookedOfferId());
 		
-		if (jObj.getFulfillmentIds() != null) {
-			for (String id : jObj.getFulfillmentIds() ) {
-				mObj.getFulfillmentIds().add(id);
-			}
+		if (jObj.getFulfillmentIds() != null && !jObj.getFulfillmentIds().isEmpty()) {
+			mObj.getFulfillmentIds().addAll(jObj.getFulfillmentIds());
+		}
+		
+		if (jObj.getBookedOfferPartIds() != null && !jObj.getBookedOfferPartIds().isEmpty()) {
+			mObj.getBookingPartIds().addAll(jObj.getBookedOfferPartIds());
+		}
+		
+		if (jObj.getAccountingReferenceIds() != null && !jObj.getAccountingReferenceIds().isEmpty()) {
+			mObj.getAccountingReferenceIds().addAll(jObj.getAccountingReferenceIds());
+		}
+		
+		if (jObj.getTicketIds() != null && !jObj.getTicketIds().isEmpty()) {
+			mObj.getTicketIds().addAll(jObj.getTicketIds());
 		}
 
-		mObj.setTicketId(jObj.getTicketId());
 		mObj.setTransactionTime(jObj.getTime());
 		
 		if (jObj.getType() != null) {

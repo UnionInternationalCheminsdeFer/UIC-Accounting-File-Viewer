@@ -8,7 +8,7 @@ Bundle-ClassPath: .
 Bundle-Activator: Accounting.presentation.AccountingEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: Accounting.presentation,
  Accounting.utils
 Require-Bundle: org.eclipse.core.runtime,
@@ -22,7 +22,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.help.webapp;bundle-version="3.9.700",
  org.apache.felix.scr;bundle-version="2.1.14",
  org.eclipse.equinox.http.jetty;bundle-version="3.7.300",
- org.apache.lucene.analyzers-common;bundle-version="8.0.0",
  org.eclipse.help.ui;bundle-version="4.1.700",
  org.eclipse.e4.ui.css.core;bundle-version="0.12.900",
  org.eclipse.equinox.event;bundle-version="1.5.300",
@@ -31,7 +30,8 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.nebula.widgets.cdatetime;bundle-version="1.5.0",
  com.ibm.icu;bundle-version="64.2.0",
  org.eclipse.jface,
- org.eclipse.e4.ui.dialogs;bundle-version="1.1.600"
+ org.eclipse.e4.ui.dialogs;bundle-version="1.1.600",
+ org.apache.lucene.analysis-common;bundle-version="9.5.0"
 Bundle-ActivationPolicy: lazy
 Import-Package: org.apache.batik;version="1.11.0",
  org.eclipse.emf.ecore.provider

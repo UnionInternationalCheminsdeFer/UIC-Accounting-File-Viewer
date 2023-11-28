@@ -5,7 +5,7 @@ Bundle-SymbolicName: UIC_Accounting_File;singleton:=true
 Automatic-Module-Name: UIC_Accounting_File
 Bundle-Version: 1.1.0
 Bundle-Vendor: www.uic.org
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-ClassPath: lib/,
  .
 Export-Package: export,
