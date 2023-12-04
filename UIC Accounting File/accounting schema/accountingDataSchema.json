@@ -167,7 +167,7 @@
           "type": "string"
         }
       },
-      "required": ["time", "type", "contract"],
+      "required": ["timestamp", "type", "contract"],
       "additionalProperties": false
     },
     "Subject": {
@@ -292,7 +292,7 @@
       },
       "required": [
         "grossAmount",
-        "refundFee",
+        "afterSaleFee",
         "commission",
         "settlementValueIndicator",
         "amount"
