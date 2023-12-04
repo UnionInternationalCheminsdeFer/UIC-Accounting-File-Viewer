@@ -42,24 +42,42 @@ public class LegacyDescription {
     @JsonProperty("classCode")
     private LegacyDescription.ClassCode classCode;
     /**
-     * YOUNG_CHILD Young child – defined by the carrier depending on the age 
-     * CHILD Child – defined by the carreir depending on the age  
-     * YOUTH Youth – defined by the carreir depending on the age  
-     * ADULT Adult – defined by the carreir depending on the age 
-     * SENIOR Senior – defined by the carreir depending on the age  
-     * FAMILY_CHILD Child associated with a family travellimng together  
-     * ACCOMP_PRM Accompanying Person for PRM  
-     * PRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   
-     * WHEELCHAIR Passenger with wheelchair    
-     * PERSON Used in requests together with date of birth   
-     * PRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   
-     * DOG A dog  
-     * PET A pet  
-     * LUGGAGE Oversize luggage 
-     * BICYCLE A bicycle 
-     * ACCOMP_DOG An accompagning dog for a PRM 
-     * CAR A car for carcarriage trains 
-     * MOTOCYCLE A motocycle for car carriage trains 
+     * YOUNG_CHILD Young child – defined by the carrier depending on the age 
+
+     * CHILD Child – defined by the carreir depending on the age  
+
+     * YOUTH Youth – defined by the carreir depending on the age  
+
+     * ADULT Adult – defined by the carreir depending on the age 
+
+     * SENIOR Senior – defined by the carreir depending on the age  
+
+     * FAMILY_CHILD Child associated with a family travellimng together  
+
+     * ACCOMP_PRM Accompanying Person for PRM  
+
+     * PRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   
+
+     * WHEELCHAIR Passenger with wheelchair    
+
+     * PERSON Used in requests together with date of birth   
+
+     * PRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   
+
+     * DOG A dog  
+
+     * PET A pet  
+
+     * LUGGAGE Oversize luggage 
+
+     * BICYCLE A bicycle 
+
+     * ACCOMP_DOG An accompagning dog for a PRM 
+
+     * CAR A car for carcarriage trains 
+
+     * MOTOCYCLE A motocycle for car carriage trains 
+
      * TRAILER A trailer for car carriage trains
      * (Required)
      * 
@@ -136,24 +154,42 @@ public class LegacyDescription {
     }
 
     /**
-     * YOUNG_CHILD Young child – defined by the carrier depending on the age 
-     * CHILD Child – defined by the carreir depending on the age  
-     * YOUTH Youth – defined by the carreir depending on the age  
-     * ADULT Adult – defined by the carreir depending on the age 
-     * SENIOR Senior – defined by the carreir depending on the age  
-     * FAMILY_CHILD Child associated with a family travellimng together  
-     * ACCOMP_PRM Accompanying Person for PRM  
-     * PRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   
-     * WHEELCHAIR Passenger with wheelchair    
-     * PERSON Used in requests together with date of birth   
-     * PRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   
-     * DOG A dog  
-     * PET A pet  
-     * LUGGAGE Oversize luggage 
-     * BICYCLE A bicycle 
-     * ACCOMP_DOG An accompagning dog for a PRM 
-     * CAR A car for carcarriage trains 
-     * MOTOCYCLE A motocycle for car carriage trains 
+     * YOUNG_CHILD Young child – defined by the carrier depending on the age 
+
+     * CHILD Child – defined by the carreir depending on the age  
+
+     * YOUTH Youth – defined by the carreir depending on the age  
+
+     * ADULT Adult – defined by the carreir depending on the age 
+
+     * SENIOR Senior – defined by the carreir depending on the age  
+
+     * FAMILY_CHILD Child associated with a family travellimng together  
+
+     * ACCOMP_PRM Accompanying Person for PRM  
+
+     * PRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   
+
+     * WHEELCHAIR Passenger with wheelchair    
+
+     * PERSON Used in requests together with date of birth   
+
+     * PRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   
+
+     * DOG A dog  
+
+     * PET A pet  
+
+     * LUGGAGE Oversize luggage 
+
+     * BICYCLE A bicycle 
+
+     * ACCOMP_DOG An accompagning dog for a PRM 
+
+     * CAR A car for carcarriage trains 
+
+     * MOTOCYCLE A motocycle for car carriage trains 
+
      * TRAILER A trailer for car carriage trains
      * (Required)
      * 
@@ -164,24 +200,42 @@ public class LegacyDescription {
     }
 
     /**
-     * YOUNG_CHILD Young child – defined by the carrier depending on the age 
-     * CHILD Child – defined by the carreir depending on the age  
-     * YOUTH Youth – defined by the carreir depending on the age  
-     * ADULT Adult – defined by the carreir depending on the age 
-     * SENIOR Senior – defined by the carreir depending on the age  
-     * FAMILY_CHILD Child associated with a family travellimng together  
-     * ACCOMP_PRM Accompanying Person for PRM  
-     * PRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   
-     * WHEELCHAIR Passenger with wheelchair    
-     * PERSON Used in requests together with date of birth   
-     * PRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   
-     * DOG A dog  
-     * PET A pet  
-     * LUGGAGE Oversize luggage 
-     * BICYCLE A bicycle 
-     * ACCOMP_DOG An accompagning dog for a PRM 
-     * CAR A car for carcarriage trains 
-     * MOTOCYCLE A motocycle for car carriage trains 
+     * YOUNG_CHILD Young child – defined by the carrier depending on the age 
+
+     * CHILD Child – defined by the carreir depending on the age  
+
+     * YOUTH Youth – defined by the carreir depending on the age  
+
+     * ADULT Adult – defined by the carreir depending on the age 
+
+     * SENIOR Senior – defined by the carreir depending on the age  
+
+     * FAMILY_CHILD Child associated with a family travellimng together  
+
+     * ACCOMP_PRM Accompanying Person for PRM  
+
+     * PRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   
+
+     * WHEELCHAIR Passenger with wheelchair    
+
+     * PERSON Used in requests together with date of birth   
+
+     * PRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   
+
+     * DOG A dog  
+
+     * PET A pet  
+
+     * LUGGAGE Oversize luggage 
+
+     * BICYCLE A bicycle 
+
+     * ACCOMP_DOG An accompagning dog for a PRM 
+
+     * CAR A car for carcarriage trains 
+
+     * MOTOCYCLE A motocycle for car carriage trains 
+
      * TRAILER A trailer for car carriage trains
      * (Required)
      * 
