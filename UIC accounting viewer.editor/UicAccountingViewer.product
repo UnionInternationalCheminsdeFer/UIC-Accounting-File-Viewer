@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="UIC Accounting Viewer" uid="AccountingViewerProduct" id="UIC_accounting_viewer.editor.UicAccountingViewer" application="UIC_accounting_viewer.editor.AccountingEditorAdvisorApplication" version="1.2" type="bundles" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="UIC Accounting Viewer" uid="AccountingViewerProduct" id="UIC_accounting_viewer.editor.UicAccountingViewer" application="UIC_accounting_viewer.editor.AccountingEditorAdvisorApplication" version="1.4" type="bundles" includeLaunchers="true" autoIncludeRequirements="true">
 
    <aboutInfo>
       <image path="/UIC accounting viewer.editor/icons/UIC GIF square_96.gif"/>
