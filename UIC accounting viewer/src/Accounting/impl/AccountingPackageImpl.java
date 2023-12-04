@@ -1978,7 +1978,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransaction_TicketId() {
+	public EAttribute getTransaction_BookingPartIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(3);
 	}
 
@@ -1987,7 +1987,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransaction_FulfillmentIds() {
+	public EAttribute getTransaction_AccountingReferenceIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(4);
 	}
 
@@ -1996,7 +1996,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransaction_ExchangebookingId() {
+	public EAttribute getTransaction_TicketIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(5);
 	}
 
@@ -2005,8 +2005,35 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransaction_TransactionTime() {
+	public EAttribute getTransaction_TicketId() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTransaction_FulfillmentIds() {
+        return (EAttribute)getTransaction().getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTransaction_ExchangebookingId() {
+        return (EAttribute)getTransaction().getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getTransaction_TransactionTime() {
+        return (EAttribute)getTransaction().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -8431,7 +8458,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	private boolean isLoaded = false;
 
 	/**
-	 * Laods the package and any sub-packages from their serialized form.
+	 * Loads the package and any sub-packages from their serialized form.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

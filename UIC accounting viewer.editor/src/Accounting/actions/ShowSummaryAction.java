@@ -86,7 +86,7 @@ public class ShowSummaryAction extends BasicAction {
 			}
 
 			
-			SummaryCalculator calculator = new SummaryCalculator(accounting.getAccountingFile().getAccountingDelivery());
+			final SummaryCalculator calculator = new SummaryCalculator(accounting.getAccountingFile().getAccountingDelivery());
 
 			
 			IRunnableWithProgress operation =	new IRunnableWithProgress() {

@@ -201,14 +201,23 @@ public class AccountingJsonImporter {
 		mObj.setContract(jObj.getContract());
 		mObj.setExchangebookingId(jObj.getExchangedBookedOfferId());
 		
-		if (jObj.getFulfillmentIds() != null) {
-			for (String id : jObj.getFulfillmentIds() ) {
-				mObj.getFulfillmentIds().add(id);
-			}
+		if (jObj.getFulfillmentIds() != null && !jObj.getFulfillmentIds().isEmpty()) {
+			mObj.getFulfillmentIds().addAll(jObj.getFulfillmentIds());
+		}
+		
+		if (jObj.getBookedOfferPartIds() != null && !jObj.getBookedOfferPartIds().isEmpty()) {
+			mObj.getBookingPartIds().addAll(jObj.getBookedOfferPartIds());
+		}
+		
+		if (jObj.getAccountingReferenceIds() != null && !jObj.getAccountingReferenceIds().isEmpty()) {
+			mObj.getAccountingReferenceIds().addAll(jObj.getAccountingReferenceIds());
+		}
+		
+		if (jObj.getTicketIds() != null && !jObj.getTicketIds().isEmpty()) {
+			mObj.getTicketIds().addAll(jObj.getTicketIds());
 		}
 
-		mObj.setTicketId(jObj.getTicketId());
-		mObj.setTransactionTime(jObj.getTime());
+		mObj.setTransactionTime(jObj.getTimestamp());
 		
 		if (jObj.getType() != null) {
 			mObj.setTransactionType(TransactionType.get(jObj.getType().value()));
@@ -315,7 +324,7 @@ public class AccountingJsonImporter {
 			
 			mObj.setCommission(jObj.getCommission());
 			
-			mObj.setFee(jObj.getRefundFee());
+			mObj.setFee(jObj.getAfterSaleFee());
 			
 			mObj.setCurrency(getCurrency(jObj.getCurrency()));
 			
@@ -325,7 +334,7 @@ public class AccountingJsonImporter {
 			
 			mObj.setAmount(convertToDecimal(jObj.getAmount(),jObj.getScale()));
 			
-			mObj.setRate(convertToDecimal(jObj.getRate(),jObj.getRateScale()));
+			mObj.setRate(convertToDecimal(jObj.getCommissionRate(),jObj.getCommissionRateScale()));
 			
 			mObjL.getAccountedAmounts().add(mObj);
 			

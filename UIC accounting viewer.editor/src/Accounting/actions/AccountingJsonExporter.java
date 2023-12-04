@@ -125,8 +125,8 @@ public class AccountingJsonExporter {
 		}
 		
 		if (mObj.getRate() != null) {
-			jObj.setRate(convertToAmount(mObj.getRate()));
-			jObj.setRateScale(convertToScale(mObj.getRate()));
+			jObj.setCommissionRate(convertToAmount(mObj.getRate()));
+			jObj.setCommissionRateScale(convertToScale(mObj.getRate()));
 		}
 		
 		if (mObj.getSettlementValueIndicator() != null) {
@@ -138,7 +138,7 @@ public class AccountingJsonExporter {
 		
 		jObj.setGrossAmount(mObj.isGrossAmount());
 		
-		jObj.setRefundFee(mObj.isFee());	
+		jObj.setAfterSaleFee(mObj.isFee());	
 		
 		
 		// TODO Auto-generated method stub
@@ -271,11 +271,20 @@ public class AccountingJsonExporter {
 			}
 		}
 		
+		if (mObj.getBookingPartIds() != null && !mObj.getBookingPartIds().isEmpty()) {
+			jObj.setBookedOfferPartIds(mObj.getBookingPartIds());
+		}
 		
-		jObj.setTicketId(mObj.getTicketId());
+		if (mObj.getAccountingReferenceIds() != null && !mObj.getAccountingReferenceIds().isEmpty()) {
+			jObj.setAccountingReferenceIds(mObj.getAccountingReferenceIds());
+		}
 
+		if (mObj.getTicketIds() != null && !mObj.getTicketIds().isEmpty()) {
+			jObj.setTicketIds(mObj.getTicketIds());
+		}
+		
 		if (mObj.getTransactionTime() != null) {
-			jObj.setTime(mObj.getTransactionTime());
+			jObj.setTimestamp(mObj.getTransactionTime());
 		}
 		
 		if (mObj.getTransactionType() != null) {

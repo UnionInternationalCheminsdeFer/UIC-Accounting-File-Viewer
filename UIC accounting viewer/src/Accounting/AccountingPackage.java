@@ -664,13 +664,40 @@ public interface AccountingPackage extends EPackage {
 	int TRANSACTION__BOOKING_ID = 2;
 
 	/**
+	 * The feature id for the '<em><b>Booking Part Ids</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSACTION__BOOKING_PART_IDS = 3;
+
+	/**
+	 * The feature id for the '<em><b>Accounting Reference Ids</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSACTION__ACCOUNTING_REFERENCE_IDS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Ticket Ids</b></em>' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSACTION__TICKET_IDS = 5;
+
+	/**
 	 * The feature id for the '<em><b>Ticket Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION__TICKET_ID = 3;
+	int TRANSACTION__TICKET_ID = 6;
 
 	/**
 	 * The feature id for the '<em><b>Fulfillment Ids</b></em>' attribute list.
@@ -679,7 +706,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION__FULFILLMENT_IDS = 4;
+	int TRANSACTION__FULFILLMENT_IDS = 7;
 
 	/**
 	 * The feature id for the '<em><b>Exchangebooking Id</b></em>' attribute.
@@ -688,7 +715,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION__EXCHANGEBOOKING_ID = 5;
+	int TRANSACTION__EXCHANGEBOOKING_ID = 8;
 
 	/**
 	 * The feature id for the '<em><b>Transaction Time</b></em>' attribute.
@@ -697,7 +724,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION__TRANSACTION_TIME = 6;
+	int TRANSACTION__TRANSACTION_TIME = 9;
 
 	/**
 	 * The number of structural features of the '<em>Transaction</em>' class.
@@ -706,7 +733,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSACTION_FEATURE_COUNT = 7;
+	int TRANSACTION_FEATURE_COUNT = 10;
 
 	/**
 	 * The number of operations of the '<em>Transaction</em>' class.
@@ -9629,6 +9656,39 @@ public interface AccountingPackage extends EPackage {
 	EAttribute getTransaction_BookingId();
 
 	/**
+	 * Returns the meta object for the attribute list '{@link Accounting.Transaction#getBookingPartIds <em>Booking Part Ids</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Booking Part Ids</em>'.
+	 * @see Accounting.Transaction#getBookingPartIds()
+	 * @see #getTransaction()
+	 * @generated
+	 */
+	EAttribute getTransaction_BookingPartIds();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link Accounting.Transaction#getAccountingReferenceIds <em>Accounting Reference Ids</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Accounting Reference Ids</em>'.
+	 * @see Accounting.Transaction#getAccountingReferenceIds()
+	 * @see #getTransaction()
+	 * @generated
+	 */
+	EAttribute getTransaction_AccountingReferenceIds();
+
+	/**
+	 * Returns the meta object for the attribute list '{@link Accounting.Transaction#getTicketIds <em>Ticket Ids</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute list '<em>Ticket Ids</em>'.
+	 * @see Accounting.Transaction#getTicketIds()
+	 * @see #getTransaction()
+	 * @generated
+	 */
+	EAttribute getTransaction_TicketIds();
+
+	/**
 	 * Returns the meta object for the attribute '{@link Accounting.Transaction#getTicketId <em>Ticket Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17065,6 +17125,30 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute TRANSACTION__BOOKING_ID = eINSTANCE.getTransaction_BookingId();
+
+		/**
+		 * The meta object literal for the '<em><b>Booking Part Ids</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSACTION__BOOKING_PART_IDS = eINSTANCE.getTransaction_BookingPartIds();
+
+		/**
+		 * The meta object literal for the '<em><b>Accounting Reference Ids</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSACTION__ACCOUNTING_REFERENCE_IDS = eINSTANCE.getTransaction_AccountingReferenceIds();
+
+		/**
+		 * The meta object literal for the '<em><b>Ticket Ids</b></em>' attribute list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TRANSACTION__TICKET_IDS = eINSTANCE.getTransaction_TicketIds();
 
 		/**
 		 * The meta object literal for the '<em><b>Ticket Id</b></em>' attribute feature.

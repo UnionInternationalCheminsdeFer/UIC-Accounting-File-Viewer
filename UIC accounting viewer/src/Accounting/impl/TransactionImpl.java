@@ -29,6 +29,9 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  *   <li>{@link Accounting.impl.TransactionImpl#getTransactionType <em>Transaction Type</em>}</li>
  *   <li>{@link Accounting.impl.TransactionImpl#getContract <em>Contract</em>}</li>
  *   <li>{@link Accounting.impl.TransactionImpl#getBookingId <em>Booking Id</em>}</li>
+ *   <li>{@link Accounting.impl.TransactionImpl#getBookingPartIds <em>Booking Part Ids</em>}</li>
+ *   <li>{@link Accounting.impl.TransactionImpl#getAccountingReferenceIds <em>Accounting Reference Ids</em>}</li>
+ *   <li>{@link Accounting.impl.TransactionImpl#getTicketIds <em>Ticket Ids</em>}</li>
  *   <li>{@link Accounting.impl.TransactionImpl#getTicketId <em>Ticket Id</em>}</li>
  *   <li>{@link Accounting.impl.TransactionImpl#getFulfillmentIds <em>Fulfillment Ids</em>}</li>
  *   <li>{@link Accounting.impl.TransactionImpl#getExchangebookingId <em>Exchangebooking Id</em>}</li>
@@ -97,6 +100,36 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * @ordered
 	 */
 	protected String bookingId = BOOKING_ID_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBookingPartIds() <em>Booking Part Ids</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBookingPartIds()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> bookingPartIds;
+
+	/**
+	 * The cached value of the '{@link #getAccountingReferenceIds() <em>Accounting Reference Ids</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAccountingReferenceIds()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> accountingReferenceIds;
+
+	/**
+	 * The cached value of the '{@link #getTicketIds() <em>Ticket Ids</em>}' attribute list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTicketIds()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<String> ticketIds;
 
 	/**
 	 * The default value of the '{@link #getTicketId() <em>Ticket Id</em>}' attribute.
@@ -255,6 +288,42 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EList<String> getBookingPartIds() {
+		if (bookingPartIds == null) {
+			bookingPartIds = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.TRANSACTION__BOOKING_PART_IDS);
+		}
+		return bookingPartIds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<String> getAccountingReferenceIds() {
+		if (accountingReferenceIds == null) {
+			accountingReferenceIds = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.TRANSACTION__ACCOUNTING_REFERENCE_IDS);
+		}
+		return accountingReferenceIds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<String> getTicketIds() {
+		if (ticketIds == null) {
+			ticketIds = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.TRANSACTION__TICKET_IDS);
+		}
+		return ticketIds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String getTicketId() {
 		return ticketId;
 	}
@@ -339,6 +408,12 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 				return getContract();
 			case AccountingPackage.TRANSACTION__BOOKING_ID:
 				return getBookingId();
+			case AccountingPackage.TRANSACTION__BOOKING_PART_IDS:
+				return getBookingPartIds();
+			case AccountingPackage.TRANSACTION__ACCOUNTING_REFERENCE_IDS:
+				return getAccountingReferenceIds();
+			case AccountingPackage.TRANSACTION__TICKET_IDS:
+				return getTicketIds();
 			case AccountingPackage.TRANSACTION__TICKET_ID:
 				return getTicketId();
 			case AccountingPackage.TRANSACTION__FULFILLMENT_IDS:
@@ -368,6 +443,18 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 				return;
 			case AccountingPackage.TRANSACTION__BOOKING_ID:
 				setBookingId((String)newValue);
+				return;
+			case AccountingPackage.TRANSACTION__BOOKING_PART_IDS:
+				getBookingPartIds().clear();
+				getBookingPartIds().addAll((Collection<? extends String>)newValue);
+				return;
+			case AccountingPackage.TRANSACTION__ACCOUNTING_REFERENCE_IDS:
+				getAccountingReferenceIds().clear();
+				getAccountingReferenceIds().addAll((Collection<? extends String>)newValue);
+				return;
+			case AccountingPackage.TRANSACTION__TICKET_IDS:
+				getTicketIds().clear();
+				getTicketIds().addAll((Collection<? extends String>)newValue);
 				return;
 			case AccountingPackage.TRANSACTION__TICKET_ID:
 				setTicketId((String)newValue);
@@ -403,6 +490,15 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 			case AccountingPackage.TRANSACTION__BOOKING_ID:
 				setBookingId(BOOKING_ID_EDEFAULT);
 				return;
+			case AccountingPackage.TRANSACTION__BOOKING_PART_IDS:
+				getBookingPartIds().clear();
+				return;
+			case AccountingPackage.TRANSACTION__ACCOUNTING_REFERENCE_IDS:
+				getAccountingReferenceIds().clear();
+				return;
+			case AccountingPackage.TRANSACTION__TICKET_IDS:
+				getTicketIds().clear();
+				return;
 			case AccountingPackage.TRANSACTION__TICKET_ID:
 				setTicketId(TICKET_ID_EDEFAULT);
 				return;
@@ -433,6 +529,12 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 				return CONTRACT_EDEFAULT == null ? contract != null : !CONTRACT_EDEFAULT.equals(contract);
 			case AccountingPackage.TRANSACTION__BOOKING_ID:
 				return BOOKING_ID_EDEFAULT == null ? bookingId != null : !BOOKING_ID_EDEFAULT.equals(bookingId);
+			case AccountingPackage.TRANSACTION__BOOKING_PART_IDS:
+				return bookingPartIds != null && !bookingPartIds.isEmpty();
+			case AccountingPackage.TRANSACTION__ACCOUNTING_REFERENCE_IDS:
+				return accountingReferenceIds != null && !accountingReferenceIds.isEmpty();
+			case AccountingPackage.TRANSACTION__TICKET_IDS:
+				return ticketIds != null && !ticketIds.isEmpty();
 			case AccountingPackage.TRANSACTION__TICKET_ID:
 				return TICKET_ID_EDEFAULT == null ? ticketId != null : !TICKET_ID_EDEFAULT.equals(ticketId);
 			case AccountingPackage.TRANSACTION__FULFILLMENT_IDS:
@@ -461,6 +563,12 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 		result.append(contract);
 		result.append(", bookingId: ");
 		result.append(bookingId);
+		result.append(", bookingPartIds: ");
+		result.append(bookingPartIds);
+		result.append(", accountingReferenceIds: ");
+		result.append(accountingReferenceIds);
+		result.append(", ticketIds: ");
+		result.append(ticketIds);
 		result.append(", ticketId: ");
 		result.append(ticketId);
 		result.append(", fulfillmentIds: ");

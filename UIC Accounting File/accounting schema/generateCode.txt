@@ -1,3 +1,3 @@
 
-D:\Software\jsonschemajava\jsonschema2pojo-1.0.1\bin\jsonschema2pojo.bat -s "D:\git\UIC-Accounting-File-Viewer\UIC Accounting File\accounting schema\accountingDataSchema.json" -t "D:\git\UIC-Accounting-File-Viewer\UIC Accounting File\src\gen" -p accountingModelV1 -R -f -dp "yyyy-MM-dd'T'HH:mm:ssZZZ" -dtp "yyyy-MM-dd'T'HH:mm:ssZZZ" 
+D:\Software\jsonschemajava\jsonschema2pojo-1.0.1\bin\jsonschema2pojo.bat -s "C:\Users\ClemensGantert\git\UIC-Accounting-File-Viewer\UIC Accounting File\accounting schema\accountingDataSchema.json" -t "C:\Users\ClemensGantert\git\UIC-Accounting-File-Viewer\UIC Accounting File\src\gen" -p accountingModelV1 -R -f -dp "yyyy-MM-dd'T'HH:mm:ssZZZ" -dtp "yyyy-MM-dd'T'HH:mm:ssZZZ" 
 
