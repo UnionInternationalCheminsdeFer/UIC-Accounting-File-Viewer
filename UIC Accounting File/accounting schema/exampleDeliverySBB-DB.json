@@ -1,0 +1,59 @@
+{
+  "uicAccountingDelivery": {
+    "deliveryDetails": {
+      "id": "delivery-1",
+      "creationDate": "2024-05-01T00:00:00.000Z",
+      "invoicingParty": "urn:uic:risc:85",
+      "invoiceRecipient": "urn:uic:risc:80",
+      "startStatementPeriod": "2023-12-01T00:00:00.000Z",
+      "endStatementPeriod": "2023-12-31T23:59:59.000Z",
+      "paymentType": "BCC_CLEARING"
+    },
+    "accountingRecords": [
+      {
+        "id": "record-1",
+        "accountingType": "SERVICE",
+        "salesType": "ONLINE",
+        "transaction": {
+          "time": "2023-12-01T09:00:00.000Z",
+          "type": "BOOKING",
+          "contract": "contract-1",
+          "bookedOfferId": "1234567890",
+          "accountingReferenceIds": ["1234567890"],
+          "ticketIds": ["1234567890"],
+          "fulfillmentIds": ["1234567890"]
+        },
+        "subject": {
+          "numberOfItems": 1,
+          "fareId": "1234567890",
+          "legacyDescription": {
+            "series": "1234567890",
+            "tariff": "1234567890",
+            "classCode": "FIRST",
+            "passengerType": "ADULT",
+            "dialogNumber": "1234567890"
+          },
+          "salesChannel": "WEB",
+          "salesOfficeId": "1234567890",
+          "train": "ICE 1892",
+          "travelDate": "2023-12-23T10:43:00.000Z",
+          "countryOfSale": "DE"
+        },
+        "accountedAmounts": [
+          {
+            "grossAmount": false,
+            "refundFee": false,
+            "commission": false,
+            "settlementValueIndicator": "CREDIT",
+            "amount": 2000,
+            "scale": 2,
+            "currency": "EUR",
+            "rate": 1,
+            "rateScale": 2
+          }
+        ],
+        "transactionStandard": "UIC"
+      }
+    ]
+  }
+}
