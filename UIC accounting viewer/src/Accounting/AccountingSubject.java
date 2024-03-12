@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Accounting.AccountingSubject#getRetailer <em>Retailer</em>}</li>
  *   <li>{@link Accounting.AccountingSubject#getBilateralTariffIdentifier <em>Bilateral Tariff Identifier</em>}</li>
  *   <li>{@link Accounting.AccountingSubject#getLegacyDescription <em>Legacy Description</em>}</li>
+ *   <li>{@link Accounting.AccountingSubject#getInternationalJourney <em>International Journey</em>}</li>
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountingSubject()
@@ -269,5 +270,27 @@ public interface AccountingSubject extends EObject {
 	 * @generated
 	 */
 	void setLegacyDescription(LegacyDescription value);
+
+	/**
+	 * Returns the value of the '<em><b>International Journey</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>International Journey</em>' attribute.
+	 * @see #setInternationalJourney(Boolean)
+	 * @see Accounting.AccountingPackage#getAccountingSubject_InternationalJourney()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.BooleanObject"
+	 * @generated
+	 */
+	Boolean getInternationalJourney();
+
+	/**
+	 * Sets the value of the '{@link Accounting.AccountingSubject#getInternationalJourney <em>International Journey</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>International Journey</em>' attribute.
+	 * @see #getInternationalJourney()
+	 * @generated
+	 */
+	void setInternationalJourney(Boolean value);
 
 } // AccountingSubject

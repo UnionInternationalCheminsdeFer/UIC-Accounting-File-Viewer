@@ -125,8 +125,8 @@ public class AccountingJsonExporter {
 		}
 		
 		if (mObj.getRate() != null) {
-			jObj.setRate(convertToAmount(mObj.getRate()));
-			jObj.setRateScale(convertToScale(mObj.getRate()));
+			jObj.setCommissionRate(convertToAmount(mObj.getRate()));
+			jObj.setCommissionRateScale(convertToScale(mObj.getRate()));
 		}
 		
 		if (mObj.getSettlementValueIndicator() != null) {
@@ -138,7 +138,7 @@ public class AccountingJsonExporter {
 		
 		jObj.setGrossAmount(mObj.isGrossAmount());
 		
-		jObj.setRefundFee(mObj.isFee());	
+		jObj.setAfterSaleFee(mObj.isFee());	
 		
 		
 		// TODO Auto-generated method stub
@@ -190,6 +190,10 @@ public class AccountingJsonExporter {
 		
 		if (mObj.getTravelDate() != null) {
 			jObj.setTravelDate(formatDate(mObj.getTravelDate()));
+		}
+		
+		if (mObj.getInternationalJourney() != null) {
+			jObj.setInternationalJourney(mObj.getInternationalJourney());
 		}
 		
 		return jObj;
@@ -284,7 +288,7 @@ public class AccountingJsonExporter {
 		}
 		
 		if (mObj.getTransactionTime() != null) {
-			jObj.setTime(mObj.getTransactionTime());
+			jObj.setTimestamp(mObj.getTransactionTime());
 		}
 		
 		if (mObj.getTransactionType() != null) {

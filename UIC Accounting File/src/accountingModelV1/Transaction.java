@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "time",
+    "timestamp",
     "type",
     "contract",
     "bookedOfferId",
@@ -34,9 +34,9 @@ public class Transaction {
      * 
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssZZZ", timezone = "UTC")
-    @JsonProperty("time")
+    @JsonProperty("timestamp")
     @JsonPropertyDescription("UTC date time of the timestamp when the transaction was made")
-    private Date time;
+    private Date timestamp;
     /**
      * type of the sales transaction accounted
      * (Required)
@@ -101,9 +101,9 @@ public class Transaction {
      * (Required)
      * 
      */
-    @JsonProperty("time")
-    public Date getTime() {
-        return time;
+    @JsonProperty("timestamp")
+    public Date getTimestamp() {
+        return timestamp;
     }
 
     /**
@@ -111,9 +111,9 @@ public class Transaction {
      * (Required)
      * 
      */
-    @JsonProperty("time")
-    public void setTime(Date time) {
-        this.time = time;
+    @JsonProperty("timestamp")
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
 
     /**
@@ -268,9 +268,9 @@ public class Transaction {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(Transaction.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("time");
+        sb.append("timestamp");
         sb.append('=');
-        sb.append(((this.time == null)?"<null>":this.time));
+        sb.append(((this.timestamp == null)?"<null>":this.timestamp));
         sb.append(',');
         sb.append("type");
         sb.append('=');
@@ -320,10 +320,10 @@ public class Transaction {
         result = ((result* 31)+((this.contract == null)? 0 :this.contract.hashCode()));
         result = ((result* 31)+((this.bookedOfferId == null)? 0 :this.bookedOfferId.hashCode()));
         result = ((result* 31)+((this.fulfillmentIds == null)? 0 :this.fulfillmentIds.hashCode()));
-        result = ((result* 31)+((this.time == null)? 0 :this.time.hashCode()));
         result = ((result* 31)+((this.type == null)? 0 :this.type.hashCode()));
         result = ((result* 31)+((this.exchangedBookedOfferId == null)? 0 :this.exchangedBookedOfferId.hashCode()));
         result = ((result* 31)+((this.ticketIds == null)? 0 :this.ticketIds.hashCode()));
+        result = ((result* 31)+((this.timestamp == null)? 0 :this.timestamp.hashCode()));
         return result;
     }
 
@@ -336,7 +336,7 @@ public class Transaction {
             return false;
         }
         Transaction rhs = ((Transaction) other);
-        return ((((((((((this.bookedOfferPartIds == rhs.bookedOfferPartIds)||((this.bookedOfferPartIds!= null)&&this.bookedOfferPartIds.equals(rhs.bookedOfferPartIds)))&&((this.accountingReferenceIds == rhs.accountingReferenceIds)||((this.accountingReferenceIds!= null)&&this.accountingReferenceIds.equals(rhs.accountingReferenceIds))))&&((this.contract == rhs.contract)||((this.contract!= null)&&this.contract.equals(rhs.contract))))&&((this.bookedOfferId == rhs.bookedOfferId)||((this.bookedOfferId!= null)&&this.bookedOfferId.equals(rhs.bookedOfferId))))&&((this.fulfillmentIds == rhs.fulfillmentIds)||((this.fulfillmentIds!= null)&&this.fulfillmentIds.equals(rhs.fulfillmentIds))))&&((this.time == rhs.time)||((this.time!= null)&&this.time.equals(rhs.time))))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.exchangedBookedOfferId == rhs.exchangedBookedOfferId)||((this.exchangedBookedOfferId!= null)&&this.exchangedBookedOfferId.equals(rhs.exchangedBookedOfferId))))&&((this.ticketIds == rhs.ticketIds)||((this.ticketIds!= null)&&this.ticketIds.equals(rhs.ticketIds))));
+        return ((((((((((this.bookedOfferPartIds == rhs.bookedOfferPartIds)||((this.bookedOfferPartIds!= null)&&this.bookedOfferPartIds.equals(rhs.bookedOfferPartIds)))&&((this.accountingReferenceIds == rhs.accountingReferenceIds)||((this.accountingReferenceIds!= null)&&this.accountingReferenceIds.equals(rhs.accountingReferenceIds))))&&((this.contract == rhs.contract)||((this.contract!= null)&&this.contract.equals(rhs.contract))))&&((this.bookedOfferId == rhs.bookedOfferId)||((this.bookedOfferId!= null)&&this.bookedOfferId.equals(rhs.bookedOfferId))))&&((this.fulfillmentIds == rhs.fulfillmentIds)||((this.fulfillmentIds!= null)&&this.fulfillmentIds.equals(rhs.fulfillmentIds))))&&((this.type == rhs.type)||((this.type!= null)&&this.type.equals(rhs.type))))&&((this.exchangedBookedOfferId == rhs.exchangedBookedOfferId)||((this.exchangedBookedOfferId!= null)&&this.exchangedBookedOfferId.equals(rhs.exchangedBookedOfferId))))&&((this.ticketIds == rhs.ticketIds)||((this.ticketIds!= null)&&this.ticketIds.equals(rhs.ticketIds))))&&((this.timestamp == rhs.timestamp)||((this.timestamp!= null)&&this.timestamp.equals(rhs.timestamp))));
     }
 
     public enum TransactionType {

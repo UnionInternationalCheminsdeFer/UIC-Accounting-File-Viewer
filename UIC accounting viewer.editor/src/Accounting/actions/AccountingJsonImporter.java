@@ -217,7 +217,7 @@ public class AccountingJsonImporter {
 			mObj.getTicketIds().addAll(jObj.getTicketIds());
 		}
 
-		mObj.setTransactionTime(jObj.getTime());
+		mObj.setTransactionTime(jObj.getTimestamp());
 		
 		if (jObj.getType() != null) {
 			mObj.setTransactionType(TransactionType.get(jObj.getType().value()));
@@ -257,6 +257,10 @@ public class AccountingJsonImporter {
 		}
 		if (jObj.getCarriers() != null && !jObj.getCarriers().isEmpty()) {
 			mObj.getCarriers().addAll(convertCarriers(jObj.getCarriers()));
+		}
+		
+		if (jObj.getInternationalJourney() != null) {
+			mObj.setInternationalJourney(jObj.getInternationalJourney());
 		}
 		
 		return mObj;
@@ -324,7 +328,7 @@ public class AccountingJsonImporter {
 			
 			mObj.setCommission(jObj.getCommission());
 			
-			mObj.setFee(jObj.getRefundFee());
+			mObj.setFee(jObj.getAfterSaleFee());
 			
 			mObj.setCurrency(getCurrency(jObj.getCurrency()));
 			
@@ -334,7 +338,7 @@ public class AccountingJsonImporter {
 			
 			mObj.setAmount(convertToDecimal(jObj.getAmount(),jObj.getScale()));
 			
-			mObj.setRate(convertToDecimal(jObj.getRate(),jObj.getRateScale()));
+			mObj.setRate(convertToDecimal(jObj.getCommissionRate(),jObj.getCommissionRateScale()));
 			
 			mObjL.getAccountedAmounts().add(mObj);
 			
