@@ -259,6 +259,10 @@ public class AccountingJsonImporter {
 			mObj.getCarriers().addAll(convertCarriers(jObj.getCarriers()));
 		}
 		
+		if (jObj.getInternationalJourney() != null) {
+			mObj.setInternationalJourney(jObj.getInternationalJourney());
+		}
+		
 		return mObj;
 	}
 

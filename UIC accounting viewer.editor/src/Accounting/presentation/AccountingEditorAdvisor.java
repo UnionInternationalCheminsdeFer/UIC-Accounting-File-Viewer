@@ -432,7 +432,7 @@ public final class AccountingEditorAdvisor extends WorkbenchAdvisor {
 			// Tips and tricks page would go here
 			menu.add(new GroupMarker(IWorkbenchActionConstants.HELP_START));
 			menu.add(new GroupMarker(IWorkbenchActionConstants.HELP_END));
-			addToMenuAndRegister(menu, ActionFactory.ABOUT.create(window));			
+			//addToMenuAndRegister(menu, ActionFactory.ABOUT.create(window));			
 			menu.add(new GroupMarker(IWorkbenchActionConstants.MB_ADDITIONS));
 			
 			return menu;

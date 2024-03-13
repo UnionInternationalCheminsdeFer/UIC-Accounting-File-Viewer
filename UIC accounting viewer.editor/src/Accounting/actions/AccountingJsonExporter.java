@@ -192,6 +192,10 @@ public class AccountingJsonExporter {
 			jObj.setTravelDate(formatDate(mObj.getTravelDate()));
 		}
 		
+		if (mObj.getInternationalJourney() != null) {
+			jObj.setInternationalJourney(mObj.getInternationalJourney());
+		}
+		
 		return jObj;
 	}
 	
