@@ -1891,6 +1891,24 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getAccountingSubject_TripOrigin() {
+        return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAccountingSubject_TripDestination() {
+        return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getLegacyDescription() {
 		if (legacyDescriptionEClass == null) {
 			legacyDescriptionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(10);

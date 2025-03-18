@@ -76,6 +76,8 @@ public class AccountingSubjectItemProvider
 			addRetailerPropertyDescriptor(object);
 			addBilateralTariffIdentifierPropertyDescriptor(object);
 			addInternationalJourneyPropertyDescriptor(object);
+			addTripOriginPropertyDescriptor(object);
+			addTripDestinationPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -324,6 +326,50 @@ public class AccountingSubjectItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Trip Origin feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTripOriginPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AccountingSubject_tripOrigin_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AccountingSubject_tripOrigin_feature", "_UI_AccountingSubject_type"),
+				 AccountingPackage.Literals.ACCOUNTING_SUBJECT__TRIP_ORIGIN,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Trip Destination feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addTripDestinationPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_AccountingSubject_tripDestination_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_AccountingSubject_tripDestination_feature", "_UI_AccountingSubject_type"),
+				 AccountingPackage.Literals.ACCOUNTING_SUBJECT__TRIP_DESTINATION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
 	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
 	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
@@ -399,6 +445,8 @@ public class AccountingSubjectItemProvider
 			case AccountingPackage.ACCOUNTING_SUBJECT__TRAVEL_DATE:
 			case AccountingPackage.ACCOUNTING_SUBJECT__BILATERAL_TARIFF_IDENTIFIER:
 			case AccountingPackage.ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY:
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_ORIGIN:
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_DESTINATION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case AccountingPackage.ACCOUNTING_SUBJECT__LEGACY_DESCRIPTION:

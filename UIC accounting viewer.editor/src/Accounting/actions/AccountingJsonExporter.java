@@ -196,6 +196,14 @@ public class AccountingJsonExporter {
 			jObj.setInternationalJourney(mObj.getInternationalJourney());
 		}
 		
+		if (mObj.getTripOrigin() != null) {
+			jObj.setTripOrigin(mObj.getTripOrigin());
+		}
+
+		if (mObj.getTripDestination() != null) {
+			jObj.setTripDestination(mObj.getTripDestination());
+		}
+		
 		return jObj;
 	}
 	

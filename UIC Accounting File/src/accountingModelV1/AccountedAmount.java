@@ -38,6 +38,7 @@ public class AccountedAmount {
     private Boolean grossAmount;
     /**
      * indicates that the value is a after sale fee (refund, exchange,...)
+     * (Required)
      * 
      */
     @JsonProperty("afterSaleFee")
@@ -116,6 +117,7 @@ public class AccountedAmount {
 
     /**
      * indicates that the value is a after sale fee (refund, exchange,...)
+     * (Required)
      * 
      */
     @JsonProperty("afterSaleFee")
@@ -125,6 +127,7 @@ public class AccountedAmount {
 
     /**
      * indicates that the value is a after sale fee (refund, exchange,...)
+     * (Required)
      * 
      */
     @JsonProperty("afterSaleFee")

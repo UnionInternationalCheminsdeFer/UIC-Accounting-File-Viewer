@@ -263,6 +263,14 @@ public class AccountingJsonImporter {
 			mObj.setInternationalJourney(jObj.getInternationalJourney());
 		}
 		
+		if (jObj.getTripOrigin() != null) {
+			mObj.setTripOrigin(jObj.getTripOrigin());
+		}
+		
+		if (jObj.getTripDestination() != null) {
+			mObj.setTripDestination(jObj.getTripDestination());
+		}
+		
 		return mObj;
 	}
 
