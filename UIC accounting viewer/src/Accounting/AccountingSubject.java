@@ -29,6 +29,8 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link Accounting.AccountingSubject#getBilateralTariffIdentifier <em>Bilateral Tariff Identifier</em>}</li>
  *   <li>{@link Accounting.AccountingSubject#getLegacyDescription <em>Legacy Description</em>}</li>
  *   <li>{@link Accounting.AccountingSubject#getInternationalJourney <em>International Journey</em>}</li>
+ *   <li>{@link Accounting.AccountingSubject#getTripOrigin <em>Trip Origin</em>}</li>
+ *   <li>{@link Accounting.AccountingSubject#getTripDestination <em>Trip Destination</em>}</li>
  * </ul>
  *
  * @see Accounting.AccountingPackage#getAccountingSubject()
@@ -292,5 +294,49 @@ public interface AccountingSubject extends EObject {
 	 * @generated
 	 */
 	void setInternationalJourney(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Trip Origin</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Trip Origin</em>' attribute.
+	 * @see #setTripOrigin(String)
+	 * @see Accounting.AccountingPackage#getAccountingSubject_TripOrigin()
+	 * @model
+	 * @generated
+	 */
+	String getTripOrigin();
+
+	/**
+	 * Sets the value of the '{@link Accounting.AccountingSubject#getTripOrigin <em>Trip Origin</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Trip Origin</em>' attribute.
+	 * @see #getTripOrigin()
+	 * @generated
+	 */
+	void setTripOrigin(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Trip Destination</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Trip Destination</em>' attribute.
+	 * @see #setTripDestination(String)
+	 * @see Accounting.AccountingPackage#getAccountingSubject_TripDestination()
+	 * @model
+	 * @generated
+	 */
+	String getTripDestination();
+
+	/**
+	 * Sets the value of the '{@link Accounting.AccountingSubject#getTripDestination <em>Trip Destination</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Trip Destination</em>' attribute.
+	 * @see #getTripDestination()
+	 * @generated
+	 */
+	void setTripDestination(String value);
 
 } // AccountingSubject

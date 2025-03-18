@@ -545,13 +545,31 @@ public interface AccountingPackage extends EPackage {
 	int ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY = 11;
 
 	/**
+	 * The feature id for the '<em><b>Trip Origin</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACCOUNTING_SUBJECT__TRIP_ORIGIN = 12;
+
+	/**
+	 * The feature id for the '<em><b>Trip Destination</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ACCOUNTING_SUBJECT__TRIP_DESTINATION = 13;
+
+	/**
 	 * The number of structural features of the '<em>Subject</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOUNTING_SUBJECT_FEATURE_COUNT = 12;
+	int ACCOUNTING_SUBJECT_FEATURE_COUNT = 14;
 
 	/**
 	 * The number of operations of the '<em>Subject</em>' class.
@@ -9568,6 +9586,28 @@ public interface AccountingPackage extends EPackage {
 	EAttribute getAccountingSubject_InternationalJourney();
 
 	/**
+	 * Returns the meta object for the attribute '{@link Accounting.AccountingSubject#getTripOrigin <em>Trip Origin</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Trip Origin</em>'.
+	 * @see Accounting.AccountingSubject#getTripOrigin()
+	 * @see #getAccountingSubject()
+	 * @generated
+	 */
+	EAttribute getAccountingSubject_TripOrigin();
+
+	/**
+	 * Returns the meta object for the attribute '{@link Accounting.AccountingSubject#getTripDestination <em>Trip Destination</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Trip Destination</em>'.
+	 * @see Accounting.AccountingSubject#getTripDestination()
+	 * @see #getAccountingSubject()
+	 * @generated
+	 */
+	EAttribute getAccountingSubject_TripDestination();
+
+	/**
 	 * Returns the meta object for class '{@link Accounting.LegacyDescription <em>Legacy Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17069,6 +17109,22 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY = eINSTANCE.getAccountingSubject_InternationalJourney();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Origin</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ACCOUNTING_SUBJECT__TRIP_ORIGIN = eINSTANCE.getAccountingSubject_TripOrigin();
+
+		/**
+		 * The meta object literal for the '<em><b>Trip Destination</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ACCOUNTING_SUBJECT__TRIP_DESTINATION = eINSTANCE.getAccountingSubject_TripDestination();
 
 		/**
 		 * The meta object literal for the '{@link Accounting.impl.LegacyDescriptionImpl <em>Legacy Description</em>}' class.
