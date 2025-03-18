@@ -1,4 +1,3 @@
-
 package accountingModelV1;
 
 import java.util.ArrayList;
@@ -30,7 +29,6 @@ public class Transaction {
 
     /**
      * UTC date time of the timestamp when the transaction was made
-     * (Required)
      * 
      */
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssZZZ", timezone = "UTC")
@@ -98,7 +96,6 @@ public class Transaction {
 
     /**
      * UTC date time of the timestamp when the transaction was made
-     * (Required)
      * 
      */
     @JsonProperty("timestamp")
@@ -108,7 +105,6 @@ public class Transaction {
 
     /**
      * UTC date time of the timestamp when the transaction was made
-     * (Required)
      * 
      */
     @JsonProperty("timestamp")

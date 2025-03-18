@@ -1,4 +1,3 @@
-
 package accountingModelV1;
 
 import java.util.HashMap;
