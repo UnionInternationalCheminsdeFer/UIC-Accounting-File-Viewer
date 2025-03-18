@@ -10,4 +10,7 @@ Bundle-ClassPath: lib/,
  .
 Export-Package: export,
  accountingModelV1
-Require-Bundle: org.eclipse.swt;bundle-version="3.113.0", fasterxml;bundle-version="1.0.0"
+Require-Bundle: org.eclipse.swt;bundle-version="3.113.0",
+ com.fasterxml.jackson.core.jackson-annotations;bundle-version="2.15.2",
+ com.fasterxml.jackson.core.jackson-core;bundle-version="2.15.2",
+ com.fasterxml.jackson.core.jackson-databind;bundle-version="2.15.2"

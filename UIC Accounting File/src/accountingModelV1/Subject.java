@@ -29,7 +29,10 @@ import com.fasterxml.jackson.annotation.JsonValue;
     "countryOfSale",
     "bilateralTariffIdentifier",
     "carriers",
-    "retailer"
+    "retailer",
+    "internationalJourney",
+    "tripOrigin",
+    "tripDestination"
 })
 public class Subject {
 
@@ -95,6 +98,27 @@ public class Subject {
     @JsonProperty("retailer")
     @JsonPropertyDescription("RICS code of the retailing company. Commission rates might depend on the retailing company.")
     private String retailer;
+    /**
+     * Indication whether the accounted service is part of an international journey and therfore might have special conditions for VAT depending on national regulations
+     * 
+     */
+    @JsonProperty("internationalJourney")
+    @JsonPropertyDescription("Indication whether the accounted service is part of an international journey and therfore might have special conditions for VAT depending on national regulations")
+    private Boolean internationalJourney;
+    /**
+     * Origin of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.
+     * 
+     */
+    @JsonProperty("tripOrigin")
+    @JsonPropertyDescription("Origin of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.")
+    private String tripOrigin;
+    /**
+     * Destination of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.
+     * 
+     */
+    @JsonProperty("tripDestination")
+    @JsonPropertyDescription("Destination of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.")
+    private String tripDestination;
 
     /**
      * 
@@ -272,6 +296,60 @@ public class Subject {
         this.retailer = retailer;
     }
 
+    /**
+     * Indication whether the accounted service is part of an international journey and therfore might have special conditions for VAT depending on national regulations
+     * 
+     */
+    @JsonProperty("internationalJourney")
+    public Boolean getInternationalJourney() {
+        return internationalJourney;
+    }
+
+    /**
+     * Indication whether the accounted service is part of an international journey and therfore might have special conditions for VAT depending on national regulations
+     * 
+     */
+    @JsonProperty("internationalJourney")
+    public void setInternationalJourney(Boolean internationalJourney) {
+        this.internationalJourney = internationalJourney;
+    }
+
+    /**
+     * Origin of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.
+     * 
+     */
+    @JsonProperty("tripOrigin")
+    public String getTripOrigin() {
+        return tripOrigin;
+    }
+
+    /**
+     * Origin of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.
+     * 
+     */
+    @JsonProperty("tripOrigin")
+    public void setTripOrigin(String tripOrigin) {
+        this.tripOrigin = tripOrigin;
+    }
+
+    /**
+     * Destination of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.
+     * 
+     */
+    @JsonProperty("tripDestination")
+    public String getTripDestination() {
+        return tripDestination;
+    }
+
+    /**
+     * Destination of the trip where th accounted item is part of. Encoding as urn, e.g. urn:uic:stn:8512345. Applicable if appropriate and needed.
+     * 
+     */
+    @JsonProperty("tripDestination")
+    public void setTripDestination(String tripDestination) {
+        this.tripDestination = tripDestination;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -320,6 +398,18 @@ public class Subject {
         sb.append('=');
         sb.append(((this.retailer == null)?"<null>":this.retailer));
         sb.append(',');
+        sb.append("internationalJourney");
+        sb.append('=');
+        sb.append(((this.internationalJourney == null)?"<null>":this.internationalJourney));
+        sb.append(',');
+        sb.append("tripOrigin");
+        sb.append('=');
+        sb.append(((this.tripOrigin == null)?"<null>":this.tripOrigin));
+        sb.append(',');
+        sb.append("tripDestination");
+        sb.append('=');
+        sb.append(((this.tripDestination == null)?"<null>":this.tripDestination));
+        sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
         } else {
@@ -332,15 +422,18 @@ public class Subject {
     public int hashCode() {
         int result = 1;
         result = ((result* 31)+((this.countryOfSale == null)? 0 :this.countryOfSale.hashCode()));
+        result = ((result* 31)+((this.retailer == null)? 0 :this.retailer.hashCode()));
+        result = ((result* 31)+((this.bilateralTariffIdentifier == null)? 0 :this.bilateralTariffIdentifier.hashCode()));
+        result = ((result* 31)+((this.carriers == null)? 0 :this.carriers.hashCode()));
+        result = ((result* 31)+((this.internationalJourney == null)? 0 :this.internationalJourney.hashCode()));
+        result = ((result* 31)+((this.salesChannel == null)? 0 :this.salesChannel.hashCode()));
         result = ((result* 31)+((this.fareId == null)? 0 :this.fareId.hashCode()));
         result = ((result* 31)+((this.travelDate == null)? 0 :this.travelDate.hashCode()));
-        result = ((result* 31)+((this.retailer == null)? 0 :this.retailer.hashCode()));
         result = ((result* 31)+((this.numberOfItems == null)? 0 :this.numberOfItems.hashCode()));
+        result = ((result* 31)+((this.tripOrigin == null)? 0 :this.tripOrigin.hashCode()));
         result = ((result* 31)+((this.salesOfficeId == null)? 0 :this.salesOfficeId.hashCode()));
-        result = ((result* 31)+((this.bilateralTariffIdentifier == null)? 0 :this.bilateralTariffIdentifier.hashCode()));
         result = ((result* 31)+((this.legacyDescription == null)? 0 :this.legacyDescription.hashCode()));
-        result = ((result* 31)+((this.carriers == null)? 0 :this.carriers.hashCode()));
-        result = ((result* 31)+((this.salesChannel == null)? 0 :this.salesChannel.hashCode()));
+        result = ((result* 31)+((this.tripDestination == null)? 0 :this.tripDestination.hashCode()));
         result = ((result* 31)+((this.train == null)? 0 :this.train.hashCode()));
         return result;
     }
@@ -354,7 +447,7 @@ public class Subject {
             return false;
         }
         Subject rhs = ((Subject) other);
-        return ((((((((((((this.countryOfSale == rhs.countryOfSale)||((this.countryOfSale!= null)&&this.countryOfSale.equals(rhs.countryOfSale)))&&((this.fareId == rhs.fareId)||((this.fareId!= null)&&this.fareId.equals(rhs.fareId))))&&((this.travelDate == rhs.travelDate)||((this.travelDate!= null)&&this.travelDate.equals(rhs.travelDate))))&&((this.retailer == rhs.retailer)||((this.retailer!= null)&&this.retailer.equals(rhs.retailer))))&&((this.numberOfItems == rhs.numberOfItems)||((this.numberOfItems!= null)&&this.numberOfItems.equals(rhs.numberOfItems))))&&((this.salesOfficeId == rhs.salesOfficeId)||((this.salesOfficeId!= null)&&this.salesOfficeId.equals(rhs.salesOfficeId))))&&((this.bilateralTariffIdentifier == rhs.bilateralTariffIdentifier)||((this.bilateralTariffIdentifier!= null)&&this.bilateralTariffIdentifier.equals(rhs.bilateralTariffIdentifier))))&&((this.legacyDescription == rhs.legacyDescription)||((this.legacyDescription!= null)&&this.legacyDescription.equals(rhs.legacyDescription))))&&((this.carriers == rhs.carriers)||((this.carriers!= null)&&this.carriers.equals(rhs.carriers))))&&((this.salesChannel == rhs.salesChannel)||((this.salesChannel!= null)&&this.salesChannel.equals(rhs.salesChannel))))&&((this.train == rhs.train)||((this.train!= null)&&this.train.equals(rhs.train))));
+        return (((((((((((((((this.countryOfSale == rhs.countryOfSale)||((this.countryOfSale!= null)&&this.countryOfSale.equals(rhs.countryOfSale)))&&((this.retailer == rhs.retailer)||((this.retailer!= null)&&this.retailer.equals(rhs.retailer))))&&((this.bilateralTariffIdentifier == rhs.bilateralTariffIdentifier)||((this.bilateralTariffIdentifier!= null)&&this.bilateralTariffIdentifier.equals(rhs.bilateralTariffIdentifier))))&&((this.carriers == rhs.carriers)||((this.carriers!= null)&&this.carriers.equals(rhs.carriers))))&&((this.internationalJourney == rhs.internationalJourney)||((this.internationalJourney!= null)&&this.internationalJourney.equals(rhs.internationalJourney))))&&((this.salesChannel == rhs.salesChannel)||((this.salesChannel!= null)&&this.salesChannel.equals(rhs.salesChannel))))&&((this.fareId == rhs.fareId)||((this.fareId!= null)&&this.fareId.equals(rhs.fareId))))&&((this.travelDate == rhs.travelDate)||((this.travelDate!= null)&&this.travelDate.equals(rhs.travelDate))))&&((this.numberOfItems == rhs.numberOfItems)||((this.numberOfItems!= null)&&this.numberOfItems.equals(rhs.numberOfItems))))&&((this.tripOrigin == rhs.tripOrigin)||((this.tripOrigin!= null)&&this.tripOrigin.equals(rhs.tripOrigin))))&&((this.salesOfficeId == rhs.salesOfficeId)||((this.salesOfficeId!= null)&&this.salesOfficeId.equals(rhs.salesOfficeId))))&&((this.legacyDescription == rhs.legacyDescription)||((this.legacyDescription!= null)&&this.legacyDescription.equals(rhs.legacyDescription))))&&((this.tripDestination == rhs.tripDestination)||((this.tripDestination!= null)&&this.tripDestination.equals(rhs.tripDestination))))&&((this.train == rhs.train)||((this.train!= null)&&this.train.equals(rhs.train))));
     }
 
     public enum SalesChannel {

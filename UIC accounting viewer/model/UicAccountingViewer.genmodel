@@ -569,6 +569,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingSubject/retailer"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/bilateralTariffIdentifier"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UicAccountingViewer.ecore#//AccountingSubject/legacyDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/internationalJourney"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/tripOrigin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//AccountingSubject/tripDestination"/>
     </genClasses>
     <genClasses ecoreClass="UicAccountingViewer.ecore#//LegacyDescription">
       <genFeatures createChild="false" propertyDescription="Passenger Types" ecoreFeature="ecore:EAttribute UicAccountingViewer.ecore#//LegacyDescription/passengerType"/>

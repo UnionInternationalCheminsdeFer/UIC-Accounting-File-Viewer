@@ -1,4 +1,3 @@
-
 package accountingModelV1;
 
 import java.util.HashMap;
@@ -18,14 +17,14 @@ import com.fasterxml.jackson.annotation.JsonValue;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
     "grossAmount",
-    "refundFee",
+    "afterSaleFee",
     "commission",
     "settlementValueIndicator",
     "amount",
     "scale",
     "currency",
-    "rate",
-    "rateScale"
+    "commissionRate",
+    "commissionRateScale"
 })
 public class AccountedAmount {
 
@@ -38,13 +37,13 @@ public class AccountedAmount {
     @JsonPropertyDescription("indicates that the amount is the travel price. Note: one of grossAmount, refundFee and commission must be set to true")
     private Boolean grossAmount;
     /**
-     * indicates that the value is a refund fee
+     * indicates that the value is a after sale fee (refund, exchange,...)
      * (Required)
      * 
      */
-    @JsonProperty("refundFee")
-    @JsonPropertyDescription("indicates that the value is a refund fee")
-    private Boolean refundFee;
+    @JsonProperty("afterSaleFee")
+    @JsonPropertyDescription("indicates that the value is a after sale fee (refund, exchange,...)")
+    private Boolean afterSaleFee;
     /**
      * indicates that the value is a commission
      * (Required)
@@ -85,16 +84,16 @@ public class AccountedAmount {
      * percentage used for the calculation of the amount (e.g. in case of comissions)
      * 
      */
-    @JsonProperty("rate")
+    @JsonProperty("commissionRate")
     @JsonPropertyDescription("percentage used for the calculation of the amount (e.g. in case of comissions)")
-    private Integer rate;
+    private Integer commissionRate;
     /**
      * scale (position of the decimal point) of the rate provided, default 2
      * 
      */
-    @JsonProperty("rateScale")
+    @JsonProperty("commissionRateScale")
     @JsonPropertyDescription("scale (position of the decimal point) of the rate provided, default 2")
-    private Integer rateScale = 2;
+    private Integer commissionRateScale = 2;
 
     /**
      * indicates that the amount is the travel price. Note: one of grossAmount, refundFee and commission must be set to true
@@ -117,23 +116,23 @@ public class AccountedAmount {
     }
 
     /**
-     * indicates that the value is a refund fee
+     * indicates that the value is a after sale fee (refund, exchange,...)
      * (Required)
      * 
      */
-    @JsonProperty("refundFee")
-    public Boolean getRefundFee() {
-        return refundFee;
+    @JsonProperty("afterSaleFee")
+    public Boolean getAfterSaleFee() {
+        return afterSaleFee;
     }
 
     /**
-     * indicates that the value is a refund fee
+     * indicates that the value is a after sale fee (refund, exchange,...)
      * (Required)
      * 
      */
-    @JsonProperty("refundFee")
-    public void setRefundFee(Boolean refundFee) {
-        this.refundFee = refundFee;
+    @JsonProperty("afterSaleFee")
+    public void setAfterSaleFee(Boolean afterSaleFee) {
+        this.afterSaleFee = afterSaleFee;
     }
 
     /**
@@ -236,36 +235,36 @@ public class AccountedAmount {
      * percentage used for the calculation of the amount (e.g. in case of comissions)
      * 
      */
-    @JsonProperty("rate")
-    public Integer getRate() {
-        return rate;
+    @JsonProperty("commissionRate")
+    public Integer getCommissionRate() {
+        return commissionRate;
     }
 
     /**
      * percentage used for the calculation of the amount (e.g. in case of comissions)
      * 
      */
-    @JsonProperty("rate")
-    public void setRate(Integer rate) {
-        this.rate = rate;
+    @JsonProperty("commissionRate")
+    public void setCommissionRate(Integer commissionRate) {
+        this.commissionRate = commissionRate;
     }
 
     /**
      * scale (position of the decimal point) of the rate provided, default 2
      * 
      */
-    @JsonProperty("rateScale")
-    public Integer getRateScale() {
-        return rateScale;
+    @JsonProperty("commissionRateScale")
+    public Integer getCommissionRateScale() {
+        return commissionRateScale;
     }
 
     /**
      * scale (position of the decimal point) of the rate provided, default 2
      * 
      */
-    @JsonProperty("rateScale")
-    public void setRateScale(Integer rateScale) {
-        this.rateScale = rateScale;
+    @JsonProperty("commissionRateScale")
+    public void setCommissionRateScale(Integer commissionRateScale) {
+        this.commissionRateScale = commissionRateScale;
     }
 
     @Override
@@ -276,9 +275,9 @@ public class AccountedAmount {
         sb.append('=');
         sb.append(((this.grossAmount == null)?"<null>":this.grossAmount));
         sb.append(',');
-        sb.append("refundFee");
+        sb.append("afterSaleFee");
         sb.append('=');
-        sb.append(((this.refundFee == null)?"<null>":this.refundFee));
+        sb.append(((this.afterSaleFee == null)?"<null>":this.afterSaleFee));
         sb.append(',');
         sb.append("commission");
         sb.append('=');
@@ -300,13 +299,13 @@ public class AccountedAmount {
         sb.append('=');
         sb.append(((this.currency == null)?"<null>":this.currency));
         sb.append(',');
-        sb.append("rate");
+        sb.append("commissionRate");
         sb.append('=');
-        sb.append(((this.rate == null)?"<null>":this.rate));
+        sb.append(((this.commissionRate == null)?"<null>":this.commissionRate));
         sb.append(',');
-        sb.append("rateScale");
+        sb.append("commissionRateScale");
         sb.append('=');
-        sb.append(((this.rateScale == null)?"<null>":this.rateScale));
+        sb.append(((this.commissionRateScale == null)?"<null>":this.commissionRateScale));
         sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
@@ -319,15 +318,15 @@ public class AccountedAmount {
     @Override
     public int hashCode() {
         int result = 1;
-        result = ((result* 31)+((this.refundFee == null)? 0 :this.refundFee.hashCode()));
+        result = ((result* 31)+((this.commissionRateScale == null)? 0 :this.commissionRateScale.hashCode()));
         result = ((result* 31)+((this.amount == null)? 0 :this.amount.hashCode()));
-        result = ((result* 31)+((this.rate == null)? 0 :this.rate.hashCode()));
+        result = ((result* 31)+((this.commissionRate == null)? 0 :this.commissionRate.hashCode()));
         result = ((result* 31)+((this.settlementValueIndicator == null)? 0 :this.settlementValueIndicator.hashCode()));
         result = ((result* 31)+((this.scale == null)? 0 :this.scale.hashCode()));
         result = ((result* 31)+((this.commission == null)? 0 :this.commission.hashCode()));
         result = ((result* 31)+((this.currency == null)? 0 :this.currency.hashCode()));
         result = ((result* 31)+((this.grossAmount == null)? 0 :this.grossAmount.hashCode()));
-        result = ((result* 31)+((this.rateScale == null)? 0 :this.rateScale.hashCode()));
+        result = ((result* 31)+((this.afterSaleFee == null)? 0 :this.afterSaleFee.hashCode()));
         return result;
     }
 
@@ -340,7 +339,7 @@ public class AccountedAmount {
             return false;
         }
         AccountedAmount rhs = ((AccountedAmount) other);
-        return ((((((((((this.refundFee == rhs.refundFee)||((this.refundFee!= null)&&this.refundFee.equals(rhs.refundFee)))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.rate == rhs.rate)||((this.rate!= null)&&this.rate.equals(rhs.rate))))&&((this.settlementValueIndicator == rhs.settlementValueIndicator)||((this.settlementValueIndicator!= null)&&this.settlementValueIndicator.equals(rhs.settlementValueIndicator))))&&((this.scale == rhs.scale)||((this.scale!= null)&&this.scale.equals(rhs.scale))))&&((this.commission == rhs.commission)||((this.commission!= null)&&this.commission.equals(rhs.commission))))&&((this.currency == rhs.currency)||((this.currency!= null)&&this.currency.equals(rhs.currency))))&&((this.grossAmount == rhs.grossAmount)||((this.grossAmount!= null)&&this.grossAmount.equals(rhs.grossAmount))))&&((this.rateScale == rhs.rateScale)||((this.rateScale!= null)&&this.rateScale.equals(rhs.rateScale))));
+        return ((((((((((this.commissionRateScale == rhs.commissionRateScale)||((this.commissionRateScale!= null)&&this.commissionRateScale.equals(rhs.commissionRateScale)))&&((this.amount == rhs.amount)||((this.amount!= null)&&this.amount.equals(rhs.amount))))&&((this.commissionRate == rhs.commissionRate)||((this.commissionRate!= null)&&this.commissionRate.equals(rhs.commissionRate))))&&((this.settlementValueIndicator == rhs.settlementValueIndicator)||((this.settlementValueIndicator!= null)&&this.settlementValueIndicator.equals(rhs.settlementValueIndicator))))&&((this.scale == rhs.scale)||((this.scale!= null)&&this.scale.equals(rhs.scale))))&&((this.commission == rhs.commission)||((this.commission!= null)&&this.commission.equals(rhs.commission))))&&((this.currency == rhs.currency)||((this.currency!= null)&&this.currency.equals(rhs.currency))))&&((this.grossAmount == rhs.grossAmount)||((this.grossAmount!= null)&&this.grossAmount.equals(rhs.grossAmount))))&&((this.afterSaleFee == rhs.afterSaleFee)||((this.afterSaleFee!= null)&&this.afterSaleFee.equals(rhs.afterSaleFee))));
     }
 
     public enum SettlementValueIndicator {

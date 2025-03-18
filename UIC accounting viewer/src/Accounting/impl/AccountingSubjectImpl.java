@@ -44,6 +44,9 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  *   <li>{@link Accounting.impl.AccountingSubjectImpl#getRetailer <em>Retailer</em>}</li>
  *   <li>{@link Accounting.impl.AccountingSubjectImpl#getBilateralTariffIdentifier <em>Bilateral Tariff Identifier</em>}</li>
  *   <li>{@link Accounting.impl.AccountingSubjectImpl#getLegacyDescription <em>Legacy Description</em>}</li>
+ *   <li>{@link Accounting.impl.AccountingSubjectImpl#getInternationalJourney <em>International Journey</em>}</li>
+ *   <li>{@link Accounting.impl.AccountingSubjectImpl#getTripOrigin <em>Trip Origin</em>}</li>
+ *   <li>{@link Accounting.impl.AccountingSubjectImpl#getTripDestination <em>Trip Destination</em>}</li>
  * </ul>
  *
  * @generated
@@ -228,6 +231,66 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * @ordered
 	 */
 	protected LegacyDescription legacyDescription;
+
+	/**
+	 * The default value of the '{@link #getInternationalJourney() <em>International Journey</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInternationalJourney()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Boolean INTERNATIONAL_JOURNEY_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getInternationalJourney() <em>International Journey</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInternationalJourney()
+	 * @generated
+	 * @ordered
+	 */
+	protected Boolean internationalJourney = INTERNATIONAL_JOURNEY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTripOrigin() <em>Trip Origin</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTripOrigin()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TRIP_ORIGIN_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTripOrigin() <em>Trip Origin</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTripOrigin()
+	 * @generated
+	 * @ordered
+	 */
+	protected String tripOrigin = TRIP_ORIGIN_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getTripDestination() <em>Trip Destination</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTripDestination()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TRIP_DESTINATION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTripDestination() <em>Trip Destination</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTripDestination()
+	 * @generated
+	 * @ordered
+	 */
+	protected String tripDestination = TRIP_DESTINATION_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -531,6 +594,69 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public Boolean getInternationalJourney() {
+		return internationalJourney;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setInternationalJourney(Boolean newInternationalJourney) {
+		Boolean oldInternationalJourney = internationalJourney;
+		internationalJourney = newInternationalJourney;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY, oldInternationalJourney, internationalJourney));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTripOrigin() {
+		return tripOrigin;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTripOrigin(String newTripOrigin) {
+		String oldTripOrigin = tripOrigin;
+		tripOrigin = newTripOrigin;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.ACCOUNTING_SUBJECT__TRIP_ORIGIN, oldTripOrigin, tripOrigin));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTripDestination() {
+		return tripDestination;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTripDestination(String newTripDestination) {
+		String oldTripDestination = tripDestination;
+		tripDestination = newTripDestination;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.ACCOUNTING_SUBJECT__TRIP_DESTINATION, oldTripDestination, tripDestination));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -572,6 +698,12 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 				return getBilateralTariffIdentifier();
 			case AccountingPackage.ACCOUNTING_SUBJECT__LEGACY_DESCRIPTION:
 				return getLegacyDescription();
+			case AccountingPackage.ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY:
+				return getInternationalJourney();
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_ORIGIN:
+				return getTripOrigin();
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_DESTINATION:
+				return getTripDestination();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -619,6 +751,15 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 			case AccountingPackage.ACCOUNTING_SUBJECT__LEGACY_DESCRIPTION:
 				setLegacyDescription((LegacyDescription)newValue);
 				return;
+			case AccountingPackage.ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY:
+				setInternationalJourney((Boolean)newValue);
+				return;
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_ORIGIN:
+				setTripOrigin((String)newValue);
+				return;
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_DESTINATION:
+				setTripDestination((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -664,6 +805,15 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 			case AccountingPackage.ACCOUNTING_SUBJECT__LEGACY_DESCRIPTION:
 				setLegacyDescription((LegacyDescription)null);
 				return;
+			case AccountingPackage.ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY:
+				setInternationalJourney(INTERNATIONAL_JOURNEY_EDEFAULT);
+				return;
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_ORIGIN:
+				setTripOrigin(TRIP_ORIGIN_EDEFAULT);
+				return;
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_DESTINATION:
+				setTripDestination(TRIP_DESTINATION_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -698,6 +848,12 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 				return BILATERAL_TARIFF_IDENTIFIER_EDEFAULT == null ? bilateralTariffIdentifier != null : !BILATERAL_TARIFF_IDENTIFIER_EDEFAULT.equals(bilateralTariffIdentifier);
 			case AccountingPackage.ACCOUNTING_SUBJECT__LEGACY_DESCRIPTION:
 				return legacyDescription != null;
+			case AccountingPackage.ACCOUNTING_SUBJECT__INTERNATIONAL_JOURNEY:
+				return INTERNATIONAL_JOURNEY_EDEFAULT == null ? internationalJourney != null : !INTERNATIONAL_JOURNEY_EDEFAULT.equals(internationalJourney);
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_ORIGIN:
+				return TRIP_ORIGIN_EDEFAULT == null ? tripOrigin != null : !TRIP_ORIGIN_EDEFAULT.equals(tripOrigin);
+			case AccountingPackage.ACCOUNTING_SUBJECT__TRIP_DESTINATION:
+				return TRIP_DESTINATION_EDEFAULT == null ? tripDestination != null : !TRIP_DESTINATION_EDEFAULT.equals(tripDestination);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -726,6 +882,12 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 		result.append(travelDate);
 		result.append(", bilateralTariffIdentifier: ");
 		result.append(bilateralTariffIdentifier);
+		result.append(", internationalJourney: ");
+		result.append(internationalJourney);
+		result.append(", tripOrigin: ");
+		result.append(tripOrigin);
+		result.append(", tripDestination: ");
+		result.append(tripDestination);
 		result.append(')');
 		return result.toString();
 	}
