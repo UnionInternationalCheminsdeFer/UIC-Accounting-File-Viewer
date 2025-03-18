@@ -1,416 +1,387 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"description": "UIC accounting data exchange",
-	"type": "object",
-	"properties": {
-		"uicAccountingDelivery": {
-			"$ref": "#/definitions/AccountingDataDelivery"
-		},
-		"additionalProperties": false
-	},
-	"additionalProperties": false,
-	"definitions": {
-		"AccountingDataDelivery": {
-			"type": "object",
-			"properties": {
-				"deliveryDetails": {
-					"$ref": "#/definitions/AccountingDeliveryDetails"
-				},
-				"accountingRecords": {
-					"type": "array",
-					"items": {
-						"$ref": "#/definitions/AccountingRecord"
-					}
-				}
-			},
-			"required": [
-				"deliveryDetails",
-				"accountingRecords"
-			],
-			"additionalProperties": false
-		},
-		"AccountingDeliveryDetails": {
-			"type": "object",
-			"properties": {
-				"id": {
-					"description": "unique id of the accounting data delivery",
-					"type": "string",
-					"format": "uuid"
-				},
-				"creationDate": {
-					"description": "UTC date time when the accounting data delivery was created",
-					"type": "string",
-					"format": "date-time"
-				},
-				"invoicingParty": {
-					"description": "RICS company code",
-					"type": "string"
-				},
-				"invoiceRecipient": {
-					"description": "RICS company code",
-					"type": "string"
-				},
-				"startStatementPeriod": {
-					"description": "start of the sales period contained in the accounting (UTC)",
-					"type": "string",
-					"format": "date-time"
-				},
-				"endStatementPeriod": {
-					"description": "end of the sales period contained within this accounting (UTC)",
-					"type": "string",
-					"format": "date-time"
-				},
-				"paymentType": {
-					"$ref": "#/definitions/PaymentType"
-				}
-			},
-			"required": [
-				"id",
-				"creationDate",
-				"invoicingParty",
-				"invoiceRecipient",
-				"startStatementPeriod",
-				"endStatementPeriod",
-				"paymentType"
-			],
-			"additionalProperties": false
-		},
-		"AccountingRecord": {
-			"type": "object",
-			"properties": {
-				"id": {
-					"description": "accounting identifier (id of the accounting record) ",
-					"type": "string",
-					"format": "uuid"
-				},
-				"accountingType": {
-					"$ref": "#/definitions/AccountingType"
-				},
-				"salesType": {
-					"$ref": "#/definitions/SalesType"
-				},
-				"transaction": {
-					"$ref": "#/definitions/Transaction"
-				},
-				"subject": {
-					"$ref": "#/definitions/Subject"
-				},
-				"accountedAmounts": {
-					"description": "list of values to be accounted within this transaction",
-					"type": "array",
-					"minItems": 1,
-					"items": {
-						"$ref": "#/definitions/AccountedAmount"
-					}
-				},
-				"transactionStandard": {
-					"$ref": "#/definitions/TransactionStandard"
-				}
-			},
-			"required": [
-				"id",
-				"accountingType",
-				"salesType",
-				"transaction",
-				"subject",
-				"accountedAmounts"
-			],
-			"additionalProperties": false
-		},
-		"Transaction": {
-			"type": "object",
-			"properties": {
-				"time": {
-					"description": "UTC date time of the timestamp when the transaction was made",
-					"type": "string",
-					"format": "date-time"
-				},
-				"type": {
-					"$ref": "#/definitions/TransactionType"
-				},
-				"contract": {
-					"description": "id of the sales contact used for this transaction defining the commission",
-					"type": "string"
-				},
-				"bookedOfferId": {
-					"description": "booked offer id of the provider in case of an online booking",
-					"type": "string"
-				},
-				"bookedOfferPartIds": {
-					"description": "booked offer part ids of the provider in case of an online booking",
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},				
-				"accountingReferenceIds": {
-					"description": "accounting ids that were provided in the bookingPart accountingRef in an online booking",
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},
-				"ticketIds": {
-					"description": "ids of the tickets in case the provider is responsible for the ticket creation used in barcodes according to 90918-9",
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},
-				"fulfillmentIds": {
-					"description": "OSDM fulfillment idsassociated with this accounting transaction",
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},
-				"exchangedBookedOfferId": {
-					"description": "reference of the original booked offer that was exchanged in case of an exchange transaction",
-					"type": "string"
-				}
-			},
-			"required": [
-				"time",
-				"type",
-				"contract"
-			],
-			"additionalProperties": false
-		},
-		"Subject": {
-			"description": "number and identification of the subject of accounting ",
-			"type": "object",
-			"properties": {
-				"numberOfItems": {
-					"type": "integer"
-				},
-				"fareId": {
-					"description": "if of the fare included in the accounting in case of OFFLINE sales in OSDM",
-					"type": "string"
-				},
-				"legacyDescription": {
-					"type": "object",
-					"properties": {
-						"series": {
-							"type": "integer",
-							"minimum": 0,
-							"maximum": 99999
-						},
-						"tariff": {
-							"type": "integer",
-							"minimum": 0,
-							"maximum": 9999
-						},
-						"classCode": {
-							"$ref": "#/definitions/ClassCode"
-						},
-						"passengerType": {
-							"$ref": "#/definitions/PassengerType"
-						},
-						"dialogNumber": {
-							"description": "identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. ",
-							"type": "string"
-						}
-					},
-					"required": [
-						"series",
-						"tariff",
-						"classCode",
-						"passengerType"
-					],
-					"additionalProperties": false
-				},
-				"salesChannel": {
-					"$ref": "#/definitions/SalesChannel"
-				},
-				"salesOfficeId": {
-					"type": "string"
-				},
-				"train": {
-					"description": "train number in case the transaction involves one and only one train",
-					"type": "string"
-				},
-				"travelDate": {
-					"description": "date of the first possible day of travel in the time zone where the travel starts.",
-					"type": "string",
-					"format": "date"
-				},
-				"countryOfSale": {
-					"description": "Country of the point of sale (ISO Country Code 2A)",
-					"type": "string"
-				},
-				"bilateralTariffIdentifier": {
-					"description": "Identifier of a fare based on bilateral agreements. Both parties involved must agree on the content provided.",
-					"type": "string"
-				},
-				"carriers": {
-					"description": "RICS code(s) of the carriers responsible for transportation. ",
-					"type": "array",
-					"items": {
-						"type": "string"
-					}
-				},
-				"retailer": {
-					"description": "RICS code of the retailing company. Commission rates might depend on the retailing company.",
-					"type": "string"
-				}
-			},
-			"required": [
-				"numberOfItems"
-			],
-			"additionalProperties": false
-		},
-		"AccountedAmount": {
-			"description": "single value to be accounted",
-			"type": "object",
-			"minProperties": 1,
-			"properties": {
-				"grossAmount": {
-					"description": "indicates that the amount is the travel price. Note: one of grossAmount, refundFee and commission must be set to true",
-					"type": "boolean"
-				},
-				"refundFee": {
-					"description": "indicates that the value is a refund fee",
-					"type": "boolean"
-				},
-				"commission": {
-					"description": "indicates that the value is a commission",
-					"type": "boolean"
-				},
-				"settlementValueIndicator": {
-					"$ref": "#/definitions/SettlementValueIndicator"
-				},
-				"amount": {
-					"type": "integer",
-					"format": "int32"
-				},
-				"scale": {
-					"description": "Position of the decimal point default 2",
-					"type": "integer",
-					"default": 2
-				},
-				"currency": {
-					"description": "default EUR",
-					"type": "string",
-					"default": "EUR"
-				},
-				"rate": {
-					"description": "percentage used for the calculation of the amount (e.g. in case of comissions)",
-					"type": "integer"
-				},
-				"rateScale": {
-					"description": "scale (position of the decimal point) of the rate provided, default 2",
-					"type": "integer",
-					"default": 2
-				}
-			},
-			"required": [
-				"grossAmount",
-				"refundFee",
-				"commission",
-				"settlementValueIndicator",
-				"amount"
-			],
-			"additionalProperties": false
-		},
-		"AccountingType": {
-			"description": "type of the accounting record",
-			"type": "string",
-			"enum": [
-				"SHARES",
-				"SERVICE"
-			]
-		},
-		"ClassCode": {
-			"type": "string",
-			"enum": [
-				"FIRST",
-				"SECOND"
-			]
-		},
-		"PassengerType": {
-			"description": "YOUNG_CHILD Young child – defined by the carrier depending on the age \r\nCHILD Child – defined by the carreir depending on the age  \r\nYOUTH Youth – defined by the carreir depending on the age  \r\nADULT Adult – defined by the carreir depending on the age \r\nSENIOR Senior – defined by the carreir depending on the age  \r\nFAMILY_CHILD Child associated with a family travellimng together  \r\nACCOMP_PRM Accompanying Person for PRM  \r\nPRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   \r\nWHEELCHAIR Passenger with wheelchair    \r\nPERSON Used in requests together with date of birth   \r\nPRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   \r\nDOG A dog  \r\nPET A pet  \r\nLUGGAGE Oversize luggage \r\nBICYCLE A bicycle \r\nACCOMP_DOG An accompagning dog for a PRM \r\nCAR A car for carcarriage trains \r\nMOTOCYCLE A motocycle for car carriage trains \r\nTRAILER A trailer for car carriage trains",
-			"type": "string",
-			"x-extensible-enum": [
-				"YOUNG_CHILD",
-				"CHILD",
-				"YOUTH",
-				"ADULT",
-				"SENIOR",
-				"FAMILY_CHILD",
-				"ACCOMP_PRM",
-				"PRM_CHILD",
-				"WHEELCHAIR",
-				"PERSON",
-				"PRM",
-				"DOG",
-				"PET",
-				"BICYCLE",
-				"ACCOMP_DOG",
-				"PRM",
-				"CAR",
-				"MOTOCYCLE",
-				"TRAILER"
-			]
-		},
-		"PaymentType": {
-			"description": "BCC Clearing (multilateral clearing) \r\ncurrent account (eg EWT)\r\nBank transfer without BCC or current account clearing",
-			"type": "string",
-			"enum": [
-				"BCC_CLEARING",
-				"CURRENT_ACCOUNT",
-				"BANK_TRANSFER",
-				"CURRENT_ACCOUNT_CLEARING"
-			]
-		},
-		"SalesChannel": {
-			"type": "string",
-			"enum": [
-				"AGENCY",
-				"AGENCY_WEB",
-				"MOBILE",
-				"RAIL_OFFICE",
-				"VENDING_MACHINE",
-				"WEB",
-				"WEB_MOBILE",
-				"ON_BOARD"
-			]
-		},
-		"SalesType": {
-			"description": "ONLINE: the transaction was an online booking bewteen the involved accounting parties OFFLINE: the sale was made based on fare data exchanged offline betewwn the accounting parties.",
-			"type": "string",
-			"enum": [
-				"ONLINE",
-				"OFFLINE"
-			]
-		},
-		"SettlementValueIndicator": {
-			"type": "string",
-			"enum": [
-				"DEBIT",
-				"CREDIT"
-			]
-		},
-		"TransactionStandard": {
-			"description": "indication of a sale that is not following UIC sales standards, Default is UIC",
-			"type": "string",
-			"enum": [
-				"UIC",
-				"BILATERAL"
-			],
-			"default": "UIC"
-		},
-		"TransactionType": {
-			"description": "type of the sales transaction accounted",
-			"type": "string",
-			"enum": [
-				"BOOKING",
-				"CANCELATION",
-				"EXCHANGE_CANCELLATION",
-				"EXCHANGE_BOOKING",
-				"COMPENSATION",
-				"MANUAL_REFUND"
-			]
-		}
-	},
-	"version": "1.0.0"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "UIC accounting data exchange",
+  "type": "object",
+  "properties": {
+    "uicAccountingDelivery": {
+      "$ref": "#/definitions/AccountingDataDelivery"
+    },
+    "additionalProperties": false
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "AccountingDataDelivery": {
+      "type": "object",
+      "properties": {
+        "deliveryDetails": {
+          "$ref": "#/definitions/AccountingDeliveryDetails"
+        },
+        "accountingRecords": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AccountingRecord"
+          }
+        }
+      },
+      "required": ["deliveryDetails", "accountingRecords"],
+      "additionalProperties": false
+    },
+    "AccountingDeliveryDetails": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "unique id of the accounting data delivery",
+          "type": "string",
+          "format": "uuid"
+        },
+        "creationDate": {
+          "description": "UTC date time when the accounting data delivery was created",
+          "type": "string",
+          "format": "date-time"
+        },
+        "invoicingParty": {
+          "description": "RICS company code",
+          "type": "string"
+        },
+        "invoiceRecipient": {
+          "description": "RICS company code",
+          "type": "string"
+        },
+        "startStatementPeriod": {
+          "description": "start of the sales period contained in the accounting (UTC)",
+          "type": "string",
+          "format": "date-time"
+        },
+        "endStatementPeriod": {
+          "description": "end of the sales period contained within this accounting (UTC)",
+          "type": "string",
+          "format": "date-time"
+        },
+        "paymentType": {
+          "$ref": "#/definitions/PaymentType"
+        }
+      },
+      "required": [
+        "id",
+        "creationDate",
+        "invoicingParty",
+        "invoiceRecipient",
+        "startStatementPeriod",
+        "endStatementPeriod",
+        "paymentType"
+      ],
+      "additionalProperties": false
+    },
+    "AccountingRecord": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "accounting identifier (id of the accounting record) ",
+          "type": "string",
+          "format": "uuid"
+        },
+        "accountingType": {
+          "$ref": "#/definitions/AccountingType"
+        },
+        "salesType": {
+          "$ref": "#/definitions/SalesType"
+        },
+        "transaction": {
+          "$ref": "#/definitions/Transaction"
+        },
+        "subject": {
+          "$ref": "#/definitions/Subject"
+        },
+        "accountedAmounts": {
+          "description": "list of values to be accounted within this transaction",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/AccountedAmount"
+          }
+        },
+        "transactionStandard": {
+          "$ref": "#/definitions/TransactionStandard"
+        }
+      },
+      "required": [
+        "id",
+        "accountingType",
+        "salesType",
+        "transaction",
+        "subject",
+        "accountedAmounts"
+      ],
+      "additionalProperties": false
+    },
+    "Transaction": {
+      "type": "object",
+      "properties": {
+        "time": {
+          "description": "UTC date time of the timestamp when the transaction was made",
+          "type": "string",
+          "format": "date-time"
+        },
+        "type": {
+          "$ref": "#/definitions/TransactionType"
+        },
+        "contract": {
+          "description": "id of the sales contact used for this transaction defining the commission",
+          "type": "string"
+        },
+        "bookedOfferId": {
+          "description": "booked offer id of the provider in case of an online booking",
+          "type": "string"
+        },
+        "bookedOfferPartIds": {
+          "description": "booked offer part ids of the provider in case of an online booking",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accountingReferenceIds": {
+          "description": "accounting ids that were provided in the bookingPart accountingRef in an online booking",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ticketIds": {
+          "description": "ids of the tickets in case the provider is responsible for the ticket creation used in barcodes according to 90918-9",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fulfillmentIds": {
+          "description": "OSDM fulfillment idsassociated with this accounting transaction",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exchangedBookedOfferId": {
+          "description": "reference of the original booked offer that was exchanged in case of an exchange transaction",
+          "type": "string"
+        }
+      },
+      "required": ["time", "type", "contract"],
+      "additionalProperties": false
+    },
+    "Subject": {
+      "description": "number and identification of the subject of accounting ",
+      "type": "object",
+      "properties": {
+        "numberOfItems": {
+          "type": "integer"
+        },
+        "fareId": {
+          "description": "if of the fare included in the accounting in case of OFFLINE sales in OSDM",
+          "type": "string"
+        },
+        "legacyDescription": {
+          "type": "object",
+          "properties": {
+            "series": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 99999
+            },
+            "tariff": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9999
+            },
+            "classCode": {
+              "$ref": "#/definitions/ClassCode"
+            },
+            "passengerType": {
+              "$ref": "#/definitions/PassengerType"
+            },
+            "dialogNumber": {
+              "description": "identification of the communication that caused the transaction e.g. the dialog number in the booking transaction according to IRS 90918-1. ",
+              "type": "string"
+            }
+          },
+          "required": ["series", "tariff", "classCode", "passengerType"],
+          "additionalProperties": false
+        },
+        "salesChannel": {
+          "$ref": "#/definitions/SalesChannel"
+        },
+        "salesOfficeId": {
+          "type": "string"
+        },
+        "train": {
+          "description": "train number in case the transaction involves one and only one train",
+          "type": "string"
+        },
+        "travelDate": {
+          "description": "date of the first possible day of travel in the time zone where the travel starts.",
+          "type": "string",
+          "format": "date"
+        },
+        "countryOfSale": {
+          "description": "Country of the point of sale (ISO Country Code 2A)",
+          "type": "string"
+        },
+        "bilateralTariffIdentifier": {
+          "description": "Identifier of a fare based on bilateral agreements. Both parties involved must agree on the content provided.",
+          "type": "string"
+        },
+        "carriers": {
+          "description": "RICS code(s) of the carriers responsible for transportation. ",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "retailer": {
+          "description": "RICS code of the retailing company. Commission rates might depend on the retailing company.",
+          "type": "string"
+        }
+      },
+      "required": ["numberOfItems"],
+      "additionalProperties": false
+    },
+    "AccountedAmount": {
+      "description": "single value to be accounted",
+      "type": "object",
+      "minProperties": 1,
+      "properties": {
+        "grossAmount": {
+          "description": "indicates that the amount is the travel price. Note: one of grossAmount, refundFee and commission must be set to true",
+          "type": "boolean"
+        },
+        "refundFee": {
+          "description": "indicates that the value is a refund fee",
+          "type": "boolean"
+        },
+        "commission": {
+          "description": "indicates that the value is a commission",
+          "type": "boolean"
+        },
+        "settlementValueIndicator": {
+          "$ref": "#/definitions/SettlementValueIndicator"
+        },
+        "amount": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "scale": {
+          "description": "Position of the decimal point default 2",
+          "type": "integer",
+          "default": 2
+        },
+        "currency": {
+          "description": "default EUR",
+          "type": "string",
+          "default": "EUR"
+        },
+        "rate": {
+          "description": "percentage used for the calculation of the amount (e.g. in case of comissions)",
+          "type": "integer"
+        },
+        "rateScale": {
+          "description": "scale (position of the decimal point) of the rate provided, default 2",
+          "type": "integer",
+          "default": 2
+        }
+      },
+      "required": [
+        "grossAmount",
+        "refundFee",
+        "commission",
+        "settlementValueIndicator",
+        "amount"
+      ],
+      "additionalProperties": false
+    },
+    "AccountingType": {
+      "description": "type of the accounting record",
+      "type": "string",
+      "enum": ["SHARES", "SERVICE"]
+    },
+    "ClassCode": {
+      "type": "string",
+      "enum": ["FIRST", "SECOND"]
+    },
+    "PassengerType": {
+      "description": "YOUNG_CHILD Young child – defined by the carrier depending on the age \r\nCHILD Child – defined by the carrier depending on the age  \r\nYOUTH Youth – defined by the carrier depending on the age  \r\nADULT Adult – defined by the carrier depending on the age \r\nSENIOR Senior – defined by the carrier depending on the age  \r\nFAMILY_CHILD Child associated with a family travellimng together  \r\nACCOMP_PRM Accompanying Person for PRM  \r\nPRM_CHILD Handicapped young child accompanied by one person where the usual child according to the age price would be zero and the accompanying person would also be free   \r\nWHEELCHAIR Passenger with wheelchair    \r\nPERSON Used in requests together with date of birth   \r\nPRM Person with reduced mobility – to be used in case of accompanying person or dog, date of birth must be provided additionally   \r\nDOG A dog  \r\nPET A pet  \r\nLUGGAGE Oversize luggage \r\nBICYCLE A bicycle \r\nACCOMP_DOG An accompagning dog for a PRM \r\nCAR A car for carcarriage trains \r\nMOTOCYCLE A motocycle for car carriage trains \r\nTRAILER A trailer for car carriage trains",
+      "type": "string",
+      "x-extensible-enum": [
+        "YOUNG_CHILD",
+        "CHILD",
+        "YOUTH",
+        "ADULT",
+        "SENIOR",
+        "FAMILY_CHILD",
+        "ACCOMP_PRM",
+        "PRM_CHILD",
+        "WHEELCHAIR",
+        "PERSON",
+        "PRM",
+        "DOG",
+        "PET",
+        "BICYCLE",
+        "ACCOMP_DOG",
+        "PRM",
+        "CAR",
+        "MOTOCYCLE",
+        "TRAILER"
+      ]
+    },
+    "PaymentType": {
+      "description": "BCC Clearing (multilateral clearing) \r\ncurrent account (eg EWT)\r\nBank transfer without BCC or current account clearing",
+      "type": "string",
+      "enum": [
+        "BCC_CLEARING",
+        "CURRENT_ACCOUNT",
+        "BANK_TRANSFER",
+        "CURRENT_ACCOUNT_CLEARING"
+      ]
+    },
+    "SalesChannel": {
+      "type": "string",
+      "enum": [
+        "AGENCY",
+        "AGENCY_WEB",
+        "MOBILE",
+        "RAIL_OFFICE",
+        "VENDING_MACHINE",
+        "WEB",
+        "WEB_MOBILE",
+        "ON_BOARD"
+      ]
+    },
+    "SalesType": {
+      "description": "ONLINE: the transaction was an online booking between the involved accounting parties OFFLINE: the sale was made based on fare data exchanged offline between the accounting parties.",
+      "type": "string",
+      "enum": ["ONLINE", "OFFLINE"]
+    },
+    "SettlementValueIndicator": {
+      "type": "string",
+      "enum": ["DEBIT", "CREDIT"]
+    },
+    "TransactionStandard": {
+      "description": "indication of a sale that is not following UIC sales standards, Default is UIC",
+      "type": "string",
+      "enum": ["UIC", "BILATERAL"],
+      "default": "UIC"
+    },
+    "TransactionType": {
+      "description": "type of the sales transaction accounted",
+      "type": "string",
+      "enum": [
+        "BOOKING",
+        "CANCELATION",
+        "EXCHANGE_CANCELLATION",
+        "EXCHANGE_BOOKING",
+        "COMPENSATION",
+        "MANUAL_REFUND"
+      ]
+    }
+  },
+  "version": "1.0.0"
 }
