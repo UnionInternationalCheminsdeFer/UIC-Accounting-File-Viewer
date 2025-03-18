@@ -1,0 +1,64 @@
+{
+  "$id": "https://jsoneditoronline.org/friends.schema.json",
+  "$schema": "accountingDataSchema.json",
+  "uicAccountingDelivery": {
+    "deliveryDetails": {
+      "id": "delivery-1",
+      "creationDate": "2024-10-01T00:00:00.000Z",
+      "invoicingParty": "urn:uic:risc:85",
+      "invoiceRecipient": "urn:uic:risc:80",
+      "startStatementPeriod": "2024-01-01T00:00:00.000Z",
+      "endStatementPeriod": "2024-01-31T23:59:59.000Z",
+      "paymentType": "BCC_CLEARING"
+    },
+    "accountingRecords": [
+      {
+        "id": "record-1",
+        "accountingType": "SERVICE",
+        "salesType": "ONLINE",
+        "transaction": {
+          "time": "2024-01-01T09:00:00.000Z",
+          "type": "BOOKING",
+          "contract": "DBA222P",
+          "bookedOfferId": "offerId-1",
+          "bookedOfferPartIds": [
+            "admission-basel-zurich",
+            "reservation-basel-zurich"
+          ],
+          "ticketIds": [
+            "ticket-admission-basel-zurich",
+            "ticket-reservation-basel-zurich"
+          ]
+        },
+        "subject": {
+          "numberOfItems": 2,
+          "salesChannel": "WEB",
+          "salesOfficeId": "salesOfficeId-1",
+          "travelDate": "2024-01-23",
+          "countryOfSale": "DE"
+        },
+        "accountedAmounts": [
+          {
+            "grossAmount": true,
+            "refundFee": false,
+            "commission": false,
+            "settlementValueIndicator": "CREDIT",
+            "amount": 6500,
+            "scale": 2,
+            "currency": "EUR"
+          },
+          {
+            "grossAmount": false,
+            "refundFee": false,
+            "commission": true,
+            "settlementValueIndicator": "DEBIT",
+            "amount": 600,
+            "scale": 2,
+            "currency": "EUR"
+          }
+        ],
+        "transactionStandard": "UIC"
+      }
+    ]
+  }
+}
