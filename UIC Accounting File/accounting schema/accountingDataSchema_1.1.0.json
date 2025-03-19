@@ -417,7 +417,7 @@
 			"type": "string",
 			"enum": [
 				"BOOKING",
-				"CANCELATION",
+				"CANCELLATION",
 				"EXCHANGE_CANCELLATION",
 				"EXCHANGE_BOOKING",
 				"COMPENSATION",
