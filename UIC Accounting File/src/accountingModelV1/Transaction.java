@@ -338,11 +338,12 @@ public class Transaction {
     public enum TransactionType {
 
         BOOKING("BOOKING"),
-        CANCELATION("CANCELATION"),
+        CANCELLATION("CANCELLATION"),
         EXCHANGE_CANCELLATION("EXCHANGE_CANCELLATION"),
         EXCHANGE_BOOKING("EXCHANGE_BOOKING"),
         COMPENSATION("COMPENSATION"),
-        MANUAL_REFUND("MANUAL_REFUND");
+        MANUAL_REFUND("MANUAL_REFUND"), 
+        PREBOOKING_TIME_EXTENSION("PREBOOKING_TIME_EXTENSION");
         private final String value;
         private final static Map<String, Transaction.TransactionType> CONSTANTS = new HashMap<String, Transaction.TransactionType>();
 

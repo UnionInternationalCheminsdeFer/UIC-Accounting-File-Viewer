@@ -220,11 +220,32 @@ public class AccountingJsonImporter {
 		mObj.setTransactionTime(jObj.getTimestamp());
 		
 		if (jObj.getType() != null) {
-			mObj.setTransactionType(TransactionType.get(jObj.getType().value()));
+			mObj.setTransactionType(convertTransactionType(jObj.getType()));
 		}
 		return mObj;
 	}
+	
+	
 
+
+	private TransactionType convertTransactionType(accountingModelV1.Transaction.TransactionType transactionType) {
+		if (transactionType.equals(accountingModelV1.Transaction.TransactionType.BOOKING)) {
+			return TransactionType.BOOKING;
+		} else if(transactionType.equals(accountingModelV1.Transaction.TransactionType.CANCELLATION)) {
+			return TransactionType.CANCELLATION;
+		} else if (transactionType.equals(accountingModelV1.Transaction.TransactionType.COMPENSATION)) {
+			return TransactionType.COMPENSATION;
+		} else if (transactionType.equals(accountingModelV1.Transaction.TransactionType.EXCHANGE_BOOKING)) {
+			return TransactionType.EXCHANGE_BOOKING;
+		} else if (transactionType.equals(accountingModelV1.Transaction.TransactionType.EXCHANGE_CANCELLATION)) {
+			return TransactionType.EXCHANGE_CANCELATION;
+		} else if (transactionType.equals(accountingModelV1.Transaction.TransactionType.MANUAL_REFUND)) {
+			return TransactionType.MANUAL_REFUND;
+		} else if (transactionType.equals(accountingModelV1.Transaction.TransactionType.PREBOOKING_TIME_EXTENSION)) {
+			return TransactionType.PREBOOKING_TIME_EXTENSION;
+		} 
+		return null;
+	}
 
 	private AccountingSubject convert(Subject jObj) throws ParseException {
 		

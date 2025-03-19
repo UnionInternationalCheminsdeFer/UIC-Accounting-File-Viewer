@@ -300,9 +300,28 @@ public class AccountingJsonExporter {
 		}
 		
 		if (mObj.getTransactionType() != null) {
-			jObj.setType(TransactionType.fromValue(mObj.getTransactionType().getLiteral()));
+			jObj.setType(convertTransactionType(mObj.getTransactionType()));
 		}
 		return jObj;
+	}
+
+	private TransactionType convertTransactionType(Accounting.TransactionType transactionType) {
+		if (transactionType.equals(Accounting.TransactionType.BOOKING)) {
+			return TransactionType.BOOKING;
+		} else if (transactionType.equals(Accounting.TransactionType.CANCELLATION)) {
+			return TransactionType.CANCELLATION;
+		} else if (transactionType.equals(Accounting.TransactionType.COMPENSATION)) {
+			return TransactionType.COMPENSATION;
+		} else if (transactionType.equals(Accounting.TransactionType.EXCHANGE_BOOKING)) {
+			return TransactionType.EXCHANGE_BOOKING;
+		} else if (transactionType.equals(Accounting.TransactionType.EXCHANGE_CANCELATION)) {
+			return TransactionType.EXCHANGE_CANCELLATION;
+		} else if (transactionType.equals(Accounting.TransactionType.MANUAL_REFUND)) {
+			return TransactionType.MANUAL_REFUND;
+		} else if (transactionType.equals(Accounting.TransactionType.PREBOOKING_TIME_EXTENSION)) {
+			return TransactionType.PREBOOKING_TIME_EXTENSION;
+		}
+		return null;
 	}
 
 	private AccountingDeliveryDetails convert(AccountingDelivery mObj) {
