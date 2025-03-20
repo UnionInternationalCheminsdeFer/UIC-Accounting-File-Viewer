@@ -199,7 +199,7 @@
 						"tariff": {
 							"type": "integer",
 							"minimum": 0,
-							"maximum": 9999
+							"maximum": 99999
 						},
 						"classCode": {
 							"$ref": "#/definitions/ClassCode"
