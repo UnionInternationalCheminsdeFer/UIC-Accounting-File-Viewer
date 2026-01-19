@@ -235,7 +235,13 @@ public class SummaryCalculator {
 		sb.append("Accounting Summary").append('\n');
 		sb.append(" Invoicing Party: ").append(accountingDelivery.getInvoicingParty().getCode());
 		sb.append("-").append(accountingDelivery.getInvoicingParty().getName());
-		sb.append(" Invoice Recipient: ").append(accountingDelivery.getInvoiceRecipient().getCode());
+		
+		if (accountingDelivery.getInvoiceRecipient() != null) {
+		  sb.append(" Invoice Recipient: ").append(accountingDelivery.getInvoiceRecipient().getCode());
+		} else {
+			sb.append(" Invoice Recipient: unknown");
+		}
+		
 		sb.append("-").append(accountingDelivery.getInvoiceRecipient().getName()).append('\n');
 		sb.append(" Accounting delivery id: ").append(accountingDelivery.getId()).append('\n');
 		sb.append(" Statement period: ").append(sdf.format(accountingDelivery.getStartStatementPeriod()));

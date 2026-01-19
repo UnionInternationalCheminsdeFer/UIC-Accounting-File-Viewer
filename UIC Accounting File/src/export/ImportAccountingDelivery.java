@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.util.StdDateFormat;
 
 import accountingModelV1.AccountingDataDelivery;
+import accountingModelV1.AccountingDataSchema;
 
 public class ImportAccountingDelivery {
 	
@@ -26,9 +27,11 @@ public class ImportAccountingDelivery {
 		mapper.setDateFormat(df);
 		
 		AccountingDataDelivery accounting = null;
+		AccountingDataSchema accountingSchema = null;
 
 		//JSON file to Java object
-		accounting  = mapper.readValue(file, AccountingDataDelivery.class);
+		accountingSchema  = mapper.readValue(file, AccountingDataSchema.class);
+		accounting = accountingSchema.getUicAccountingDelivery();
 		
 		return accounting;
 		

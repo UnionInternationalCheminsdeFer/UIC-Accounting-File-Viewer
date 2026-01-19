@@ -5,12 +5,15 @@ Bundle-SymbolicName: UIC_Accounting_File;singleton:=true
 Automatic-Module-Name: UIC_Accounting_File
 Bundle-Version: 1.1.0
 Bundle-Vendor: www.uic.org
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: lib/,
  .
 Export-Package: export,
  accountingModelV1
-Require-Bundle: org.eclipse.swt;bundle-version="3.113.0",
- com.fasterxml.jackson.core.jackson-annotations;bundle-version="2.15.2",
- com.fasterxml.jackson.core.jackson-core;bundle-version="2.15.2",
- com.fasterxml.jackson.core.jackson-databind;bundle-version="2.15.2"
+Import-Package: com.fasterxml.jackson.annotation,
+ com.fasterxml.jackson.core,
+ com.fasterxml.jackson.databind,
+ com.fasterxml.jackson.databind.util,
+ com.fasterxml.jackson.datatype.jdk8,
+ com.fasterxml.jackson.datatype.jsr310.util
+Require-Bundle: org.eclipse.swt;bundle-version="3.113.0"
