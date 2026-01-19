@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="UIC Accounting Viewer" uid="AccountingViewerProduct" id="UIC_accounting_viewer.editor.UicAccountingViewer" application="UIC_accounting_viewer.editor.AccountingEditorAdvisorApplication" version="1.6" type="bundles" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="UIC Accounting Viewer" uid="AccountingViewerProduct" id="UIC_accounting_viewer.editor.UicAccountingViewer" application="UIC_accounting_viewer.editor.AccountingEditorAdvisorApplication" version="1.7" type="bundles" includeLaunchers="true" autoIncludeRequirements="true">
+
    <aboutInfo>
       <image path="/UIC accounting viewer.editor/icons/UIC GIF square_96.gif"/>
       <text>
@@ -58,9 +59,6 @@ This application includes icons from Wiki Commons available under LGPL.
       <plugin id="bcprov"/>
       <plugin id="ch.qos.logback.classic"/>
       <plugin id="ch.qos.logback.core"/>
-      <plugin id="com.fasterxml.jackson.core.jackson-annotations"/>
-      <plugin id="com.fasterxml.jackson.core.jackson-core"/>
-      <plugin id="com.fasterxml.jackson.core.jackson-databind"/>
       <plugin id="com.google.gson"/>
       <plugin id="com.google.guava"/>
       <plugin id="com.google.guava.failureaccess"/>
@@ -73,6 +71,7 @@ This application includes icons from Wiki Commons available under LGPL.
       <plugin id="javax.inject"/>
       <plugin id="javax.servlet.jsp-api"/>
       <plugin id="jaxen"/>
+      <plugin id="net.certiv.dsl.lib"/>
       <plugin id="org.apache.aries.spifly.dynamic.bundle"/>
       <plugin id="org.apache.batik.constants"/>
       <plugin id="org.apache.batik.css"/>

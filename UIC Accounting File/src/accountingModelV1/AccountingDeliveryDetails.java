@@ -32,13 +32,13 @@ public class AccountingDeliveryDetails {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("unique id of the accounting data delivery")
-    private UUID id;
+    private String id;
     /**
      * UTC date time when the accounting data delivery was created
      * (Required)
      * 
      */
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssZZZ", timezone = "UTC")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
     @JsonProperty("creationDate")
     @JsonPropertyDescription("UTC date time when the accounting data delivery was created")
     private Date creationDate;
@@ -63,7 +63,7 @@ public class AccountingDeliveryDetails {
      * (Required)
      * 
      */
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssZZZ", timezone = "UTC")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
     @JsonProperty("startStatementPeriod")
     @JsonPropertyDescription("start of the sales period contained in the accounting (UTC)")
     private Date startStatementPeriod;
@@ -72,7 +72,7 @@ public class AccountingDeliveryDetails {
      * (Required)
      * 
      */
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssZZZ", timezone = "UTC")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
     @JsonProperty("endStatementPeriod")
     @JsonPropertyDescription("end of the sales period contained within this accounting (UTC)")
     private Date endStatementPeriod;
@@ -93,7 +93,7 @@ public class AccountingDeliveryDetails {
      * 
      */
     @JsonProperty("id")
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
@@ -103,7 +103,7 @@ public class AccountingDeliveryDetails {
      * 
      */
     @JsonProperty("id")
-    public void setId(UUID id) {
+    public void setId(String id) {
         this.id = id;
     }
 

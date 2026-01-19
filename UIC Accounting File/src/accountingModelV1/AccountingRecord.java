@@ -32,7 +32,7 @@ public class AccountingRecord {
      */
     @JsonProperty("id")
     @JsonPropertyDescription("accounting identifier (id of the accounting record) ")
-    private UUID id;
+    private String id;
     /**
      * type of the accounting record
      * (Required)
@@ -86,7 +86,7 @@ public class AccountingRecord {
      * 
      */
     @JsonProperty("id")
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
@@ -96,7 +96,7 @@ public class AccountingRecord {
      * 
      */
     @JsonProperty("id")
-    public void setId(UUID id) {
+    public void setId(String id) {
         this.id = id;
     }
 

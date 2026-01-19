@@ -31,7 +31,7 @@ public class Transaction {
      * UTC date time of the timestamp when the transaction was made
      * 
      */
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ssZZZ", timezone = "UTC")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", timezone = "UTC")
     @JsonProperty("timestamp")
     @JsonPropertyDescription("UTC date time of the timestamp when the transaction was made")
     private Date timestamp;

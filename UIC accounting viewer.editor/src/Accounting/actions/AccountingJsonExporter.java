@@ -104,7 +104,7 @@ public class AccountingJsonExporter {
 			jObj.setAccountingType(AccountingRecord.AccountingType.fromValue(mObj.getAccountingType().getLiteral()));
 		}
 		
-		jObj.setId(UUID.fromString(mObj.getId()));
+		jObj.setId(mObj.getId());
 		
 		if (mObj.getSalesType() != null) {
 			jObj.setSalesType(SalesType.fromValue(mObj.getSalesType().getLiteral()));
@@ -330,7 +330,7 @@ public class AccountingJsonExporter {
 		
 		jObj.setCreationDate(mObj.getCreationDate());
 		
-		jObj.setId(UUID.fromString(mObj.getId()));
+		jObj.setId(mObj.getId());
 		
 		if (mObj.getEndStatementPeriod() != null) {
 			jObj.setEndStatementPeriod(mObj.getEndStatementPeriod());
