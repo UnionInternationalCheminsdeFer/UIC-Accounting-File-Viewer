@@ -64,6 +64,7 @@ public class RequiredBarcodesImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<BarcodeTypes> getRequiredBarcodes() {
 		if (requiredBarcodes == null) {
 			requiredBarcodes = new EDataTypeUniqueEList<BarcodeTypes>(BarcodeTypes.class, this, AccountingPackage.REQUIRED_BARCODES__REQUIRED_BARCODES);

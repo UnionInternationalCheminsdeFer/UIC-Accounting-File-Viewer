@@ -75,6 +75,7 @@ public class GeneralTariffModelImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Delivery getDelivery() {
 		return delivery;
 	}
@@ -99,6 +100,7 @@ public class GeneralTariffModelImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDelivery(Delivery newDelivery) {
 		if (newDelivery != delivery) {
 			NotificationChain msgs = null;
@@ -118,6 +120,7 @@ public class GeneralTariffModelImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareStructure getFareStructure() {
 		return fareStructure;
 	}
@@ -142,6 +145,7 @@ public class GeneralTariffModelImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareStructure(FareStructure newFareStructure) {
 		if (newFareStructure != fareStructure) {
 			NotificationChain msgs = null;

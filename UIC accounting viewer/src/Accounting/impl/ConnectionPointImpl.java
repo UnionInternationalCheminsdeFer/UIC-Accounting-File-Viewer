@@ -197,6 +197,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -206,6 +207,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -218,6 +220,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -227,6 +230,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -239,6 +243,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLegacyBorderPointCode() {
 		return legacyBorderPointCode;
 	}
@@ -248,6 +253,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLegacyBorderPointCode(int newLegacyBorderPointCode) {
 		int oldLegacyBorderPointCode = legacyBorderPointCode;
 		legacyBorderPointCode = newLegacyBorderPointCode;
@@ -260,6 +266,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDescription() {
 		return description;
 	}
@@ -269,6 +276,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDescription(String newDescription) {
 		String oldDescription = description;
 		description = newDescription;
@@ -281,6 +289,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<StationSet> getConnectedStationSets() {
 		if (connectedStationSets == null) {
 			connectedStationSets = new EObjectContainmentEList<StationSet>(StationSet.class, this, AccountingPackage.CONNECTION_POINT__CONNECTED_STATION_SETS);
@@ -293,6 +302,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -302,6 +312,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;
@@ -314,6 +325,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getNameUtf8() {
 		return nameUtf8;
 	}
@@ -323,6 +335,7 @@ public class ConnectionPointImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNameUtf8(String newNameUtf8) {
 		String oldNameUtf8 = nameUtf8;
 		nameUtf8 = newNameUtf8;

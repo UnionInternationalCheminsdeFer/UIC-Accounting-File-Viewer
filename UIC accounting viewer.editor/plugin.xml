@@ -119,7 +119,7 @@
          </property>
          <property
                name="aboutImage"
-               value="icons/UIC GIF square_96.gif">
+               value="/UIC accounting viewer.editor/icons/UIC GIF square_96.gif">
          </property>
          <property
                name="aboutText"
@@ -127,7 +127,7 @@
          </property>
          <property
                name="windowImages"
-               value="icons/UIC GIF square_16.gif,icons/UIC GIF square_32.gif,icons/UIC GIF square_48.gif,icons/UIC GIF square_64.gif">
+               value="/UIC accounting viewer.editor/icons/UIC GIF square_16.gif,/UIC accounting viewer.editor/icons/UIC GIF square_32.gif,/UIC accounting viewer.editor/icons/UIC GIF square_48.gif,/UIC accounting viewer.editor/icons/UIC GIF square_64.gif">
          </property>
       </product>
    </extension>

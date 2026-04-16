@@ -68,6 +68,7 @@ public class LuggageConstraintsImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<LuggageConstraint> getConstraints() {
 		if (constraints == null) {
 			constraints = new EObjectContainmentEList<LuggageConstraint>(LuggageConstraint.class, this, AccountingPackage.LUGGAGE_CONSTRAINTS__CONSTRAINTS);

@@ -67,6 +67,7 @@ public class ServiceBrandsImpl extends MinimalEObjectImpl.Container implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceBrand> getServiceBrands() {
 		if (serviceBrands == null) {
 			serviceBrands = new EObjectContainmentEList<ServiceBrand>(ServiceBrand.class, this, AccountingPackage.SERVICE_BRANDS__SERVICE_BRANDS);

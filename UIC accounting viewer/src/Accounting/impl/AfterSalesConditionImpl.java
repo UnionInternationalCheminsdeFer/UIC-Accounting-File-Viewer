@@ -139,6 +139,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AfterSalesTransactionType getTransactionType() {
 		return transactionType;
 	}
@@ -148,6 +149,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTransactionType(AfterSalesTransactionType newTransactionType) {
 		AfterSalesTransactionType oldTransactionType = transactionType;
 		transactionType = newTransactionType == null ? TRANSACTION_TYPE_EDEFAULT : newTransactionType;
@@ -160,6 +162,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIndividualContracts() {
 		return individualContracts;
 	}
@@ -169,6 +172,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIndividualContracts(boolean newIndividualContracts) {
 		boolean oldIndividualContracts = individualContracts;
 		individualContracts = newIndividualContracts;
@@ -181,6 +185,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isCarrierFee() {
 		return carrierFee;
 	}
@@ -190,6 +195,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierFee(boolean newCarrierFee) {
 		boolean oldCarrierFee = carrierFee;
 		carrierFee = newCarrierFee;
@@ -202,6 +208,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Price getFee() {
 		if (fee != null && fee.eIsProxy()) {
 			InternalEObject oldFee = (InternalEObject)fee;
@@ -228,6 +235,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFee(Price newFee) {
 		Price oldFee = fee;
 		fee = newFee;
@@ -240,6 +248,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ApplicationTime getApplicationTime() {
 		return applicationTime;
 	}
@@ -264,6 +273,7 @@ public class AfterSalesConditionImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setApplicationTime(ApplicationTime newApplicationTime) {
 		if (newApplicationTime != applicationTime) {
 			NotificationChain msgs = null;

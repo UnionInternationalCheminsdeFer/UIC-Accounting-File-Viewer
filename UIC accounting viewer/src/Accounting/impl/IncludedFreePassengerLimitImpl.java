@@ -105,6 +105,7 @@ public class IncludedFreePassengerLimitImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getNumber() {
 		return number;
 	}
@@ -114,6 +115,7 @@ public class IncludedFreePassengerLimitImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNumber(int newNumber) {
 		int oldNumber = number;
 		number = newNumber;
@@ -126,6 +128,7 @@ public class IncludedFreePassengerLimitImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelerType getPassengerType() {
 		return passengerType;
 	}
@@ -135,6 +138,7 @@ public class IncludedFreePassengerLimitImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerType(TravelerType newPassengerType) {
 		TravelerType oldPassengerType = passengerType;
 		passengerType = newPassengerType == null ? PASSENGER_TYPE_EDEFAULT : newPassengerType;
@@ -147,6 +151,7 @@ public class IncludedFreePassengerLimitImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PassengerConstraint getPassengerConstraint() {
 		if (passengerConstraint != null && passengerConstraint.eIsProxy()) {
 			InternalEObject oldPassengerConstraint = (InternalEObject)passengerConstraint;
@@ -173,6 +178,7 @@ public class IncludedFreePassengerLimitImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerConstraint(PassengerConstraint newPassengerConstraint) {
 		PassengerConstraint oldPassengerConstraint = passengerConstraint;
 		passengerConstraint = newPassengerConstraint;

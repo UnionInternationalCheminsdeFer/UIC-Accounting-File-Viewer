@@ -93,6 +93,7 @@ public class StationResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<OnlineResource> getOnlineResources() {
 		if (onlineResources == null) {
 			onlineResources = new EObjectContainmentEList<OnlineResource>(OnlineResource.class, this, AccountingPackage.STATION_RESOURCE_LOCATION__ONLINE_RESOURCES);
@@ -105,6 +106,7 @@ public class StationResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Station> getStations() {
 		if (stations == null) {
 			stations = new EObjectResolvingEList<Station>(Station.class, this, AccountingPackage.STATION_RESOURCE_LOCATION__STATIONS);
@@ -117,6 +119,7 @@ public class StationResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ConnectionPoint> getConnectionPoints() {
 		if (connectionPoints == null) {
 			connectionPoints = new EObjectResolvingEList<ConnectionPoint>(ConnectionPoint.class, this, AccountingPackage.STATION_RESOURCE_LOCATION__CONNECTION_POINTS);

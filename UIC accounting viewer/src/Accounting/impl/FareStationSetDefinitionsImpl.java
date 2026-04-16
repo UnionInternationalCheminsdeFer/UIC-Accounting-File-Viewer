@@ -71,6 +71,7 @@ public class FareStationSetDefinitionsImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FareStationSetDefinition> getFareStationSetDefinitions() {
 		if (fareStationSetDefinitions == null) {
 			fareStationSetDefinitions = new EObjectContainmentEList<FareStationSetDefinition>(FareStationSetDefinition.class, this, AccountingPackage.FARE_STATION_SET_DEFINITIONS__FARE_STATION_SET_DEFINITIONS);
@@ -83,6 +84,7 @@ public class FareStationSetDefinitionsImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareStationSetDefinition findFareSet(Carrier carrier, int legacyCode) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT

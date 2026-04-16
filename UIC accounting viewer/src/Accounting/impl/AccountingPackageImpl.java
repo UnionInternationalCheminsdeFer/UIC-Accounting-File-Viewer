@@ -1483,6 +1483,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		EValidator.Registry.INSTANCE.put
 			(theAccountingPackage,
 			 new EValidator.Descriptor() {
+				 @Override
 				 public EValidator getEValidator() {
 					 return AccountingValidator.INSTANCE;
 				 }
@@ -1501,6 +1502,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountingViewerData() {
 		if (accountingViewerDataEClass == null) {
 			accountingViewerDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(2);
@@ -1513,6 +1515,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingViewerData_CodeLists() {
         return (EReference)getAccountingViewerData().getEStructuralFeatures().get(0);
 	}
@@ -1522,6 +1525,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingViewerData_FareModells() {
         return (EReference)getAccountingViewerData().getEStructuralFeatures().get(2);
 	}
@@ -1531,6 +1535,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingViewerData_WorkflowHistory() {
         return (EReference)getAccountingViewerData().getEStructuralFeatures().get(3);
 	}
@@ -1540,6 +1545,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingViewerData_AccountingFile() {
         return (EReference)getAccountingViewerData().getEStructuralFeatures().get(1);
 	}
@@ -1549,6 +1555,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountingFile() {
 		if (accountingFileEClass == null) {
 			accountingFileEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(3);
@@ -1561,6 +1568,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingFile_AccountingDelivery() {
         return (EReference)getAccountingFile().getEStructuralFeatures().get(0);
 	}
@@ -1570,6 +1578,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingFile_AccountingRecords() {
         return (EReference)getAccountingFile().getEStructuralFeatures().get(1);
 	}
@@ -1579,6 +1588,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountingRecords() {
 		if (accountingRecordsEClass == null) {
 			accountingRecordsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(4);
@@ -1591,6 +1601,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingRecords_AccountingRecords() {
         return (EReference)getAccountingRecords().getEStructuralFeatures().get(0);
 	}
@@ -1600,6 +1611,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountingDelivery() {
 		if (accountingDeliveryEClass == null) {
 			accountingDeliveryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(5);
@@ -1612,6 +1624,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingDelivery_Id() {
         return (EAttribute)getAccountingDelivery().getEStructuralFeatures().get(0);
 	}
@@ -1621,6 +1634,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingDelivery_CreationDate() {
         return (EAttribute)getAccountingDelivery().getEStructuralFeatures().get(1);
 	}
@@ -1630,6 +1644,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingDelivery_InvoicingParty() {
         return (EReference)getAccountingDelivery().getEStructuralFeatures().get(2);
 	}
@@ -1639,6 +1654,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingDelivery_InvoiceRecipient() {
         return (EReference)getAccountingDelivery().getEStructuralFeatures().get(3);
 	}
@@ -1648,6 +1664,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingDelivery_StartStatementPeriod() {
         return (EAttribute)getAccountingDelivery().getEStructuralFeatures().get(4);
 	}
@@ -1657,6 +1674,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingDelivery_EndStatementPeriod() {
         return (EAttribute)getAccountingDelivery().getEStructuralFeatures().get(5);
 	}
@@ -1666,6 +1684,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingDelivery_PaymentType() {
         return (EAttribute)getAccountingDelivery().getEStructuralFeatures().get(6);
 	}
@@ -1675,6 +1694,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountingRecord() {
 		if (accountingRecordEClass == null) {
 			accountingRecordEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(7);
@@ -1687,6 +1707,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingRecord_Id() {
         return (EAttribute)getAccountingRecord().getEStructuralFeatures().get(0);
 	}
@@ -1696,6 +1717,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingRecord_SalesType() {
         return (EAttribute)getAccountingRecord().getEStructuralFeatures().get(1);
 	}
@@ -1705,6 +1727,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingRecord_AccountingType() {
         return (EAttribute)getAccountingRecord().getEStructuralFeatures().get(2);
 	}
@@ -1714,6 +1737,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingRecord_TransactionStandard() {
         return (EAttribute)getAccountingRecord().getEStructuralFeatures().get(3);
 	}
@@ -1723,6 +1747,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingRecord_Transaction() {
         return (EReference)getAccountingRecord().getEStructuralFeatures().get(4);
 	}
@@ -1732,6 +1757,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingRecord_Subject() {
         return (EReference)getAccountingRecord().getEStructuralFeatures().get(5);
 	}
@@ -1741,6 +1767,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingRecord_AccountedAmounts() {
         return (EReference)getAccountingRecord().getEStructuralFeatures().get(6);
 	}
@@ -1750,6 +1777,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountedAmounts() {
 		if (accountedAmountsEClass == null) {
 			accountedAmountsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(8);
@@ -1762,6 +1790,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountedAmounts_AccountedAmounts() {
         return (EReference)getAccountedAmounts().getEStructuralFeatures().get(0);
 	}
@@ -1771,6 +1800,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountingSubject() {
 		if (accountingSubjectEClass == null) {
 			accountingSubjectEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(9);
@@ -1783,6 +1813,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_FareId() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(0);
 	}
@@ -1792,6 +1823,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_NumberOfItems() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(1);
 	}
@@ -1801,6 +1833,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_SalesOfficeId() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(2);
 	}
@@ -1810,6 +1843,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_SalesChannel() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(3);
 	}
@@ -1819,6 +1853,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_Train() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(4);
 	}
@@ -1828,6 +1863,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_TravelDate() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(5);
 	}
@@ -1837,6 +1873,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingSubject_CountryOfSale() {
         return (EReference)getAccountingSubject().getEStructuralFeatures().get(6);
 	}
@@ -1846,6 +1883,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingSubject_Carriers() {
         return (EReference)getAccountingSubject().getEStructuralFeatures().get(7);
 	}
@@ -1855,6 +1893,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingSubject_Retailer() {
         return (EReference)getAccountingSubject().getEStructuralFeatures().get(8);
 	}
@@ -1864,6 +1903,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_BilateralTariffIdentifier() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(9);
 	}
@@ -1873,6 +1913,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountingSubject_LegacyDescription() {
         return (EReference)getAccountingSubject().getEStructuralFeatures().get(10);
 	}
@@ -1882,6 +1923,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_InternationalJourney() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(11);
 	}
@@ -1891,6 +1933,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_TripOrigin() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(12);
 	}
@@ -1900,6 +1943,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountingSubject_TripDestination() {
         return (EAttribute)getAccountingSubject().getEStructuralFeatures().get(13);
 	}
@@ -1909,6 +1953,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLegacyDescription() {
 		if (legacyDescriptionEClass == null) {
 			legacyDescriptionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(10);
@@ -1921,6 +1966,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyDescription_PassengerType() {
         return (EAttribute)getLegacyDescription().getEStructuralFeatures().get(0);
 	}
@@ -1930,6 +1976,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyDescription_ClassCode() {
         return (EAttribute)getLegacyDescription().getEStructuralFeatures().get(1);
 	}
@@ -1939,6 +1986,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyDescription_Series() {
         return (EAttribute)getLegacyDescription().getEStructuralFeatures().get(2);
 	}
@@ -1948,6 +1996,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyDescription_Tariff() {
         return (EAttribute)getLegacyDescription().getEStructuralFeatures().get(3);
 	}
@@ -1957,6 +2006,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyDescription_DialogNumber() {
         return (EAttribute)getLegacyDescription().getEStructuralFeatures().get(4);
 	}
@@ -1966,6 +2016,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTransaction() {
 		if (transactionEClass == null) {
 			transactionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(12);
@@ -1978,6 +2029,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_TransactionType() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(0);
 	}
@@ -1987,6 +2039,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_Contract() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(1);
 	}
@@ -1996,6 +2049,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_BookingId() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(2);
 	}
@@ -2005,6 +2059,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_BookingPartIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(3);
 	}
@@ -2014,6 +2069,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_AccountingReferenceIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(4);
 	}
@@ -2023,6 +2079,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_TicketIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(5);
 	}
@@ -2032,6 +2089,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_TicketId() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(6);
 	}
@@ -2041,6 +2099,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_FulfillmentIds() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(7);
 	}
@@ -2050,6 +2109,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_ExchangebookingId() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(8);
 	}
@@ -2059,6 +2119,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTransaction_TransactionTime() {
         return (EAttribute)getTransaction().getEStructuralFeatures().get(9);
 	}
@@ -2068,6 +2129,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAccountedAmount() {
 		if (accountedAmountEClass == null) {
 			accountedAmountEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(14);
@@ -2080,6 +2142,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountedAmount_SettlementValueIndicator() {
         return (EAttribute)getAccountedAmount().getEStructuralFeatures().get(0);
 	}
@@ -2089,6 +2152,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountedAmount_GrossAmount() {
         return (EAttribute)getAccountedAmount().getEStructuralFeatures().get(1);
 	}
@@ -2098,6 +2162,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountedAmount_Fee() {
         return (EAttribute)getAccountedAmount().getEStructuralFeatures().get(2);
 	}
@@ -2107,6 +2172,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountedAmount_Commission() {
         return (EAttribute)getAccountedAmount().getEStructuralFeatures().get(3);
 	}
@@ -2116,6 +2182,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAccountedAmount_Currency() {
         return (EReference)getAccountedAmount().getEStructuralFeatures().get(4);
 	}
@@ -2125,6 +2192,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountedAmount_Amount() {
         return (EAttribute)getAccountedAmount().getEStructuralFeatures().get(5);
 	}
@@ -2134,6 +2202,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAccountedAmount_Rate() {
         return (EAttribute)getAccountedAmount().getEStructuralFeatures().get(6);
 	}
@@ -2143,6 +2212,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCodeLists() {
 		if (codeListsEClass == null) {
 			codeListsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(19);
@@ -2155,6 +2225,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCodeLists_Carriers() {
         return (EReference)getCodeLists().getEStructuralFeatures().get(0);
 	}
@@ -2164,6 +2235,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCodeLists_Stations() {
         return (EReference)getCodeLists().getEStructuralFeatures().get(1);
 	}
@@ -2173,6 +2245,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCodeLists_Countries() {
         return (EReference)getCodeLists().getEStructuralFeatures().get(2);
 	}
@@ -2182,6 +2255,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCodeLists_Languages() {
         return (EReference)getCodeLists().getEStructuralFeatures().get(3);
 	}
@@ -2191,6 +2265,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCodeLists_Currencies() {
         return (EReference)getCodeLists().getEStructuralFeatures().get(4);
 	}
@@ -2200,6 +2275,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCodeLists_ServiceBrands() {
         return (EReference)getCodeLists().getEStructuralFeatures().get(5);
 	}
@@ -2209,6 +2285,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCodeLists_NutsCodes() {
         return (EReference)getCodeLists().getEStructuralFeatures().get(6);
 	}
@@ -2218,6 +2295,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getWorkflowHistory() {
 		if (workflowHistoryEClass == null) {
 			workflowHistoryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(20);
@@ -2230,6 +2308,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getWorkflowHistory_WorkflowSteps() {
         return (EReference)getWorkflowHistory().getEStructuralFeatures().get(0);
 	}
@@ -2239,6 +2318,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getWorkflowStep() {
 		if (workflowStepEClass == null) {
 			workflowStepEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(21);
@@ -2251,6 +2331,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getWorkflowStep_Time() {
         return (EAttribute)getWorkflowStep().getEStructuralFeatures().get(0);
 	}
@@ -2260,6 +2341,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getWorkflowStep_Description() {
         return (EAttribute)getWorkflowStep().getEStructuralFeatures().get(1);
 	}
@@ -2269,6 +2351,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNUTSCodes() {
 		if (nutsCodesEClass == null) {
 			nutsCodesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(22);
@@ -2281,6 +2364,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNUTSCodes_NutsCodes() {
         return (EReference)getNUTSCodes().getEStructuralFeatures().get(0);
 	}
@@ -2290,6 +2374,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNutsCode() {
 		if (nutsCodeEClass == null) {
 			nutsCodeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(23);
@@ -2302,6 +2387,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getNutsCode_Name() {
         return (EAttribute)getNutsCode().getEStructuralFeatures().get(0);
 	}
@@ -2311,6 +2397,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getNutsCode_Code() {
         return (EAttribute)getNutsCode().getEStructuralFeatures().get(1);
 	}
@@ -2320,6 +2407,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceBrands() {
 		if (serviceBrandsEClass == null) {
 			serviceBrandsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(24);
@@ -2332,6 +2420,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceBrands_ServiceBrands() {
         return (EReference)getServiceBrands().getEStructuralFeatures().get(0);
 	}
@@ -2341,6 +2430,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceBrand() {
 		if (serviceBrandEClass == null) {
 			serviceBrandEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(25);
@@ -2353,6 +2443,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceBrand_Code() {
         return (EAttribute)getServiceBrand().getEStructuralFeatures().get(0);
 	}
@@ -2362,6 +2453,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceBrand_Name() {
         return (EAttribute)getServiceBrand().getEStructuralFeatures().get(1);
 	}
@@ -2371,6 +2463,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceBrand_Abbreviation() {
         return (EAttribute)getServiceBrand().getEStructuralFeatures().get(2);
 	}
@@ -2380,6 +2473,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceBrand_Description() {
         return (EAttribute)getServiceBrand().getEStructuralFeatures().get(3);
 	}
@@ -2389,6 +2483,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceBrand_TransportMode() {
         return (EAttribute)getServiceBrand().getEStructuralFeatures().get(4);
 	}
@@ -2398,6 +2493,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceBrand_LocalLanguageName() {
         return (EAttribute)getServiceBrand().getEStructuralFeatures().get(5);
 	}
@@ -2407,6 +2503,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCountries() {
 		if (countriesEClass == null) {
 			countriesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(26);
@@ -2419,6 +2516,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCountries_Countries() {
         return (EReference)getCountries().getEStructuralFeatures().get(0);
 	}
@@ -2428,6 +2526,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCountry() {
 		if (countryEClass == null) {
 			countryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(27);
@@ -2440,6 +2539,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCountry_Code() {
         return (EAttribute)getCountry().getEStructuralFeatures().get(0);
 	}
@@ -2449,6 +2549,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCountry_Name() {
         return (EAttribute)getCountry().getEStructuralFeatures().get(1);
 	}
@@ -2458,6 +2559,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCountry_ISOcode() {
         return (EAttribute)getCountry().getEStructuralFeatures().get(2);
 	}
@@ -2467,6 +2569,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCountry_DefaultCharacterSet() {
         return (EAttribute)getCountry().getEStructuralFeatures().get(3);
 	}
@@ -2476,6 +2579,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLanguages() {
 		if (languagesEClass == null) {
 			languagesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(28);
@@ -2488,6 +2592,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLanguages_Languages() {
         return (EReference)getLanguages().getEStructuralFeatures().get(0);
 	}
@@ -2497,6 +2602,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLanguage() {
 		if (languageEClass == null) {
 			languageEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(29);
@@ -2509,6 +2615,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLanguage_Name() {
         return (EAttribute)getLanguage().getEStructuralFeatures().get(0);
 	}
@@ -2518,6 +2625,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLanguage_Code() {
         return (EAttribute)getLanguage().getEStructuralFeatures().get(1);
 	}
@@ -2527,6 +2635,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCurrencies() {
 		if (currenciesEClass == null) {
 			currenciesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(30);
@@ -2539,6 +2648,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCurrencies_Currencies() {
         return (EReference)getCurrencies().getEStructuralFeatures().get(0);
 	}
@@ -2548,6 +2658,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCurrency() {
 		if (currencyEClass == null) {
 			currencyEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(31);
@@ -2560,6 +2671,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCurrency_Name() {
         return (EAttribute)getCurrency().getEStructuralFeatures().get(0);
 	}
@@ -2569,6 +2681,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCurrency_IsoCode() {
         return (EAttribute)getCurrency().getEStructuralFeatures().get(1);
 	}
@@ -2578,6 +2691,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStations() {
 		if (stationsEClass == null) {
 			stationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(32);
@@ -2590,6 +2704,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStations_Stations() {
         return (EReference)getStations().getEStructuralFeatures().get(0);
 	}
@@ -2599,6 +2714,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStation() {
 		if (stationEClass == null) {
 			stationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(33);
@@ -2611,6 +2727,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_Name() {
         return (EAttribute)getStation().getEStructuralFeatures().get(0);
 	}
@@ -2620,6 +2737,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStation_Country() {
         return (EReference)getStation().getEStructuralFeatures().get(1);
 	}
@@ -2629,6 +2747,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_Code() {
         return (EAttribute)getStation().getEStructuralFeatures().get(2);
 	}
@@ -2638,6 +2757,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_Longitude() {
         return (EAttribute)getStation().getEStructuralFeatures().get(3);
 	}
@@ -2647,6 +2767,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_Latitude() {
         return (EAttribute)getStation().getEStructuralFeatures().get(4);
 	}
@@ -2656,6 +2777,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_TimetableName() {
         return (EAttribute)getStation().getEStructuralFeatures().get(5);
 	}
@@ -2665,6 +2787,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_BorderStation() {
         return (EAttribute)getStation().getEStructuralFeatures().get(6);
 	}
@@ -2674,6 +2797,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_NameCaseUTF8() {
         return (EAttribute)getStation().getEStructuralFeatures().get(7);
 	}
@@ -2683,6 +2807,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_NameCaseASCII() {
         return (EAttribute)getStation().getEStructuralFeatures().get(8);
 	}
@@ -2692,6 +2817,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_ShortNameCaseASCII() {
         return (EAttribute)getStation().getEStructuralFeatures().get(9);
 	}
@@ -2701,6 +2827,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_ShortNameCaseUTF8() {
         return (EAttribute)getStation().getEStructuralFeatures().get(10);
 	}
@@ -2710,6 +2837,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_LegacyBorderPointCode() {
         return (EAttribute)getStation().getEStructuralFeatures().get(11);
 	}
@@ -2719,6 +2847,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getStation_StationCode() {
         return (EAttribute)getStation().getEStructuralFeatures().get(12);
 	}
@@ -2728,6 +2857,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCarrier() {
 		if (carrierEClass == null) {
 			carrierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(34);
@@ -2740,6 +2870,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCarrier_Code() {
         return (EAttribute)getCarrier().getEStructuralFeatures().get(0);
 	}
@@ -2749,6 +2880,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCarrier_Name() {
         return (EAttribute)getCarrier().getEStructuralFeatures().get(1);
 	}
@@ -2758,6 +2890,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCarrier_ShortName() {
         return (EAttribute)getCarrier().getEStructuralFeatures().get(2);
 	}
@@ -2767,6 +2900,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCarriers() {
 		if (carriersEClass == null) {
 			carriersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(35);
@@ -2779,6 +2913,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarriers_Carriers() {
         return (EReference)getCarriers().getEStructuralFeatures().get(0);
 	}
@@ -2788,6 +2923,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStationSet() {
 		if (stationSetEClass == null) {
 			stationSetEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(38);
@@ -2800,6 +2936,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStationSet_Stations() {
         return (EReference)getStationSet().getEStructuralFeatures().get(0);
 	}
@@ -2809,6 +2946,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getGeneralTariffModel() {
 		if (generalTariffModelEClass == null) {
 			generalTariffModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(36);
@@ -2821,6 +2959,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getGeneralTariffModel_Delivery() {
         return (EReference)getGeneralTariffModel().getEStructuralFeatures().get(0);
 	}
@@ -2830,6 +2969,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getGeneralTariffModel_FareStructure() {
         return (EReference)getGeneralTariffModel().getEStructuralFeatures().get(1);
 	}
@@ -2839,6 +2979,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDelivery() {
 		if (deliveryEClass == null) {
 			deliveryEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(37);
@@ -2851,6 +2992,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDelivery_Id() {
         return (EAttribute)getDelivery().getEStructuralFeatures().get(0);
 	}
@@ -2860,6 +3002,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDelivery_PreviousDeliveryId() {
         return (EAttribute)getDelivery().getEStructuralFeatures().get(1);
 	}
@@ -2869,6 +3012,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDelivery_ReplacedDeliveryId() {
         return (EAttribute)getDelivery().getEStructuralFeatures().get(2);
 	}
@@ -2878,6 +3022,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDelivery_Optional() {
         return (EAttribute)getDelivery().getEStructuralFeatures().get(3);
 	}
@@ -2887,6 +3032,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getDelivery_Provider() {
         return (EReference)getDelivery().getEStructuralFeatures().get(4);
 	}
@@ -2896,6 +3042,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDelivery_SchemaVersion() {
         return (EAttribute)getDelivery().getEStructuralFeatures().get(5);
 	}
@@ -2905,6 +3052,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDelivery_AcceptedSchemaVersion() {
         return (EAttribute)getDelivery().getEStructuralFeatures().get(6);
 	}
@@ -2914,6 +3062,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getDelivery_Usage() {
         return (EAttribute)getDelivery().getEStructuralFeatures().get(7);
 	}
@@ -2923,6 +3072,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAfterSalesRules() {
 		if (afterSalesRulesEClass == null) {
 			afterSalesRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(39);
@@ -2935,6 +3085,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAfterSalesRules_AfterSalesRules() {
         return (EReference)getAfterSalesRules().getEStructuralFeatures().get(0);
 	}
@@ -2944,6 +3095,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAfterSalesRule() {
 		if (afterSalesRuleEClass == null) {
 			afterSalesRuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(40);
@@ -2956,6 +3108,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAfterSalesRule_Id() {
         return (EAttribute)getAfterSalesRule().getEStructuralFeatures().get(0);
 	}
@@ -2965,6 +3118,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAfterSalesRule_DataSource() {
         return (EAttribute)getAfterSalesRule().getEStructuralFeatures().get(1);
 	}
@@ -2974,6 +3128,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAfterSalesRule_Conditions() {
         return (EReference)getAfterSalesRule().getEStructuralFeatures().get(2);
 	}
@@ -2983,6 +3138,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAfterSalesCondition() {
 		if (afterSalesConditionEClass == null) {
 			afterSalesConditionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(41);
@@ -2995,6 +3151,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAfterSalesCondition_TransactionType() {
         return (EAttribute)getAfterSalesCondition().getEStructuralFeatures().get(0);
 	}
@@ -3004,6 +3161,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAfterSalesCondition_IndividualContracts() {
         return (EAttribute)getAfterSalesCondition().getEStructuralFeatures().get(1);
 	}
@@ -3013,6 +3171,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAfterSalesCondition_CarrierFee() {
         return (EAttribute)getAfterSalesCondition().getEStructuralFeatures().get(2);
 	}
@@ -3022,6 +3181,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAfterSalesCondition_Fee() {
         return (EReference)getAfterSalesCondition().getEStructuralFeatures().get(3);
 	}
@@ -3031,6 +3191,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAfterSalesCondition_ApplicationTime() {
         return (EReference)getAfterSalesCondition().getEStructuralFeatures().get(4);
 	}
@@ -3040,6 +3201,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getApplicationTime() {
 		if (applicationTimeEClass == null) {
 			applicationTimeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(42);
@@ -3052,6 +3214,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareStructure() {
 		if (fareStructureEClass == null) {
 			fareStructureEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(43);
@@ -3064,6 +3227,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ServiceClassDefinitions() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(0);
 	}
@@ -3073,6 +3237,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ServiceLevelDefinitions() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(1);
 	}
@@ -3082,6 +3247,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_StationNames() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(2);
 	}
@@ -3091,6 +3257,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_FareStationSetDefinitions() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(3);
 	}
@@ -3100,6 +3267,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_Calendars() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(4);
 	}
@@ -3109,6 +3277,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_Texts() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(5);
 	}
@@ -3118,6 +3287,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ReductionCards() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(6);
 	}
@@ -3127,6 +3297,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_FareConstraintBundles() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(7);
 	}
@@ -3136,6 +3307,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_FareElements() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(8);
 	}
@@ -3145,6 +3317,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_CombinationConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(9);
 	}
@@ -3154,6 +3327,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_SalesAvailabilityConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(10);
 	}
@@ -3163,6 +3337,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_TravelValidityConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(11);
 	}
@@ -3172,6 +3347,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_RegionalConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(12);
 	}
@@ -3181,6 +3357,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ConnectionPoints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(13);
 	}
@@ -3190,6 +3367,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_CarrierConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(14);
 	}
@@ -3199,6 +3377,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ServiceConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(15);
 	}
@@ -3208,6 +3387,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_PassengerConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(16);
 	}
@@ -3217,6 +3397,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_TotalPassengerCombinationConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(17);
 	}
@@ -3226,6 +3407,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ReductionConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(18);
 	}
@@ -3235,6 +3417,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_PersonalDataConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(19);
 	}
@@ -3244,6 +3427,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_AfterSalesRules() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(20);
 	}
@@ -3253,6 +3437,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_Prices() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(21);
 	}
@@ -3262,6 +3447,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_FulfillmentConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(22);
 	}
@@ -3271,6 +3457,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ReservationParameters() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(23);
 	}
@@ -3280,6 +3467,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_SupportedOnlineServices() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(24);
 	}
@@ -3289,6 +3477,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_FareResourceLocations() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(25);
 	}
@@ -3298,6 +3487,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_ZoneDefinitions() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(26);
 	}
@@ -3307,6 +3497,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStructure_LuggageConstraints() {
         return (EReference)getFareStructure().getEStructuralFeatures().get(27);
 	}
@@ -3316,6 +3507,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getConnectionPoints() {
 		if (connectionPointsEClass == null) {
 			connectionPointsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(44);
@@ -3328,6 +3520,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getConnectionPoints_ConnectionPoints() {
         return (EReference)getConnectionPoints().getEStructuralFeatures().get(0);
 	}
@@ -3337,6 +3530,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getConnectionPoint() {
 		if (connectionPointEClass == null) {
 			connectionPointEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(45);
@@ -3349,6 +3543,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getConnectionPoint_Id() {
         return (EAttribute)getConnectionPoint().getEStructuralFeatures().get(0);
 	}
@@ -3358,6 +3553,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getConnectionPoint_Name() {
         return (EAttribute)getConnectionPoint().getEStructuralFeatures().get(1);
 	}
@@ -3367,6 +3563,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getConnectionPoint_LegacyBorderPointCode() {
         return (EAttribute)getConnectionPoint().getEStructuralFeatures().get(2);
 	}
@@ -3376,6 +3573,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getConnectionPoint_Description() {
         return (EAttribute)getConnectionPoint().getEStructuralFeatures().get(3);
 	}
@@ -3385,6 +3583,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getConnectionPoint_ConnectedStationSets() {
         return (EReference)getConnectionPoint().getEStructuralFeatures().get(4);
 	}
@@ -3394,6 +3593,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getConnectionPoint_DataSource() {
         return (EAttribute)getConnectionPoint().getEStructuralFeatures().get(5);
 	}
@@ -3403,6 +3603,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getConnectionPoint_NameUtf8() {
         return (EAttribute)getConnectionPoint().getEStructuralFeatures().get(6);
 	}
@@ -3412,6 +3613,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareResourceLocations() {
 		if (fareResourceLocationsEClass == null) {
 			fareResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(46);
@@ -3424,6 +3626,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareResourceLocations_TrainResourceLocations() {
         return (EReference)getFareResourceLocations().getEStructuralFeatures().get(0);
 	}
@@ -3433,6 +3636,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareResourceLocations_StationResourceLocations() {
         return (EReference)getFareResourceLocations().getEStructuralFeatures().get(1);
 	}
@@ -3442,6 +3646,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareResourceLocations_CarrierResourceLocations() {
         return (EReference)getFareResourceLocations().getEStructuralFeatures().get(2);
 	}
@@ -3451,6 +3656,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTrainResourceLocations() {
 		if (trainResourceLocationsEClass == null) {
 			trainResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(47);
@@ -3463,6 +3669,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTrainResourceLocations_TrainResourceLocations() {
         return (EReference)getTrainResourceLocations().getEStructuralFeatures().get(0);
 	}
@@ -3472,6 +3679,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStationResourceLocations() {
 		if (stationResourceLocationsEClass == null) {
 			stationResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(48);
@@ -3484,6 +3692,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStationResourceLocations_StationResourceLocations() {
         return (EReference)getStationResourceLocations().getEStructuralFeatures().get(0);
 	}
@@ -3493,6 +3702,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCarrierResourceLocations() {
 		if (carrierResourceLocationsEClass == null) {
 			carrierResourceLocationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(49);
@@ -3505,6 +3715,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarrierResourceLocations_CarrierResourceLocations() {
         return (EReference)getCarrierResourceLocations().getEStructuralFeatures().get(0);
 	}
@@ -3514,6 +3725,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTrainResourceLocation() {
 		if (trainResourceLocationEClass == null) {
 			trainResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(50);
@@ -3526,6 +3738,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTrainResourceLocation_Carrier() {
         return (EReference)getTrainResourceLocation().getEStructuralFeatures().get(0);
 	}
@@ -3535,6 +3748,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTrainResourceLocation_OnlineResources() {
         return (EReference)getTrainResourceLocation().getEStructuralFeatures().get(1);
 	}
@@ -3544,6 +3758,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTrainResourceLocation_TrainId() {
         return (EAttribute)getTrainResourceLocation().getEStructuralFeatures().get(2);
 	}
@@ -3553,6 +3768,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStationResourceLocation() {
 		if (stationResourceLocationEClass == null) {
 			stationResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(51);
@@ -3565,6 +3781,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStationResourceLocation_OnlineResources() {
         return (EReference)getStationResourceLocation().getEStructuralFeatures().get(0);
 	}
@@ -3574,6 +3791,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStationResourceLocation_Stations() {
         return (EReference)getStationResourceLocation().getEStructuralFeatures().get(1);
 	}
@@ -3583,6 +3801,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStationResourceLocation_ConnectionPoints() {
         return (EReference)getStationResourceLocation().getEStructuralFeatures().get(2);
 	}
@@ -3592,6 +3811,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCarrierResourceLocation() {
 		if (carrierResourceLocationEClass == null) {
 			carrierResourceLocationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(52);
@@ -3604,6 +3824,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarrierResourceLocation_Carrier() {
         return (EReference)getCarrierResourceLocation().getEStructuralFeatures().get(0);
 	}
@@ -3613,6 +3834,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarrierResourceLocation_ServiceBrand() {
         return (EReference)getCarrierResourceLocation().getEStructuralFeatures().get(1);
 	}
@@ -3622,6 +3844,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarrierResourceLocation_OnlineResources() {
         return (EReference)getCarrierResourceLocation().getEStructuralFeatures().get(2);
 	}
@@ -3631,6 +3854,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getOnlineResource() {
 		if (onlineResourceEClass == null) {
 			onlineResourceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(53);
@@ -3643,6 +3867,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getOnlineResource_OfferRequestType() {
         return (EAttribute)getOnlineResource().getEStructuralFeatures().get(0);
 	}
@@ -3652,6 +3877,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getOnlineResource_InterfaceType() {
         return (EAttribute)getOnlineResource().getEStructuralFeatures().get(1);
 	}
@@ -3661,6 +3887,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getOnlineResource_Version() {
         return (EAttribute)getOnlineResource().getEStructuralFeatures().get(2);
 	}
@@ -3670,6 +3897,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getOnlineResource_System() {
         return (EAttribute)getOnlineResource().getEStructuralFeatures().get(3);
 	}
@@ -3679,6 +3907,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFulfillmentConstraints() {
 		if (fulfillmentConstraintsEClass == null) {
 			fulfillmentConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(54);
@@ -3691,6 +3920,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFulfillmentConstraints_FulfillmentConstraints() {
         return (EReference)getFulfillmentConstraints().getEStructuralFeatures().get(0);
 	}
@@ -3700,6 +3930,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFulfillmentConstraint() {
 		if (fulfillmentConstraintEClass == null) {
 			fulfillmentConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(55);
@@ -3712,6 +3943,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_Id() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(0);
 	}
@@ -3721,6 +3953,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_AcceptedFulfilmentTypes() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(1);
 	}
@@ -3730,6 +3963,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_RequiredControlDataExchange() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(2);
 	}
@@ -3739,6 +3973,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_IndividualTicketingPermitted() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(3);
 	}
@@ -3748,6 +3983,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_SeparateFulFillmentRequired() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(4);
 	}
@@ -3757,6 +3993,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFulfillmentConstraint_AcceptedBarcodes() {
         return (EReference)getFulfillmentConstraint().getEStructuralFeatures().get(5);
 	}
@@ -3766,6 +4003,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFulfillmentConstraint_RequiredBarcodes() {
         return (EReference)getFulfillmentConstraint().getEStructuralFeatures().get(6);
 	}
@@ -3775,6 +4013,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_DataDescription() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(7);
 	}
@@ -3784,6 +4023,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_AcceptedBarcodeTypes() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(8);
 	}
@@ -3793,6 +4033,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFulfillmentConstraint_RequiredBarcodeTypes() {
         return (EAttribute)getFulfillmentConstraint().getEStructuralFeatures().get(9);
 	}
@@ -3802,6 +4043,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRequiredBarcodes() {
 		if (requiredBarcodesEClass == null) {
 			requiredBarcodesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(56);
@@ -3814,6 +4056,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRequiredBarcodes_RequiredBarcodes() {
         return (EAttribute)getRequiredBarcodes().getEStructuralFeatures().get(0);
 	}
@@ -3823,6 +4066,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAcceptedBarcodes() {
 		if (acceptedBarcodesEClass == null) {
 			acceptedBarcodesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(57);
@@ -3835,6 +4079,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAcceptedBarcodes_AcceptedBarcodes() {
         return (EAttribute)getAcceptedBarcodes().getEStructuralFeatures().get(0);
 	}
@@ -3844,6 +4089,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSupportedOnlineServices() {
 		if (supportedOnlineServicesEClass == null) {
 			supportedOnlineServicesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(58);
@@ -3856,6 +4102,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSupportedOnlineServices_SupportedOnlineServices() {
         return (EAttribute)getSupportedOnlineServices().getEStructuralFeatures().get(0);
 	}
@@ -3865,6 +4112,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStationNames() {
 		if (stationNamesEClass == null) {
 			stationNamesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(59);
@@ -3877,6 +4125,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getStationNames_StationName() {
         return (EReference)getStationNames().getEStructuralFeatures().get(0);
 	}
@@ -3886,6 +4135,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareElements() {
 		if (fareElementsEClass == null) {
 			fareElementsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(60);
@@ -3898,6 +4148,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElements_FareElements() {
         return (EReference)getFareElements().getEStructuralFeatures().get(0);
 	}
@@ -3907,6 +4158,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareElement() {
 		if (fareElementEClass == null) {
 			fareElementEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(61);
@@ -3919,6 +4171,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareElement_Id() {
         return (EAttribute)getFareElement().getEStructuralFeatures().get(0);
 	}
@@ -3928,6 +4181,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareElement_Type() {
         return (EAttribute)getFareElement().getEStructuralFeatures().get(1);
 	}
@@ -3937,6 +4191,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareElement_DataDescription() {
         return (EAttribute)getFareElement().getEStructuralFeatures().get(2);
 	}
@@ -3946,6 +4201,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_FareConstraintBundle() {
         return (EReference)getFareElement().getEStructuralFeatures().get(3);
 	}
@@ -3955,6 +4211,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_Text() {
         return (EReference)getFareElement().getEStructuralFeatures().get(4);
 	}
@@ -3964,6 +4221,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_Price() {
         return (EReference)getFareElement().getEStructuralFeatures().get(5);
 	}
@@ -3973,6 +4231,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_RegionalConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(6);
 	}
@@ -3982,6 +4241,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_ServiceConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(7);
 	}
@@ -3991,6 +4251,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_CarrierConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(8);
 	}
@@ -4000,6 +4261,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_ServiceClass() {
         return (EReference)getFareElement().getEStructuralFeatures().get(9);
 	}
@@ -4009,6 +4271,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_ServiceLevel() {
         return (EReference)getFareElement().getEStructuralFeatures().get(10);
 	}
@@ -4018,6 +4281,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_SalesAvailability() {
         return (EReference)getFareElement().getEStructuralFeatures().get(11);
 	}
@@ -4027,6 +4291,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_TravelValidity() {
         return (EReference)getFareElement().getEStructuralFeatures().get(12);
 	}
@@ -4036,6 +4301,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_CombinationConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(13);
 	}
@@ -4045,6 +4311,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_FareDetailDescription() {
         return (EReference)getFareElement().getEStructuralFeatures().get(14);
 	}
@@ -4054,6 +4321,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_PersonalDataConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(15);
 	}
@@ -4063,6 +4331,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_ReservationParameter() {
         return (EReference)getFareElement().getEStructuralFeatures().get(16);
 	}
@@ -4072,6 +4341,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_ReductionConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(17);
 	}
@@ -4081,6 +4351,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_FulfillmentConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(18);
 	}
@@ -4090,6 +4361,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_PassengerConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(19);
 	}
@@ -4099,6 +4371,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareElement_RegulatoryConditions() {
         return (EAttribute)getFareElement().getEStructuralFeatures().get(20);
 	}
@@ -4108,6 +4381,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_AfterSalesRule() {
         return (EReference)getFareElement().getEStructuralFeatures().get(21);
 	}
@@ -4117,6 +4391,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareElement_DataSource() {
         return (EAttribute)getFareElement().getEStructuralFeatures().get(22);
 	}
@@ -4126,6 +4401,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_LegacyAccountingIdentifier() {
         return (EReference)getFareElement().getEStructuralFeatures().get(23);
 	}
@@ -4135,6 +4411,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareElement_LegacyConversion() {
         return (EAttribute)getFareElement().getEStructuralFeatures().get(24);
 	}
@@ -4144,6 +4421,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareElement_IndividualContracts() {
         return (EAttribute)getFareElement().getEStructuralFeatures().get(25);
 	}
@@ -4153,6 +4431,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_InvolvedTcos() {
         return (EReference)getFareElement().getEStructuralFeatures().get(26);
 	}
@@ -4162,6 +4441,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareElement_LuggageConstraint() {
         return (EReference)getFareElement().getEStructuralFeatures().get(27);
 	}
@@ -4171,6 +4451,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTotalPassengerCombinationConstraints() {
 		if (totalPassengerCombinationConstraintsEClass == null) {
 			totalPassengerCombinationConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(62);
@@ -4183,6 +4464,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTotalPassengerCombinationConstraints_TotalPassengerCombinationConstraint() {
         return (EReference)getTotalPassengerCombinationConstraints().getEStructuralFeatures().get(0);
 	}
@@ -4192,6 +4474,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTotalPassengerCombinationConstraint() {
 		if (totalPassengerCombinationConstraintEClass == null) {
 			totalPassengerCombinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(63);
@@ -4204,6 +4487,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTotalPassengerCombinationConstraint_Id() {
         return (EAttribute)getTotalPassengerCombinationConstraint().getEStructuralFeatures().get(0);
 	}
@@ -4213,6 +4497,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTotalPassengerCombinationConstraint_DataDescription() {
         return (EAttribute)getTotalPassengerCombinationConstraint().getEStructuralFeatures().get(1);
 	}
@@ -4222,6 +4507,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTotalPassengerCombinationConstraint_MaxTotalPassengerWeight() {
         return (EAttribute)getTotalPassengerCombinationConstraint().getEStructuralFeatures().get(2);
 	}
@@ -4231,6 +4517,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTotalPassengerCombinationConstraint_MinTotalPassengerWeight() {
         return (EAttribute)getTotalPassengerCombinationConstraint().getEStructuralFeatures().get(3);
 	}
@@ -4240,6 +4527,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareConstraintBundles() {
 		if (fareConstraintBundlesEClass == null) {
 			fareConstraintBundlesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(64);
@@ -4252,6 +4540,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundles_FareConstraintBundles() {
         return (EReference)getFareConstraintBundles().getEStructuralFeatures().get(0);
 	}
@@ -4261,6 +4550,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareConstraintBundle() {
 		if (fareConstraintBundleEClass == null) {
 			fareConstraintBundleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(65);
@@ -4273,6 +4563,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareConstraintBundle_Id() {
         return (EAttribute)getFareConstraintBundle().getEStructuralFeatures().get(0);
 	}
@@ -4282,6 +4573,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareConstraintBundle_DefaultFareType() {
         return (EAttribute)getFareConstraintBundle().getEStructuralFeatures().get(1);
 	}
@@ -4291,6 +4583,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareConstraintBundle_DataDescription() {
         return (EAttribute)getFareConstraintBundle().getEStructuralFeatures().get(2);
 	}
@@ -4300,6 +4593,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_CarrierConstraint() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(3);
 	}
@@ -4309,6 +4603,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_SalesAvailability() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(4);
 	}
@@ -4318,6 +4613,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_TravelValidity() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(5);
 	}
@@ -4327,6 +4623,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_CombinationConstraint() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(6);
 	}
@@ -4336,6 +4633,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_PersonalDataConstraint() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(7);
 	}
@@ -4345,6 +4643,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_FulfillmentConstraint() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(8);
 	}
@@ -4354,6 +4653,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_TotalPassengerConstraint() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(9);
 	}
@@ -4363,6 +4663,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareConstraintBundle_DefaultRegulatoryConditions() {
         return (EAttribute)getFareConstraintBundle().getEStructuralFeatures().get(10);
 	}
@@ -4372,6 +4673,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareConstraintBundle_DataSource() {
         return (EAttribute)getFareConstraintBundle().getEStructuralFeatures().get(11);
 	}
@@ -4381,6 +4683,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_ConvertedBundles() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(12);
 	}
@@ -4390,6 +4693,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareConstraintBundle_LuggageConstraint() {
         return (EReference)getFareConstraintBundle().getEStructuralFeatures().get(13);
 	}
@@ -4399,6 +4703,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareStationSetDefinitions() {
 		if (fareStationSetDefinitionsEClass == null) {
 			fareStationSetDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(66);
@@ -4411,6 +4716,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStationSetDefinitions_FareStationSetDefinitions() {
         return (EReference)getFareStationSetDefinitions().getEStructuralFeatures().get(0);
 	}
@@ -4420,6 +4726,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getFareStationSetDefinitions__FindFareSet__Carrier_int() {
         return getFareStationSetDefinitions().getEOperations().get(0);
 	}
@@ -4429,6 +4736,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareStationSetDefinition() {
 		if (fareStationSetDefinitionEClass == null) {
 			fareStationSetDefinitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(67);
@@ -4441,6 +4749,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareStationSetDefinition_DataSource() {
         return (EAttribute)getFareStationSetDefinition().getEStructuralFeatures().get(0);
 	}
@@ -4450,6 +4759,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStationSetDefinition_Carrier() {
         return (EReference)getFareStationSetDefinition().getEStructuralFeatures().get(1);
 	}
@@ -4459,6 +4769,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareStationSetDefinition_Code() {
         return (EAttribute)getFareStationSetDefinition().getEStructuralFeatures().get(2);
 	}
@@ -4468,6 +4779,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareStationSetDefinition_LegacyCode() {
         return (EAttribute)getFareStationSetDefinition().getEStructuralFeatures().get(3);
 	}
@@ -4477,6 +4789,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareStationSetDefinition_Id() {
         return (EAttribute)getFareStationSetDefinition().getEStructuralFeatures().get(4);
 	}
@@ -4486,6 +4799,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareStationSetDefinition_Name() {
         return (EAttribute)getFareStationSetDefinition().getEStructuralFeatures().get(5);
 	}
@@ -4495,6 +4809,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareStationSetDefinition_NameUtf8() {
         return (EAttribute)getFareStationSetDefinition().getEStructuralFeatures().get(6);
 	}
@@ -4504,6 +4819,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareStationSetDefinition_Stations() {
         return (EReference)getFareStationSetDefinition().getEStructuralFeatures().get(7);
 	}
@@ -4513,6 +4829,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLegacyAccountingIdentifier() {
 		if (legacyAccountingIdentifierEClass == null) {
 			legacyAccountingIdentifierEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(68);
@@ -4525,6 +4842,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyAccountingIdentifier_SeriesId() {
         return (EAttribute)getLegacyAccountingIdentifier().getEStructuralFeatures().get(0);
 	}
@@ -4534,6 +4852,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyAccountingIdentifier_TariffId() {
         return (EAttribute)getLegacyAccountingIdentifier().getEStructuralFeatures().get(1);
 	}
@@ -4543,6 +4862,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLegacyAccountingIdentifier_AddSeriesId() {
         return (EAttribute)getLegacyAccountingIdentifier().getEStructuralFeatures().get(2);
 	}
@@ -4552,6 +4872,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPersonalDataConstraints() {
 		if (personalDataConstraintsEClass == null) {
 			personalDataConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(69);
@@ -4564,6 +4885,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPersonalDataConstraints_PersonalDataConstraints() {
         return (EReference)getPersonalDataConstraints().getEStructuralFeatures().get(0);
 	}
@@ -4573,6 +4895,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPersonalDataConstraint() {
 		if (personalDataConstraintEClass == null) {
 			personalDataConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(70);
@@ -4585,6 +4908,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPersonalDataConstraint_Id() {
         return (EAttribute)getPersonalDataConstraint().getEStructuralFeatures().get(0);
 	}
@@ -4594,6 +4918,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPersonalDataConstraint_RequiredPersonalData() {
         return (EReference)getPersonalDataConstraint().getEStructuralFeatures().get(1);
 	}
@@ -4603,6 +4928,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPersonalDataConstraint_AllowedChanges() {
         return (EReference)getPersonalDataConstraint().getEStructuralFeatures().get(2);
 	}
@@ -4612,6 +4938,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRequiredPersonalData() {
 		if (requiredPersonalDataEClass == null) {
 			requiredPersonalDataEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(71);
@@ -4624,6 +4951,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRequiredPersonalData_TicketHolderOnly() {
         return (EAttribute)getRequiredPersonalData().getEStructuralFeatures().get(0);
 	}
@@ -4633,6 +4961,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRequiredPersonalData_DataItem() {
         return (EAttribute)getRequiredPersonalData().getEStructuralFeatures().get(1);
 	}
@@ -4642,6 +4971,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRequiredPersonalData_Transfer() {
         return (EAttribute)getRequiredPersonalData().getEStructuralFeatures().get(2);
 	}
@@ -4651,6 +4981,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRequiredPersonalData_FulfillmentType() {
         return (EAttribute)getRequiredPersonalData().getEStructuralFeatures().get(3);
 	}
@@ -4660,6 +4991,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRequiredPersonalData_CrossBorder() {
         return (EReference)getRequiredPersonalData().getEStructuralFeatures().get(4);
 	}
@@ -4669,6 +5001,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAllowedPersonalDataChanges() {
 		if (allowedPersonalDataChangesEClass == null) {
 			allowedPersonalDataChangesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(72);
@@ -4681,6 +5014,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAllowedPersonalDataChanges_TimeLimit() {
         return (EAttribute)getAllowedPersonalDataChanges().getEStructuralFeatures().get(0);
 	}
@@ -4690,6 +5024,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAllowedPersonalDataChanges_AcceptedReason() {
         return (EAttribute)getAllowedPersonalDataChanges().getEStructuralFeatures().get(1);
 	}
@@ -4699,6 +5034,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPassengerConstraints() {
 		if (passengerConstraintsEClass == null) {
 			passengerConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(73);
@@ -4711,6 +5047,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPassengerConstraints_PassengerConstraints() {
         return (EReference)getPassengerConstraints().getEStructuralFeatures().get(0);
 	}
@@ -4720,6 +5057,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPassengerConstraint() {
 		if (passengerConstraintEClass == null) {
 			passengerConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(74);
@@ -4732,6 +5070,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_Id() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(0);
 	}
@@ -4741,6 +5080,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_TravelerType() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(1);
 	}
@@ -4750,6 +5090,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPassengerConstraint_Text() {
         return (EReference)getPassengerConstraint().getEStructuralFeatures().get(2);
 	}
@@ -4759,6 +5100,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_UpperAgeLimit() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(3);
 	}
@@ -4768,6 +5110,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_LowerAgeLimit() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(4);
 	}
@@ -4777,6 +5120,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_TravelAloneAgeLimit() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(5);
 	}
@@ -4786,6 +5130,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_ReservationAgeLimit() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(6);
 	}
@@ -4795,6 +5140,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_IsAncilliary() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(7);
 	}
@@ -4804,6 +5150,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_PassengerWeight() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(8);
 	}
@@ -4813,6 +5160,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_MaxTotalPassengerWeight() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(9);
 	}
@@ -4822,6 +5170,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_MinTotalPassengerWeight() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(10);
 	}
@@ -4831,6 +5180,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPassengerConstraint_IncludedFreePassengers() {
         return (EReference)getPassengerConstraint().getEStructuralFeatures().get(11);
 	}
@@ -4840,6 +5190,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPassengerConstraint_ExcludedPassengerCombinations() {
         return (EReference)getPassengerConstraint().getEStructuralFeatures().get(12);
 	}
@@ -4849,6 +5200,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_DataDescription() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(13);
 	}
@@ -4858,6 +5210,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerConstraint_DataSource() {
         return (EAttribute)getPassengerConstraint().getEStructuralFeatures().get(14);
 	}
@@ -4867,6 +5220,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPassengerCombinationConstraint() {
 		if (passengerCombinationConstraintEClass == null) {
 			passengerCombinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(75);
@@ -4879,6 +5233,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerCombinationConstraint_MaxNumber() {
         return (EAttribute)getPassengerCombinationConstraint().getEStructuralFeatures().get(0);
 	}
@@ -4888,6 +5243,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerCombinationConstraint_MinNumber() {
         return (EAttribute)getPassengerCombinationConstraint().getEStructuralFeatures().get(1);
 	}
@@ -4897,6 +5253,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPassengerCombinationConstraint_PassengerType() {
         return (EAttribute)getPassengerCombinationConstraint().getEStructuralFeatures().get(2);
 	}
@@ -4906,6 +5263,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPassengerCombinationConstraint_PassengerConstraint() {
         return (EReference)getPassengerCombinationConstraint().getEStructuralFeatures().get(3);
 	}
@@ -4915,6 +5273,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getIncludedFreePassengerLimit() {
 		if (includedFreePassengerLimitEClass == null) {
 			includedFreePassengerLimitEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(76);
@@ -4927,6 +5286,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIncludedFreePassengerLimit_Number() {
         return (EAttribute)getIncludedFreePassengerLimit().getEStructuralFeatures().get(0);
 	}
@@ -4936,6 +5296,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIncludedFreePassengerLimit_PassengerType() {
         return (EAttribute)getIncludedFreePassengerLimit().getEStructuralFeatures().get(1);
 	}
@@ -4945,6 +5306,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getIncludedFreePassengerLimit_PassengerConstraint() {
         return (EReference)getIncludedFreePassengerLimit().getEStructuralFeatures().get(2);
 	}
@@ -4954,6 +5316,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCombinationConstraints() {
 		if (combinationConstraintsEClass == null) {
 			combinationConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(77);
@@ -4966,6 +5329,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCombinationConstraints_CombinationConstraints() {
         return (EReference)getCombinationConstraints().getEStructuralFeatures().get(0);
 	}
@@ -4975,6 +5339,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCombinationConstraint() {
 		if (combinationConstraintEClass == null) {
 			combinationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(78);
@@ -4987,6 +5352,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCombinationConstraint_Id() {
         return (EAttribute)getCombinationConstraint().getEStructuralFeatures().get(0);
 	}
@@ -4996,6 +5362,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCombinationConstraint_DataDescription() {
         return (EAttribute)getCombinationConstraint().getEStructuralFeatures().get(1);
 	}
@@ -5005,6 +5372,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCombinationConstraint_CombinationModels() {
         return (EReference)getCombinationConstraint().getEStructuralFeatures().get(2);
 	}
@@ -5014,6 +5382,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTravelValidityConstraints() {
 		if (travelValidityConstraintsEClass == null) {
 			travelValidityConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(79);
@@ -5026,6 +5395,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraints_TravelValidityConstraints() {
         return (EReference)getTravelValidityConstraints().getEStructuralFeatures().get(0);
 	}
@@ -5035,6 +5405,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTravelValidityConstraint() {
 		if (travelValidityConstraintEClass == null) {
 			travelValidityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(80);
@@ -5047,6 +5418,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTravelValidityConstraint_Id() {
         return (EAttribute)getTravelValidityConstraint().getEStructuralFeatures().get(0);
 	}
@@ -5056,6 +5428,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTravelValidityConstraint_DataDescription() {
         return (EAttribute)getTravelValidityConstraint().getEStructuralFeatures().get(1);
 	}
@@ -5065,6 +5438,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraint_ValidDays() {
         return (EReference)getTravelValidityConstraint().getEStructuralFeatures().get(2);
 	}
@@ -5074,6 +5448,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTravelValidityConstraint_TravelDays() {
         return (EAttribute)getTravelValidityConstraint().getEStructuralFeatures().get(3);
 	}
@@ -5083,6 +5458,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraint_Range() {
         return (EReference)getTravelValidityConstraint().getEStructuralFeatures().get(4);
 	}
@@ -5092,6 +5468,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraint_ReturnConstraint() {
         return (EReference)getTravelValidityConstraint().getEStructuralFeatures().get(5);
 	}
@@ -5101,6 +5478,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraint_ExcludedTimeRange() {
         return (EReference)getTravelValidityConstraint().getEStructuralFeatures().get(6);
 	}
@@ -5110,6 +5488,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraint_TrainValidity() {
         return (EReference)getTravelValidityConstraint().getEStructuralFeatures().get(7);
 	}
@@ -5119,6 +5498,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTravelValidityConstraint_ValidityType() {
         return (EAttribute)getTravelValidityConstraint().getEStructuralFeatures().get(8);
 	}
@@ -5128,6 +5508,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraint_TripInterruptionConstraint() {
         return (EReference)getTravelValidityConstraint().getEStructuralFeatures().get(9);
 	}
@@ -5137,6 +5518,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTravelValidityConstraint_TripAllocationConstraint() {
         return (EReference)getTravelValidityConstraint().getEStructuralFeatures().get(10);
 	}
@@ -5146,6 +5528,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTrainValidity() {
 		if (trainValidityEClass == null) {
 			trainValidityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(81);
@@ -5158,6 +5541,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTrainValidity_CarrierConstraint() {
         return (EReference)getTrainValidity().getEStructuralFeatures().get(0);
 	}
@@ -5167,6 +5551,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTrainValidity_SerrviceConstraint() {
         return (EReference)getTrainValidity().getEStructuralFeatures().get(1);
 	}
@@ -5176,6 +5561,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTrainValidity_Scope() {
         return (EAttribute)getTrainValidity().getEStructuralFeatures().get(2);
 	}
@@ -5185,6 +5571,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSalesAvailabilityConstraints() {
 		if (salesAvailabilityConstraintsEClass == null) {
 			salesAvailabilityConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(83);
@@ -5197,6 +5584,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSalesAvailabilityConstraints_SalesAvailabilityConstraints() {
         return (EReference)getSalesAvailabilityConstraints().getEStructuralFeatures().get(0);
 	}
@@ -5206,6 +5594,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSalesAvailabilityConstraint() {
 		if (salesAvailabilityConstraintEClass == null) {
 			salesAvailabilityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(84);
@@ -5218,6 +5607,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSalesAvailabilityConstraint_Id() {
         return (EAttribute)getSalesAvailabilityConstraint().getEStructuralFeatures().get(0);
 	}
@@ -5227,6 +5617,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSalesAvailabilityConstraint_DataDescription() {
         return (EAttribute)getSalesAvailabilityConstraint().getEStructuralFeatures().get(1);
 	}
@@ -5236,6 +5627,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSalesAvailabilityConstraint_Restrictions() {
         return (EReference)getSalesAvailabilityConstraint().getEStructuralFeatures().get(2);
 	}
@@ -5245,6 +5637,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getSalesAvailabilityConstraint_DataSource() {
         return (EAttribute)getSalesAvailabilityConstraint().getEStructuralFeatures().get(3);
 	}
@@ -5254,6 +5647,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSalesRestriction() {
 		if (salesRestrictionEClass == null) {
 			salesRestrictionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(85);
@@ -5266,6 +5660,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSalesRestriction_SalesDates() {
         return (EReference)getSalesRestriction().getEStructuralFeatures().get(0);
 	}
@@ -5275,6 +5670,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSalesRestriction_StartOfSale() {
         return (EReference)getSalesRestriction().getEStructuralFeatures().get(1);
 	}
@@ -5284,6 +5680,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSalesRestriction_EndOfSale() {
         return (EReference)getSalesRestriction().getEStructuralFeatures().get(2);
 	}
@@ -5293,6 +5690,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getEndOfSale() {
 		if (endOfSaleEClass == null) {
 			endOfSaleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(86);
@@ -5305,6 +5703,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getStartOfSale() {
 		if (startOfSaleEClass == null) {
 			startOfSaleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(87);
@@ -5317,6 +5716,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCarrierConstraints() {
 		if (carrierConstraintsEClass == null) {
 			carrierConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(88);
@@ -5329,6 +5729,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarrierConstraints_CarrierConstraints() {
         return (EReference)getCarrierConstraints().getEStructuralFeatures().get(0);
 	}
@@ -5338,6 +5739,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCarrierConstraint() {
 		if (carrierConstraintEClass == null) {
 			carrierConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(89);
@@ -5350,6 +5752,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCarrierConstraint_Id() {
         return (EAttribute)getCarrierConstraint().getEStructuralFeatures().get(0);
 	}
@@ -5359,6 +5762,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarrierConstraint_IncludedCarriers() {
         return (EReference)getCarrierConstraint().getEStructuralFeatures().get(1);
 	}
@@ -5368,6 +5772,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCarrierConstraint_ExcludedCarriers() {
         return (EReference)getCarrierConstraint().getEStructuralFeatures().get(2);
 	}
@@ -5377,6 +5782,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCarrierConstraint_DataDescription() {
         return (EAttribute)getCarrierConstraint().getEStructuralFeatures().get(3);
 	}
@@ -5386,6 +5792,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCarrierConstraint_DataSource() {
         return (EAttribute)getCarrierConstraint().getEStructuralFeatures().get(4);
 	}
@@ -5395,6 +5802,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceConstraints() {
 		if (serviceConstraintsEClass == null) {
 			serviceConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(90);
@@ -5407,6 +5815,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceConstraints_ServiceConstraints() {
         return (EReference)getServiceConstraints().getEStructuralFeatures().get(0);
 	}
@@ -5416,6 +5825,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceConstraint() {
 		if (serviceConstraintEClass == null) {
 			serviceConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(91);
@@ -5428,6 +5838,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceConstraint_Id() {
         return (EAttribute)getServiceConstraint().getEStructuralFeatures().get(0);
 	}
@@ -5437,6 +5848,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceConstraint_IncludedServiceBrands() {
         return (EReference)getServiceConstraint().getEStructuralFeatures().get(1);
 	}
@@ -5446,6 +5858,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceConstraint_ExcludedServiceBrands() {
         return (EReference)getServiceConstraint().getEStructuralFeatures().get(2);
 	}
@@ -5455,6 +5868,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceConstraint_DataDescription() {
         return (EAttribute)getServiceConstraint().getEStructuralFeatures().get(3);
 	}
@@ -5464,6 +5878,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceConstraint_Legacy108Code() {
         return (EAttribute)getServiceConstraint().getEStructuralFeatures().get(4);
 	}
@@ -5473,6 +5888,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceConstraint_Description() {
         return (EReference)getServiceConstraint().getEStructuralFeatures().get(5);
 	}
@@ -5482,6 +5898,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRegionalConstraints() {
 		if (regionalConstraintsEClass == null) {
 			regionalConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(92);
@@ -5494,6 +5911,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalConstraints_RegionalConstraints() {
         return (EReference)getRegionalConstraints().getEStructuralFeatures().get(0);
 	}
@@ -5503,6 +5921,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRegionalConstraint() {
 		if (regionalConstraintEClass == null) {
 			regionalConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(93);
@@ -5515,6 +5934,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRegionalConstraint_Id() {
         return (EAttribute)getRegionalConstraint().getEStructuralFeatures().get(0);
 	}
@@ -5524,6 +5944,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRegionalConstraint_Distance() {
         return (EAttribute)getRegionalConstraint().getEStructuralFeatures().get(1);
 	}
@@ -5533,6 +5954,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalConstraint_EntryConnectionPoint() {
         return (EReference)getRegionalConstraint().getEStructuralFeatures().get(2);
 	}
@@ -5542,6 +5964,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalConstraint_ExitConnectionPoint() {
         return (EReference)getRegionalConstraint().getEStructuralFeatures().get(3);
 	}
@@ -5551,6 +5974,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalConstraint_RegionalValidity() {
         return (EReference)getRegionalConstraint().getEStructuralFeatures().get(4);
 	}
@@ -5560,6 +5984,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRegionalConstraint_DataSource() {
         return (EAttribute)getRegionalConstraint().getEStructuralFeatures().get(5);
 	}
@@ -5569,6 +5994,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRegionalConstraint_DataDescription() {
         return (EAttribute)getRegionalConstraint().getEStructuralFeatures().get(6);
 	}
@@ -5578,6 +6004,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalConstraint_LinkedFares() {
         return (EReference)getRegionalConstraint().getEStructuralFeatures().get(7);
 	}
@@ -5587,6 +6014,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRegionalValidity() {
 		if (regionalValidityEClass == null) {
 			regionalValidityEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(94);
@@ -5599,6 +6027,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRegionalValidity_SeqNb() {
         return (EAttribute)getRegionalValidity().getEStructuralFeatures().get(0);
 	}
@@ -5608,6 +6037,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalValidity_ViaStation() {
         return (EReference)getRegionalValidity().getEStructuralFeatures().get(1);
 	}
@@ -5617,6 +6047,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalValidity_Zone() {
         return (EReference)getRegionalValidity().getEStructuralFeatures().get(2);
 	}
@@ -5626,6 +6057,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalValidity_Line() {
         return (EReference)getRegionalValidity().getEStructuralFeatures().get(3);
 	}
@@ -5635,6 +6067,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalValidity_Polygone() {
         return (EReference)getRegionalValidity().getEStructuralFeatures().get(4);
 	}
@@ -5644,6 +6077,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalValidity_CarrierConstraint() {
         return (EReference)getRegionalValidity().getEStructuralFeatures().get(5);
 	}
@@ -5653,6 +6087,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRegionalValidity_ServiceConstraint() {
         return (EReference)getRegionalValidity().getEStructuralFeatures().get(6);
 	}
@@ -5662,6 +6097,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceLevelDefinitions() {
 		if (serviceLevelDefinitionsEClass == null) {
 			serviceLevelDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(95);
@@ -5674,6 +6110,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceLevelDefinitions_ServiceLevelDefinition() {
         return (EReference)getServiceLevelDefinitions().getEStructuralFeatures().get(0);
 	}
@@ -5683,6 +6120,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTexts() {
 		if (textsEClass == null) {
 			textsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(96);
@@ -5695,6 +6133,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTexts_Texts() {
         return (EReference)getTexts().getEStructuralFeatures().get(0);
 	}
@@ -5704,6 +6143,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getText() {
 		if (textEClass == null) {
 			textEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(97);
@@ -5716,6 +6156,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_Id() {
         return (EAttribute)getText().getEStructuralFeatures().get(0);
 	}
@@ -5725,6 +6166,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_TextUTF8() {
         return (EAttribute)getText().getEStructuralFeatures().get(1);
 	}
@@ -5734,6 +6176,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_TextICAO() {
         return (EAttribute)getText().getEStructuralFeatures().get(2);
 	}
@@ -5743,6 +6186,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_ShortTextUTF8() {
         return (EAttribute)getText().getEStructuralFeatures().get(3);
 	}
@@ -5752,6 +6196,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_ShortTextICAO() {
         return (EAttribute)getText().getEStructuralFeatures().get(4);
 	}
@@ -5761,6 +6206,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getText_Translations() {
         return (EReference)getText().getEStructuralFeatures().get(5);
 	}
@@ -5770,6 +6216,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_StandardText() {
         return (EAttribute)getText().getEStructuralFeatures().get(6);
 	}
@@ -5779,6 +6226,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getText_DataSource() {
         return (EAttribute)getText().getEStructuralFeatures().get(7);
 	}
@@ -5788,6 +6236,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTranslation() {
 		if (translationEClass == null) {
 			translationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(98);
@@ -5800,6 +6249,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTranslation_Language() {
         return (EReference)getTranslation().getEStructuralFeatures().get(0);
 	}
@@ -5809,6 +6259,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTranslation_TextUTF8() {
         return (EAttribute)getTranslation().getEStructuralFeatures().get(1);
 	}
@@ -5818,6 +6269,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTranslation_TextICAO() {
         return (EAttribute)getTranslation().getEStructuralFeatures().get(2);
 	}
@@ -5827,6 +6279,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTranslation_ShortTextUTF8() {
         return (EAttribute)getTranslation().getEStructuralFeatures().get(3);
 	}
@@ -5836,6 +6289,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTranslation_ShortTextICAO() {
         return (EAttribute)getTranslation().getEStructuralFeatures().get(4);
 	}
@@ -5845,6 +6299,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPrices() {
 		if (pricesEClass == null) {
 			pricesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(99);
@@ -5857,6 +6312,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPrices_Prices() {
         return (EReference)getPrices().getEStructuralFeatures().get(0);
 	}
@@ -5866,6 +6322,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPrice() {
 		if (priceEClass == null) {
 			priceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(100);
@@ -5878,6 +6335,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPrice_Id() {
         return (EAttribute)getPrice().getEStructuralFeatures().get(0);
 	}
@@ -5887,6 +6345,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPrice_Currencies() {
         return (EReference)getPrice().getEStructuralFeatures().get(1);
 	}
@@ -5896,6 +6355,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPrice_DataSource() {
         return (EAttribute)getPrice().getEStructuralFeatures().get(2);
 	}
@@ -5905,6 +6365,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getVATDetail() {
 		if (vatDetailEClass == null) {
 			vatDetailEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(101);
@@ -5917,6 +6378,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getVATDetail_Amount() {
         return (EAttribute)getVATDetail().getEStructuralFeatures().get(0);
 	}
@@ -5926,6 +6388,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getVATDetail_Percentage() {
         return (EAttribute)getVATDetail().getEStructuralFeatures().get(1);
 	}
@@ -5935,6 +6398,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getVATDetail_Country() {
         return (EReference)getVATDetail().getEStructuralFeatures().get(2);
 	}
@@ -5944,6 +6408,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getVATDetail_TaxId() {
         return (EAttribute)getVATDetail().getEStructuralFeatures().get(3);
 	}
@@ -5953,6 +6418,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getVATDetail_Scope() {
         return (EAttribute)getVATDetail().getEStructuralFeatures().get(4);
 	}
@@ -5962,6 +6428,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCurrencyPrice() {
 		if (currencyPriceEClass == null) {
 			currencyPriceEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(102);
@@ -5974,6 +6441,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCurrencyPrice_Currency() {
         return (EReference)getCurrencyPrice().getEStructuralFeatures().get(0);
 	}
@@ -5983,6 +6451,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCurrencyPrice_Amount() {
         return (EAttribute)getCurrencyPrice().getEStructuralFeatures().get(1);
 	}
@@ -5992,6 +6461,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCurrencyPrice_VATdetails() {
         return (EReference)getCurrencyPrice().getEStructuralFeatures().get(2);
 	}
@@ -6001,6 +6471,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceClassDefinitions() {
 		if (serviceClassDefinitionsEClass == null) {
 			serviceClassDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(103);
@@ -6013,6 +6484,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceClassDefinitions_ServiceClassDefinitions() {
         return (EReference)getServiceClassDefinitions().getEStructuralFeatures().get(0);
 	}
@@ -6022,6 +6494,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCalendars() {
 		if (calendarsEClass == null) {
 			calendarsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(104);
@@ -6034,6 +6507,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCalendars_Calendars() {
         return (EReference)getCalendars().getEStructuralFeatures().get(0);
 	}
@@ -6043,6 +6517,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCalendar() {
 		if (calendarEClass == null) {
 			calendarEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(105);
@@ -6055,6 +6530,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_Name() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(0);
 	}
@@ -6064,6 +6540,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_Id() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(1);
 	}
@@ -6073,6 +6550,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_FromDate() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(2);
 	}
@@ -6082,6 +6560,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_UntilDate() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(3);
 	}
@@ -6091,6 +6570,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_UtcOffset() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(4);
 	}
@@ -6100,6 +6580,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_Dates() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(5);
 	}
@@ -6109,6 +6590,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_DataSource() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(6);
 	}
@@ -6118,6 +6600,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_FromDateTime() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(7);
 	}
@@ -6127,6 +6610,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCalendar_UntilDateTime() {
         return (EAttribute)getCalendar().getEStructuralFeatures().get(8);
 	}
@@ -6136,6 +6620,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReservationParameters() {
 		if (reservationParametersEClass == null) {
 			reservationParametersEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(106);
@@ -6148,6 +6633,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReservationParameters_ReservationParameters() {
         return (EReference)getReservationParameters().getEStructuralFeatures().get(0);
 	}
@@ -6157,6 +6643,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReservationParameter() {
 		if (reservationParameterEClass == null) {
 			reservationParameterEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(107);
@@ -6169,6 +6656,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParameter_MandatoryReservation() {
         return (EAttribute)getReservationParameter().getEStructuralFeatures().get(0);
 	}
@@ -6178,6 +6666,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParameter_Id() {
         return (EAttribute)getReservationParameter().getEStructuralFeatures().get(1);
 	}
@@ -6187,6 +6676,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReservationParameter_Params9181() {
         return (EReference)getReservationParameter().getEStructuralFeatures().get(2);
 	}
@@ -6196,6 +6686,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReservationParameter_Options() {
         return (EReference)getReservationParameter().getEStructuralFeatures().get(3);
 	}
@@ -6205,6 +6696,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReservationParameter_MandatoryReservationForBrands() {
         return (EReference)getReservationParameter().getEStructuralFeatures().get(4);
 	}
@@ -6214,6 +6706,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParameter_MandatoryReservationsForMode() {
         return (EAttribute)getReservationParameter().getEStructuralFeatures().get(5);
 	}
@@ -6223,6 +6716,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReservationParams9181() {
 		if (reservationParams9181EClass == null) {
 			reservationParams9181EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(108);
@@ -6235,6 +6729,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParams9181_TravelClass() {
         return (EAttribute)getReservationParams9181().getEStructuralFeatures().get(0);
 	}
@@ -6244,6 +6739,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParams9181_ServiceLevel() {
         return (EAttribute)getReservationParams9181().getEStructuralFeatures().get(1);
 	}
@@ -6253,6 +6749,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParams9181_Service() {
         return (EAttribute)getReservationParams9181().getEStructuralFeatures().get(2);
 	}
@@ -6262,6 +6759,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParams9181_BerthType() {
         return (EAttribute)getReservationParams9181().getEStructuralFeatures().get(3);
 	}
@@ -6271,6 +6769,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParams9181_CoachType() {
         return (EAttribute)getReservationParams9181().getEStructuralFeatures().get(4);
 	}
@@ -6280,6 +6779,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParams9181_CompartmentType() {
         return (EAttribute)getReservationParams9181().getEStructuralFeatures().get(5);
 	}
@@ -6289,6 +6789,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationParams9181_Tariff() {
         return (EAttribute)getReservationParams9181().getEStructuralFeatures().get(6);
 	}
@@ -6298,6 +6799,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReservationOptions() {
 		if (reservationOptionsEClass == null) {
 			reservationOptionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(109);
@@ -6310,6 +6812,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReservationOptions_Preferences() {
         return (EReference)getReservationOptions().getEStructuralFeatures().get(0);
 	}
@@ -6319,6 +6822,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReservationOptions_ServiceBrands() {
         return (EReference)getReservationOptions().getEStructuralFeatures().get(1);
 	}
@@ -6328,6 +6832,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationOptions_GraphicalReservation() {
         return (EAttribute)getReservationOptions().getEStructuralFeatures().get(2);
 	}
@@ -6337,6 +6842,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReservationPreferenceGroup() {
 		if (reservationPreferenceGroupEClass == null) {
 			reservationPreferenceGroupEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(110);
@@ -6349,6 +6855,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationPreferenceGroup_Preference() {
         return (EAttribute)getReservationPreferenceGroup().getEStructuralFeatures().get(0);
 	}
@@ -6358,6 +6865,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReservationPreferenceGroup_Group() {
         return (EAttribute)getReservationPreferenceGroup().getEStructuralFeatures().get(1);
 	}
@@ -6367,6 +6875,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceClass() {
 		if (serviceClassEClass == null) {
 			serviceClassEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(111);
@@ -6379,6 +6888,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceClass_Id() {
         return (EAttribute)getServiceClass().getEStructuralFeatures().get(0);
 	}
@@ -6388,6 +6898,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceClass_ClassicClass() {
         return (EAttribute)getServiceClass().getEStructuralFeatures().get(1);
 	}
@@ -6397,6 +6908,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceClass_Text() {
         return (EReference)getServiceClass().getEStructuralFeatures().get(2);
 	}
@@ -6406,6 +6918,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getServiceLevel() {
 		if (serviceLevelEClass == null) {
 			serviceLevelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(112);
@@ -6418,6 +6931,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceLevel_Id() {
         return (EAttribute)getServiceLevel().getEStructuralFeatures().get(0);
 	}
@@ -6427,6 +6941,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceLevel_Text() {
         return (EReference)getServiceLevel().getEStructuralFeatures().get(1);
 	}
@@ -6436,6 +6951,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceLevel_CombiningServiceClasses() {
         return (EReference)getServiceLevel().getEStructuralFeatures().get(2);
 	}
@@ -6445,6 +6961,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getServiceLevel_ReservationParameter() {
         return (EReference)getServiceLevel().getEStructuralFeatures().get(3);
 	}
@@ -6454,6 +6971,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getServiceLevel_IncludesClassName() {
         return (EAttribute)getServiceLevel().getEStructuralFeatures().get(4);
 	}
@@ -6463,6 +6981,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTimeRange() {
 		if (timeRangeEClass == null) {
 			timeRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(113);
@@ -6475,6 +6994,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTimeRange_Scope() {
         return (EAttribute)getTimeRange().getEStructuralFeatures().get(0);
 	}
@@ -6484,6 +7004,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTimeRange_From() {
         return (EAttribute)getTimeRange().getEStructuralFeatures().get(1);
 	}
@@ -6493,6 +7014,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTimeRange_Until() {
         return (EAttribute)getTimeRange().getEStructuralFeatures().get(2);
 	}
@@ -6502,6 +7024,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getExcludedTimeRange() {
 		if (excludedTimeRangeEClass == null) {
 			excludedTimeRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(114);
@@ -6514,6 +7037,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getValidityRange() {
 		if (validityRangeEClass == null) {
 			validityRangeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(115);
@@ -6526,6 +7050,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValidityRange_Unit() {
         return (EAttribute)getValidityRange().getEStructuralFeatures().get(0);
 	}
@@ -6535,6 +7060,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValidityRange_Value() {
         return (EAttribute)getValidityRange().getEStructuralFeatures().get(1);
 	}
@@ -6544,6 +7070,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getValidityRange_HoursAfterMidnight() {
         return (EAttribute)getValidityRange().getEStructuralFeatures().get(2);
 	}
@@ -6553,6 +7080,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRelativeTime() {
 		if (relativeTimeEClass == null) {
 			relativeTimeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(116);
@@ -6565,6 +7093,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRelativeTime_Unit() {
         return (EAttribute)getRelativeTime().getEStructuralFeatures().get(0);
 	}
@@ -6574,6 +7103,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRelativeTime_Reference() {
         return (EAttribute)getRelativeTime().getEStructuralFeatures().get(1);
 	}
@@ -6583,6 +7113,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRelativeTime_Value() {
         return (EAttribute)getRelativeTime().getEStructuralFeatures().get(2);
 	}
@@ -6592,6 +7123,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReturnValidityConstraint() {
 		if (returnValidityConstraintEClass == null) {
 			returnValidityConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(117);
@@ -6604,6 +7136,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReturnValidityConstraint_ExcludedWeekdays() {
         return (EAttribute)getReturnValidityConstraint().getEStructuralFeatures().get(0);
 	}
@@ -6613,6 +7146,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReturnValidityConstraint_LatestReturn() {
         return (EAttribute)getReturnValidityConstraint().getEStructuralFeatures().get(1);
 	}
@@ -6622,6 +7156,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReturnValidityConstraint_EarliestReturn() {
         return (EAttribute)getReturnValidityConstraint().getEStructuralFeatures().get(2);
 	}
@@ -6631,6 +7166,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTripAllocationConstraint() {
 		if (tripAllocationConstraintEClass == null) {
 			tripAllocationConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(118);
@@ -6643,6 +7179,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripAllocationConstraint_AllocationUnit() {
         return (EAttribute)getTripAllocationConstraint().getEStructuralFeatures().get(0);
 	}
@@ -6652,6 +7189,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripAllocationConstraint_MaxUnits() {
         return (EAttribute)getTripAllocationConstraint().getEStructuralFeatures().get(1);
 	}
@@ -6661,6 +7199,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripAllocationConstraint_DurationUnit() {
         return (EAttribute)getTripAllocationConstraint().getEStructuralFeatures().get(2);
 	}
@@ -6670,6 +7209,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripAllocationConstraint_RequiredProcesses() {
         return (EAttribute)getTripAllocationConstraint().getEStructuralFeatures().get(3);
 	}
@@ -6679,6 +7219,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTripInterruptionConstraint() {
 		if (tripInterruptionConstraintEClass == null) {
 			tripInterruptionConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(119);
@@ -6691,6 +7232,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripInterruptionConstraint_MaxInterruptions() {
         return (EAttribute)getTripInterruptionConstraint().getEStructuralFeatures().get(0);
 	}
@@ -6700,6 +7242,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripInterruptionConstraint_MaxDuration() {
         return (EAttribute)getTripInterruptionConstraint().getEStructuralFeatures().get(1);
 	}
@@ -6709,6 +7252,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripInterruptionConstraint_TotalMaxDuration() {
         return (EAttribute)getTripInterruptionConstraint().getEStructuralFeatures().get(2);
 	}
@@ -6718,6 +7262,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTripInterruptionConstraint_RequiredProcesses() {
         return (EAttribute)getTripInterruptionConstraint().getEStructuralFeatures().get(3);
 	}
@@ -6727,6 +7272,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getViaStation() {
 		if (viaStationEClass == null) {
 			viaStationEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(120);
@@ -6739,6 +7285,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getViaStation_Station() {
         return (EReference)getViaStation().getEStructuralFeatures().get(0);
 	}
@@ -6748,6 +7295,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getViaStation_CarrierConstraint() {
         return (EReference)getViaStation().getEStructuralFeatures().get(1);
 	}
@@ -6757,6 +7305,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getViaStation_Carrier() {
         return (EReference)getViaStation().getEStructuralFeatures().get(2);
 	}
@@ -6766,6 +7315,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getViaStation_Route() {
         return (EReference)getViaStation().getEStructuralFeatures().get(3);
 	}
@@ -6775,6 +7325,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getViaStation_AlternativeRoutes() {
         return (EReference)getViaStation().getEStructuralFeatures().get(4);
 	}
@@ -6784,6 +7335,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getViaStation_DataDescription() {
         return (EAttribute)getViaStation().getEStructuralFeatures().get(5);
 	}
@@ -6793,6 +7345,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getViaStation_FareStationSet() {
         return (EReference)getViaStation().getEStructuralFeatures().get(6);
 	}
@@ -6802,6 +7355,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getViaStation_ServiceConstraint() {
         return (EReference)getViaStation().getEStructuralFeatures().get(7);
 	}
@@ -6811,6 +7365,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getViaStation__GetDescription() {
         return getViaStation().getEOperations().get(0);
 	}
@@ -6820,6 +7375,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAlternativeRoute() {
 		if (alternativeRouteEClass == null) {
 			alternativeRouteEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(121);
@@ -6832,6 +7388,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAlternativeRoute_Stations() {
         return (EReference)getAlternativeRoute().getEStructuralFeatures().get(0);
 	}
@@ -6841,6 +7398,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRoute() {
 		if (routeEClass == null) {
 			routeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(122);
@@ -6853,6 +7411,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRoute_Stations() {
         return (EReference)getRoute().getEStructuralFeatures().get(0);
 	}
@@ -6862,6 +7421,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getZone() {
 		if (zoneEClass == null) {
 			zoneEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(123);
@@ -6874,6 +7434,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getZone_BinaryZoneId() {
         return (EAttribute)getZone().getEStructuralFeatures().get(0);
 	}
@@ -6883,6 +7444,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getZone_ZoneId() {
         return (EAttribute)getZone().getEStructuralFeatures().get(1);
 	}
@@ -6892,6 +7454,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getZone_City() {
         return (EAttribute)getZone().getEStructuralFeatures().get(2);
 	}
@@ -6901,6 +7464,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZone_Carrier() {
         return (EReference)getZone().getEStructuralFeatures().get(3);
 	}
@@ -6910,6 +7474,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZone_EntryStation() {
         return (EReference)getZone().getEStructuralFeatures().get(4);
 	}
@@ -6919,6 +7484,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZone_TerminalStation() {
         return (EReference)getZone().getEStructuralFeatures().get(5);
 	}
@@ -6928,6 +7494,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZone_NutsCode() {
         return (EReference)getZone().getEStructuralFeatures().get(6);
 	}
@@ -6937,6 +7504,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLine() {
 		if (lineEClass == null) {
 			lineEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(124);
@@ -6949,6 +7517,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLine_BinaryZoneId() {
         return (EAttribute)getLine().getEStructuralFeatures().get(0);
 	}
@@ -6958,6 +7527,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLine_LineId() {
         return (EAttribute)getLine().getEStructuralFeatures().get(1);
 	}
@@ -6967,6 +7537,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLine_Carrier() {
         return (EReference)getLine().getEStructuralFeatures().get(2);
 	}
@@ -6976,6 +7547,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLine_EntryStation() {
         return (EReference)getLine().getEStructuralFeatures().get(3);
 	}
@@ -6985,6 +7557,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLine_TerminalStation() {
         return (EReference)getLine().getEStructuralFeatures().get(4);
 	}
@@ -6994,6 +7567,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLine_NutsCode() {
         return (EReference)getLine().getEStructuralFeatures().get(5);
 	}
@@ -7003,6 +7577,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLine_City() {
         return (EAttribute)getLine().getEStructuralFeatures().get(6);
 	}
@@ -7012,6 +7587,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPolygone() {
 		if (polygoneEClass == null) {
 			polygoneEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(125);
@@ -7024,6 +7600,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPolygone_Edge() {
         return (EReference)getPolygone().getEStructuralFeatures().get(0);
 	}
@@ -7033,6 +7610,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getEdge() {
 		if (edgeEClass == null) {
 			edgeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(126);
@@ -7045,6 +7623,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getEdge_System() {
         return (EAttribute)getEdge().getEStructuralFeatures().get(0);
 	}
@@ -7054,6 +7633,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getEdge_Accuracy() {
         return (EAttribute)getEdge().getEStructuralFeatures().get(1);
 	}
@@ -7063,6 +7643,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getEdge_Longitude() {
         return (EAttribute)getEdge().getEStructuralFeatures().get(2);
 	}
@@ -7072,6 +7653,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getEdge_Latitude() {
         return (EAttribute)getEdge().getEStructuralFeatures().get(3);
 	}
@@ -7081,6 +7663,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getZoneDefinitions() {
 		if (zoneDefinitionsEClass == null) {
 			zoneDefinitionsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(127);
@@ -7093,6 +7676,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZoneDefinitions_ZoneDefinition() {
         return (EReference)getZoneDefinitions().getEStructuralFeatures().get(0);
 	}
@@ -7102,6 +7686,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getZoneDefinition() {
 		if (zoneDefinitionEClass == null) {
 			zoneDefinitionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(128);
@@ -7114,6 +7699,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZoneDefinition_Provider() {
         return (EReference)getZoneDefinition().getEStructuralFeatures().get(0);
 	}
@@ -7123,6 +7709,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getZoneDefinition_ZoneId() {
         return (EAttribute)getZoneDefinition().getEStructuralFeatures().get(1);
 	}
@@ -7132,6 +7719,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getZoneDefinition_Name() {
         return (EAttribute)getZoneDefinition().getEStructuralFeatures().get(2);
 	}
@@ -7141,6 +7729,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZoneDefinition_Polygone() {
         return (EReference)getZoneDefinition().getEStructuralFeatures().get(3);
 	}
@@ -7150,6 +7739,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getZoneDefinition_NameUtf8() {
         return (EAttribute)getZoneDefinition().getEStructuralFeatures().get(4);
 	}
@@ -7159,6 +7749,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZoneDefinition_StationSet() {
         return (EReference)getZoneDefinition().getEStructuralFeatures().get(5);
 	}
@@ -7168,6 +7759,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getZoneDefinition_NutsCodes() {
         return (EReference)getZoneDefinition().getEStructuralFeatures().get(6);
 	}
@@ -7177,6 +7769,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCrossBorderCondition() {
 		if (crossBorderConditionEClass == null) {
 			crossBorderConditionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(129);
@@ -7189,6 +7782,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCrossBorderCondition_FromCountry() {
         return (EReference)getCrossBorderCondition().getEStructuralFeatures().get(0);
 	}
@@ -7198,6 +7792,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCrossBorderCondition_ToCountry() {
         return (EReference)getCrossBorderCondition().getEStructuralFeatures().get(1);
 	}
@@ -7207,6 +7802,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getCrossBorderCondition_AffectedServiceBrands() {
         return (EReference)getCrossBorderCondition().getEStructuralFeatures().get(2);
 	}
@@ -7216,6 +7812,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFareCombinationModel() {
 		if (fareCombinationModelEClass == null) {
 			fareCombinationModelEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(130);
@@ -7228,6 +7825,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareCombinationModel_Model() {
         return (EAttribute)getFareCombinationModel().getEStructuralFeatures().get(0);
 	}
@@ -7237,6 +7835,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareCombinationModel_CombinableCarriers() {
         return (EReference)getFareCombinationModel().getEStructuralFeatures().get(1);
 	}
@@ -7246,6 +7845,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareCombinationModel_OnlyWhenCombined() {
         return (EAttribute)getFareCombinationModel().getEStructuralFeatures().get(2);
 	}
@@ -7255,6 +7855,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareCombinationModel_AllowedAllocators() {
         return (EReference)getFareCombinationModel().getEStructuralFeatures().get(3);
 	}
@@ -7264,6 +7865,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareCombinationModel_ReferenceCluster() {
         return (EAttribute)getFareCombinationModel().getEStructuralFeatures().get(4);
 	}
@@ -7273,6 +7875,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFareCombinationModel_AllowedClusters() {
         return (EAttribute)getFareCombinationModel().getEStructuralFeatures().get(5);
 	}
@@ -7282,6 +7885,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFareCombinationModel_AllowedCommonContracts() {
         return (EReference)getFareCombinationModel().getEStructuralFeatures().get(6);
 	}
@@ -7291,6 +7895,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReductionConstraints() {
 		if (reductionConstraintsEClass == null) {
 			reductionConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(131);
@@ -7303,6 +7908,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReductionConstraints_ReductionConstraints() {
         return (EReference)getReductionConstraints().getEStructuralFeatures().get(0);
 	}
@@ -7312,6 +7918,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReductionConstraint() {
 		if (reductionConstraintEClass == null) {
 			reductionConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(132);
@@ -7324,6 +7931,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReductionConstraint_Id() {
         return (EAttribute)getReductionConstraint().getEStructuralFeatures().get(0);
 	}
@@ -7333,6 +7941,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReductionConstraint_RequiredReductionCards() {
         return (EReference)getReductionConstraint().getEStructuralFeatures().get(1);
 	}
@@ -7342,6 +7951,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReductionCards() {
 		if (reductionCardsEClass == null) {
 			reductionCardsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(133);
@@ -7354,6 +7964,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReductionCards_ReductionCards() {
         return (EReference)getReductionCards().getEStructuralFeatures().get(0);
 	}
@@ -7363,6 +7974,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getReductionCard() {
 		if (reductionCardEClass == null) {
 			reductionCardEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(134);
@@ -7375,6 +7987,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReductionCard_Id() {
         return (EAttribute)getReductionCard().getEStructuralFeatures().get(0);
 	}
@@ -7384,6 +7997,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReductionCard_CardIssuer() {
         return (EReference)getReductionCard().getEStructuralFeatures().get(1);
 	}
@@ -7393,6 +8007,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReductionCard_Name() {
         return (EReference)getReductionCard().getEStructuralFeatures().get(2);
 	}
@@ -7402,6 +8017,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReductionCard_ServiceClasses() {
         return (EReference)getReductionCard().getEStructuralFeatures().get(3);
 	}
@@ -7411,6 +8027,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReductionCard_IdRequiredForBooking() {
         return (EAttribute)getReductionCard().getEStructuralFeatures().get(4);
 	}
@@ -7420,6 +8037,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getReductionCard_IncludedReductionCards() {
         return (EReference)getReductionCard().getEStructuralFeatures().get(5);
 	}
@@ -7429,6 +8047,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getReductionCard_UicCode() {
         return (EAttribute)getReductionCard().getEStructuralFeatures().get(6);
 	}
@@ -7438,6 +8057,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRequiredReductionCard() {
 		if (requiredReductionCardEClass == null) {
 			requiredReductionCardEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(135);
@@ -7450,6 +8070,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRequiredReductionCard_CardClass() {
         return (EReference)getRequiredReductionCard().getEStructuralFeatures().get(0);
 	}
@@ -7459,6 +8080,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRequiredReductionCard_Card() {
         return (EReference)getRequiredReductionCard().getEStructuralFeatures().get(1);
 	}
@@ -7468,6 +8090,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getRequiredReductionCard_Name() {
         return (EAttribute)getRequiredReductionCard().getEStructuralFeatures().get(2);
 	}
@@ -7477,6 +8100,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLuggageConstraints() {
 		if (luggageConstraintsEClass == null) {
 			luggageConstraintsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(136);
@@ -7489,6 +8113,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLuggageConstraints_Constraints() {
         return (EReference)getLuggageConstraints().getEStructuralFeatures().get(0);
 	}
@@ -7498,6 +8123,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLuggageConstraint() {
 		if (luggageConstraintEClass == null) {
 			luggageConstraintEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(137);
@@ -7510,6 +8136,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageConstraint_Id() {
         return (EAttribute)getLuggageConstraint().getEStructuralFeatures().get(0);
 	}
@@ -7519,6 +8146,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageConstraint_MaxHandLuggage() {
         return (EAttribute)getLuggageConstraint().getEStructuralFeatures().get(1);
 	}
@@ -7528,6 +8156,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageConstraint_MaxLargeLuggage() {
         return (EAttribute)getLuggageConstraint().getEStructuralFeatures().get(2);
 	}
@@ -7537,6 +8166,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLuggageConstraint_RestrictedItems() {
         return (EReference)getLuggageConstraint().getEStructuralFeatures().get(3);
 	}
@@ -7546,6 +8176,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageConstraint_Rules() {
         return (EAttribute)getLuggageConstraint().getEStructuralFeatures().get(4);
 	}
@@ -7555,6 +8186,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageConstraint_DataDescription() {
         return (EAttribute)getLuggageConstraint().getEStructuralFeatures().get(5);
 	}
@@ -7564,6 +8196,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLuggageItemsRestriction() {
 		if (luggageItemsRestrictionEClass == null) {
 			luggageItemsRestrictionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(138);
@@ -7576,6 +8209,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageItemsRestriction_NumberOfItems() {
         return (EAttribute)getLuggageItemsRestriction().getEStructuralFeatures().get(0);
 	}
@@ -7585,6 +8219,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLuggageItemsRestriction_Dimension() {
         return (EReference)getLuggageItemsRestriction().getEStructuralFeatures().get(1);
 	}
@@ -7594,6 +8229,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLuggageDimension() {
 		if (luggageDimensionEClass == null) {
 			luggageDimensionEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(139);
@@ -7606,6 +8242,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageDimension_Value() {
         return (EAttribute)getLuggageDimension().getEStructuralFeatures().get(0);
 	}
@@ -7615,6 +8252,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLuggageDimension_Dimension() {
         return (EAttribute)getLuggageDimension().getEStructuralFeatures().get(1);
 	}
@@ -7624,6 +8262,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAddCarrierRules() {
 		if (addCarrierRulesEClass == null) {
 			addCarrierRulesEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(142);
@@ -7636,6 +8275,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAddCarrierRules_AddCarrierRule() {
         return (EReference)getAddCarrierRules().getEStructuralFeatures().get(0);
 	}
@@ -7645,6 +8285,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAddCarrierRule() {
 		if (addCarrierRuleEClass == null) {
 			addCarrierRuleEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(143);
@@ -7657,6 +8298,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAddCarrierRule_Carrier() {
         return (EReference)getAddCarrierRule().getEStructuralFeatures().get(0);
 	}
@@ -7666,6 +8308,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getAddCarrierRule_Scope() {
         return (EAttribute)getAddCarrierRule().getEStructuralFeatures().get(1);
 	}
@@ -7675,6 +8318,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAddCarrierRule_Stations() {
         return (EReference)getAddCarrierRule().getEStructuralFeatures().get(2);
 	}
@@ -7684,6 +8328,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getOnBorderStations() {
 		if (onBorderStationsEClass == null) {
 			onBorderStationsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(145);
@@ -7696,6 +8341,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getOnBorderStations_Stations() {
         return (EReference)getOnBorderStations().getEStructuralFeatures().get(0);
 	}
@@ -7705,6 +8351,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getPaymentType() {
 		if (paymentTypeEEnum == null) {
 			paymentTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(6);
@@ -7717,6 +8364,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getSalesChannel() {
 		if (salesChannelEEnum == null) {
 			salesChannelEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(11);
@@ -7729,6 +8377,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTransactionType() {
 		if (transactionTypeEEnum == null) {
 			transactionTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(13);
@@ -7741,6 +8390,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getAccountingType() {
 		if (accountingTypeEEnum == null) {
 			accountingTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(15);
@@ -7753,6 +8403,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getSettlementValueIndicator() {
 		if (settlementValueIndicatorEEnum == null) {
 			settlementValueIndicatorEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(16);
@@ -7765,6 +8416,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getSalesType() {
 		if (salesTypeEEnum == null) {
 			salesTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(17);
@@ -7777,6 +8429,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTransactionStandard() {
 		if (transactionStandardEEnum == null) {
 			transactionStandardEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(18);
@@ -7789,6 +8442,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getBoardingOrArrival() {
 		if (boardingOrArrivalEEnum == null) {
 			boardingOrArrivalEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(82);
@@ -7801,6 +8455,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getLuggageRule() {
 		if (luggageRuleEEnum == null) {
 			luggageRuleEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(140);
@@ -7813,6 +8468,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getDimension() {
 		if (dimensionEEnum == null) {
 			dimensionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(141);
@@ -7825,6 +8481,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getAddCarrierScope() {
 		if (addCarrierScopeEEnum == null) {
 			addCarrierScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(144);
@@ -7837,6 +8494,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTransportMode() {
 		if (transportModeEEnum == null) {
 			transportModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(146);
@@ -7849,6 +8507,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getStationRelationType() {
 		if (stationRelationTypeEEnum == null) {
 			stationRelationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(147);
@@ -7861,6 +8520,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getStationFareDetailType() {
 		if (stationFareDetailTypeEEnum == null) {
 			stationFareDetailTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(148);
@@ -7873,6 +8533,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getRegulatoryCondition() {
 		if (regulatoryConditionEEnum == null) {
 			regulatoryConditionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(149);
@@ -7885,6 +8546,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getAfterSalesTransactionType() {
 		if (afterSalesTransactionTypeEEnum == null) {
 			afterSalesTransactionTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(150);
@@ -7897,6 +8559,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getBarcodeTypes() {
 		if (barcodeTypesEEnum == null) {
 			barcodeTypesEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(151);
@@ -7909,6 +8572,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getBasePriceClassType() {
 		if (basePriceClassTypeEEnum == null) {
 			basePriceClassTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(152);
@@ -7921,6 +8585,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getClassicClassType() {
 		if (classicClassTypeEEnum == null) {
 			classicClassTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(153);
@@ -7933,6 +8598,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getClassId() {
 		if (classIdEEnum == null) {
 			classIdEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(154);
@@ -7945,6 +8611,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCharacterSet() {
 		if (characterSetEEnum == null) {
 			characterSetEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(155);
@@ -7957,6 +8624,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getClusters() {
 		if (clustersEEnum == null) {
 			clustersEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(156);
@@ -7969,6 +8637,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCombinationModel() {
 		if (combinationModelEEnum == null) {
 			combinationModelEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(157);
@@ -7981,6 +8650,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getControlDataExchangeTypes() {
 		if (controlDataExchangeTypesEEnum == null) {
 			controlDataExchangeTypesEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(158);
@@ -7993,6 +8663,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getDataSource() {
 		if (dataSourceEEnum == null) {
 			dataSourceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(159);
@@ -8005,6 +8676,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getDataType() {
 		if (dataTypeEEnum == null) {
 			dataTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(160);
@@ -8017,6 +8689,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getFareType() {
 		if (fareTypeEEnum == null) {
 			fareTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(161);
@@ -8029,6 +8702,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getFulfillmentType() {
 		if (fulfillmentTypeEEnum == null) {
 			fulfillmentTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(162);
@@ -8041,6 +8715,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getGeoSystem() {
 		if (geoSystemEEnum == null) {
 			geoSystemEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(163);
@@ -8053,6 +8728,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getGeoUnit() {
 		if (geoUnitEEnum == null) {
 			geoUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(164);
@@ -8065,6 +8741,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getGraphicalReservationType() {
 		if (graphicalReservationTypeEEnum == null) {
 			graphicalReservationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(165);
@@ -8077,6 +8754,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getGenericReductionCards() {
 		if (genericReductionCardsEEnum == null) {
 			genericReductionCardsEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(166);
@@ -8089,6 +8767,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getHemisphereEW() {
 		if (hemisphereEWEEnum == null) {
 			hemisphereEWEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(167);
@@ -8101,6 +8780,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getHemisphereNS() {
 		if (hemisphereNSEEnum == null) {
 			hemisphereNSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(168);
@@ -8113,6 +8793,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getInterfaceType() {
 		if (interfaceTypeEEnum == null) {
 			interfaceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(169);
@@ -8125,6 +8806,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getLegacyCalculationType() {
 		if (legacyCalculationTypeEEnum == null) {
 			legacyCalculationTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(170);
@@ -8137,6 +8819,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getLegacyPassengerType() {
 		if (legacyPassengerTypeEEnum == null) {
 			legacyPassengerTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(171);
@@ -8149,6 +8832,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getLegacySeriesType() {
 		if (legacySeriesTypeEEnum == null) {
 			legacySeriesTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(172);
@@ -8161,6 +8845,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getLegacyConversionType() {
 		if (legacyConversionTypeEEnum == null) {
 			legacyConversionTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(173);
@@ -8173,6 +8858,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getOfferRequestType() {
 		if (offerRequestTypeEEnum == null) {
 			offerRequestTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(174);
@@ -8185,6 +8871,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getOnlineServiceType() {
 		if (onlineServiceTypeEEnum == null) {
 			onlineServiceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(175);
@@ -8197,6 +8884,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getPersonalDataItemsType() {
 		if (personalDataItemsTypeEEnum == null) {
 			personalDataItemsTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(176);
@@ -8209,6 +8897,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getPersonalDataTransferType() {
 		if (personalDataTransferTypeEEnum == null) {
 			personalDataTransferTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(177);
@@ -8221,6 +8910,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getPersonalDataChangeReason() {
 		if (personalDataChangeReasonEEnum == null) {
 			personalDataChangeReasonEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(178);
@@ -8233,6 +8923,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getReservationTravelClass() {
 		if (reservationTravelClassEEnum == null) {
 			reservationTravelClassEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(179);
@@ -8245,6 +8936,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getReservationServiceLevel() {
 		if (reservationServiceLevelEEnum == null) {
 			reservationServiceLevelEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(180);
@@ -8257,6 +8949,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getReservationService() {
 		if (reservationServiceEEnum == null) {
 			reservationServiceEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(181);
@@ -8269,6 +8962,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getReservationBerthType() {
 		if (reservationBerthTypeEEnum == null) {
 			reservationBerthTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(182);
@@ -8281,6 +8975,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getRoundingType() {
 		if (roundingTypeEEnum == null) {
 			roundingTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(183);
@@ -8293,6 +8988,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getSchemaVersion() {
 		if (schemaVersionEEnum == null) {
 			schemaVersionEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(184);
@@ -8305,6 +9001,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getServiceMode() {
 		if (serviceModeEEnum == null) {
 			serviceModeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(185);
@@ -8317,6 +9014,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTimeZone() {
 		if (timeZoneEEnum == null) {
 			timeZoneEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(186);
@@ -8329,6 +9027,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTaxScope() {
 		if (taxScopeEEnum == null) {
 			taxScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(187);
@@ -8341,6 +9040,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTimeReferenceType() {
 		if (timeReferenceTypeEEnum == null) {
 			timeReferenceTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(188);
@@ -8353,6 +9053,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTimeRangeScope() {
 		if (timeRangeScopeEEnum == null) {
 			timeRangeScopeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(189);
@@ -8365,6 +9066,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTimeUnit() {
 		if (timeUnitEEnum == null) {
 			timeUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(190);
@@ -8377,6 +9079,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTravelerType() {
 		if (travelerTypeEEnum == null) {
 			travelerTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(191);
@@ -8389,6 +9092,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTripAllocationProcess() {
 		if (tripAllocationProcessEEnum == null) {
 			tripAllocationProcessEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(192);
@@ -8401,6 +9105,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTripAllocationUnit() {
 		if (tripAllocationUnitEEnum == null) {
 			tripAllocationUnitEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(193);
@@ -8413,6 +9118,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTripInterruptionProcess() {
 		if (tripInterruptionProcessEEnum == null) {
 			tripInterruptionProcessEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(194);
@@ -8425,6 +9131,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getTravelValidityType() {
 		if (travelValidityTypeEEnum == null) {
 			travelValidityTypeEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(195);
@@ -8437,6 +9144,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getWeekDay() {
 		if (weekDayEEnum == null) {
 			weekDayEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(196);
@@ -8449,6 +9157,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EDataType getDateAsDate() {
 		if (dateAsDateEDataType == null) {
 			dateAsDateEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(0);
@@ -8461,6 +9170,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EDataType getDateAsDateTime() {
 		if (dateAsDateTimeEDataType == null) {
 			dateAsDateTimeEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI).getEClassifiers().get(1);
@@ -8473,6 +9183,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AccountingFactory getAccountingFactory() {
 		return (AccountingFactory)getEFactoryInstance();
 	}

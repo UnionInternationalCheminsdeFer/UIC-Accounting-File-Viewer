@@ -67,6 +67,7 @@ public class ConnectionPointsImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ConnectionPoint> getConnectionPoints() {
 		if (connectionPoints == null) {
 			connectionPoints = new EObjectContainmentEList<ConnectionPoint>(ConnectionPoint.class, this, AccountingPackage.CONNECTION_POINTS__CONNECTION_POINTS);

@@ -68,6 +68,7 @@ public class AlternativeRouteImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ViaStation> getStations() {
 		if (stations == null) {
 			stations = new EObjectContainmentEList<ViaStation>(ViaStation.class, this, AccountingPackage.ALTERNATIVE_ROUTE__STATIONS);

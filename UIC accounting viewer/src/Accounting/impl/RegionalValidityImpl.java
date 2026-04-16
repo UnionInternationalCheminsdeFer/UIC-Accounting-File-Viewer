@@ -144,6 +144,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getSeqNb() {
 		return seqNb;
 	}
@@ -153,6 +154,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSeqNb(int newSeqNb) {
 		int oldSeqNb = seqNb;
 		seqNb = newSeqNb;
@@ -165,6 +167,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ViaStation getViaStation() {
 		return viaStation;
 	}
@@ -189,6 +192,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setViaStation(ViaStation newViaStation) {
 		if (newViaStation != viaStation) {
 			NotificationChain msgs = null;
@@ -208,6 +212,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Zone getZone() {
 		return zone;
 	}
@@ -232,6 +237,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setZone(Zone newZone) {
 		if (newZone != zone) {
 			NotificationChain msgs = null;
@@ -251,6 +257,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Line getLine() {
 		return line;
 	}
@@ -275,6 +282,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLine(Line newLine) {
 		if (newLine != line) {
 			NotificationChain msgs = null;
@@ -294,6 +302,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Polygone getPolygone() {
 		return polygone;
 	}
@@ -318,6 +327,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPolygone(Polygone newPolygone) {
 		if (newPolygone != polygone) {
 			NotificationChain msgs = null;
@@ -337,6 +347,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarrierConstraint getCarrierConstraint() {
 		if (carrierConstraint != null && carrierConstraint.eIsProxy()) {
 			InternalEObject oldCarrierConstraint = (InternalEObject)carrierConstraint;
@@ -363,6 +374,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierConstraint(CarrierConstraint newCarrierConstraint) {
 		CarrierConstraint oldCarrierConstraint = carrierConstraint;
 		carrierConstraint = newCarrierConstraint;
@@ -375,6 +387,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceConstraint getServiceConstraint() {
 		if (serviceConstraint != null && serviceConstraint.eIsProxy()) {
 			InternalEObject oldServiceConstraint = (InternalEObject)serviceConstraint;
@@ -401,6 +414,7 @@ public class RegionalValidityImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceConstraint(ServiceConstraint newServiceConstraint) {
 		ServiceConstraint oldServiceConstraint = serviceConstraint;
 		serviceConstraint = newServiceConstraint;

@@ -91,6 +91,7 @@ public class CurrencyImpl extends MinimalEObjectImpl.Container implements Curren
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -100,6 +101,7 @@ public class CurrencyImpl extends MinimalEObjectImpl.Container implements Curren
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -112,6 +114,7 @@ public class CurrencyImpl extends MinimalEObjectImpl.Container implements Curren
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getIsoCode() {
 		return isoCode;
 	}
@@ -121,6 +124,7 @@ public class CurrencyImpl extends MinimalEObjectImpl.Container implements Curren
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIsoCode(String newIsoCode) {
 		String oldIsoCode = isoCode;
 		isoCode = newIsoCode;

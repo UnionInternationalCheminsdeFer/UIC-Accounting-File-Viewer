@@ -135,6 +135,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carriers getCarriers() {
 		return carriers;
 	}
@@ -159,6 +160,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarriers(Carriers newCarriers) {
 		if (newCarriers != carriers) {
 			NotificationChain msgs = null;
@@ -178,6 +180,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Stations getStations() {
 		return stations;
 	}
@@ -202,6 +205,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStations(Stations newStations) {
 		if (newStations != stations) {
 			NotificationChain msgs = null;
@@ -221,6 +225,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Countries getCountries() {
 		return countries;
 	}
@@ -245,6 +250,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCountries(Countries newCountries) {
 		if (newCountries != countries) {
 			NotificationChain msgs = null;
@@ -264,6 +270,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Languages getLanguages() {
 		return languages;
 	}
@@ -288,6 +295,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLanguages(Languages newLanguages) {
 		if (newLanguages != languages) {
 			NotificationChain msgs = null;
@@ -307,6 +315,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Currencies getCurrencies() {
 		return currencies;
 	}
@@ -331,6 +340,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCurrencies(Currencies newCurrencies) {
 		if (newCurrencies != currencies) {
 			NotificationChain msgs = null;
@@ -350,6 +360,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceBrands getServiceBrands() {
 		return serviceBrands;
 	}
@@ -374,6 +385,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceBrands(ServiceBrands newServiceBrands) {
 		if (newServiceBrands != serviceBrands) {
 			NotificationChain msgs = null;
@@ -393,6 +405,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NUTSCodes getNutsCodes() {
 		return nutsCodes;
 	}
@@ -417,6 +430,7 @@ public class CodeListsImpl extends MinimalEObjectImpl.Container implements CodeL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNutsCodes(NUTSCodes newNutsCodes) {
 		if (newNutsCodes != nutsCodes) {
 			NotificationChain msgs = null;

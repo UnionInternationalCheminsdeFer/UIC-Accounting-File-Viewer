@@ -316,6 +316,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getFareId() {
 		return fareId;
 	}
@@ -325,6 +326,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareId(String newFareId) {
 		String oldFareId = fareId;
 		fareId = newFareId;
@@ -337,6 +339,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getNumberOfItems() {
 		return numberOfItems;
 	}
@@ -346,6 +349,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNumberOfItems(int newNumberOfItems) {
 		int oldNumberOfItems = numberOfItems;
 		numberOfItems = newNumberOfItems;
@@ -358,6 +362,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getSalesOfficeId() {
 		return salesOfficeId;
 	}
@@ -367,6 +372,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSalesOfficeId(String newSalesOfficeId) {
 		String oldSalesOfficeId = salesOfficeId;
 		salesOfficeId = newSalesOfficeId;
@@ -379,6 +385,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SalesChannel getSalesChannel() {
 		return salesChannel;
 	}
@@ -388,6 +395,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSalesChannel(SalesChannel newSalesChannel) {
 		SalesChannel oldSalesChannel = salesChannel;
 		salesChannel = newSalesChannel == null ? SALES_CHANNEL_EDEFAULT : newSalesChannel;
@@ -400,6 +408,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTrain() {
 		return train;
 	}
@@ -409,6 +418,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTrain(String newTrain) {
 		String oldTrain = train;
 		train = newTrain;
@@ -421,6 +431,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getTravelDate() {
 		return travelDate;
 	}
@@ -430,6 +441,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelDate(Date newTravelDate) {
 		Date oldTravelDate = travelDate;
 		travelDate = newTravelDate;
@@ -442,6 +454,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Country getCountryOfSale() {
 		if (countryOfSale != null && countryOfSale.eIsProxy()) {
 			InternalEObject oldCountryOfSale = (InternalEObject)countryOfSale;
@@ -468,6 +481,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCountryOfSale(Country newCountryOfSale) {
 		Country oldCountryOfSale = countryOfSale;
 		countryOfSale = newCountryOfSale;
@@ -480,6 +494,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getCarriers() {
 		if (carriers == null) {
 			carriers = new EObjectResolvingEList<Carrier>(Carrier.class, this, AccountingPackage.ACCOUNTING_SUBJECT__CARRIERS);
@@ -492,6 +507,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getRetailer() {
 		if (retailer != null && retailer.eIsProxy()) {
 			InternalEObject oldRetailer = (InternalEObject)retailer;
@@ -518,6 +534,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRetailer(Carrier newRetailer) {
 		Carrier oldRetailer = retailer;
 		retailer = newRetailer;
@@ -530,6 +547,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBilateralTariffIdentifier() {
 		return bilateralTariffIdentifier;
 	}
@@ -539,6 +557,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBilateralTariffIdentifier(String newBilateralTariffIdentifier) {
 		String oldBilateralTariffIdentifier = bilateralTariffIdentifier;
 		bilateralTariffIdentifier = newBilateralTariffIdentifier;
@@ -551,6 +570,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LegacyDescription getLegacyDescription() {
 		return legacyDescription;
 	}
@@ -575,6 +595,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLegacyDescription(LegacyDescription newLegacyDescription) {
 		if (newLegacyDescription != legacyDescription) {
 			NotificationChain msgs = null;
@@ -594,6 +615,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Boolean getInternationalJourney() {
 		return internationalJourney;
 	}
@@ -603,6 +625,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setInternationalJourney(Boolean newInternationalJourney) {
 		Boolean oldInternationalJourney = internationalJourney;
 		internationalJourney = newInternationalJourney;
@@ -615,6 +638,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTripOrigin() {
 		return tripOrigin;
 	}
@@ -624,6 +648,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTripOrigin(String newTripOrigin) {
 		String oldTripOrigin = tripOrigin;
 		tripOrigin = newTripOrigin;
@@ -636,6 +661,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTripDestination() {
 		return tripDestination;
 	}
@@ -645,6 +671,7 @@ public class AccountingSubjectImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTripDestination(String newTripDestination) {
 		String oldTripDestination = tripDestination;
 		tripDestination = newTripDestination;

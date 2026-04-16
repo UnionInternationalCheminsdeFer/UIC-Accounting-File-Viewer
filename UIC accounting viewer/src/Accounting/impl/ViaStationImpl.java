@@ -165,6 +165,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Station getStation() {
 		if (station != null && station.eIsProxy()) {
 			InternalEObject oldStation = (InternalEObject)station;
@@ -191,6 +192,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStation(Station newStation) {
 		Station oldStation = station;
 		station = newStation;
@@ -203,6 +205,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarrierConstraint getCarrierConstraint() {
 		if (carrierConstraint != null && carrierConstraint.eIsProxy()) {
 			InternalEObject oldCarrierConstraint = (InternalEObject)carrierConstraint;
@@ -229,6 +232,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierConstraint(CarrierConstraint newCarrierConstraint) {
 		CarrierConstraint oldCarrierConstraint = carrierConstraint;
 		carrierConstraint = newCarrierConstraint;
@@ -241,6 +245,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getCarrier() {
 		if (carrier != null && carrier.eIsProxy()) {
 			InternalEObject oldCarrier = (InternalEObject)carrier;
@@ -267,6 +272,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrier(Carrier newCarrier) {
 		Carrier oldCarrier = carrier;
 		carrier = newCarrier;
@@ -279,6 +285,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Route getRoute() {
 		return route;
 	}
@@ -303,6 +310,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRoute(Route newRoute) {
 		if (newRoute != route) {
 			NotificationChain msgs = null;
@@ -322,6 +330,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AlternativeRoute> getAlternativeRoutes() {
 		if (alternativeRoutes == null) {
 			alternativeRoutes = new EObjectContainmentEList<AlternativeRoute>(AlternativeRoute.class, this, AccountingPackage.VIA_STATION__ALTERNATIVE_ROUTES);
@@ -334,6 +343,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -343,6 +353,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -355,6 +366,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareStationSetDefinition getFareStationSet() {
 		if (fareStationSet != null && fareStationSet.eIsProxy()) {
 			InternalEObject oldFareStationSet = (InternalEObject)fareStationSet;
@@ -381,6 +393,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareStationSet(FareStationSetDefinition newFareStationSet) {
 		FareStationSetDefinition oldFareStationSet = fareStationSet;
 		fareStationSet = newFareStationSet;
@@ -393,6 +406,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceConstraint getServiceConstraint() {
 		if (serviceConstraint != null && serviceConstraint.eIsProxy()) {
 			InternalEObject oldServiceConstraint = (InternalEObject)serviceConstraint;
@@ -419,6 +433,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceConstraint(ServiceConstraint newServiceConstraint) {
 		ServiceConstraint oldServiceConstraint = serviceConstraint;
 		serviceConstraint = newServiceConstraint;
@@ -431,6 +446,7 @@ public class ViaStationImpl extends MinimalEObjectImpl.Container implements ViaS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDescription() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT

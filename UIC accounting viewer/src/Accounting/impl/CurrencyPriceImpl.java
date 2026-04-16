@@ -103,6 +103,7 @@ public class CurrencyPriceImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Currency getCurrency() {
 		if (currency != null && currency.eIsProxy()) {
 			InternalEObject oldCurrency = (InternalEObject)currency;
@@ -129,6 +130,7 @@ public class CurrencyPriceImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCurrency(Currency newCurrency) {
 		Currency oldCurrency = currency;
 		currency = newCurrency;
@@ -141,6 +143,7 @@ public class CurrencyPriceImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getAmount() {
 		return amount;
 	}
@@ -150,6 +153,7 @@ public class CurrencyPriceImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAmount(float newAmount) {
 		float oldAmount = amount;
 		amount = newAmount;
@@ -162,6 +166,7 @@ public class CurrencyPriceImpl extends MinimalEObjectImpl.Container implements C
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<VATDetail> getVATdetails() {
 		if (vaTdetails == null) {
 			vaTdetails = new EObjectContainmentEList<VATDetail>(VATDetail.class, this, AccountingPackage.CURRENCY_PRICE__VA_TDETAILS);

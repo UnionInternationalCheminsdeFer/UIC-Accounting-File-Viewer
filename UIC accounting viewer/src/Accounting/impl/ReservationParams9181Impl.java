@@ -200,6 +200,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationTravelClass getTravelClass() {
 		return travelClass;
 	}
@@ -209,6 +210,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelClass(ReservationTravelClass newTravelClass) {
 		ReservationTravelClass oldTravelClass = travelClass;
 		travelClass = newTravelClass == null ? TRAVEL_CLASS_EDEFAULT : newTravelClass;
@@ -221,6 +223,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationServiceLevel getServiceLevel() {
 		return serviceLevel;
 	}
@@ -230,6 +233,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceLevel(ReservationServiceLevel newServiceLevel) {
 		ReservationServiceLevel oldServiceLevel = serviceLevel;
 		serviceLevel = newServiceLevel == null ? SERVICE_LEVEL_EDEFAULT : newServiceLevel;
@@ -242,6 +246,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationService getService() {
 		return service;
 	}
@@ -251,6 +256,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setService(ReservationService newService) {
 		ReservationService oldService = service;
 		service = newService == null ? SERVICE_EDEFAULT : newService;
@@ -263,6 +269,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationBerthType getBerthType() {
 		return berthType;
 	}
@@ -272,6 +279,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBerthType(ReservationBerthType newBerthType) {
 		ReservationBerthType oldBerthType = berthType;
 		berthType = newBerthType == null ? BERTH_TYPE_EDEFAULT : newBerthType;
@@ -284,6 +292,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCoachType() {
 		return coachType;
 	}
@@ -293,6 +302,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCoachType(int newCoachType) {
 		int oldCoachType = coachType;
 		coachType = newCoachType;
@@ -305,6 +315,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCompartmentType() {
 		return compartmentType;
 	}
@@ -314,6 +325,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCompartmentType(int newCompartmentType) {
 		int oldCompartmentType = compartmentType;
 		compartmentType = newCompartmentType;
@@ -326,6 +338,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getTariff() {
 		return tariff;
 	}
@@ -335,6 +348,7 @@ public class ReservationParams9181Impl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTariff(int newTariff) {
 		int oldTariff = tariff;
 		tariff = newTariff;

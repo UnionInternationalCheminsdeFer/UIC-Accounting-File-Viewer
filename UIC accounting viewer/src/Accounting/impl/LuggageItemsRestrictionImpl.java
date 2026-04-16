@@ -91,6 +91,7 @@ public class LuggageItemsRestrictionImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getNumberOfItems() {
 		return numberOfItems;
 	}
@@ -100,6 +101,7 @@ public class LuggageItemsRestrictionImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNumberOfItems(int newNumberOfItems) {
 		int oldNumberOfItems = numberOfItems;
 		numberOfItems = newNumberOfItems;
@@ -112,6 +114,7 @@ public class LuggageItemsRestrictionImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<LuggageDimension> getDimension() {
 		if (dimension == null) {
 			dimension = new EObjectContainmentEList<LuggageDimension>(LuggageDimension.class, this, AccountingPackage.LUGGAGE_ITEMS_RESTRICTION__DIMENSION);

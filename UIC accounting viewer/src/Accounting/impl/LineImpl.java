@@ -156,6 +156,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public byte[] getBinaryZoneId() {
 		return binaryZoneId;
 	}
@@ -165,6 +166,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBinaryZoneId(byte[] newBinaryZoneId) {
 		byte[] oldBinaryZoneId = binaryZoneId;
 		binaryZoneId = newBinaryZoneId;
@@ -177,6 +179,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<String> getLineId() {
 		if (lineId == null) {
 			lineId = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.LINE__LINE_ID);
@@ -189,6 +192,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getCarrier() {
 		if (carrier != null && carrier.eIsProxy()) {
 			InternalEObject oldCarrier = (InternalEObject)carrier;
@@ -215,6 +219,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrier(Carrier newCarrier) {
 		Carrier oldCarrier = carrier;
 		carrier = newCarrier;
@@ -227,6 +232,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Station getEntryStation() {
 		if (entryStation != null && entryStation.eIsProxy()) {
 			InternalEObject oldEntryStation = (InternalEObject)entryStation;
@@ -253,6 +259,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setEntryStation(Station newEntryStation) {
 		Station oldEntryStation = entryStation;
 		entryStation = newEntryStation;
@@ -265,6 +272,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Station getTerminalStation() {
 		if (terminalStation != null && terminalStation.eIsProxy()) {
 			InternalEObject oldTerminalStation = (InternalEObject)terminalStation;
@@ -291,6 +299,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTerminalStation(Station newTerminalStation) {
 		Station oldTerminalStation = terminalStation;
 		terminalStation = newTerminalStation;
@@ -303,6 +312,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NutsCode getNutsCode() {
 		if (nutsCode != null && nutsCode.eIsProxy()) {
 			InternalEObject oldNutsCode = (InternalEObject)nutsCode;
@@ -329,6 +339,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNutsCode(NutsCode newNutsCode) {
 		NutsCode oldNutsCode = nutsCode;
 		nutsCode = newNutsCode;
@@ -341,6 +352,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCity() {
 		return city;
 	}
@@ -350,6 +362,7 @@ public class LineImpl extends MinimalEObjectImpl.Container implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCity(int newCity) {
 		int oldCity = city;
 		city = newCity;

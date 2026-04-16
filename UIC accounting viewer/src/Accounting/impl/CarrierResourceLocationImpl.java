@@ -94,6 +94,7 @@ public class CarrierResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getCarrier() {
 		if (carrier != null && carrier.eIsProxy()) {
 			InternalEObject oldCarrier = (InternalEObject)carrier;
@@ -120,6 +121,7 @@ public class CarrierResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrier(Carrier newCarrier) {
 		Carrier oldCarrier = carrier;
 		carrier = newCarrier;
@@ -132,6 +134,7 @@ public class CarrierResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceBrand getServiceBrand() {
 		if (serviceBrand != null && serviceBrand.eIsProxy()) {
 			InternalEObject oldServiceBrand = (InternalEObject)serviceBrand;
@@ -158,6 +161,7 @@ public class CarrierResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceBrand(ServiceBrand newServiceBrand) {
 		ServiceBrand oldServiceBrand = serviceBrand;
 		serviceBrand = newServiceBrand;
@@ -170,6 +174,7 @@ public class CarrierResourceLocationImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<OnlineResource> getOnlineResources() {
 		if (onlineResources == null) {
 			onlineResources = new EObjectContainmentEList<OnlineResource>(OnlineResource.class, this, AccountingPackage.CARRIER_RESOURCE_LOCATION__ONLINE_RESOURCES);

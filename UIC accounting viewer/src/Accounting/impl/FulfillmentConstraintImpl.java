@@ -212,6 +212,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -221,6 +222,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -233,6 +235,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FulfillmentType> getAcceptedFulfilmentTypes() {
 		if (acceptedFulfilmentTypes == null) {
 			acceptedFulfilmentTypes = new EDataTypeUniqueEList<FulfillmentType>(FulfillmentType.class, this, AccountingPackage.FULFILLMENT_CONSTRAINT__ACCEPTED_FULFILMENT_TYPES);
@@ -245,6 +248,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ControlDataExchangeTypes> getRequiredControlDataExchange() {
 		if (requiredControlDataExchange == null) {
 			requiredControlDataExchange = new EDataTypeUniqueEList<ControlDataExchangeTypes>(ControlDataExchangeTypes.class, this, AccountingPackage.FULFILLMENT_CONSTRAINT__REQUIRED_CONTROL_DATA_EXCHANGE);
@@ -257,6 +261,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIndividualTicketingPermitted() {
 		return individualTicketingPermitted;
 	}
@@ -266,6 +271,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIndividualTicketingPermitted(boolean newIndividualTicketingPermitted) {
 		boolean oldIndividualTicketingPermitted = individualTicketingPermitted;
 		individualTicketingPermitted = newIndividualTicketingPermitted;
@@ -278,6 +284,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isSeparateFulFillmentRequired() {
 		return separateFulFillmentRequired;
 	}
@@ -287,6 +294,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSeparateFulFillmentRequired(boolean newSeparateFulFillmentRequired) {
 		boolean oldSeparateFulFillmentRequired = separateFulFillmentRequired;
 		separateFulFillmentRequired = newSeparateFulFillmentRequired;
@@ -299,6 +307,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AcceptedBarcodes getAcceptedBarcodes() {
 		return acceptedBarcodes;
 	}
@@ -323,6 +332,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAcceptedBarcodes(AcceptedBarcodes newAcceptedBarcodes) {
 		if (newAcceptedBarcodes != acceptedBarcodes) {
 			NotificationChain msgs = null;
@@ -342,6 +352,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RequiredBarcodes getRequiredBarcodes() {
 		return requiredBarcodes;
 	}
@@ -366,6 +377,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRequiredBarcodes(RequiredBarcodes newRequiredBarcodes) {
 		if (newRequiredBarcodes != requiredBarcodes) {
 			NotificationChain msgs = null;
@@ -385,6 +397,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -394,6 +407,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -406,6 +420,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<BarcodeTypes> getAcceptedBarcodeTypes() {
 		if (acceptedBarcodeTypes == null) {
 			acceptedBarcodeTypes = new EDataTypeUniqueEList<BarcodeTypes>(BarcodeTypes.class, this, AccountingPackage.FULFILLMENT_CONSTRAINT__ACCEPTED_BARCODE_TYPES);
@@ -418,6 +433,7 @@ public class FulfillmentConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<BarcodeTypes> getRequiredBarcodeTypes() {
 		if (requiredBarcodeTypes == null) {
 			requiredBarcodeTypes = new EDataTypeUniqueEList<BarcodeTypes>(BarcodeTypes.class, this, AccountingPackage.FULFILLMENT_CONSTRAINT__REQUIRED_BARCODE_TYPES);

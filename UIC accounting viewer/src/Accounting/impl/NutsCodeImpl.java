@@ -91,6 +91,7 @@ public class NutsCodeImpl extends MinimalEObjectImpl.Container implements NutsCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -100,6 +101,7 @@ public class NutsCodeImpl extends MinimalEObjectImpl.Container implements NutsCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -112,6 +114,7 @@ public class NutsCodeImpl extends MinimalEObjectImpl.Container implements NutsCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCode() {
 		return code;
 	}
@@ -121,6 +124,7 @@ public class NutsCodeImpl extends MinimalEObjectImpl.Container implements NutsCo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCode(String newCode) {
 		String oldCode = code;
 		code = newCode;

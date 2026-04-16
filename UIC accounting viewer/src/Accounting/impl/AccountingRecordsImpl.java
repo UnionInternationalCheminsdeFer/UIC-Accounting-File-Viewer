@@ -68,6 +68,7 @@ public class AccountingRecordsImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AccountingRecord> getAccountingRecords() {
 		if (accountingRecords == null) {
 			accountingRecords = new EObjectContainmentEList<AccountingRecord>(AccountingRecord.class, this, AccountingPackage.ACCOUNTING_RECORDS__ACCOUNTING_RECORDS);

@@ -191,6 +191,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SettlementValueIndicator getSettlementValueIndicator() {
 		return settlementValueIndicator;
 	}
@@ -200,6 +201,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSettlementValueIndicator(SettlementValueIndicator newSettlementValueIndicator) {
 		SettlementValueIndicator oldSettlementValueIndicator = settlementValueIndicator;
 		settlementValueIndicator = newSettlementValueIndicator == null ? SETTLEMENT_VALUE_INDICATOR_EDEFAULT : newSettlementValueIndicator;
@@ -212,6 +214,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isGrossAmount() {
 		return grossAmount;
 	}
@@ -221,6 +224,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGrossAmount(boolean newGrossAmount) {
 		boolean oldGrossAmount = grossAmount;
 		grossAmount = newGrossAmount;
@@ -233,6 +237,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isFee() {
 		return fee;
 	}
@@ -242,6 +247,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFee(boolean newFee) {
 		boolean oldFee = fee;
 		fee = newFee;
@@ -254,6 +260,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isCommission() {
 		return commission;
 	}
@@ -263,6 +270,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCommission(boolean newCommission) {
 		boolean oldCommission = commission;
 		commission = newCommission;
@@ -275,6 +283,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Currency getCurrency() {
 		if (currency != null && currency.eIsProxy()) {
 			InternalEObject oldCurrency = (InternalEObject)currency;
@@ -301,6 +310,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCurrency(Currency newCurrency) {
 		Currency oldCurrency = currency;
 		currency = newCurrency;
@@ -313,6 +323,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BigDecimal getAmount() {
 		return amount;
 	}
@@ -322,6 +333,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAmount(BigDecimal newAmount) {
 		BigDecimal oldAmount = amount;
 		amount = newAmount;
@@ -334,6 +346,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BigDecimal getRate() {
 		return rate;
 	}
@@ -343,6 +356,7 @@ public class AccountedAmountImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRate(BigDecimal newRate) {
 		BigDecimal oldRate = rate;
 		rate = newRate;

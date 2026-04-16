@@ -166,6 +166,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -175,6 +176,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -187,6 +189,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getCardIssuer() {
 		if (cardIssuer != null && cardIssuer.eIsProxy()) {
 			InternalEObject oldCardIssuer = (InternalEObject)cardIssuer;
@@ -213,6 +216,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCardIssuer(Carrier newCardIssuer) {
 		Carrier oldCardIssuer = cardIssuer;
 		cardIssuer = newCardIssuer;
@@ -225,6 +229,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text getName() {
 		if (name != null && name.eIsProxy()) {
 			InternalEObject oldName = (InternalEObject)name;
@@ -251,6 +256,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(Text newName) {
 		Text oldName = name;
 		name = newName;
@@ -263,6 +269,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceClass> getServiceClasses() {
 		if (serviceClasses == null) {
 			serviceClasses = new EObjectResolvingEList<ServiceClass>(ServiceClass.class, this, AccountingPackage.REDUCTION_CARD__SERVICE_CLASSES);
@@ -275,6 +282,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIdRequiredForBooking() {
 		return idRequiredForBooking;
 	}
@@ -284,6 +292,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIdRequiredForBooking(boolean newIdRequiredForBooking) {
 		boolean oldIdRequiredForBooking = idRequiredForBooking;
 		idRequiredForBooking = newIdRequiredForBooking;
@@ -296,6 +305,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ReductionCard> getIncludedReductionCards() {
 		if (includedReductionCards == null) {
 			includedReductionCards = new EObjectResolvingEList<ReductionCard>(ReductionCard.class, this, AccountingPackage.REDUCTION_CARD__INCLUDED_REDUCTION_CARDS);
@@ -308,6 +318,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isUicCode() {
 		return uicCode;
 	}
@@ -317,6 +328,7 @@ public class ReductionCardImpl extends MinimalEObjectImpl.Container implements R
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUicCode(boolean newUicCode) {
 		boolean oldUicCode = uicCode;
 		uicCode = newUicCode;

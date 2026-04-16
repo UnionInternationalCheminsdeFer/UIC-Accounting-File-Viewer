@@ -131,6 +131,7 @@ public class TripAllocationConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TripAllocationUnit getAllocationUnit() {
 		return allocationUnit;
 	}
@@ -140,6 +141,7 @@ public class TripAllocationConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAllocationUnit(TripAllocationUnit newAllocationUnit) {
 		TripAllocationUnit oldAllocationUnit = allocationUnit;
 		allocationUnit = newAllocationUnit == null ? ALLOCATION_UNIT_EDEFAULT : newAllocationUnit;
@@ -152,6 +154,7 @@ public class TripAllocationConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getMaxUnits() {
 		return maxUnits;
 	}
@@ -161,6 +164,7 @@ public class TripAllocationConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxUnits(int newMaxUnits) {
 		int oldMaxUnits = maxUnits;
 		maxUnits = newMaxUnits;
@@ -173,6 +177,7 @@ public class TripAllocationConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDurationUnit() {
 		return durationUnit;
 	}
@@ -182,6 +187,7 @@ public class TripAllocationConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDurationUnit(String newDurationUnit) {
 		String oldDurationUnit = durationUnit;
 		durationUnit = newDurationUnit;
@@ -194,6 +200,7 @@ public class TripAllocationConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<TripAllocationProcess> getRequiredProcesses() {
 		if (requiredProcesses == null) {
 			requiredProcesses = new EDataTypeUniqueEList<TripAllocationProcess>(TripAllocationProcess.class, this, AccountingPackage.TRIP_ALLOCATION_CONSTRAINT__REQUIRED_PROCESSES);

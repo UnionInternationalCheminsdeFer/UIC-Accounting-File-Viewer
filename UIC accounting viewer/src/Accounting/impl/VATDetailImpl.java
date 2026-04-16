@@ -147,6 +147,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getAmount() {
 		return amount;
 	}
@@ -156,6 +157,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAmount(float newAmount) {
 		float oldAmount = amount;
 		amount = newAmount;
@@ -168,6 +170,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getPercentage() {
 		return percentage;
 	}
@@ -177,6 +180,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPercentage(float newPercentage) {
 		float oldPercentage = percentage;
 		percentage = newPercentage;
@@ -189,6 +193,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Country getCountry() {
 		if (country != null && country.eIsProxy()) {
 			InternalEObject oldCountry = (InternalEObject)country;
@@ -215,6 +220,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCountry(Country newCountry) {
 		Country oldCountry = country;
 		country = newCountry;
@@ -227,6 +233,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTaxId() {
 		return taxId;
 	}
@@ -236,6 +243,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTaxId(String newTaxId) {
 		String oldTaxId = taxId;
 		taxId = newTaxId;
@@ -248,6 +256,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TaxScope getScope() {
 		return scope;
 	}
@@ -257,6 +266,7 @@ public class VATDetailImpl extends MinimalEObjectImpl.Container implements VATDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setScope(TaxScope newScope) {
 		TaxScope oldScope = scope;
 		scope = newScope == null ? SCOPE_EDEFAULT : newScope;

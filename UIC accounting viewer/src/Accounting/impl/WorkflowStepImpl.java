@@ -93,6 +93,7 @@ public class WorkflowStepImpl extends MinimalEObjectImpl.Container implements Wo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getTime() {
 		return time;
 	}
@@ -102,6 +103,7 @@ public class WorkflowStepImpl extends MinimalEObjectImpl.Container implements Wo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTime(Date newTime) {
 		Date oldTime = time;
 		time = newTime;
@@ -114,6 +116,7 @@ public class WorkflowStepImpl extends MinimalEObjectImpl.Container implements Wo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDescription() {
 		return description;
 	}
@@ -123,6 +126,7 @@ public class WorkflowStepImpl extends MinimalEObjectImpl.Container implements Wo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDescription(String newDescription) {
 		String oldDescription = description;
 		description = newDescription;

@@ -113,6 +113,7 @@ public class AfterSalesRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -122,6 +123,7 @@ public class AfterSalesRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -134,6 +136,7 @@ public class AfterSalesRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -143,6 +146,7 @@ public class AfterSalesRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;
@@ -155,6 +159,7 @@ public class AfterSalesRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AfterSalesCondition> getConditions() {
 		if (conditions == null) {
 			conditions = new EObjectContainmentEList<AfterSalesCondition>(AfterSalesCondition.class, this, AccountingPackage.AFTER_SALES_RULE__CONDITIONS);

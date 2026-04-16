@@ -174,6 +174,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -183,6 +184,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -195,6 +197,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SalesType getSalesType() {
 		return salesType;
 	}
@@ -204,6 +207,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSalesType(SalesType newSalesType) {
 		SalesType oldSalesType = salesType;
 		salesType = newSalesType == null ? SALES_TYPE_EDEFAULT : newSalesType;
@@ -216,6 +220,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AccountingType getAccountingType() {
 		return accountingType;
 	}
@@ -225,6 +230,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAccountingType(AccountingType newAccountingType) {
 		AccountingType oldAccountingType = accountingType;
 		accountingType = newAccountingType == null ? ACCOUNTING_TYPE_EDEFAULT : newAccountingType;
@@ -237,6 +243,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TransactionStandard getTransactionStandard() {
 		return transactionStandard;
 	}
@@ -246,6 +253,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTransactionStandard(TransactionStandard newTransactionStandard) {
 		TransactionStandard oldTransactionStandard = transactionStandard;
 		transactionStandard = newTransactionStandard == null ? TRANSACTION_STANDARD_EDEFAULT : newTransactionStandard;
@@ -258,6 +266,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Transaction getTransaction() {
 		return transaction;
 	}
@@ -282,6 +291,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTransaction(Transaction newTransaction) {
 		if (newTransaction != transaction) {
 			NotificationChain msgs = null;
@@ -301,6 +311,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AccountingSubject getSubject() {
 		return subject;
 	}
@@ -325,6 +336,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSubject(AccountingSubject newSubject) {
 		if (newSubject != subject) {
 			NotificationChain msgs = null;
@@ -344,6 +356,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AccountedAmounts getAccountedAmounts() {
 		return accountedAmounts;
 	}
@@ -368,6 +381,7 @@ public class AccountingRecordImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAccountedAmounts(AccountedAmounts newAccountedAmounts) {
 		if (newAccountedAmounts != accountedAmounts) {
 			NotificationChain msgs = null;

@@ -68,6 +68,7 @@ public class ServiceLevelDefinitionsImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceLevel> getServiceLevelDefinition() {
 		if (serviceLevelDefinition == null) {
 			serviceLevelDefinition = new EObjectContainmentEList<ServiceLevel>(ServiceLevel.class, this, AccountingPackage.SERVICE_LEVEL_DEFINITIONS__SERVICE_LEVEL_DEFINITION);

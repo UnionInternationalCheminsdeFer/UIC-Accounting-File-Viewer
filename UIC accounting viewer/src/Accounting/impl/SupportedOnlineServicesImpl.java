@@ -64,6 +64,7 @@ public class SupportedOnlineServicesImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<OnlineServiceType> getSupportedOnlineServices() {
 		if (supportedOnlineServices == null) {
 			supportedOnlineServices = new EDataTypeUniqueEList<OnlineServiceType>(OnlineServiceType.class, this, AccountingPackage.SUPPORTED_ONLINE_SERVICES__SUPPORTED_ONLINE_SERVICES);

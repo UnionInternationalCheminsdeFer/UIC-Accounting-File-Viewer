@@ -87,6 +87,7 @@ public class SalesRestrictionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Calendar getSalesDates() {
 		if (salesDates != null && salesDates.eIsProxy()) {
 			InternalEObject oldSalesDates = (InternalEObject)salesDates;
@@ -113,6 +114,7 @@ public class SalesRestrictionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSalesDates(Calendar newSalesDates) {
 		Calendar oldSalesDates = salesDates;
 		salesDates = newSalesDates;
@@ -125,6 +127,7 @@ public class SalesRestrictionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StartOfSale getStartOfSale() {
 		return startOfSale;
 	}
@@ -149,6 +152,7 @@ public class SalesRestrictionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStartOfSale(StartOfSale newStartOfSale) {
 		if (newStartOfSale != startOfSale) {
 			NotificationChain msgs = null;
@@ -168,6 +172,7 @@ public class SalesRestrictionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EndOfSale getEndOfSale() {
 		return endOfSale;
 	}
@@ -192,6 +197,7 @@ public class SalesRestrictionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setEndOfSale(EndOfSale newEndOfSale) {
 		if (newEndOfSale != endOfSale) {
 			NotificationChain msgs = null;

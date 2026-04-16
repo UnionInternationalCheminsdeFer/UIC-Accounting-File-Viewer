@@ -130,6 +130,7 @@ public class TripInterruptionConstraintImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getMaxInterruptions() {
 		return maxInterruptions;
 	}
@@ -139,6 +140,7 @@ public class TripInterruptionConstraintImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxInterruptions(int newMaxInterruptions) {
 		int oldMaxInterruptions = maxInterruptions;
 		maxInterruptions = newMaxInterruptions;
@@ -151,6 +153,7 @@ public class TripInterruptionConstraintImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getMaxDuration() {
 		return maxDuration;
 	}
@@ -160,6 +163,7 @@ public class TripInterruptionConstraintImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxDuration(String newMaxDuration) {
 		String oldMaxDuration = maxDuration;
 		maxDuration = newMaxDuration;
@@ -172,6 +176,7 @@ public class TripInterruptionConstraintImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTotalMaxDuration() {
 		return totalMaxDuration;
 	}
@@ -181,6 +186,7 @@ public class TripInterruptionConstraintImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTotalMaxDuration(String newTotalMaxDuration) {
 		String oldTotalMaxDuration = totalMaxDuration;
 		totalMaxDuration = newTotalMaxDuration;
@@ -193,6 +199,7 @@ public class TripInterruptionConstraintImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<TripInterruptionProcess> getRequiredProcesses() {
 		if (requiredProcesses == null) {
 			requiredProcesses = new EDataTypeUniqueEList<TripInterruptionProcess>(TripInterruptionProcess.class, this, AccountingPackage.TRIP_INTERRUPTION_CONSTRAINT__REQUIRED_PROCESSES);

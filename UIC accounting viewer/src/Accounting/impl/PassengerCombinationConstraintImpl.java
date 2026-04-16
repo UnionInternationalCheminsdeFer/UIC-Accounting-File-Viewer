@@ -126,6 +126,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getMaxNumber() {
 		return maxNumber;
 	}
@@ -135,6 +136,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxNumber(int newMaxNumber) {
 		int oldMaxNumber = maxNumber;
 		maxNumber = newMaxNumber;
@@ -147,6 +149,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getMinNumber() {
 		return minNumber;
 	}
@@ -156,6 +159,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMinNumber(int newMinNumber) {
 		int oldMinNumber = minNumber;
 		minNumber = newMinNumber;
@@ -168,6 +172,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelerType getPassengerType() {
 		return passengerType;
 	}
@@ -177,6 +182,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerType(TravelerType newPassengerType) {
 		TravelerType oldPassengerType = passengerType;
 		passengerType = newPassengerType == null ? PASSENGER_TYPE_EDEFAULT : newPassengerType;
@@ -189,6 +195,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PassengerConstraint getPassengerConstraint() {
 		if (passengerConstraint != null && passengerConstraint.eIsProxy()) {
 			InternalEObject oldPassengerConstraint = (InternalEObject)passengerConstraint;
@@ -215,6 +222,7 @@ public class PassengerCombinationConstraintImpl extends MinimalEObjectImpl.Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerConstraint(PassengerConstraint newPassengerConstraint) {
 		PassengerConstraint oldPassengerConstraint = passengerConstraint;
 		passengerConstraint = newPassengerConstraint;

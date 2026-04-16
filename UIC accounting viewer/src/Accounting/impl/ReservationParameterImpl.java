@@ -148,6 +148,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isMandatoryReservation() {
 		return mandatoryReservation;
 	}
@@ -157,6 +158,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMandatoryReservation(boolean newMandatoryReservation) {
 		boolean oldMandatoryReservation = mandatoryReservation;
 		mandatoryReservation = newMandatoryReservation;
@@ -169,6 +171,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -178,6 +181,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -190,6 +194,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationParams9181 getParams9181() {
 		return params9181;
 	}
@@ -214,6 +219,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setParams9181(ReservationParams9181 newParams9181) {
 		if (newParams9181 != params9181) {
 			NotificationChain msgs = null;
@@ -233,6 +239,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationOptions getOptions() {
 		return options;
 	}
@@ -257,6 +264,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOptions(ReservationOptions newOptions) {
 		if (newOptions != options) {
 			NotificationChain msgs = null;
@@ -276,6 +284,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceBrand> getMandatoryReservationForBrands() {
 		if (mandatoryReservationForBrands == null) {
 			mandatoryReservationForBrands = new EObjectResolvingEList<ServiceBrand>(ServiceBrand.class, this, AccountingPackage.RESERVATION_PARAMETER__MANDATORY_RESERVATION_FOR_BRANDS);
@@ -288,6 +297,7 @@ public class ReservationParameterImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceMode> getMandatoryReservationsForMode() {
 		if (mandatoryReservationsForMode == null) {
 			mandatoryReservationsForMode = new EDataTypeUniqueEList<ServiceMode>(ServiceMode.class, this, AccountingPackage.RESERVATION_PARAMETER__MANDATORY_RESERVATIONS_FOR_MODE);

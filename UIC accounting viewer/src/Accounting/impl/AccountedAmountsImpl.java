@@ -68,6 +68,7 @@ public class AccountedAmountsImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AccountedAmount> getAccountedAmounts() {
 		if (accountedAmounts == null) {
 			accountedAmounts = new EObjectContainmentEList<AccountedAmount>(AccountedAmount.class, this, AccountingPackage.ACCOUNTED_AMOUNTS__ACCOUNTED_AMOUNTS);

@@ -68,6 +68,7 @@ public class TrainResourceLocationsImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<TrainResourceLocation> getTrainResourceLocations() {
 		if (trainResourceLocations == null) {
 			trainResourceLocations = new EObjectContainmentEList<TrainResourceLocation>(TrainResourceLocation.class, this, AccountingPackage.TRAIN_RESOURCE_LOCATIONS__TRAIN_RESOURCE_LOCATIONS);

@@ -135,6 +135,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OfferRequestType getOfferRequestType() {
 		return offerRequestType;
 	}
@@ -144,6 +145,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOfferRequestType(OfferRequestType newOfferRequestType) {
 		OfferRequestType oldOfferRequestType = offerRequestType;
 		offerRequestType = newOfferRequestType == null ? OFFER_REQUEST_TYPE_EDEFAULT : newOfferRequestType;
@@ -156,6 +158,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public InterfaceType getInterfaceType() {
 		return interfaceType;
 	}
@@ -165,6 +168,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setInterfaceType(InterfaceType newInterfaceType) {
 		InterfaceType oldInterfaceType = interfaceType;
 		interfaceType = newInterfaceType == null ? INTERFACE_TYPE_EDEFAULT : newInterfaceType;
@@ -177,6 +181,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getVersion() {
 		return version;
 	}
@@ -186,6 +191,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setVersion(String newVersion) {
 		String oldVersion = version;
 		version = newVersion;
@@ -198,6 +204,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getSystem() {
 		return system;
 	}
@@ -207,6 +214,7 @@ public class OnlineResourceImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSystem(String newSystem) {
 		String oldSystem = system;
 		system = newSystem;

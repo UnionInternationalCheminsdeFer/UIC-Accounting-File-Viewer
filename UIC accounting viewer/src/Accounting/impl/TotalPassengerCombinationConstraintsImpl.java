@@ -68,6 +68,7 @@ public class TotalPassengerCombinationConstraintsImpl extends MinimalEObjectImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<TotalPassengerCombinationConstraint> getTotalPassengerCombinationConstraint() {
 		if (totalPassengerCombinationConstraint == null) {
 			totalPassengerCombinationConstraint = new EObjectContainmentEList<TotalPassengerCombinationConstraint>(TotalPassengerCombinationConstraint.class, this, AccountingPackage.TOTAL_PASSENGER_COMBINATION_CONSTRAINTS__TOTAL_PASSENGER_COMBINATION_CONSTRAINT);

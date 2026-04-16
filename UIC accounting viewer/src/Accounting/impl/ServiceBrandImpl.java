@@ -176,6 +176,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCode() {
 		return code;
 	}
@@ -185,6 +186,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCode(int newCode) {
 		int oldCode = code;
 		code = newCode;
@@ -197,6 +199,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -206,6 +209,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -218,6 +222,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getAbbreviation() {
 		return abbreviation;
 	}
@@ -227,6 +232,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAbbreviation(String newAbbreviation) {
 		String oldAbbreviation = abbreviation;
 		abbreviation = newAbbreviation;
@@ -239,6 +245,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDescription() {
 		return description;
 	}
@@ -248,6 +255,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDescription(String newDescription) {
 		String oldDescription = description;
 		description = newDescription;
@@ -260,6 +268,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TransportMode getTransportMode() {
 		return transportMode;
 	}
@@ -269,6 +278,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTransportMode(TransportMode newTransportMode) {
 		TransportMode oldTransportMode = transportMode;
 		transportMode = newTransportMode == null ? TRANSPORT_MODE_EDEFAULT : newTransportMode;
@@ -281,6 +291,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getLocalLanguageName() {
 		return localLanguageName;
 	}
@@ -290,6 +301,7 @@ public class ServiceBrandImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLocalLanguageName(String newLocalLanguageName) {
 		String oldLocalLanguageName = localLanguageName;
 		localLanguageName = newLocalLanguageName;

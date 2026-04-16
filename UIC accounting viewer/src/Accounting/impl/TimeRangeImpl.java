@@ -113,6 +113,7 @@ public class TimeRangeImpl extends MinimalEObjectImpl.Container implements TimeR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TimeRangeScope getScope() {
 		return scope;
 	}
@@ -122,6 +123,7 @@ public class TimeRangeImpl extends MinimalEObjectImpl.Container implements TimeR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setScope(TimeRangeScope newScope) {
 		TimeRangeScope oldScope = scope;
 		scope = newScope == null ? SCOPE_EDEFAULT : newScope;
@@ -134,6 +136,7 @@ public class TimeRangeImpl extends MinimalEObjectImpl.Container implements TimeR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getFrom() {
 		return from;
 	}
@@ -143,6 +146,7 @@ public class TimeRangeImpl extends MinimalEObjectImpl.Container implements TimeR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFrom(int newFrom) {
 		int oldFrom = from;
 		from = newFrom;
@@ -155,6 +159,7 @@ public class TimeRangeImpl extends MinimalEObjectImpl.Container implements TimeR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getUntil() {
 		return until;
 	}
@@ -164,6 +169,7 @@ public class TimeRangeImpl extends MinimalEObjectImpl.Container implements TimeR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUntil(int newUntil) {
 		int oldUntil = until;
 		until = newUntil;

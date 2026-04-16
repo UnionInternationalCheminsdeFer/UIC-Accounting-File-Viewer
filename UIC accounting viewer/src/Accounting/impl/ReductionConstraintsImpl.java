@@ -68,6 +68,7 @@ public class ReductionConstraintsImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ReductionConstraint> getReductionConstraints() {
 		if (reductionConstraints == null) {
 			reductionConstraints = new EObjectContainmentEList<ReductionConstraint>(ReductionConstraint.class, this, AccountingPackage.REDUCTION_CONSTRAINTS__REDUCTION_CONSTRAINTS);

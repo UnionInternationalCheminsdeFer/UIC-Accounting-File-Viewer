@@ -103,6 +103,7 @@ public class TrainResourceLocationImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getCarrier() {
 		if (carrier != null && carrier.eIsProxy()) {
 			InternalEObject oldCarrier = (InternalEObject)carrier;
@@ -129,6 +130,7 @@ public class TrainResourceLocationImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrier(Carrier newCarrier) {
 		Carrier oldCarrier = carrier;
 		carrier = newCarrier;
@@ -141,6 +143,7 @@ public class TrainResourceLocationImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<OnlineResource> getOnlineResources() {
 		if (onlineResources == null) {
 			onlineResources = new EObjectContainmentEList<OnlineResource>(OnlineResource.class, this, AccountingPackage.TRAIN_RESOURCE_LOCATION__ONLINE_RESOURCES);
@@ -153,6 +156,7 @@ public class TrainResourceLocationImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTrainId() {
 		return trainId;
 	}
@@ -162,6 +166,7 @@ public class TrainResourceLocationImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTrainId(String newTrainId) {
 		String oldTrainId = trainId;
 		trainId = newTrainId;

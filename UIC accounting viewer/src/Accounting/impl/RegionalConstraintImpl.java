@@ -191,6 +191,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -200,6 +201,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -212,6 +214,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getDistance() {
 		return distance;
 	}
@@ -221,6 +224,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDistance(float newDistance) {
 		float oldDistance = distance;
 		distance = newDistance;
@@ -233,6 +237,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConnectionPoint getEntryConnectionPoint() {
 		if (entryConnectionPoint != null && entryConnectionPoint.eIsProxy()) {
 			InternalEObject oldEntryConnectionPoint = (InternalEObject)entryConnectionPoint;
@@ -259,6 +264,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setEntryConnectionPoint(ConnectionPoint newEntryConnectionPoint) {
 		ConnectionPoint oldEntryConnectionPoint = entryConnectionPoint;
 		entryConnectionPoint = newEntryConnectionPoint;
@@ -271,6 +277,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConnectionPoint getExitConnectionPoint() {
 		if (exitConnectionPoint != null && exitConnectionPoint.eIsProxy()) {
 			InternalEObject oldExitConnectionPoint = (InternalEObject)exitConnectionPoint;
@@ -297,6 +304,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setExitConnectionPoint(ConnectionPoint newExitConnectionPoint) {
 		ConnectionPoint oldExitConnectionPoint = exitConnectionPoint;
 		exitConnectionPoint = newExitConnectionPoint;
@@ -309,6 +317,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<RegionalValidity> getRegionalValidity() {
 		if (regionalValidity == null) {
 			regionalValidity = new EObjectContainmentEList<RegionalValidity>(RegionalValidity.class, this, AccountingPackage.REGIONAL_CONSTRAINT__REGIONAL_VALIDITY);
@@ -321,6 +330,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -330,6 +340,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;
@@ -342,6 +353,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -351,6 +363,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -363,6 +376,7 @@ public class RegionalConstraintImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FareElement> getLinkedFares() {
 		if (linkedFares == null) {
 			linkedFares = new EObjectResolvingEList<FareElement>(FareElement.class, this, AccountingPackage.REGIONAL_CONSTRAINT__LINKED_FARES);

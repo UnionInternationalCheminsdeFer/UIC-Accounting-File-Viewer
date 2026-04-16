@@ -113,6 +113,7 @@ public class ValidityRangeImpl extends MinimalEObjectImpl.Container implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TimeUnit getUnit() {
 		return unit;
 	}
@@ -122,6 +123,7 @@ public class ValidityRangeImpl extends MinimalEObjectImpl.Container implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUnit(TimeUnit newUnit) {
 		TimeUnit oldUnit = unit;
 		unit = newUnit == null ? UNIT_EDEFAULT : newUnit;
@@ -134,6 +136,7 @@ public class ValidityRangeImpl extends MinimalEObjectImpl.Container implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getValue() {
 		return value;
 	}
@@ -143,6 +146,7 @@ public class ValidityRangeImpl extends MinimalEObjectImpl.Container implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValue(float newValue) {
 		float oldValue = value;
 		value = newValue;
@@ -155,6 +159,7 @@ public class ValidityRangeImpl extends MinimalEObjectImpl.Container implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getHoursAfterMidnight() {
 		return hoursAfterMidnight;
 	}
@@ -164,6 +169,7 @@ public class ValidityRangeImpl extends MinimalEObjectImpl.Container implements V
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHoursAfterMidnight(float newHoursAfterMidnight) {
 		float oldHoursAfterMidnight = hoursAfterMidnight;
 		hoursAfterMidnight = newHoursAfterMidnight;

@@ -134,6 +134,7 @@ public class SalesAvailabilityConstraintImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -143,6 +144,7 @@ public class SalesAvailabilityConstraintImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -155,6 +157,7 @@ public class SalesAvailabilityConstraintImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -164,6 +167,7 @@ public class SalesAvailabilityConstraintImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -176,6 +180,7 @@ public class SalesAvailabilityConstraintImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<SalesRestriction> getRestrictions() {
 		if (restrictions == null) {
 			restrictions = new EObjectContainmentEList<SalesRestriction>(SalesRestriction.class, this, AccountingPackage.SALES_AVAILABILITY_CONSTRAINT__RESTRICTIONS);
@@ -188,6 +193,7 @@ public class SalesAvailabilityConstraintImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -197,6 +203,7 @@ public class SalesAvailabilityConstraintImpl extends MinimalEObjectImpl.Containe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;

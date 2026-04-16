@@ -168,6 +168,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getProvider() {
 		if (provider != null && provider.eIsProxy()) {
 			InternalEObject oldProvider = (InternalEObject)provider;
@@ -194,6 +195,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setProvider(Carrier newProvider) {
 		Carrier oldProvider = provider;
 		provider = newProvider;
@@ -206,6 +208,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getZoneId() {
 		return zoneId;
 	}
@@ -215,6 +218,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setZoneId(String newZoneId) {
 		String oldZoneId = zoneId;
 		zoneId = newZoneId;
@@ -227,6 +231,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -236,6 +241,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -248,6 +254,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Polygone getPolygone() {
 		return polygone;
 	}
@@ -272,6 +279,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPolygone(Polygone newPolygone) {
 		if (newPolygone != polygone) {
 			NotificationChain msgs = null;
@@ -291,6 +299,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getNameUtf8() {
 		return nameUtf8;
 	}
@@ -300,6 +309,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNameUtf8(String newNameUtf8) {
 		String oldNameUtf8 = nameUtf8;
 		nameUtf8 = newNameUtf8;
@@ -312,6 +322,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StationSet getStationSet() {
 		return stationSet;
 	}
@@ -336,6 +347,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStationSet(StationSet newStationSet) {
 		if (newStationSet != stationSet) {
 			NotificationChain msgs = null;
@@ -355,6 +367,7 @@ public class ZoneDefinitionImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NutsCode> getNutsCodes() {
 		if (nutsCodes == null) {
 			nutsCodes = new EObjectResolvingEList<NutsCode>(NutsCode.class, this, AccountingPackage.ZONE_DEFINITION__NUTS_CODES);

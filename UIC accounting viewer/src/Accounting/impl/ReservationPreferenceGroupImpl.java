@@ -87,6 +87,7 @@ public class ReservationPreferenceGroupImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<String> getPreference() {
 		if (preference == null) {
 			preference = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.RESERVATION_PREFERENCE_GROUP__PREFERENCE);
@@ -99,6 +100,7 @@ public class ReservationPreferenceGroupImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getGroup() {
 		return group;
 	}
@@ -108,6 +110,7 @@ public class ReservationPreferenceGroupImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGroup(String newGroup) {
 		String oldGroup = group;
 		group = newGroup;

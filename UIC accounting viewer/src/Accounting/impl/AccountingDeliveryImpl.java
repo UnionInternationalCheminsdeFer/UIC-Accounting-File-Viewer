@@ -181,6 +181,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -190,6 +191,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -202,6 +204,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getCreationDate() {
 		return creationDate;
 	}
@@ -211,6 +214,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCreationDate(Date newCreationDate) {
 		Date oldCreationDate = creationDate;
 		creationDate = newCreationDate;
@@ -223,6 +227,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getInvoicingParty() {
 		if (invoicingParty != null && invoicingParty.eIsProxy()) {
 			InternalEObject oldInvoicingParty = (InternalEObject)invoicingParty;
@@ -249,6 +254,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setInvoicingParty(Carrier newInvoicingParty) {
 		Carrier oldInvoicingParty = invoicingParty;
 		invoicingParty = newInvoicingParty;
@@ -261,6 +267,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getInvoiceRecipient() {
 		if (invoiceRecipient != null && invoiceRecipient.eIsProxy()) {
 			InternalEObject oldInvoiceRecipient = (InternalEObject)invoiceRecipient;
@@ -287,6 +294,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setInvoiceRecipient(Carrier newInvoiceRecipient) {
 		Carrier oldInvoiceRecipient = invoiceRecipient;
 		invoiceRecipient = newInvoiceRecipient;
@@ -299,6 +307,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getStartStatementPeriod() {
 		return startStatementPeriod;
 	}
@@ -308,6 +317,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStartStatementPeriod(Date newStartStatementPeriod) {
 		Date oldStartStatementPeriod = startStatementPeriod;
 		startStatementPeriod = newStartStatementPeriod;
@@ -320,6 +330,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getEndStatementPeriod() {
 		return endStatementPeriod;
 	}
@@ -329,6 +340,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setEndStatementPeriod(Date newEndStatementPeriod) {
 		Date oldEndStatementPeriod = endStatementPeriod;
 		endStatementPeriod = newEndStatementPeriod;
@@ -341,6 +353,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PaymentType getPaymentType() {
 		return paymentType;
 	}
@@ -350,6 +363,7 @@ public class AccountingDeliveryImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPaymentType(PaymentType newPaymentType) {
 		PaymentType oldPaymentType = paymentType;
 		paymentType = newPaymentType == null ? PAYMENT_TYPE_EDEFAULT : newPaymentType;

@@ -8,12 +8,29 @@ Bundle-ClassPath: .
 Bundle-Activator: Accounting.provider.AccountingEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Export-Package: Accounting,
  Accounting.provider
 Require-Bundle: org.eclipse.core.runtime,
  UIC_accounting_viewer;visibility:=reexport,
  org.eclipse.emf.edit;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Import-Package: Accounting.provider,
- org.eclipse.jface.preference
+Import-Package: jakarta.annotation;version="[2.1.0,3.0.0)",
+ org.eclipse.core.runtime;version="[3.7.0,4.0.0)",
+ org.eclipse.emf.common;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.common.command;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.common.notify;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.common.ui;version="[2.27.0,3.0.0)",
+ org.eclipse.emf.common.util;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.ecore;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.impl;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.plugin;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.util;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.edit;version="[2.23.0,3.0.0)",
+ org.eclipse.emf.edit.command;version="[2.23.0,3.0.0)",
+ org.eclipse.emf.edit.domain;version="[2.23.0,3.0.0)",
+ org.eclipse.emf.edit.provider;version="[2.23.0,3.0.0)",
+ org.eclipse.emf.edit.ui;version="[2.27.0,3.0.0)",
+ org.eclipse.jface,
+ org.eclipse.jface.preference,
+ org.osgi.framework;version="[1.10.0,2.0.0)"

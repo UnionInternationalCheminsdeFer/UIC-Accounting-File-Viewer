@@ -156,6 +156,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelerType getPassengerType() {
 		return passengerType;
 	}
@@ -165,6 +166,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerType(TravelerType newPassengerType) {
 		TravelerType oldPassengerType = passengerType;
 		passengerType = newPassengerType == null ? PASSENGER_TYPE_EDEFAULT : newPassengerType;
@@ -177,6 +179,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ClassicClassType getClassCode() {
 		return classCode;
 	}
@@ -186,6 +189,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setClassCode(ClassicClassType newClassCode) {
 		ClassicClassType oldClassCode = classCode;
 		classCode = newClassCode == null ? CLASS_CODE_EDEFAULT : newClassCode;
@@ -198,6 +202,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getSeries() {
 		return series;
 	}
@@ -207,6 +212,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSeries(int newSeries) {
 		int oldSeries = series;
 		series = newSeries;
@@ -219,6 +225,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getTariff() {
 		return tariff;
 	}
@@ -228,6 +235,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTariff(int newTariff) {
 		int oldTariff = tariff;
 		tariff = newTariff;
@@ -240,6 +248,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDialogNumber() {
 		return dialogNumber;
 	}
@@ -249,6 +258,7 @@ public class LegacyDescriptionImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDialogNumber(String newDialogNumber) {
 		String oldDialogNumber = dialogNumber;
 		dialogNumber = newDialogNumber;

@@ -109,6 +109,7 @@ public class ReturnValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<WeekDay> getExcludedWeekdays() {
 		if (excludedWeekdays == null) {
 			excludedWeekdays = new EDataTypeUniqueEList<WeekDay>(WeekDay.class, this, AccountingPackage.RETURN_VALIDITY_CONSTRAINT__EXCLUDED_WEEKDAYS);
@@ -121,6 +122,7 @@ public class ReturnValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLatestReturn() {
 		return latestReturn;
 	}
@@ -130,6 +132,7 @@ public class ReturnValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLatestReturn(int newLatestReturn) {
 		int oldLatestReturn = latestReturn;
 		latestReturn = newLatestReturn;
@@ -142,6 +145,7 @@ public class ReturnValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getEarliestReturn() {
 		return earliestReturn;
 	}
@@ -151,6 +155,7 @@ public class ReturnValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setEarliestReturn(int newEarliestReturn) {
 		int oldEarliestReturn = earliestReturn;
 		earliestReturn = newEarliestReturn;

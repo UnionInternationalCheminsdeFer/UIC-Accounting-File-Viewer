@@ -167,6 +167,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -176,6 +177,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -188,6 +190,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getMaxHandLuggage() {
 		return maxHandLuggage;
 	}
@@ -197,6 +200,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxHandLuggage(int newMaxHandLuggage) {
 		int oldMaxHandLuggage = maxHandLuggage;
 		maxHandLuggage = newMaxHandLuggage;
@@ -209,6 +213,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getMaxLargeLuggage() {
 		return maxLargeLuggage;
 	}
@@ -218,6 +223,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxLargeLuggage(int newMaxLargeLuggage) {
 		int oldMaxLargeLuggage = maxLargeLuggage;
 		maxLargeLuggage = newMaxLargeLuggage;
@@ -230,6 +236,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<LuggageItemsRestriction> getRestrictedItems() {
 		if (restrictedItems == null) {
 			restrictedItems = new EObjectContainmentEList<LuggageItemsRestriction>(LuggageItemsRestriction.class, this, AccountingPackage.LUGGAGE_CONSTRAINT__RESTRICTED_ITEMS);
@@ -242,6 +249,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<LuggageRule> getRules() {
 		if (rules == null) {
 			rules = new EDataTypeUniqueEList<LuggageRule>(LuggageRule.class, this, AccountingPackage.LUGGAGE_CONSTRAINT__RULES);
@@ -254,6 +262,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -263,6 +272,7 @@ public class LuggageConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;

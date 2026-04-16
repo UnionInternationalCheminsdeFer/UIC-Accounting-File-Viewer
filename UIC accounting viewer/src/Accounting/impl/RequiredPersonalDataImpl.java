@@ -138,6 +138,7 @@ public class RequiredPersonalDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isTicketHolderOnly() {
 		return ticketHolderOnly;
 	}
@@ -147,6 +148,7 @@ public class RequiredPersonalDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTicketHolderOnly(boolean newTicketHolderOnly) {
 		boolean oldTicketHolderOnly = ticketHolderOnly;
 		ticketHolderOnly = newTicketHolderOnly;
@@ -159,6 +161,7 @@ public class RequiredPersonalDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PersonalDataItemsType getDataItem() {
 		return dataItem;
 	}
@@ -168,6 +171,7 @@ public class RequiredPersonalDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataItem(PersonalDataItemsType newDataItem) {
 		PersonalDataItemsType oldDataItem = dataItem;
 		dataItem = newDataItem == null ? DATA_ITEM_EDEFAULT : newDataItem;
@@ -180,6 +184,7 @@ public class RequiredPersonalDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PersonalDataTransferType> getTransfer() {
 		if (transfer == null) {
 			transfer = new EDataTypeUniqueEList<PersonalDataTransferType>(PersonalDataTransferType.class, this, AccountingPackage.REQUIRED_PERSONAL_DATA__TRANSFER);
@@ -192,6 +197,7 @@ public class RequiredPersonalDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FulfillmentType> getFulfillmentType() {
 		if (fulfillmentType == null) {
 			fulfillmentType = new EDataTypeUniqueEList<FulfillmentType>(FulfillmentType.class, this, AccountingPackage.REQUIRED_PERSONAL_DATA__FULFILLMENT_TYPE);
@@ -204,6 +210,7 @@ public class RequiredPersonalDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CrossBorderCondition> getCrossBorder() {
 		if (crossBorder == null) {
 			crossBorder = new EObjectContainmentEList<CrossBorderCondition>(CrossBorderCondition.class, this, AccountingPackage.REQUIRED_PERSONAL_DATA__CROSS_BORDER);

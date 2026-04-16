@@ -68,6 +68,7 @@ public class RouteImpl extends MinimalEObjectImpl.Container implements Route {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ViaStation> getStations() {
 		if (stations == null) {
 			stations = new EObjectContainmentEList<ViaStation>(ViaStation.class, this, AccountingPackage.ROUTE__STATIONS);

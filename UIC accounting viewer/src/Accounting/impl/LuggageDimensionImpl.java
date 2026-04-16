@@ -92,6 +92,7 @@ public class LuggageDimensionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
@@ -101,6 +102,7 @@ public class LuggageDimensionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValue(int newValue) {
 		int oldValue = value;
 		value = newValue;
@@ -113,6 +115,7 @@ public class LuggageDimensionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Dimension getDimension() {
 		return dimension;
 	}
@@ -122,6 +125,7 @@ public class LuggageDimensionImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDimension(Dimension newDimension) {
 		Dimension oldDimension = dimension;
 		dimension = newDimension == null ? DIMENSION_EDEFAULT : newDimension;

@@ -67,6 +67,7 @@ public class CarriersImpl extends MinimalEObjectImpl.Container implements Carrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getCarriers() {
 		if (carriers == null) {
 			carriers = new EObjectContainmentEList<Carrier>(Carrier.class, this, AccountingPackage.CARRIERS__CARRIERS);

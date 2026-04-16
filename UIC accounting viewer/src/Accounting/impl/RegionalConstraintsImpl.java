@@ -68,6 +68,7 @@ public class RegionalConstraintsImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<RegionalConstraint> getRegionalConstraints() {
 		if (regionalConstraints == null) {
 			regionalConstraints = new EObjectContainmentEList<RegionalConstraint>(RegionalConstraint.class, this, AccountingPackage.REGIONAL_CONSTRAINTS__REGIONAL_CONSTRAINTS);

@@ -68,6 +68,7 @@ public class AfterSalesRulesImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AfterSalesRule> getAfterSalesRules() {
 		if (afterSalesRules == null) {
 			afterSalesRules = new EObjectContainmentEList<AfterSalesRule>(AfterSalesRule.class, this, AccountingPackage.AFTER_SALES_RULES__AFTER_SALES_RULES);

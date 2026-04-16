@@ -92,6 +92,7 @@ public class AllowedPersonalDataChangesImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getTimeLimit() {
 		return timeLimit;
 	}
@@ -101,6 +102,7 @@ public class AllowedPersonalDataChangesImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTimeLimit(float newTimeLimit) {
 		float oldTimeLimit = timeLimit;
 		timeLimit = newTimeLimit;
@@ -113,6 +115,7 @@ public class AllowedPersonalDataChangesImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PersonalDataChangeReason getAcceptedReason() {
 		return acceptedReason;
 	}
@@ -122,6 +125,7 @@ public class AllowedPersonalDataChangesImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAcceptedReason(PersonalDataChangeReason newAcceptedReason) {
 		PersonalDataChangeReason oldAcceptedReason = acceptedReason;
 		acceptedReason = newAcceptedReason == null ? ACCEPTED_REASON_EDEFAULT : newAcceptedReason;

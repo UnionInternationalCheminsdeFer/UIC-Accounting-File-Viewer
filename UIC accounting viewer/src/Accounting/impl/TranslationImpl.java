@@ -146,6 +146,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Language getLanguage() {
 		if (language != null && language.eIsProxy()) {
 			InternalEObject oldLanguage = (InternalEObject)language;
@@ -172,6 +173,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLanguage(Language newLanguage) {
 		Language oldLanguage = language;
 		language = newLanguage;
@@ -184,6 +186,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTextUTF8() {
 		return textUTF8;
 	}
@@ -193,6 +196,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTextUTF8(String newTextUTF8) {
 		String oldTextUTF8 = textUTF8;
 		textUTF8 = newTextUTF8;
@@ -205,6 +209,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTextICAO() {
 		return textICAO;
 	}
@@ -214,6 +219,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTextICAO(String newTextICAO) {
 		String oldTextICAO = textICAO;
 		textICAO = newTextICAO;
@@ -226,6 +232,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getShortTextUTF8() {
 		return shortTextUTF8;
 	}
@@ -235,6 +242,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShortTextUTF8(String newShortTextUTF8) {
 		String oldShortTextUTF8 = shortTextUTF8;
 		shortTextUTF8 = newShortTextUTF8;
@@ -247,6 +255,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getShortTextICAO() {
 		return shortTextICAO;
 	}
@@ -256,6 +265,7 @@ public class TranslationImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShortTextICAO(String newShortTextICAO) {
 		String oldShortTextICAO = shortTextICAO;
 		shortTextICAO = newShortTextICAO;

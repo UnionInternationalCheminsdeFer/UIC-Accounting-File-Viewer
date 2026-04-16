@@ -96,6 +96,7 @@ public class TrainValidityImpl extends MinimalEObjectImpl.Container implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarrierConstraint getCarrierConstraint() {
 		if (carrierConstraint != null && carrierConstraint.eIsProxy()) {
 			InternalEObject oldCarrierConstraint = (InternalEObject)carrierConstraint;
@@ -122,6 +123,7 @@ public class TrainValidityImpl extends MinimalEObjectImpl.Container implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierConstraint(CarrierConstraint newCarrierConstraint) {
 		CarrierConstraint oldCarrierConstraint = carrierConstraint;
 		carrierConstraint = newCarrierConstraint;
@@ -134,6 +136,7 @@ public class TrainValidityImpl extends MinimalEObjectImpl.Container implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceConstraint getSerrviceConstraint() {
 		if (serrviceConstraint != null && serrviceConstraint.eIsProxy()) {
 			InternalEObject oldSerrviceConstraint = (InternalEObject)serrviceConstraint;
@@ -160,6 +163,7 @@ public class TrainValidityImpl extends MinimalEObjectImpl.Container implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSerrviceConstraint(ServiceConstraint newSerrviceConstraint) {
 		ServiceConstraint oldSerrviceConstraint = serrviceConstraint;
 		serrviceConstraint = newSerrviceConstraint;
@@ -172,6 +176,7 @@ public class TrainValidityImpl extends MinimalEObjectImpl.Container implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BoardingOrArrival getScope() {
 		return scope;
 	}
@@ -181,6 +186,7 @@ public class TrainValidityImpl extends MinimalEObjectImpl.Container implements T
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setScope(BoardingOrArrival newScope) {
 		BoardingOrArrival oldScope = scope;
 		scope = newScope == null ? SCOPE_EDEFAULT : newScope;

@@ -134,6 +134,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GeoSystem getSystem() {
 		return system;
 	}
@@ -143,6 +144,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSystem(GeoSystem newSystem) {
 		GeoSystem oldSystem = system;
 		system = newSystem == null ? SYSTEM_EDEFAULT : newSystem;
@@ -155,6 +157,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getAccuracy() {
 		return accuracy;
 	}
@@ -164,6 +167,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAccuracy(float newAccuracy) {
 		float oldAccuracy = accuracy;
 		accuracy = newAccuracy;
@@ -176,6 +180,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getLongitude() {
 		return longitude;
 	}
@@ -185,6 +190,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLongitude(float newLongitude) {
 		float oldLongitude = longitude;
 		longitude = newLongitude;
@@ -197,6 +203,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getLatitude() {
 		return latitude;
 	}
@@ -206,6 +213,7 @@ public class EdgeImpl extends MinimalEObjectImpl.Container implements Edge {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLatitude(float newLatitude) {
 		float oldLatitude = latitude;
 		latitude = newLatitude;

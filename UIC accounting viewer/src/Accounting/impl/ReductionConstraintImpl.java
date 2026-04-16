@@ -91,6 +91,7 @@ public class ReductionConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -100,6 +101,7 @@ public class ReductionConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -112,6 +114,7 @@ public class ReductionConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<RequiredReductionCard> getRequiredReductionCards() {
 		if (requiredReductionCards == null) {
 			requiredReductionCards = new EObjectContainmentEList<RequiredReductionCard>(RequiredReductionCard.class, this, AccountingPackage.REDUCTION_CONSTRAINT__REQUIRED_REDUCTION_CARDS);

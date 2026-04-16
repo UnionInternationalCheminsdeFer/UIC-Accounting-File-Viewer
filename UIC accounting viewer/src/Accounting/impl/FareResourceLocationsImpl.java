@@ -87,6 +87,7 @@ public class FareResourceLocationsImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TrainResourceLocations getTrainResourceLocations() {
 		return trainResourceLocations;
 	}
@@ -111,6 +112,7 @@ public class FareResourceLocationsImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTrainResourceLocations(TrainResourceLocations newTrainResourceLocations) {
 		if (newTrainResourceLocations != trainResourceLocations) {
 			NotificationChain msgs = null;
@@ -130,6 +132,7 @@ public class FareResourceLocationsImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StationResourceLocations getStationResourceLocations() {
 		return stationResourceLocations;
 	}
@@ -154,6 +157,7 @@ public class FareResourceLocationsImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStationResourceLocations(StationResourceLocations newStationResourceLocations) {
 		if (newStationResourceLocations != stationResourceLocations) {
 			NotificationChain msgs = null;
@@ -173,6 +177,7 @@ public class FareResourceLocationsImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarrierResourceLocations getCarrierResourceLocations() {
 		return carrierResourceLocations;
 	}
@@ -197,6 +202,7 @@ public class FareResourceLocationsImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierResourceLocations(CarrierResourceLocations newCarrierResourceLocations) {
 		if (newCarrierResourceLocations != carrierResourceLocations) {
 			NotificationChain msgs = null;

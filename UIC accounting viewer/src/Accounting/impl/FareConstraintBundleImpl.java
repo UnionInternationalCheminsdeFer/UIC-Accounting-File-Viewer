@@ -262,6 +262,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -271,6 +272,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -283,6 +285,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareType getDefaultFareType() {
 		return defaultFareType;
 	}
@@ -292,6 +295,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDefaultFareType(FareType newDefaultFareType) {
 		FareType oldDefaultFareType = defaultFareType;
 		defaultFareType = newDefaultFareType == null ? DEFAULT_FARE_TYPE_EDEFAULT : newDefaultFareType;
@@ -304,6 +308,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -313,6 +318,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -325,6 +331,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarrierConstraint getCarrierConstraint() {
 		if (carrierConstraint != null && carrierConstraint.eIsProxy()) {
 			InternalEObject oldCarrierConstraint = (InternalEObject)carrierConstraint;
@@ -351,6 +358,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierConstraint(CarrierConstraint newCarrierConstraint) {
 		CarrierConstraint oldCarrierConstraint = carrierConstraint;
 		carrierConstraint = newCarrierConstraint;
@@ -363,6 +371,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SalesAvailabilityConstraint getSalesAvailability() {
 		if (salesAvailability != null && salesAvailability.eIsProxy()) {
 			InternalEObject oldSalesAvailability = (InternalEObject)salesAvailability;
@@ -389,6 +398,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSalesAvailability(SalesAvailabilityConstraint newSalesAvailability) {
 		SalesAvailabilityConstraint oldSalesAvailability = salesAvailability;
 		salesAvailability = newSalesAvailability;
@@ -401,6 +411,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelValidityConstraint getTravelValidity() {
 		if (travelValidity != null && travelValidity.eIsProxy()) {
 			InternalEObject oldTravelValidity = (InternalEObject)travelValidity;
@@ -427,6 +438,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelValidity(TravelValidityConstraint newTravelValidity) {
 		TravelValidityConstraint oldTravelValidity = travelValidity;
 		travelValidity = newTravelValidity;
@@ -439,6 +451,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CombinationConstraint getCombinationConstraint() {
 		if (combinationConstraint != null && combinationConstraint.eIsProxy()) {
 			InternalEObject oldCombinationConstraint = (InternalEObject)combinationConstraint;
@@ -465,6 +478,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCombinationConstraint(CombinationConstraint newCombinationConstraint) {
 		CombinationConstraint oldCombinationConstraint = combinationConstraint;
 		combinationConstraint = newCombinationConstraint;
@@ -477,6 +491,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PersonalDataConstraint getPersonalDataConstraint() {
 		if (personalDataConstraint != null && personalDataConstraint.eIsProxy()) {
 			InternalEObject oldPersonalDataConstraint = (InternalEObject)personalDataConstraint;
@@ -503,6 +518,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPersonalDataConstraint(PersonalDataConstraint newPersonalDataConstraint) {
 		PersonalDataConstraint oldPersonalDataConstraint = personalDataConstraint;
 		personalDataConstraint = newPersonalDataConstraint;
@@ -515,6 +531,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FulfillmentConstraint getFulfillmentConstraint() {
 		if (fulfillmentConstraint != null && fulfillmentConstraint.eIsProxy()) {
 			InternalEObject oldFulfillmentConstraint = (InternalEObject)fulfillmentConstraint;
@@ -541,6 +558,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFulfillmentConstraint(FulfillmentConstraint newFulfillmentConstraint) {
 		FulfillmentConstraint oldFulfillmentConstraint = fulfillmentConstraint;
 		fulfillmentConstraint = newFulfillmentConstraint;
@@ -553,6 +571,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TotalPassengerCombinationConstraint getTotalPassengerConstraint() {
 		if (totalPassengerConstraint != null && totalPassengerConstraint.eIsProxy()) {
 			InternalEObject oldTotalPassengerConstraint = (InternalEObject)totalPassengerConstraint;
@@ -579,6 +598,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTotalPassengerConstraint(TotalPassengerCombinationConstraint newTotalPassengerConstraint) {
 		TotalPassengerCombinationConstraint oldTotalPassengerConstraint = totalPassengerConstraint;
 		totalPassengerConstraint = newTotalPassengerConstraint;
@@ -591,6 +611,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<RegulatoryCondition> getDefaultRegulatoryConditions() {
 		if (defaultRegulatoryConditions == null) {
 			defaultRegulatoryConditions = new EDataTypeUniqueEList<RegulatoryCondition>(RegulatoryCondition.class, this, AccountingPackage.FARE_CONSTRAINT_BUNDLE__DEFAULT_REGULATORY_CONDITIONS);
@@ -603,6 +624,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -612,6 +634,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;
@@ -624,6 +647,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FareConstraintBundle> getConvertedBundles() {
 		if (convertedBundles == null) {
 			convertedBundles = new EObjectResolvingEList<FareConstraintBundle>(FareConstraintBundle.class, this, AccountingPackage.FARE_CONSTRAINT_BUNDLE__CONVERTED_BUNDLES);
@@ -636,6 +660,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LuggageConstraint getLuggageConstraint() {
 		if (luggageConstraint != null && luggageConstraint.eIsProxy()) {
 			InternalEObject oldLuggageConstraint = (InternalEObject)luggageConstraint;
@@ -662,6 +687,7 @@ public class FareConstraintBundleImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLuggageConstraint(LuggageConstraint newLuggageConstraint) {
 		LuggageConstraint oldLuggageConstraint = luggageConstraint;
 		luggageConstraint = newLuggageConstraint;

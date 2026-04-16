@@ -112,6 +112,7 @@ public class CarrierImpl extends MinimalEObjectImpl.Container implements Carrier
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCode() {
 		return code;
 	}
@@ -121,6 +122,7 @@ public class CarrierImpl extends MinimalEObjectImpl.Container implements Carrier
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCode(String newCode) {
 		String oldCode = code;
 		code = newCode;
@@ -133,6 +135,7 @@ public class CarrierImpl extends MinimalEObjectImpl.Container implements Carrier
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -142,6 +145,7 @@ public class CarrierImpl extends MinimalEObjectImpl.Container implements Carrier
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -154,6 +158,7 @@ public class CarrierImpl extends MinimalEObjectImpl.Container implements Carrier
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getShortName() {
 		return shortName;
 	}
@@ -163,6 +168,7 @@ public class CarrierImpl extends MinimalEObjectImpl.Container implements Carrier
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShortName(String newShortName) {
 		String oldShortName = shortName;
 		shortName = newShortName;

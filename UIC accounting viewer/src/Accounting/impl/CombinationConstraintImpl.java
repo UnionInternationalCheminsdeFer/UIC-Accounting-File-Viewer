@@ -112,6 +112,7 @@ public class CombinationConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -121,6 +122,7 @@ public class CombinationConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -133,6 +135,7 @@ public class CombinationConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -142,6 +145,7 @@ public class CombinationConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -154,6 +158,7 @@ public class CombinationConstraintImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FareCombinationModel> getCombinationModels() {
 		if (combinationModels == null) {
 			combinationModels = new EObjectContainmentEList<FareCombinationModel>(FareCombinationModel.class, this, AccountingPackage.COMBINATION_CONSTRAINT__COMBINATION_MODELS);
