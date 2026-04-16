@@ -142,6 +142,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -151,6 +152,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -163,6 +165,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getIncludedCarriers() {
 		if (includedCarriers == null) {
 			includedCarriers = new EObjectResolvingEList<Carrier>(Carrier.class, this, AccountingPackage.CARRIER_CONSTRAINT__INCLUDED_CARRIERS);
@@ -175,6 +178,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getExcludedCarriers() {
 		if (excludedCarriers == null) {
 			excludedCarriers = new EObjectResolvingEList<Carrier>(Carrier.class, this, AccountingPackage.CARRIER_CONSTRAINT__EXCLUDED_CARRIERS);
@@ -187,6 +191,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -196,6 +201,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -208,6 +214,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -217,6 +224,7 @@ public class CarrierConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;

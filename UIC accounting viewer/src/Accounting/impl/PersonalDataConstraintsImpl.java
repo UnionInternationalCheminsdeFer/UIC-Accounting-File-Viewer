@@ -68,6 +68,7 @@ public class PersonalDataConstraintsImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PersonalDataConstraint> getPersonalDataConstraints() {
 		if (personalDataConstraints == null) {
 			personalDataConstraints = new EObjectContainmentEList<PersonalDataConstraint>(PersonalDataConstraint.class, this, AccountingPackage.PERSONAL_DATA_CONSTRAINTS__PERSONAL_DATA_CONSTRAINTS);

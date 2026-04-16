@@ -63,6 +63,7 @@ public class OnBorderStationsImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StationSet getStations() {
 		return stations;
 	}
@@ -87,6 +88,7 @@ public class OnBorderStationsImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStations(StationSet newStations) {
 		if (newStations != stations) {
 			NotificationChain msgs = null;

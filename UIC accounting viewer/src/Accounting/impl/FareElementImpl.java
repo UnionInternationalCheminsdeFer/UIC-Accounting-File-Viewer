@@ -450,6 +450,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -459,6 +460,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -471,6 +473,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareType getType() {
 		return type;
 	}
@@ -480,6 +483,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setType(FareType newType) {
 		FareType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
@@ -492,6 +496,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -501,6 +506,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -513,6 +519,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareConstraintBundle getFareConstraintBundle() {
 		if (fareConstraintBundle != null && fareConstraintBundle.eIsProxy()) {
 			InternalEObject oldFareConstraintBundle = (InternalEObject)fareConstraintBundle;
@@ -539,6 +546,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareConstraintBundle(FareConstraintBundle newFareConstraintBundle) {
 		FareConstraintBundle oldFareConstraintBundle = fareConstraintBundle;
 		fareConstraintBundle = newFareConstraintBundle;
@@ -551,6 +559,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text getText() {
 		if (text != null && text.eIsProxy()) {
 			InternalEObject oldText = (InternalEObject)text;
@@ -577,6 +586,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(Text newText) {
 		Text oldText = text;
 		text = newText;
@@ -589,6 +599,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Price getPrice() {
 		if (price != null && price.eIsProxy()) {
 			InternalEObject oldPrice = (InternalEObject)price;
@@ -615,6 +626,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPrice(Price newPrice) {
 		Price oldPrice = price;
 		price = newPrice;
@@ -627,6 +639,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RegionalConstraint getRegionalConstraint() {
 		if (regionalConstraint != null && regionalConstraint.eIsProxy()) {
 			InternalEObject oldRegionalConstraint = (InternalEObject)regionalConstraint;
@@ -653,6 +666,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRegionalConstraint(RegionalConstraint newRegionalConstraint) {
 		RegionalConstraint oldRegionalConstraint = regionalConstraint;
 		regionalConstraint = newRegionalConstraint;
@@ -665,6 +679,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceConstraint getServiceConstraint() {
 		if (serviceConstraint != null && serviceConstraint.eIsProxy()) {
 			InternalEObject oldServiceConstraint = (InternalEObject)serviceConstraint;
@@ -691,6 +706,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceConstraint(ServiceConstraint newServiceConstraint) {
 		ServiceConstraint oldServiceConstraint = serviceConstraint;
 		serviceConstraint = newServiceConstraint;
@@ -703,6 +719,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarrierConstraint getCarrierConstraint() {
 		if (carrierConstraint != null && carrierConstraint.eIsProxy()) {
 			InternalEObject oldCarrierConstraint = (InternalEObject)carrierConstraint;
@@ -729,6 +746,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierConstraint(CarrierConstraint newCarrierConstraint) {
 		CarrierConstraint oldCarrierConstraint = carrierConstraint;
 		carrierConstraint = newCarrierConstraint;
@@ -741,6 +759,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceClass getServiceClass() {
 		if (serviceClass != null && serviceClass.eIsProxy()) {
 			InternalEObject oldServiceClass = (InternalEObject)serviceClass;
@@ -767,6 +786,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceClass(ServiceClass newServiceClass) {
 		ServiceClass oldServiceClass = serviceClass;
 		serviceClass = newServiceClass;
@@ -779,6 +799,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceLevel getServiceLevel() {
 		if (serviceLevel != null && serviceLevel.eIsProxy()) {
 			InternalEObject oldServiceLevel = (InternalEObject)serviceLevel;
@@ -805,6 +826,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceLevel(ServiceLevel newServiceLevel) {
 		ServiceLevel oldServiceLevel = serviceLevel;
 		serviceLevel = newServiceLevel;
@@ -817,6 +839,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SalesAvailabilityConstraint getSalesAvailability() {
 		if (salesAvailability != null && salesAvailability.eIsProxy()) {
 			InternalEObject oldSalesAvailability = (InternalEObject)salesAvailability;
@@ -843,6 +866,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSalesAvailability(SalesAvailabilityConstraint newSalesAvailability) {
 		SalesAvailabilityConstraint oldSalesAvailability = salesAvailability;
 		salesAvailability = newSalesAvailability;
@@ -855,6 +879,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelValidityConstraint getTravelValidity() {
 		if (travelValidity != null && travelValidity.eIsProxy()) {
 			InternalEObject oldTravelValidity = (InternalEObject)travelValidity;
@@ -881,6 +906,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelValidity(TravelValidityConstraint newTravelValidity) {
 		TravelValidityConstraint oldTravelValidity = travelValidity;
 		travelValidity = newTravelValidity;
@@ -893,6 +919,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CombinationConstraint getCombinationConstraint() {
 		if (combinationConstraint != null && combinationConstraint.eIsProxy()) {
 			InternalEObject oldCombinationConstraint = (InternalEObject)combinationConstraint;
@@ -919,6 +946,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCombinationConstraint(CombinationConstraint newCombinationConstraint) {
 		CombinationConstraint oldCombinationConstraint = combinationConstraint;
 		combinationConstraint = newCombinationConstraint;
@@ -931,6 +959,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text getFareDetailDescription() {
 		if (fareDetailDescription != null && fareDetailDescription.eIsProxy()) {
 			InternalEObject oldFareDetailDescription = (InternalEObject)fareDetailDescription;
@@ -957,6 +986,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareDetailDescription(Text newFareDetailDescription) {
 		Text oldFareDetailDescription = fareDetailDescription;
 		fareDetailDescription = newFareDetailDescription;
@@ -969,6 +999,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PersonalDataConstraint getPersonalDataConstraint() {
 		if (personalDataConstraint != null && personalDataConstraint.eIsProxy()) {
 			InternalEObject oldPersonalDataConstraint = (InternalEObject)personalDataConstraint;
@@ -995,6 +1026,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPersonalDataConstraint(PersonalDataConstraint newPersonalDataConstraint) {
 		PersonalDataConstraint oldPersonalDataConstraint = personalDataConstraint;
 		personalDataConstraint = newPersonalDataConstraint;
@@ -1007,6 +1039,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationParameter getReservationParameter() {
 		if (reservationParameter != null && reservationParameter.eIsProxy()) {
 			InternalEObject oldReservationParameter = (InternalEObject)reservationParameter;
@@ -1033,6 +1066,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReservationParameter(ReservationParameter newReservationParameter) {
 		ReservationParameter oldReservationParameter = reservationParameter;
 		reservationParameter = newReservationParameter;
@@ -1045,6 +1079,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReductionConstraint getReductionConstraint() {
 		if (reductionConstraint != null && reductionConstraint.eIsProxy()) {
 			InternalEObject oldReductionConstraint = (InternalEObject)reductionConstraint;
@@ -1071,6 +1106,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReductionConstraint(ReductionConstraint newReductionConstraint) {
 		ReductionConstraint oldReductionConstraint = reductionConstraint;
 		reductionConstraint = newReductionConstraint;
@@ -1083,6 +1119,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FulfillmentConstraint getFulfillmentConstraint() {
 		if (fulfillmentConstraint != null && fulfillmentConstraint.eIsProxy()) {
 			InternalEObject oldFulfillmentConstraint = (InternalEObject)fulfillmentConstraint;
@@ -1109,6 +1146,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFulfillmentConstraint(FulfillmentConstraint newFulfillmentConstraint) {
 		FulfillmentConstraint oldFulfillmentConstraint = fulfillmentConstraint;
 		fulfillmentConstraint = newFulfillmentConstraint;
@@ -1121,6 +1159,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PassengerConstraint getPassengerConstraint() {
 		if (passengerConstraint != null && passengerConstraint.eIsProxy()) {
 			InternalEObject oldPassengerConstraint = (InternalEObject)passengerConstraint;
@@ -1147,6 +1186,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerConstraint(PassengerConstraint newPassengerConstraint) {
 		PassengerConstraint oldPassengerConstraint = passengerConstraint;
 		passengerConstraint = newPassengerConstraint;
@@ -1159,6 +1199,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<RegulatoryCondition> getRegulatoryConditions() {
 		if (regulatoryConditions == null) {
 			regulatoryConditions = new EDataTypeUniqueEList<RegulatoryCondition>(RegulatoryCondition.class, this, AccountingPackage.FARE_ELEMENT__REGULATORY_CONDITIONS);
@@ -1171,6 +1212,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AfterSalesRule getAfterSalesRule() {
 		if (afterSalesRule != null && afterSalesRule.eIsProxy()) {
 			InternalEObject oldAfterSalesRule = (InternalEObject)afterSalesRule;
@@ -1197,6 +1239,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAfterSalesRule(AfterSalesRule newAfterSalesRule) {
 		AfterSalesRule oldAfterSalesRule = afterSalesRule;
 		afterSalesRule = newAfterSalesRule;
@@ -1209,6 +1252,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -1218,6 +1262,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;
@@ -1230,6 +1275,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LegacyAccountingIdentifier getLegacyAccountingIdentifier() {
 		return legacyAccountingIdentifier;
 	}
@@ -1254,6 +1300,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLegacyAccountingIdentifier(LegacyAccountingIdentifier newLegacyAccountingIdentifier) {
 		if (newLegacyAccountingIdentifier != legacyAccountingIdentifier) {
 			NotificationChain msgs = null;
@@ -1273,6 +1320,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LegacyConversionType getLegacyConversion() {
 		return legacyConversion;
 	}
@@ -1282,6 +1330,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLegacyConversion(LegacyConversionType newLegacyConversion) {
 		LegacyConversionType oldLegacyConversion = legacyConversion;
 		legacyConversion = newLegacyConversion == null ? LEGACY_CONVERSION_EDEFAULT : newLegacyConversion;
@@ -1294,6 +1343,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIndividualContracts() {
 		return individualContracts;
 	}
@@ -1303,6 +1353,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIndividualContracts(boolean newIndividualContracts) {
 		boolean oldIndividualContracts = individualContracts;
 		individualContracts = newIndividualContracts;
@@ -1315,6 +1366,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getInvolvedTcos() {
 		if (involvedTcos == null) {
 			involvedTcos = new EObjectResolvingEList<Carrier>(Carrier.class, this, AccountingPackage.FARE_ELEMENT__INVOLVED_TCOS);
@@ -1327,6 +1379,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LuggageConstraint getLuggageConstraint() {
 		if (luggageConstraint != null && luggageConstraint.eIsProxy()) {
 			InternalEObject oldLuggageConstraint = (InternalEObject)luggageConstraint;
@@ -1353,6 +1406,7 @@ public class FareElementImpl extends MinimalEObjectImpl.Container implements Far
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLuggageConstraint(LuggageConstraint newLuggageConstraint) {
 		LuggageConstraint oldLuggageConstraint = luggageConstraint;
 		luggageConstraint = newLuggageConstraint;

@@ -95,6 +95,7 @@ public class RequiredReductionCardImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceClass getCardClass() {
 		if (cardClass != null && cardClass.eIsProxy()) {
 			InternalEObject oldCardClass = (InternalEObject)cardClass;
@@ -121,6 +122,7 @@ public class RequiredReductionCardImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCardClass(ServiceClass newCardClass) {
 		ServiceClass oldCardClass = cardClass;
 		cardClass = newCardClass;
@@ -133,6 +135,7 @@ public class RequiredReductionCardImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReductionCard getCard() {
 		if (card != null && card.eIsProxy()) {
 			InternalEObject oldCard = (InternalEObject)card;
@@ -159,6 +162,7 @@ public class RequiredReductionCardImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCard(ReductionCard newCard) {
 		ReductionCard oldCard = card;
 		card = newCard;
@@ -171,6 +175,7 @@ public class RequiredReductionCardImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -180,6 +185,7 @@ public class RequiredReductionCardImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;

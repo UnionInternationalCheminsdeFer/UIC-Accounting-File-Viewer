@@ -68,6 +68,7 @@ public class PolygoneImpl extends MinimalEObjectImpl.Container implements Polygo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Edge> getEdge() {
 		if (edge == null) {
 			edge = new EObjectContainmentEList<Edge>(Edge.class, this, AccountingPackage.POLYGONE__EDGE);

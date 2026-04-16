@@ -68,6 +68,7 @@ public class ServiceClassDefinitionsImpl extends MinimalEObjectImpl.Container im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceClass> getServiceClassDefinitions() {
 		if (serviceClassDefinitions == null) {
 			serviceClassDefinitions = new EObjectContainmentEList<ServiceClass>(ServiceClass.class, this, AccountingPackage.SERVICE_CLASS_DEFINITIONS__SERVICE_CLASS_DEFINITIONS);

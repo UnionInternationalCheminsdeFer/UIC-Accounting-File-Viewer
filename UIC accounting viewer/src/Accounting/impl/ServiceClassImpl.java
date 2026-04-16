@@ -106,6 +106,7 @@ public class ServiceClassImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ClassId getId() {
 		return id;
 	}
@@ -115,6 +116,7 @@ public class ServiceClassImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(ClassId newId) {
 		ClassId oldId = id;
 		id = newId == null ? ID_EDEFAULT : newId;
@@ -127,6 +129,7 @@ public class ServiceClassImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ClassicClassType getClassicClass() {
 		return classicClass;
 	}
@@ -136,6 +139,7 @@ public class ServiceClassImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setClassicClass(ClassicClassType newClassicClass) {
 		ClassicClassType oldClassicClass = classicClass;
 		classicClass = newClassicClass == null ? CLASSIC_CLASS_EDEFAULT : newClassicClass;
@@ -148,6 +152,7 @@ public class ServiceClassImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text getText() {
 		if (text != null && text.eIsProxy()) {
 			InternalEObject oldText = (InternalEObject)text;
@@ -174,6 +179,7 @@ public class ServiceClassImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(Text newText) {
 		Text oldText = text;
 		text = newText;

@@ -68,6 +68,7 @@ public class TravelValidityConstraintsImpl extends MinimalEObjectImpl.Container 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<TravelValidityConstraint> getTravelValidityConstraints() {
 		if (travelValidityConstraints == null) {
 			travelValidityConstraints = new EObjectContainmentEList<TravelValidityConstraint>(TravelValidityConstraint.class, this, AccountingPackage.TRAVEL_VALIDITY_CONSTRAINTS__TRAVEL_VALIDITY_CONSTRAINTS);

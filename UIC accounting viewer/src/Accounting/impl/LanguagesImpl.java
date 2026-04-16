@@ -68,6 +68,7 @@ public class LanguagesImpl extends MinimalEObjectImpl.Container implements Langu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Language> getLanguages() {
 		if (languages == null) {
 			languages = new EObjectContainmentEList<Language>(Language.class, this, AccountingPackage.LANGUAGES__LANGUAGES);

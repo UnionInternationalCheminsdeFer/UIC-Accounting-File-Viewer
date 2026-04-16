@@ -68,6 +68,7 @@ public class ReductionCardsImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ReductionCard> getReductionCards() {
 		if (reductionCards == null) {
 			reductionCards = new EObjectContainmentEList<ReductionCard>(ReductionCard.class, this, AccountingPackage.REDUCTION_CARDS__REDUCTION_CARDS);

@@ -133,6 +133,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -142,6 +143,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -154,6 +156,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -163,6 +166,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -175,6 +179,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getMaxTotalPassengerWeight() {
 		return maxTotalPassengerWeight;
 	}
@@ -184,6 +189,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxTotalPassengerWeight(float newMaxTotalPassengerWeight) {
 		float oldMaxTotalPassengerWeight = maxTotalPassengerWeight;
 		maxTotalPassengerWeight = newMaxTotalPassengerWeight;
@@ -196,6 +202,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getMinTotalPassengerWeight() {
 		return minTotalPassengerWeight;
 	}
@@ -205,6 +212,7 @@ public class TotalPassengerCombinationConstraintImpl extends MinimalEObjectImpl.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMinTotalPassengerWeight(float newMinTotalPassengerWeight) {
 		float oldMinTotalPassengerWeight = minTotalPassengerWeight;
 		minTotalPassengerWeight = newMinTotalPassengerWeight;

@@ -68,6 +68,7 @@ public class CarrierConstraintsImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CarrierConstraint> getCarrierConstraints() {
 		if (carrierConstraints == null) {
 			carrierConstraints = new EObjectContainmentEList<CarrierConstraint>(CarrierConstraint.class, this, AccountingPackage.CARRIER_CONSTRAINTS__CARRIER_CONSTRAINTS);

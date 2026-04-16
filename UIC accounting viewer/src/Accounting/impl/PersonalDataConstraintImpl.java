@@ -103,6 +103,7 @@ public class PersonalDataConstraintImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -112,6 +113,7 @@ public class PersonalDataConstraintImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -124,6 +126,7 @@ public class PersonalDataConstraintImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<RequiredPersonalData> getRequiredPersonalData() {
 		if (requiredPersonalData == null) {
 			requiredPersonalData = new EObjectContainmentEList<RequiredPersonalData>(RequiredPersonalData.class, this, AccountingPackage.PERSONAL_DATA_CONSTRAINT__REQUIRED_PERSONAL_DATA);
@@ -136,6 +139,7 @@ public class PersonalDataConstraintImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AllowedPersonalDataChanges> getAllowedChanges() {
 		if (allowedChanges == null) {
 			allowedChanges = new EObjectContainmentEList<AllowedPersonalDataChanges>(AllowedPersonalDataChanges.class, this, AccountingPackage.PERSONAL_DATA_CONSTRAINT__ALLOWED_CHANGES);

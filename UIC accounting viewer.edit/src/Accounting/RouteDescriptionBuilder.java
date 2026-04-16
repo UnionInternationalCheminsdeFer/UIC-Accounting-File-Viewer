@@ -1,14 +1,8 @@
 package Accounting;
 
 import org.eclipse.emf.common.util.EList;
-import Accounting.AlternativeRoute;
-import Accounting.RegionalValidity;
-import Accounting.Route;
-import Accounting.Station;
-import Accounting.ViaStation;
 
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class RouteDescriptionBuilder.
  */

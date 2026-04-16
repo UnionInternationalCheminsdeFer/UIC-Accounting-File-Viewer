@@ -154,6 +154,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -163,6 +164,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -175,6 +177,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceBrand> getIncludedServiceBrands() {
 		if (includedServiceBrands == null) {
 			includedServiceBrands = new EObjectResolvingEList<ServiceBrand>(ServiceBrand.class, this, AccountingPackage.SERVICE_CONSTRAINT__INCLUDED_SERVICE_BRANDS);
@@ -187,6 +190,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceBrand> getExcludedServiceBrands() {
 		if (excludedServiceBrands == null) {
 			excludedServiceBrands = new EObjectResolvingEList<ServiceBrand>(ServiceBrand.class, this, AccountingPackage.SERVICE_CONSTRAINT__EXCLUDED_SERVICE_BRANDS);
@@ -199,6 +203,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -208,6 +213,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -220,6 +226,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLegacy108Code() {
 		return legacy108Code;
 	}
@@ -229,6 +236,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLegacy108Code(int newLegacy108Code) {
 		int oldLegacy108Code = legacy108Code;
 		legacy108Code = newLegacy108Code;
@@ -241,6 +249,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text getDescription() {
 		if (description != null && description.eIsProxy()) {
 			InternalEObject oldDescription = (InternalEObject)description;
@@ -267,6 +276,7 @@ public class ServiceConstraintImpl extends MinimalEObjectImpl.Container implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDescription(Text newDescription) {
 		Text oldDescription = description;
 		description = newDescription;

@@ -91,6 +91,7 @@ public class CrossBorderConditionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Country getFromCountry() {
 		if (fromCountry != null && fromCountry.eIsProxy()) {
 			InternalEObject oldFromCountry = (InternalEObject)fromCountry;
@@ -117,6 +118,7 @@ public class CrossBorderConditionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFromCountry(Country newFromCountry) {
 		Country oldFromCountry = fromCountry;
 		fromCountry = newFromCountry;
@@ -129,6 +131,7 @@ public class CrossBorderConditionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Country getToCountry() {
 		if (toCountry != null && toCountry.eIsProxy()) {
 			InternalEObject oldToCountry = (InternalEObject)toCountry;
@@ -155,6 +158,7 @@ public class CrossBorderConditionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setToCountry(Country newToCountry) {
 		Country oldToCountry = toCountry;
 		toCountry = newToCountry;
@@ -167,6 +171,7 @@ public class CrossBorderConditionImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceBrand> getAffectedServiceBrands() {
 		if (affectedServiceBrands == null) {
 			affectedServiceBrands = new EObjectResolvingEList<ServiceBrand>(ServiceBrand.class, this, AccountingPackage.CROSS_BORDER_CONDITION__AFFECTED_SERVICE_BRANDS);

@@ -67,6 +67,7 @@ public class CountriesImpl extends MinimalEObjectImpl.Container implements Count
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Country> getCountries() {
 		if (countries == null) {
 			countries = new EObjectContainmentEList<Country>(Country.class, this, AccountingPackage.COUNTRIES__COUNTRIES);

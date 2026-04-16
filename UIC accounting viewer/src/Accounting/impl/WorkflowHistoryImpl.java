@@ -68,6 +68,7 @@ public class WorkflowHistoryImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<WorkflowStep> getWorkflowSteps() {
 		if (workflowSteps == null) {
 			workflowSteps = new EObjectContainmentEList<WorkflowStep>(WorkflowStep.class, this, AccountingPackage.WORKFLOW_HISTORY__WORKFLOW_STEPS);

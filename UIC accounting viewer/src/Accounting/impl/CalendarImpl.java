@@ -236,6 +236,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -245,6 +246,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -257,6 +259,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -266,6 +269,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -278,6 +282,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getFromDate() {
 		return fromDate;
 	}
@@ -287,6 +292,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFromDate(Date newFromDate) {
 		Date oldFromDate = fromDate;
 		fromDate = newFromDate;
@@ -299,6 +305,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getUntilDate() {
 		return untilDate;
 	}
@@ -308,6 +315,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUntilDate(Date newUntilDate) {
 		Date oldUntilDate = untilDate;
 		untilDate = newUntilDate;
@@ -320,6 +328,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getUtcOffset() {
 		return utcOffset;
 	}
@@ -329,6 +338,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUtcOffset(int newUtcOffset) {
 		int oldUtcOffset = utcOffset;
 		utcOffset = newUtcOffset;
@@ -341,6 +351,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Date> getDates() {
 		if (dates == null) {
 			dates = new EDataTypeUniqueEList<Date>(Date.class, this, AccountingPackage.CALENDAR__DATES);
@@ -353,6 +364,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -362,6 +374,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;
@@ -374,6 +387,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getFromDateTime() {
 		return fromDateTime;
 	}
@@ -383,6 +397,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFromDateTime(Date newFromDateTime) {
 		Date oldFromDateTime = fromDateTime;
 		fromDateTime = newFromDateTime;
@@ -395,6 +410,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getUntilDateTime() {
 		return untilDateTime;
 	}
@@ -404,6 +420,7 @@ public class CalendarImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUntilDateTime(Date newUntilDateTime) {
 		Date oldUntilDateTime = untilDateTime;
 		untilDateTime = newUntilDateTime;

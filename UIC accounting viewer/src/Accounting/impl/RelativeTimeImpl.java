@@ -114,6 +114,7 @@ public class RelativeTimeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TimeUnit getUnit() {
 		return unit;
 	}
@@ -123,6 +124,7 @@ public class RelativeTimeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUnit(TimeUnit newUnit) {
 		TimeUnit oldUnit = unit;
 		unit = newUnit == null ? UNIT_EDEFAULT : newUnit;
@@ -135,6 +137,7 @@ public class RelativeTimeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TimeReferenceType getReference() {
 		return reference;
 	}
@@ -144,6 +147,7 @@ public class RelativeTimeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReference(TimeReferenceType newReference) {
 		TimeReferenceType oldReference = reference;
 		reference = newReference == null ? REFERENCE_EDEFAULT : newReference;
@@ -156,6 +160,7 @@ public class RelativeTimeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
@@ -165,6 +170,7 @@ public class RelativeTimeImpl extends MinimalEObjectImpl.Container implements Re
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValue(int newValue) {
 		int oldValue = value;
 		value = newValue;

@@ -75,6 +75,7 @@ public class AccountingFileImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AccountingDelivery getAccountingDelivery() {
 		return accountingDelivery;
 	}
@@ -99,6 +100,7 @@ public class AccountingFileImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAccountingDelivery(AccountingDelivery newAccountingDelivery) {
 		if (newAccountingDelivery != accountingDelivery) {
 			NotificationChain msgs = null;
@@ -118,6 +120,7 @@ public class AccountingFileImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AccountingRecords getAccountingRecords() {
 		return accountingRecords;
 	}
@@ -142,6 +145,7 @@ public class AccountingFileImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAccountingRecords(AccountingRecords newAccountingRecords) {
 		if (newAccountingRecords != accountingRecords) {
 			NotificationChain msgs = null;

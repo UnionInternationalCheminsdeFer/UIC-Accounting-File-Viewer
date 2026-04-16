@@ -68,6 +68,7 @@ public class ServiceConstraintsImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceConstraint> getServiceConstraints() {
 		if (serviceConstraints == null) {
 			serviceConstraints = new EObjectContainmentEList<ServiceConstraint>(ServiceConstraint.class, this, AccountingPackage.SERVICE_CONSTRAINTS__SERVICE_CONSTRAINTS);

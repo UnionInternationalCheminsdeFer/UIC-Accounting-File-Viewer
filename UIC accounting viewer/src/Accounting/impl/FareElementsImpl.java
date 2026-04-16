@@ -68,6 +68,7 @@ public class FareElementsImpl extends MinimalEObjectImpl.Container implements Fa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FareElement> getFareElements() {
 		if (fareElements == null) {
 			fareElements = new EObjectContainmentEList<FareElement>(FareElement.class, this, AccountingPackage.FARE_ELEMENTS__FARE_ELEMENTS);

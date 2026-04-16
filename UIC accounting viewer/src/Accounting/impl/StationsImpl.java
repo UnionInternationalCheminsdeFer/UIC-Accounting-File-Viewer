@@ -67,6 +67,7 @@ public class StationsImpl extends MinimalEObjectImpl.Container implements Statio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Station> getStations() {
 		if (stations == null) {
 			stations = new EObjectContainmentEList<Station>(Station.class, this, AccountingPackage.STATIONS__STATIONS);

@@ -64,6 +64,7 @@ public class AcceptedBarcodesImpl extends MinimalEObjectImpl.Container implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<BarcodeTypes> getAcceptedBarcodes() {
 		if (acceptedBarcodes == null) {
 			acceptedBarcodes = new EDataTypeUniqueEList<BarcodeTypes>(BarcodeTypes.class, this, AccountingPackage.ACCEPTED_BARCODES__ACCEPTED_BARCODES);

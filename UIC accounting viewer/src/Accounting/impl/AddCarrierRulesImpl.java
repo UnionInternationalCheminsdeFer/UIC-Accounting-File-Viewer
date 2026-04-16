@@ -68,6 +68,7 @@ public class AddCarrierRulesImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<AddCarrierRule> getAddCarrierRule() {
 		if (addCarrierRule == null) {
 			addCarrierRule = new EObjectContainmentEList<AddCarrierRule>(AddCarrierRule.class, this, AccountingPackage.ADD_CARRIER_RULES__ADD_CARRIER_RULE);

@@ -105,6 +105,7 @@ public class ReservationOptionsImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ReservationPreferenceGroup> getPreferences() {
 		if (preferences == null) {
 			preferences = new EObjectContainmentEList<ReservationPreferenceGroup>(ReservationPreferenceGroup.class, this, AccountingPackage.RESERVATION_OPTIONS__PREFERENCES);
@@ -117,6 +118,7 @@ public class ReservationOptionsImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceBrand> getServiceBrands() {
 		if (serviceBrands == null) {
 			serviceBrands = new EObjectResolvingEList<ServiceBrand>(ServiceBrand.class, this, AccountingPackage.RESERVATION_OPTIONS__SERVICE_BRANDS);
@@ -129,6 +131,7 @@ public class ReservationOptionsImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GraphicalReservationType getGraphicalReservation() {
 		return graphicalReservation;
 	}
@@ -138,6 +141,7 @@ public class ReservationOptionsImpl extends MinimalEObjectImpl.Container impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGraphicalReservation(GraphicalReservationType newGraphicalReservation) {
 		GraphicalReservationType oldGraphicalReservation = graphicalReservation;
 		graphicalReservation = newGraphicalReservation == null ? GRAPHICAL_RESERVATION_EDEFAULT : newGraphicalReservation;

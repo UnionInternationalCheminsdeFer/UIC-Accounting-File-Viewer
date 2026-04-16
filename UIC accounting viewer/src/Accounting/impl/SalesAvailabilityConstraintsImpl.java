@@ -68,6 +68,7 @@ public class SalesAvailabilityConstraintsImpl extends MinimalEObjectImpl.Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<SalesAvailabilityConstraint> getSalesAvailabilityConstraints() {
 		if (salesAvailabilityConstraints == null) {
 			salesAvailabilityConstraints = new EObjectContainmentEList<SalesAvailabilityConstraint>(SalesAvailabilityConstraint.class, this, AccountingPackage.SALES_AVAILABILITY_CONSTRAINTS__SALES_AVAILABILITY_CONSTRAINTS);

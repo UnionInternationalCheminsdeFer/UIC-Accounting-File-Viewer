@@ -387,6 +387,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceClassDefinitions getServiceClassDefinitions() {
 		return serviceClassDefinitions;
 	}
@@ -411,6 +412,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceClassDefinitions(ServiceClassDefinitions newServiceClassDefinitions) {
 		if (newServiceClassDefinitions != serviceClassDefinitions) {
 			NotificationChain msgs = null;
@@ -430,6 +432,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceLevelDefinitions getServiceLevelDefinitions() {
 		return serviceLevelDefinitions;
 	}
@@ -454,6 +457,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceLevelDefinitions(ServiceLevelDefinitions newServiceLevelDefinitions) {
 		if (newServiceLevelDefinitions != serviceLevelDefinitions) {
 			NotificationChain msgs = null;
@@ -473,6 +477,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StationNames getStationNames() {
 		return stationNames;
 	}
@@ -497,6 +502,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStationNames(StationNames newStationNames) {
 		if (newStationNames != stationNames) {
 			NotificationChain msgs = null;
@@ -516,6 +522,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareStationSetDefinitions getFareStationSetDefinitions() {
 		return fareStationSetDefinitions;
 	}
@@ -540,6 +547,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareStationSetDefinitions(FareStationSetDefinitions newFareStationSetDefinitions) {
 		if (newFareStationSetDefinitions != fareStationSetDefinitions) {
 			NotificationChain msgs = null;
@@ -559,6 +567,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Calendars getCalendars() {
 		return calendars;
 	}
@@ -583,6 +592,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCalendars(Calendars newCalendars) {
 		if (newCalendars != calendars) {
 			NotificationChain msgs = null;
@@ -602,6 +612,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Texts getTexts() {
 		return texts;
 	}
@@ -626,6 +637,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTexts(Texts newTexts) {
 		if (newTexts != texts) {
 			NotificationChain msgs = null;
@@ -645,6 +657,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReductionCards getReductionCards() {
 		return reductionCards;
 	}
@@ -669,6 +682,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReductionCards(ReductionCards newReductionCards) {
 		if (newReductionCards != reductionCards) {
 			NotificationChain msgs = null;
@@ -688,6 +702,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareConstraintBundles getFareConstraintBundles() {
 		return fareConstraintBundles;
 	}
@@ -712,6 +727,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareConstraintBundles(FareConstraintBundles newFareConstraintBundles) {
 		if (newFareConstraintBundles != fareConstraintBundles) {
 			NotificationChain msgs = null;
@@ -731,6 +747,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareElements getFareElements() {
 		return fareElements;
 	}
@@ -755,6 +772,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareElements(FareElements newFareElements) {
 		if (newFareElements != fareElements) {
 			NotificationChain msgs = null;
@@ -774,6 +792,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CombinationConstraints getCombinationConstraints() {
 		return combinationConstraints;
 	}
@@ -798,6 +817,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCombinationConstraints(CombinationConstraints newCombinationConstraints) {
 		if (newCombinationConstraints != combinationConstraints) {
 			NotificationChain msgs = null;
@@ -817,6 +837,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SalesAvailabilityConstraints getSalesAvailabilityConstraints() {
 		return salesAvailabilityConstraints;
 	}
@@ -841,6 +862,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSalesAvailabilityConstraints(SalesAvailabilityConstraints newSalesAvailabilityConstraints) {
 		if (newSalesAvailabilityConstraints != salesAvailabilityConstraints) {
 			NotificationChain msgs = null;
@@ -860,6 +882,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelValidityConstraints getTravelValidityConstraints() {
 		return travelValidityConstraints;
 	}
@@ -884,6 +907,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelValidityConstraints(TravelValidityConstraints newTravelValidityConstraints) {
 		if (newTravelValidityConstraints != travelValidityConstraints) {
 			NotificationChain msgs = null;
@@ -903,6 +927,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RegionalConstraints getRegionalConstraints() {
 		return regionalConstraints;
 	}
@@ -927,6 +952,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRegionalConstraints(RegionalConstraints newRegionalConstraints) {
 		if (newRegionalConstraints != regionalConstraints) {
 			NotificationChain msgs = null;
@@ -946,6 +972,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConnectionPoints getConnectionPoints() {
 		return connectionPoints;
 	}
@@ -970,6 +997,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setConnectionPoints(ConnectionPoints newConnectionPoints) {
 		if (newConnectionPoints != connectionPoints) {
 			NotificationChain msgs = null;
@@ -989,6 +1017,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CarrierConstraints getCarrierConstraints() {
 		return carrierConstraints;
 	}
@@ -1013,6 +1042,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrierConstraints(CarrierConstraints newCarrierConstraints) {
 		if (newCarrierConstraints != carrierConstraints) {
 			NotificationChain msgs = null;
@@ -1032,6 +1062,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ServiceConstraints getServiceConstraints() {
 		return serviceConstraints;
 	}
@@ -1056,6 +1087,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setServiceConstraints(ServiceConstraints newServiceConstraints) {
 		if (newServiceConstraints != serviceConstraints) {
 			NotificationChain msgs = null;
@@ -1075,6 +1107,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PassengerConstraints getPassengerConstraints() {
 		return passengerConstraints;
 	}
@@ -1099,6 +1132,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerConstraints(PassengerConstraints newPassengerConstraints) {
 		if (newPassengerConstraints != passengerConstraints) {
 			NotificationChain msgs = null;
@@ -1118,6 +1152,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TotalPassengerCombinationConstraints getTotalPassengerCombinationConstraints() {
 		return totalPassengerCombinationConstraints;
 	}
@@ -1142,6 +1177,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTotalPassengerCombinationConstraints(TotalPassengerCombinationConstraints newTotalPassengerCombinationConstraints) {
 		if (newTotalPassengerCombinationConstraints != totalPassengerCombinationConstraints) {
 			NotificationChain msgs = null;
@@ -1161,6 +1197,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReductionConstraints getReductionConstraints() {
 		return reductionConstraints;
 	}
@@ -1185,6 +1222,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReductionConstraints(ReductionConstraints newReductionConstraints) {
 		if (newReductionConstraints != reductionConstraints) {
 			NotificationChain msgs = null;
@@ -1204,6 +1242,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PersonalDataConstraints getPersonalDataConstraints() {
 		return personalDataConstraints;
 	}
@@ -1228,6 +1267,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPersonalDataConstraints(PersonalDataConstraints newPersonalDataConstraints) {
 		if (newPersonalDataConstraints != personalDataConstraints) {
 			NotificationChain msgs = null;
@@ -1247,6 +1287,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AfterSalesRules getAfterSalesRules() {
 		return afterSalesRules;
 	}
@@ -1271,6 +1312,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAfterSalesRules(AfterSalesRules newAfterSalesRules) {
 		if (newAfterSalesRules != afterSalesRules) {
 			NotificationChain msgs = null;
@@ -1290,6 +1332,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Prices getPrices() {
 		return prices;
 	}
@@ -1314,6 +1357,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPrices(Prices newPrices) {
 		if (newPrices != prices) {
 			NotificationChain msgs = null;
@@ -1333,6 +1377,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FulfillmentConstraints getFulfillmentConstraints() {
 		return fulfillmentConstraints;
 	}
@@ -1357,6 +1402,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFulfillmentConstraints(FulfillmentConstraints newFulfillmentConstraints) {
 		if (newFulfillmentConstraints != fulfillmentConstraints) {
 			NotificationChain msgs = null;
@@ -1376,6 +1422,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationParameters getReservationParameters() {
 		return reservationParameters;
 	}
@@ -1400,6 +1447,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReservationParameters(ReservationParameters newReservationParameters) {
 		if (newReservationParameters != reservationParameters) {
 			NotificationChain msgs = null;
@@ -1419,6 +1467,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SupportedOnlineServices getSupportedOnlineServices() {
 		return supportedOnlineServices;
 	}
@@ -1443,6 +1492,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSupportedOnlineServices(SupportedOnlineServices newSupportedOnlineServices) {
 		if (newSupportedOnlineServices != supportedOnlineServices) {
 			NotificationChain msgs = null;
@@ -1462,6 +1512,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FareResourceLocations getFareResourceLocations() {
 		return fareResourceLocations;
 	}
@@ -1486,6 +1537,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFareResourceLocations(FareResourceLocations newFareResourceLocations) {
 		if (newFareResourceLocations != fareResourceLocations) {
 			NotificationChain msgs = null;
@@ -1505,6 +1557,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ZoneDefinitions getZoneDefinitions() {
 		return zoneDefinitions;
 	}
@@ -1529,6 +1582,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setZoneDefinitions(ZoneDefinitions newZoneDefinitions) {
 		if (newZoneDefinitions != zoneDefinitions) {
 			NotificationChain msgs = null;
@@ -1548,6 +1602,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LuggageConstraints getLuggageConstraints() {
 		return luggageConstraints;
 	}
@@ -1572,6 +1627,7 @@ public class FareStructureImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLuggageConstraints(LuggageConstraints newLuggageConstraints) {
 		if (newLuggageConstraints != luggageConstraints) {
 			NotificationChain msgs = null;

@@ -68,6 +68,7 @@ public class TextsImpl extends MinimalEObjectImpl.Container implements Texts {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Text> getTexts() {
 		if (texts == null) {
 			texts = new EObjectContainmentEList<Text>(Text.class, this, AccountingPackage.TEXTS__TEXTS);

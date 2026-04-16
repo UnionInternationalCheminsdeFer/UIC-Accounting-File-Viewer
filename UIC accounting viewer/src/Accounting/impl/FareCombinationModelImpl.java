@@ -166,6 +166,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CombinationModel getModel() {
 		return model;
 	}
@@ -175,6 +176,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setModel(CombinationModel newModel) {
 		CombinationModel oldModel = model;
 		model = newModel == null ? MODEL_EDEFAULT : newModel;
@@ -187,6 +189,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getCombinableCarriers() {
 		if (combinableCarriers == null) {
 			combinableCarriers = new EObjectResolvingEList<Carrier>(Carrier.class, this, AccountingPackage.FARE_COMBINATION_MODEL__COMBINABLE_CARRIERS);
@@ -199,6 +202,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isOnlyWhenCombined() {
 		return onlyWhenCombined;
 	}
@@ -208,6 +212,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOnlyWhenCombined(boolean newOnlyWhenCombined) {
 		boolean oldOnlyWhenCombined = onlyWhenCombined;
 		onlyWhenCombined = newOnlyWhenCombined;
@@ -220,6 +225,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getAllowedAllocators() {
 		if (allowedAllocators == null) {
 			allowedAllocators = new EObjectResolvingEList<Carrier>(Carrier.class, this, AccountingPackage.FARE_COMBINATION_MODEL__ALLOWED_ALLOCATORS);
@@ -232,6 +238,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Clusters getReferenceCluster() {
 		return referenceCluster;
 	}
@@ -241,6 +248,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReferenceCluster(Clusters newReferenceCluster) {
 		Clusters oldReferenceCluster = referenceCluster;
 		referenceCluster = newReferenceCluster == null ? REFERENCE_CLUSTER_EDEFAULT : newReferenceCluster;
@@ -253,6 +261,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Clusters> getAllowedClusters() {
 		if (allowedClusters == null) {
 			allowedClusters = new EDataTypeUniqueEList<Clusters>(Clusters.class, this, AccountingPackage.FARE_COMBINATION_MODEL__ALLOWED_CLUSTERS);
@@ -265,6 +274,7 @@ public class FareCombinationModelImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Carrier> getAllowedCommonContracts() {
 		if (allowedCommonContracts == null) {
 			allowedCommonContracts = new EObjectResolvingEList<Carrier>(Carrier.class, this, AccountingPackage.FARE_COMBINATION_MODEL__ALLOWED_COMMON_CONTRACTS);

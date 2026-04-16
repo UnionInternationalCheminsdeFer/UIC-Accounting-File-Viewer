@@ -68,6 +68,7 @@ public class PassengerConstraintsImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PassengerConstraint> getPassengerConstraints() {
 		if (passengerConstraints == null) {
 			passengerConstraints = new EObjectContainmentEList<PassengerConstraint>(PassengerConstraint.class, this, AccountingPackage.PASSENGER_CONSTRAINTS__PASSENGER_CONSTRAINTS);

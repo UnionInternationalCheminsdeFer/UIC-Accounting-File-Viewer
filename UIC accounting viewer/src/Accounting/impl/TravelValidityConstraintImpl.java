@@ -227,6 +227,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -236,6 +237,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -248,6 +250,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -257,6 +260,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -269,6 +273,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Calendar getValidDays() {
 		if (validDays != null && validDays.eIsProxy()) {
 			InternalEObject oldValidDays = (InternalEObject)validDays;
@@ -295,6 +300,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValidDays(Calendar newValidDays) {
 		Calendar oldValidDays = validDays;
 		validDays = newValidDays;
@@ -307,6 +313,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getTravelDays() {
 		return travelDays;
 	}
@@ -316,6 +323,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelDays(int newTravelDays) {
 		int oldTravelDays = travelDays;
 		travelDays = newTravelDays;
@@ -328,6 +336,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ValidityRange getRange() {
 		return range;
 	}
@@ -352,6 +361,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRange(ValidityRange newRange) {
 		if (newRange != range) {
 			NotificationChain msgs = null;
@@ -371,6 +381,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReturnValidityConstraint getReturnConstraint() {
 		return returnConstraint;
 	}
@@ -395,6 +406,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReturnConstraint(ReturnValidityConstraint newReturnConstraint) {
 		if (newReturnConstraint != returnConstraint) {
 			NotificationChain msgs = null;
@@ -414,6 +426,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ExcludedTimeRange> getExcludedTimeRange() {
 		if (excludedTimeRange == null) {
 			excludedTimeRange = new EObjectContainmentEList<ExcludedTimeRange>(ExcludedTimeRange.class, this, AccountingPackage.TRAVEL_VALIDITY_CONSTRAINT__EXCLUDED_TIME_RANGE);
@@ -426,6 +439,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TrainValidity getTrainValidity() {
 		return trainValidity;
 	}
@@ -450,6 +464,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTrainValidity(TrainValidity newTrainValidity) {
 		if (newTrainValidity != trainValidity) {
 			NotificationChain msgs = null;
@@ -469,6 +484,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelValidityType getValidityType() {
 		return validityType;
 	}
@@ -478,6 +494,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValidityType(TravelValidityType newValidityType) {
 		TravelValidityType oldValidityType = validityType;
 		validityType = newValidityType == null ? VALIDITY_TYPE_EDEFAULT : newValidityType;
@@ -490,6 +507,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TripInterruptionConstraint getTripInterruptionConstraint() {
 		return tripInterruptionConstraint;
 	}
@@ -514,6 +532,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTripInterruptionConstraint(TripInterruptionConstraint newTripInterruptionConstraint) {
 		if (newTripInterruptionConstraint != tripInterruptionConstraint) {
 			NotificationChain msgs = null;
@@ -533,6 +552,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TripAllocationConstraint getTripAllocationConstraint() {
 		return tripAllocationConstraint;
 	}
@@ -557,6 +577,7 @@ public class TravelValidityConstraintImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTripAllocationConstraint(TripAllocationConstraint newTripAllocationConstraint) {
 		if (newTripAllocationConstraint != tripAllocationConstraint) {
 			NotificationChain msgs = null;

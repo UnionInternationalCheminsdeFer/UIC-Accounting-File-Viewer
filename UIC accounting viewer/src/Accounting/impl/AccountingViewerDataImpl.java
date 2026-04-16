@@ -106,6 +106,7 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CodeLists getCodeLists() {
 		return codeLists;
 	}
@@ -130,6 +131,7 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCodeLists(CodeLists newCodeLists) {
 		if (newCodeLists != codeLists) {
 			NotificationChain msgs = null;
@@ -149,6 +151,7 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<GeneralTariffModel> getFareModells() {
 		if (fareModells == null) {
 			fareModells = new EObjectContainmentEList<GeneralTariffModel>(GeneralTariffModel.class, this, AccountingPackage.ACCOUNTING_VIEWER_DATA__FARE_MODELLS);
@@ -161,6 +164,7 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public WorkflowHistory getWorkflowHistory() {
 		return workflowHistory;
 	}
@@ -185,6 +189,7 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setWorkflowHistory(WorkflowHistory newWorkflowHistory) {
 		if (newWorkflowHistory != workflowHistory) {
 			NotificationChain msgs = null;
@@ -204,6 +209,7 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AccountingFile getAccountingFile() {
 		return accountingFile;
 	}
@@ -228,6 +234,7 @@ public class AccountingViewerDataImpl extends MinimalEObjectImpl.Container imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAccountingFile(AccountingFile newAccountingFile) {
 		if (newAccountingFile != accountingFile) {
 			NotificationChain msgs = null;

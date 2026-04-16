@@ -134,6 +134,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCode() {
 		return code;
 	}
@@ -143,6 +144,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCode(int newCode) {
 		int oldCode = code;
 		code = newCode;
@@ -155,6 +157,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -164,6 +167,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -176,6 +180,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getISOcode() {
 		return isOcode;
 	}
@@ -185,6 +190,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setISOcode(String newISOcode) {
 		String oldISOcode = isOcode;
 		isOcode = newISOcode;
@@ -197,6 +203,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CharacterSet getDefaultCharacterSet() {
 		return defaultCharacterSet;
 	}
@@ -206,6 +213,7 @@ public class CountryImpl extends MinimalEObjectImpl.Container implements Country
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDefaultCharacterSet(CharacterSet newDefaultCharacterSet) {
 		CharacterSet oldDefaultCharacterSet = defaultCharacterSet;
 		defaultCharacterSet = newDefaultCharacterSet == null ? DEFAULT_CHARACTER_SET_EDEFAULT : newDefaultCharacterSet;

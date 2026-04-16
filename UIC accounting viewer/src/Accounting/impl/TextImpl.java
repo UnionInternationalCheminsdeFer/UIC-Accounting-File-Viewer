@@ -218,6 +218,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -227,6 +228,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -239,6 +241,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTextUTF8() {
 		return textUTF8;
 	}
@@ -248,6 +251,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTextUTF8(String newTextUTF8) {
 		String oldTextUTF8 = textUTF8;
 		textUTF8 = newTextUTF8;
@@ -260,6 +264,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTextICAO() {
 		return textICAO;
 	}
@@ -269,6 +274,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTextICAO(String newTextICAO) {
 		String oldTextICAO = textICAO;
 		textICAO = newTextICAO;
@@ -281,6 +287,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getShortTextUTF8() {
 		return shortTextUTF8;
 	}
@@ -290,6 +297,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShortTextUTF8(String newShortTextUTF8) {
 		String oldShortTextUTF8 = shortTextUTF8;
 		shortTextUTF8 = newShortTextUTF8;
@@ -302,6 +310,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getShortTextICAO() {
 		return shortTextICAO;
 	}
@@ -311,6 +320,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShortTextICAO(String newShortTextICAO) {
 		String oldShortTextICAO = shortTextICAO;
 		shortTextICAO = newShortTextICAO;
@@ -323,6 +333,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Translation> getTranslations() {
 		if (translations == null) {
 			translations = new EObjectContainmentEList<Translation>(Translation.class, this, AccountingPackage.TEXT__TRANSLATIONS);
@@ -335,6 +346,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isStandardText() {
 		return standardText;
 	}
@@ -344,6 +356,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStandardText(boolean newStandardText) {
 		boolean oldStandardText = standardText;
 		standardText = newStandardText;
@@ -356,6 +369,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -365,6 +379,7 @@ public class TextImpl extends MinimalEObjectImpl.Container implements Text {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;

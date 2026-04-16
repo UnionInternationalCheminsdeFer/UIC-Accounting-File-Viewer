@@ -68,6 +68,7 @@ public class CalendarsImpl extends MinimalEObjectImpl.Container implements Calen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Calendar> getCalendars() {
 		if (calendars == null) {
 			calendars = new EObjectContainmentEList<Calendar>(Calendar.class, this, AccountingPackage.CALENDARS__CALENDARS);

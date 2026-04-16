@@ -68,6 +68,7 @@ public class ZoneDefinitionsImpl extends MinimalEObjectImpl.Container implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ZoneDefinition> getZoneDefinition() {
 		if (zoneDefinition == null) {
 			zoneDefinition = new EObjectContainmentEList<ZoneDefinition>(ZoneDefinition.class, this, AccountingPackage.ZONE_DEFINITIONS__ZONE_DEFINITION);

@@ -64,6 +64,7 @@ public class StationNamesImpl extends MinimalEObjectImpl.Container implements St
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Station> getStationName() {
 		if (stationName == null) {
 			stationName = new EObjectResolvingEList<Station>(Station.class, this, AccountingPackage.STATION_NAMES__STATION_NAME);

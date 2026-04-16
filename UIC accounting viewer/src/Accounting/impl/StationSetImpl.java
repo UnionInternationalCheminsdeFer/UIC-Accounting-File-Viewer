@@ -64,6 +64,7 @@ public class StationSetImpl extends MinimalEObjectImpl.Container implements Stat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Station> getStations() {
 		if (stations == null) {
 			stations = new EObjectResolvingEList<Station>(Station.class, this, AccountingPackage.STATION_SET__STATIONS);

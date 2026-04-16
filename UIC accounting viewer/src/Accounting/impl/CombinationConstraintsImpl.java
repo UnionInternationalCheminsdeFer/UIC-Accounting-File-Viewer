@@ -68,6 +68,7 @@ public class CombinationConstraintsImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CombinationConstraint> getCombinationConstraints() {
 		if (combinationConstraints == null) {
 			combinationConstraints = new EObjectContainmentEList<CombinationConstraint>(CombinationConstraint.class, this, AccountingPackage.COMBINATION_CONSTRAINTS__COMBINATION_CONSTRAINTS);

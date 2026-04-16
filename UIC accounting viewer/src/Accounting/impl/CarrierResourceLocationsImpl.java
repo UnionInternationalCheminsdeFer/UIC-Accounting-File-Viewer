@@ -68,6 +68,7 @@ public class CarrierResourceLocationsImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CarrierResourceLocation> getCarrierResourceLocations() {
 		if (carrierResourceLocations == null) {
 			carrierResourceLocations = new EObjectContainmentEList<CarrierResourceLocation>(CarrierResourceLocation.class, this, AccountingPackage.CARRIER_RESOURCE_LOCATIONS__CARRIER_RESOURCE_LOCATIONS);

@@ -312,6 +312,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -321,6 +322,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -333,6 +335,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Country getCountry() {
 		if (country != null && country.eIsProxy()) {
 			InternalEObject oldCountry = (InternalEObject)country;
@@ -359,6 +362,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCountry(Country newCountry) {
 		Country oldCountry = country;
 		country = newCountry;
@@ -371,6 +375,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCode() {
 		return code;
 	}
@@ -380,6 +385,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCode(String newCode) {
 		String oldCode = code;
 		code = newCode;
@@ -392,6 +398,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getLongitude() {
 		return longitude;
 	}
@@ -401,6 +408,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLongitude(float newLongitude) {
 		float oldLongitude = longitude;
 		longitude = newLongitude;
@@ -413,6 +421,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getLatitude() {
 		return latitude;
 	}
@@ -422,6 +431,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLatitude(float newLatitude) {
 		float oldLatitude = latitude;
 		latitude = newLatitude;
@@ -434,6 +444,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTimetableName() {
 		return timetableName;
 	}
@@ -443,6 +454,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTimetableName(String newTimetableName) {
 		String oldTimetableName = timetableName;
 		timetableName = newTimetableName;
@@ -455,6 +467,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isBorderStation() {
 		return borderStation;
 	}
@@ -464,6 +477,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBorderStation(boolean newBorderStation) {
 		boolean oldBorderStation = borderStation;
 		borderStation = newBorderStation;
@@ -476,6 +490,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getNameCaseUTF8() {
 		return nameCaseUTF8;
 	}
@@ -485,6 +500,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNameCaseUTF8(String newNameCaseUTF8) {
 		String oldNameCaseUTF8 = nameCaseUTF8;
 		nameCaseUTF8 = newNameCaseUTF8;
@@ -497,6 +513,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getNameCaseASCII() {
 		return nameCaseASCII;
 	}
@@ -506,6 +523,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNameCaseASCII(String newNameCaseASCII) {
 		String oldNameCaseASCII = nameCaseASCII;
 		nameCaseASCII = newNameCaseASCII;
@@ -518,6 +536,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getShortNameCaseASCII() {
 		return shortNameCaseASCII;
 	}
@@ -527,6 +546,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShortNameCaseASCII(String newShortNameCaseASCII) {
 		String oldShortNameCaseASCII = shortNameCaseASCII;
 		shortNameCaseASCII = newShortNameCaseASCII;
@@ -539,6 +559,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getShortNameCaseUTF8() {
 		return shortNameCaseUTF8;
 	}
@@ -548,6 +569,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShortNameCaseUTF8(String newShortNameCaseUTF8) {
 		String oldShortNameCaseUTF8 = shortNameCaseUTF8;
 		shortNameCaseUTF8 = newShortNameCaseUTF8;
@@ -560,6 +582,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLegacyBorderPointCode() {
 		return legacyBorderPointCode;
 	}
@@ -569,6 +592,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLegacyBorderPointCode(int newLegacyBorderPointCode) {
 		int oldLegacyBorderPointCode = legacyBorderPointCode;
 		legacyBorderPointCode = newLegacyBorderPointCode;
@@ -581,6 +605,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public long getStationCode() {
 		return stationCode;
 	}
@@ -590,6 +615,7 @@ public class StationImpl extends MinimalEObjectImpl.Container implements Station
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStationCode(long newStationCode) {
 		long oldStationCode = stationCode;
 		stationCode = newStationCode;

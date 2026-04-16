@@ -348,6 +348,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -357,6 +358,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -369,6 +371,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TravelerType getTravelerType() {
 		return travelerType;
 	}
@@ -378,6 +381,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelerType(TravelerType newTravelerType) {
 		TravelerType oldTravelerType = travelerType;
 		travelerType = newTravelerType == null ? TRAVELER_TYPE_EDEFAULT : newTravelerType;
@@ -390,6 +394,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text getText() {
 		if (text != null && text.eIsProxy()) {
 			InternalEObject oldText = (InternalEObject)text;
@@ -416,6 +421,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(Text newText) {
 		Text oldText = text;
 		text = newText;
@@ -428,6 +434,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getUpperAgeLimit() {
 		return upperAgeLimit;
 	}
@@ -437,6 +444,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUpperAgeLimit(int newUpperAgeLimit) {
 		int oldUpperAgeLimit = upperAgeLimit;
 		upperAgeLimit = newUpperAgeLimit;
@@ -449,6 +457,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLowerAgeLimit() {
 		return lowerAgeLimit;
 	}
@@ -458,6 +467,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLowerAgeLimit(int newLowerAgeLimit) {
 		int oldLowerAgeLimit = lowerAgeLimit;
 		lowerAgeLimit = newLowerAgeLimit;
@@ -470,6 +480,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getTravelAloneAgeLimit() {
 		return travelAloneAgeLimit;
 	}
@@ -479,6 +490,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTravelAloneAgeLimit(int newTravelAloneAgeLimit) {
 		int oldTravelAloneAgeLimit = travelAloneAgeLimit;
 		travelAloneAgeLimit = newTravelAloneAgeLimit;
@@ -491,6 +503,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getReservationAgeLimit() {
 		return reservationAgeLimit;
 	}
@@ -500,6 +513,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReservationAgeLimit(int newReservationAgeLimit) {
 		int oldReservationAgeLimit = reservationAgeLimit;
 		reservationAgeLimit = newReservationAgeLimit;
@@ -512,6 +526,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIsAncilliary() {
 		return isAncilliary;
 	}
@@ -521,6 +536,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIsAncilliary(boolean newIsAncilliary) {
 		boolean oldIsAncilliary = isAncilliary;
 		isAncilliary = newIsAncilliary;
@@ -533,6 +549,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getPassengerWeight() {
 		return passengerWeight;
 	}
@@ -542,6 +559,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPassengerWeight(float newPassengerWeight) {
 		float oldPassengerWeight = passengerWeight;
 		passengerWeight = newPassengerWeight;
@@ -554,6 +572,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getMaxTotalPassengerWeight() {
 		return maxTotalPassengerWeight;
 	}
@@ -563,6 +582,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMaxTotalPassengerWeight(float newMaxTotalPassengerWeight) {
 		float oldMaxTotalPassengerWeight = maxTotalPassengerWeight;
 		maxTotalPassengerWeight = newMaxTotalPassengerWeight;
@@ -575,6 +595,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public float getMinTotalPassengerWeight() {
 		return minTotalPassengerWeight;
 	}
@@ -584,6 +605,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMinTotalPassengerWeight(float newMinTotalPassengerWeight) {
 		float oldMinTotalPassengerWeight = minTotalPassengerWeight;
 		minTotalPassengerWeight = newMinTotalPassengerWeight;
@@ -596,6 +618,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<IncludedFreePassengerLimit> getIncludedFreePassengers() {
 		if (includedFreePassengers == null) {
 			includedFreePassengers = new EObjectContainmentEList<IncludedFreePassengerLimit>(IncludedFreePassengerLimit.class, this, AccountingPackage.PASSENGER_CONSTRAINT__INCLUDED_FREE_PASSENGERS);
@@ -608,6 +631,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PassengerCombinationConstraint> getExcludedPassengerCombinations() {
 		if (excludedPassengerCombinations == null) {
 			excludedPassengerCombinations = new EObjectContainmentEList<PassengerCombinationConstraint>(PassengerCombinationConstraint.class, this, AccountingPackage.PASSENGER_CONSTRAINT__EXCLUDED_PASSENGER_COMBINATIONS);
@@ -620,6 +644,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getDataDescription() {
 		return dataDescription;
 	}
@@ -629,6 +654,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataDescription(String newDataDescription) {
 		String oldDataDescription = dataDescription;
 		dataDescription = newDataDescription;
@@ -641,6 +667,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -650,6 +677,7 @@ public class PassengerConstraintImpl extends MinimalEObjectImpl.Container implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;

@@ -68,6 +68,7 @@ public class ReservationParametersImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ReservationParameter> getReservationParameters() {
 		if (reservationParameters == null) {
 			reservationParameters = new EObjectContainmentEList<ReservationParameter>(ReservationParameter.class, this, AccountingPackage.RESERVATION_PARAMETERS__RESERVATION_PARAMETERS);

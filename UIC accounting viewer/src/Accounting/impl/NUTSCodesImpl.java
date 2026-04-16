@@ -68,6 +68,7 @@ public class NUTSCodesImpl extends MinimalEObjectImpl.Container implements NUTSC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<NutsCode> getNutsCodes() {
 		if (nutsCodes == null) {
 			nutsCodes = new EObjectContainmentEList<NutsCode>(NutsCode.class, this, AccountingPackage.NUTS_CODES__NUTS_CODES);

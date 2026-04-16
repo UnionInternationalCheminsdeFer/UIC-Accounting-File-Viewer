@@ -68,6 +68,7 @@ public class StationResourceLocationsImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<StationResourceLocation> getStationResourceLocations() {
 		if (stationResourceLocations == null) {
 			stationResourceLocations = new EObjectContainmentEList<StationResourceLocation>(StationResourceLocation.class, this, AccountingPackage.STATION_RESOURCE_LOCATIONS__STATION_RESOURCE_LOCATIONS);

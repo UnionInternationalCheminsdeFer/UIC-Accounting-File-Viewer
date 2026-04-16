@@ -229,6 +229,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -238,6 +239,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -250,6 +252,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getPreviousDeliveryId() {
 		return previousDeliveryId;
 	}
@@ -259,6 +262,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPreviousDeliveryId(String newPreviousDeliveryId) {
 		String oldPreviousDeliveryId = previousDeliveryId;
 		previousDeliveryId = newPreviousDeliveryId;
@@ -271,6 +275,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getReplacedDeliveryId() {
 		return replacedDeliveryId;
 	}
@@ -280,6 +285,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReplacedDeliveryId(String newReplacedDeliveryId) {
 		String oldReplacedDeliveryId = replacedDeliveryId;
 		replacedDeliveryId = newReplacedDeliveryId;
@@ -294,6 +300,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void unsetReplacedDeliveryId() {
 		String oldReplacedDeliveryId = replacedDeliveryId;
 		boolean oldReplacedDeliveryIdESet = replacedDeliveryIdESet;
@@ -308,6 +315,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isSetReplacedDeliveryId() {
 		return replacedDeliveryIdESet;
 	}
@@ -317,6 +325,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isOptional() {
 		return optional;
 	}
@@ -326,6 +335,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOptional(boolean newOptional) {
 		boolean oldOptional = optional;
 		optional = newOptional;
@@ -340,6 +350,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void unsetOptional() {
 		boolean oldOptional = optional;
 		boolean oldOptionalESet = optionalESet;
@@ -354,6 +365,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isSetOptional() {
 		return optionalESet;
 	}
@@ -363,6 +375,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getProvider() {
 		if (provider != null && provider.eIsProxy()) {
 			InternalEObject oldProvider = (InternalEObject)provider;
@@ -389,6 +402,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setProvider(Carrier newProvider) {
 		Carrier oldProvider = provider;
 		provider = newProvider;
@@ -401,6 +415,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SchemaVersion getSchemaVersion() {
 		return schemaVersion;
 	}
@@ -410,6 +425,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSchemaVersion(SchemaVersion newSchemaVersion) {
 		SchemaVersion oldSchemaVersion = schemaVersion;
 		schemaVersion = newSchemaVersion == null ? SCHEMA_VERSION_EDEFAULT : newSchemaVersion;
@@ -422,6 +438,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SchemaVersion getAcceptedSchemaVersion() {
 		return acceptedSchemaVersion;
 	}
@@ -431,6 +448,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAcceptedSchemaVersion(SchemaVersion newAcceptedSchemaVersion) {
 		SchemaVersion oldAcceptedSchemaVersion = acceptedSchemaVersion;
 		acceptedSchemaVersion = newAcceptedSchemaVersion == null ? ACCEPTED_SCHEMA_VERSION_EDEFAULT : newAcceptedSchemaVersion;
@@ -443,6 +461,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataType getUsage() {
 		return usage;
 	}
@@ -452,6 +471,7 @@ public class DeliveryImpl extends MinimalEObjectImpl.Container implements Delive
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUsage(DataType newUsage) {
 		DataType oldUsage = usage;
 		usage = newUsage == null ? USAGE_EDEFAULT : newUsage;

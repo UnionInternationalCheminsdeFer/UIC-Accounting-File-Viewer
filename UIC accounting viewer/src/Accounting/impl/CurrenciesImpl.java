@@ -67,6 +67,7 @@ public class CurrenciesImpl extends MinimalEObjectImpl.Container implements Curr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Currency> getCurrencies() {
 		if (currencies == null) {
 			currencies = new EObjectContainmentEList<Currency>(Currency.class, this, AccountingPackage.CURRENCIES__CURRENCIES);

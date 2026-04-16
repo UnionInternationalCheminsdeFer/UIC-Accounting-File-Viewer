@@ -112,6 +112,7 @@ public class LegacyAccountingIdentifierImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getSeriesId() {
 		return seriesId;
 	}
@@ -121,6 +122,7 @@ public class LegacyAccountingIdentifierImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSeriesId(int newSeriesId) {
 		int oldSeriesId = seriesId;
 		seriesId = newSeriesId;
@@ -133,6 +135,7 @@ public class LegacyAccountingIdentifierImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getTariffId() {
 		return tariffId;
 	}
@@ -142,6 +145,7 @@ public class LegacyAccountingIdentifierImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTariffId(int newTariffId) {
 		int oldTariffId = tariffId;
 		tariffId = newTariffId;
@@ -154,6 +158,7 @@ public class LegacyAccountingIdentifierImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getAddSeriesId() {
 		return addSeriesId;
 	}
@@ -163,6 +168,7 @@ public class LegacyAccountingIdentifierImpl extends MinimalEObjectImpl.Container
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAddSeriesId(int newAddSeriesId) {
 		int oldAddSeriesId = addSeriesId;
 		addSeriesId = newAddSeriesId;

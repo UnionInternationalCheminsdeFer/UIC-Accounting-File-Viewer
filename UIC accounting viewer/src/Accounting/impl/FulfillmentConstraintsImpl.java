@@ -68,6 +68,7 @@ public class FulfillmentConstraintsImpl extends MinimalEObjectImpl.Container imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FulfillmentConstraint> getFulfillmentConstraints() {
 		if (fulfillmentConstraints == null) {
 			fulfillmentConstraints = new EObjectContainmentEList<FulfillmentConstraint>(FulfillmentConstraint.class, this, AccountingPackage.FULFILLMENT_CONSTRAINTS__FULFILLMENT_CONSTRAINTS);

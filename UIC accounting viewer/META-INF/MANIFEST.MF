@@ -7,13 +7,28 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Export-Package: Accounting,
  Accounting.impl,
  Accounting.util
+Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport
-Bundle-ActivationPolicy: lazy
-Import-Package: org.eclipse.emf.ecore.provider,
- org.eclipse.emf.edit.provider
+Import-Package: org.eclipse.core.runtime;version="[3.7.0,4.0.0)",
+ org.eclipse.emf.common;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.common.notify;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.common.notify.impl;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.common.util;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.ecore;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.impl;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.plugin;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.provider,
+ org.eclipse.emf.ecore.resource;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.resource.impl;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.util;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.xmi.impl;version="[2.40.0,3.0.0)",
+ org.eclipse.emf.ecore.xmi.util;version="[2.40.0,3.0.0)",
+ org.eclipse.emf.ecore.xml.type;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.edit.provider,
+ org.eclipse.jface

@@ -102,6 +102,7 @@ public class AddCarrierRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getCarrier() {
 		if (carrier != null && carrier.eIsProxy()) {
 			InternalEObject oldCarrier = (InternalEObject)carrier;
@@ -128,6 +129,7 @@ public class AddCarrierRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrier(Carrier newCarrier) {
 		Carrier oldCarrier = carrier;
 		carrier = newCarrier;
@@ -140,6 +142,7 @@ public class AddCarrierRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AddCarrierScope getScope() {
 		return scope;
 	}
@@ -149,6 +152,7 @@ public class AddCarrierRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setScope(AddCarrierScope newScope) {
 		AddCarrierScope oldScope = scope;
 		scope = newScope == null ? SCOPE_EDEFAULT : newScope;
@@ -161,6 +165,7 @@ public class AddCarrierRuleImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Station> getStations() {
 		if (stations == null) {
 			stations = new EObjectResolvingEList<Station>(Station.class, this, AccountingPackage.ADD_CARRIER_RULE__STATIONS);

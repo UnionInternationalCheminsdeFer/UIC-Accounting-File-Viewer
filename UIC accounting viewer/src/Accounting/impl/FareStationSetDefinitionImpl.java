@@ -207,6 +207,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -216,6 +217,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;
@@ -228,6 +230,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Carrier getCarrier() {
 		if (carrier != null && carrier.eIsProxy()) {
 			InternalEObject oldCarrier = (InternalEObject)carrier;
@@ -254,6 +257,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCarrier(Carrier newCarrier) {
 		Carrier oldCarrier = carrier;
 		carrier = newCarrier;
@@ -266,6 +270,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCode() {
 		return code;
 	}
@@ -275,6 +280,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCode(String newCode) {
 		String oldCode = code;
 		code = newCode;
@@ -287,6 +293,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getLegacyCode() {
 		return legacyCode;
 	}
@@ -296,6 +303,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLegacyCode(int newLegacyCode) {
 		int oldLegacyCode = legacyCode;
 		legacyCode = newLegacyCode;
@@ -308,6 +316,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -317,6 +326,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -329,6 +339,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -338,6 +349,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -350,6 +362,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getNameUtf8() {
 		return nameUtf8;
 	}
@@ -359,6 +372,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNameUtf8(String newNameUtf8) {
 		String oldNameUtf8 = nameUtf8;
 		nameUtf8 = newNameUtf8;
@@ -371,6 +385,7 @@ public class FareStationSetDefinitionImpl extends MinimalEObjectImpl.Container i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Station> getStations() {
 		if (stations == null) {
 			stations = new EObjectResolvingEList<Station>(Station.class, this, AccountingPackage.FARE_STATION_SET_DEFINITION__STATIONS);

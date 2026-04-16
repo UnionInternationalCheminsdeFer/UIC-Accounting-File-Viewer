@@ -68,6 +68,7 @@ public class FareConstraintBundlesImpl extends MinimalEObjectImpl.Container impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<FareConstraintBundle> getFareConstraintBundles() {
 		if (fareConstraintBundles == null) {
 			fareConstraintBundles = new EObjectContainmentEList<FareConstraintBundle>(FareConstraintBundle.class, this, AccountingPackage.FARE_CONSTRAINT_BUNDLES__FARE_CONSTRAINT_BUNDLES);

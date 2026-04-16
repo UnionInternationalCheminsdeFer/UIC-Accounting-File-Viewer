@@ -358,6 +358,7 @@ public class AccountingEditor
 	 */
 	protected IPartListener partListener =
 		new IPartListener() {
+			@Override
 			public void partActivated(IWorkbenchPart p) {
 				if (p instanceof ContentOutline) {
 					if (((ContentOutline)p).getCurrentPage() == contentOutlinePage) {
@@ -376,15 +377,19 @@ public class AccountingEditor
 					handleActivate();
 				}
 			}
+			@Override
 			public void partBroughtToTop(IWorkbenchPart p) {
 				// Ignore.
 			}
+			@Override
 			public void partClosed(IWorkbenchPart p) {
 				// Ignore.
 			}
+			@Override
 			public void partDeactivated(IWorkbenchPart p) {
 				// Ignore.
 			}
+			@Override
 			public void partOpened(IWorkbenchPart p) {
 				// Ignore.
 			}
@@ -470,6 +475,7 @@ public class AccountingEditor
 					dispatching = true;
 					getSite().getShell().getDisplay().asyncExec
 						(new Runnable() {
+							 @Override
 							 public void run() {
 								 dispatching = false;
 								 updateProblemIndication();
@@ -656,9 +662,11 @@ public class AccountingEditor
 		//
 		commandStack.addCommandStackListener
 			(new CommandStackListener() {
+				 @Override
 				 public void commandStackChanged(final EventObject event) {
 					 getContainer().getDisplay().asyncExec
 						 (new Runnable() {
+							  @Override
 							  public void run() {
 								  firePropertyChange(IEditorPart.PROP_DIRTY);
 
@@ -724,6 +732,7 @@ public class AccountingEditor
 		if (theSelection != null && !theSelection.isEmpty()) {
 			Runnable runnable =
 				new Runnable() {
+					@Override
 					public void run() {
 						// Try to select the items in the current content viewer of the editor.
 						//
@@ -744,6 +753,7 @@ public class AccountingEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EditingDomain getEditingDomain() {
 		return editingDomain;
 	}
@@ -853,6 +863,7 @@ public class AccountingEditor
 					new ISelectionChangedListener() {
 						// This just notifies those things that are affected by the section.
 						//
+						@Override
 						public void selectionChanged(SelectionChangedEvent selectionChangedEvent) {
 							setSelection(selectionChangedEvent.getSelection());
 						}
@@ -887,6 +898,7 @@ public class AccountingEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Viewer getViewer() {
 		return currentViewer;
 	}
@@ -1191,6 +1203,7 @@ public class AccountingEditor
 
 			getSite().getShell().getDisplay().asyncExec
 				(new Runnable() {
+					 @Override
 					 public void run() {
 						 if (!getContainer().isDisposed()) {
 							 setActivePage(0);
@@ -1217,6 +1230,7 @@ public class AccountingEditor
 
 		getSite().getShell().getDisplay().asyncExec
 			(new Runnable() {
+				 @Override
 				 public void run() {
 					 updateProblemIndication();
 				 }
@@ -1796,6 +1810,7 @@ public class AccountingEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void addSelectionChangedListener(ISelectionChangedListener listener) {
 		selectionChangedListeners.add(listener);
 	}
@@ -1806,6 +1821,7 @@ public class AccountingEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void removeSelectionChangedListener(ISelectionChangedListener listener) {
 		selectionChangedListeners.remove(listener);
 	}
@@ -1816,6 +1832,7 @@ public class AccountingEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ISelection getSelection() {
 		return editorSelection;
 	}
@@ -1916,6 +1933,7 @@ public class AccountingEditor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void menuAboutToShow(IMenuManager menuManager) {
 		((IMenuListener)getEditorSite().getActionBarContributor()).menuAboutToShow(menuManager);
 	}

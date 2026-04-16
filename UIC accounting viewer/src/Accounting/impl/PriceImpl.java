@@ -113,6 +113,7 @@ public class PriceImpl extends MinimalEObjectImpl.Container implements Price {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -122,6 +123,7 @@ public class PriceImpl extends MinimalEObjectImpl.Container implements Price {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -134,6 +136,7 @@ public class PriceImpl extends MinimalEObjectImpl.Container implements Price {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<CurrencyPrice> getCurrencies() {
 		if (currencies == null) {
 			currencies = new EObjectContainmentEList<CurrencyPrice>(CurrencyPrice.class, this, AccountingPackage.PRICE__CURRENCIES);
@@ -146,6 +149,7 @@ public class PriceImpl extends MinimalEObjectImpl.Container implements Price {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DataSource getDataSource() {
 		return dataSource;
 	}
@@ -155,6 +159,7 @@ public class PriceImpl extends MinimalEObjectImpl.Container implements Price {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDataSource(DataSource newDataSource) {
 		DataSource oldDataSource = dataSource;
 		dataSource = newDataSource == null ? DATA_SOURCE_EDEFAULT : newDataSource;

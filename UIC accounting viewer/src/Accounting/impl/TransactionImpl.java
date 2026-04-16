@@ -225,6 +225,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TransactionType getTransactionType() {
 		return transactionType;
 	}
@@ -234,6 +235,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTransactionType(TransactionType newTransactionType) {
 		TransactionType oldTransactionType = transactionType;
 		transactionType = newTransactionType == null ? TRANSACTION_TYPE_EDEFAULT : newTransactionType;
@@ -246,6 +248,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getContract() {
 		return contract;
 	}
@@ -255,6 +258,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContract(String newContract) {
 		String oldContract = contract;
 		contract = newContract;
@@ -267,6 +271,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getBookingId() {
 		return bookingId;
 	}
@@ -276,6 +281,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBookingId(String newBookingId) {
 		String oldBookingId = bookingId;
 		bookingId = newBookingId;
@@ -288,6 +294,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<String> getBookingPartIds() {
 		if (bookingPartIds == null) {
 			bookingPartIds = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.TRANSACTION__BOOKING_PART_IDS);
@@ -300,6 +307,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<String> getAccountingReferenceIds() {
 		if (accountingReferenceIds == null) {
 			accountingReferenceIds = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.TRANSACTION__ACCOUNTING_REFERENCE_IDS);
@@ -312,6 +320,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<String> getTicketIds() {
 		if (ticketIds == null) {
 			ticketIds = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.TRANSACTION__TICKET_IDS);
@@ -324,6 +333,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTicketId() {
 		return ticketId;
 	}
@@ -333,6 +343,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTicketId(String newTicketId) {
 		String oldTicketId = ticketId;
 		ticketId = newTicketId;
@@ -345,6 +356,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<String> getFulfillmentIds() {
 		if (fulfillmentIds == null) {
 			fulfillmentIds = new EDataTypeUniqueEList<String>(String.class, this, AccountingPackage.TRANSACTION__FULFILLMENT_IDS);
@@ -357,6 +369,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getExchangebookingId() {
 		return exchangebookingId;
 	}
@@ -366,6 +379,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setExchangebookingId(String newExchangebookingId) {
 		String oldExchangebookingId = exchangebookingId;
 		exchangebookingId = newExchangebookingId;
@@ -378,6 +392,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Date getTransactionTime() {
 		return transactionTime;
 	}
@@ -387,6 +402,7 @@ public class TransactionImpl extends MinimalEObjectImpl.Container implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTransactionTime(Date newTransactionTime) {
 		Date oldTransactionTime = transactionTime;
 		transactionTime = newTransactionTime;

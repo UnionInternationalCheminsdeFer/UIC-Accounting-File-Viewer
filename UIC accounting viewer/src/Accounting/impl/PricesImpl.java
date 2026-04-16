@@ -68,6 +68,7 @@ public class PricesImpl extends MinimalEObjectImpl.Container implements Prices {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Price> getPrices() {
 		if (prices == null) {
 			prices = new EObjectContainmentEList<Price>(Price.class, this, AccountingPackage.PRICES__PRICES);

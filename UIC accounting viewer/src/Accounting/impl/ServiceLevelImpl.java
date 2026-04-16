@@ -134,6 +134,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -143,6 +144,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -155,6 +157,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Text getText() {
 		if (text != null && text.eIsProxy()) {
 			InternalEObject oldText = (InternalEObject)text;
@@ -181,6 +184,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(Text newText) {
 		Text oldText = text;
 		text = newText;
@@ -193,6 +197,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<ServiceClass> getCombiningServiceClasses() {
 		if (combiningServiceClasses == null) {
 			combiningServiceClasses = new EObjectResolvingEList<ServiceClass>(ServiceClass.class, this, AccountingPackage.SERVICE_LEVEL__COMBINING_SERVICE_CLASSES);
@@ -205,6 +210,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ReservationParameter getReservationParameter() {
 		if (reservationParameter != null && reservationParameter.eIsProxy()) {
 			InternalEObject oldReservationParameter = (InternalEObject)reservationParameter;
@@ -231,6 +237,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setReservationParameter(ReservationParameter newReservationParameter) {
 		ReservationParameter oldReservationParameter = reservationParameter;
 		reservationParameter = newReservationParameter;
@@ -243,6 +250,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean isIncludesClassName() {
 		return includesClassName;
 	}
@@ -252,6 +260,7 @@ public class ServiceLevelImpl extends MinimalEObjectImpl.Container implements Se
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIncludesClassName(boolean newIncludesClassName) {
 		boolean oldIncludesClassName = includesClassName;
 		includesClassName = newIncludesClassName;
